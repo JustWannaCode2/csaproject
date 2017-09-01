@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="viewProgramsStyle.css">
+<title>View Programs</title>
+</head>
+<body>
+<div class="container">
+<div class="GlobalAdminsHeader">
+<h2>Global Admin</h2>
+<!--End of div GlobalAdminsHeader-->
+</div>
+
+
+<div class = "navigationBar">
+			<table id = "adminTable" align="center">
+			<thead>
+				
+				<tr>
+					<td>
+						<b>Users</b>
+					</td>
+					<td>
+						<b>Institutions</b>
+					</td>
+					<td>
+						<b>Programs</b>
+					</td>
+					<td>
+						<b>Courses</b>
+					</td>
+					<td>
+						<b>Agreements</b>
+					</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td align='center'>
+						<form action = "viewUsers.htm">
+							<input type="submit" value="View Users" name="viewProgram" style="width:100%" onclick="" id="navigationBarButton">
+						</form>
+					</td>
+					<td align='center'>
+						<form action="">
+							<input type="submit" value="View Institutions" name="viewInstitutions" style="width:100%" onclick = "" id="navigationBarButton">
+						</form>
+					</td>
+					<td align='center'>
+						<form action="viewPrograms.htm">
+							<input type="submit" name = "viewPrograms" value="View Programs" style="width:100%" onclick="" id="navigationBarButton">
+						</form>
+					</td>	
+					<td align='center'>
+						<form action="">
+							<input type="submit" name = "viewCourses" value="View Courses" style="width:100%" onclick="" id="navigationBarButton">
+						</form>
+					</td>
+					<td align='center'>
+						<form action="">
+							<input type="submit" name = "viewAgreements" value="View Agreements" style="width:100%" onclick="" id="navigationBarButton">
+						</form>
+					</td>
+				</tr>
+				<tr>
+					<td align='center'>
+						<form action="addUsers.htm">
+							<input type="submit" value="Add Users" name="addPrograms" style="width:100%" onclick="" id="navigationBarButton">
+						</form>
+					</td>
+					<td align='center'>
+						<form action="">
+							<input type="submit" value="Add Institutions" name="addInstitutions" style="width:100%" onclick = "" id="navigationBarButton">
+						</form>
+					</td>
+					<td align='center'>
+						<form action="">
+							<input type="submit" value="Add Programs" name = "addPrograms" style="width:100%" onclick="" id="navigationBarButton">
+						</form>
+					</td>
+					<td align='center'>
+						<form action="">
+							<input type="submit" value="Add Courses" name = "addCourses" style="width:100%" onclick="" id="navigationBarButton">
+						</form>
+					</td>
+					<td align='center'>
+						<form action="">
+							<input type="submit" value="Add Agreements" name = "addAgreements" style="width:100%" onclick="" id="navigationBarButton">
+						</form>
+					</td>
+				</tr>
+				</tbody>
+		</table>
+		<!--End of div navigationBar-->
+	</div>
+	<div class="viewProgramContainer">
+		<div class="viewProgramHeader">
+			<h4>View Programs</h4>
+		</div>
+
+			<div class="viewProgramsMultilineSelect">
+				<select multiple id="selectProgram">
+					<option>  </option>
+					<option>  </option>
+					<option>  </option>
+				</select>
+				<br><br>
+				<input type="submit" name="selectProgram" value="Select Program" onclick="" id="selectProgramButton">
+				<input type="submit" name="addProgram" value="Add Program" onclick="" id="addProgramButton">
+				<input type="submit" name="removeProgram" value="Remove Program" onclick="" id="removeProgramButton">
+				<br>
+				<!--End of div viewProgramsMultilineSelect -->
+			</div>
+
+			<div class="filterBy">
+				<h2 id="filterByHeader"> Filter By </h2>
+				<br>
+				<p id="instituteIDLabel"> Program ID: </p>
+				<input type="text" name="instituteIDInput" placeholder="Name of the Program">
+				<br>
+				<input type="submit" value="Search" name="searchButton">  <br>
+				<p id="adminTypeLabel"> Filter By State </p>
+				<select id="selectAdminType">
+					<option></option><option></option><option></option>
+				</select><br><br>
+				<p id="adminTypeLabel"> Filter By City: </p>
+				<select id="selectAdminType">
+					<option></option><option></option><option></option>
+				</select><br><br>
+				<input type="submit" value="Apply Filter" name="searchButton">  <br>
+				<p id="adminTypeLabel"> Program Type: </p>
+				<select id="selectAdminType">
+					<option></option><option></option><option></option>
+				</select><br><br>
+				<input type="submit" value="Apply Filter" name="searchButton">  <br>
+				<p id="adminTypeLabel"> CAE Designation: </p>
+				<select id="selectAdminType">
+					<option></option><option></option><option></option>
+				</select><br><br>
+				<input type="submit" value="Apply Filter" name="searchButton">  <br>
+				<!--End of div filterBy -->
+			</div>
+		<!--End of div Container-->
+</div>
+    </div>
+</body>
+</html>
