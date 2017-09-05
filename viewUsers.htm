@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+<title>View Users</title>
+</head>
+<body>
+<div class="container">
+<div class="GlobalAdminsHeader">
+<h2>Global Admin</h2>
+<!--End of div GlobalAdminsHeader-->
+</div>
+
+
+<div class = "navigationBar">
+			<table id = "adminTable" align="center">
+			<thead>
+				
+				<tr>
+					<td>
+						<b>Users</b>
+					</td>
+					<td>
+						<b>Institutions</b>
+					</td>
+					<td>
+						<b>Programs</b>
+					</td>
+					<td>
+						<b>Courses</b>
+					</td>
+					<td>
+						<b>Agreements</b>
+					</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td align='center'>
+						<form action = "viewUsers.htm">
+							<input type="submit" value="View Users" name="viewUser" style="width:100%" onclick="" id="navigationBarButton">
+						</form>
+					</td>
+					<td align='center'>
+						<form action="">
+							<input type="submit" value="View Institutions" name="viewInstitutions" style="width:100%" onclick = "" id="navigationBarButton">
+						</form>
+					</td>
+					<td align='center'>
+						<form action="viewPrograms.htm">
+							<input type="submit" name = "viewPrograms" value="View Programs" style="width:100%" onclick="" id="navigationBarButton">
+						</form>
+					</td>	
+					<td align='center'>
+						<form action="">
+							<input type="submit" name = "viewCourses" value="View Courses" style="width:100%" onclick="" id="navigationBarButton">
+						</form>
+					</td>
+					<td align='center'>
+						<form action="">
+							<input type="submit" name = "viewAgreements" value="View Agreements" style="width:100%" onclick="" id="navigationBarButton">
+						</form>
+					</td>
+				</tr>
+				<tr>
+					<td align='center'>
+						<form action="addUsers.htm">
+							<input type="submit" value="Add Users" name="addUsers" style="width:100%" onclick="" id="navigationBarButton">
+						</form>
+					</td>
+					<td align='center'>
+						<form action="">
+							<input type="submit" value="Add Institutions" name="addInstitutions" style="width:100%" onclick = "" id="navigationBarButton">
+						</form>
+					</td>
+					<td align='center'>
+						<form action="">
+							<input type="submit" value="Add Programs" name = "addPrograms" style="width:100%" onclick="" id="navigationBarButton">
+						</form>
+					</td>
+					<td align='center'>
+						<form action="">
+							<input type="submit" value="Add Courses" name = "addCourses" style="width:100%" onclick="" id="navigationBarButton">
+						</form>
+					</td>
+					<td align='center'>
+						<form action="">
+							<input type="submit" value="Add Agreements" name = "addAgreements" style="width:100%" onclick="" id="navigationBarButton">
+						</form>
+					</td>
+				</tr>
+				</tbody>
+		</table>
+		<!--End of div navigationBar-->
+	</div>
+	<div class="viewUserContainer">
+		<div class="viewUserHeader">
+			<h4>View User</h4>
+		</div>
+
+			<div class="viewUsersMultilineSelect">
+				<select multiple id="lstBoxselectUserInViewUser">
+					<option>  </option>
+					<option>  </option>
+					<option>  </option>
+				</select>
+				<br><br>
+				<form action="viewUsers_selectUser.htm" id="selectUserButtonForm">
+				<input type="submit" name="selectUser" value="Select User" onclick="" id="selectUserButton">
+				</form>
+				<form action="addUsers.htm" id="addUserButtonForm">
+				<input type="submit" name="addUser" value="Add User" onclick="" id="addUserButton">
+				</form>
+				<form action="" id="removeUserButtonForm">
+				<input type="submit" name="removeUser" value="Remove User" onclick="" id="removeUserButton">
+				</form>
+				<br>
+				<!--End of div viewUsersMultilineSelect -->
+			</div>
+
+			<div class="filterBy">
+				<h2 id="filterByHeader"> Filter By </h2>
+				<br>
+				<p id="instituteLabelInFilterBy"> Institute: </p>
+				<select id="selectInstituteDropDownInFilterBy">
+					<option></option><option></option><option></option><option></option>
+				</select>
+				<br><br><br>
+				<p id="instituteIDLabelInFilterBy"> Institute ID: </p>
+				<input type="text" name="instituteIDInput" placeholder="Name of the Institute" id="InstituteIdFilterTextBoxInFilterBy">
+				<br>
+				<input type="submit" value="Apply Filter" name="applyFilterButton" id="applyFilterButtonInFilterBy"><br><br>
+				<p id="adminTypeLabelInFilterBy"> Admin Type: </p>
+				<select id="selectAdminTypeDropBoxInFilterBy">
+					<option></option><option></option><option></option>
+				</select><br><br>
+				<p id="UserIDLabelInFilterBy"> User ID: </p>
+				<input type="text" name="userIDInput" placeholder="Name of the user" id="selectUserTextBoxInFilterBy"><br>
+				<input type="submit" value="Search" name="searchButton" id="searchButtonInFilterBy"> 
+				<!--End of div filterBy -->
+			</div>
+    </div>
+    
+		<!--End of div Container-->
+</div>
+</body>
+</html>

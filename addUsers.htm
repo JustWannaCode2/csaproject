@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+<title>Add Users</title>
+</head>
+<body>
+<div class="container">
+	<div class="GlobalAdminsHeader">
+		<h2>Global Admin</h2>
+		<!--End of div GlobalAdminsHeader-->
+	</div>
+
+
+	<div class = "navigationBar">
+			<table id = "adminTable" align="center">
+			<thead>
+				
+				<tr>
+					<td>
+						<b>Users</b>
+					</td>
+					<td>
+						<b>Institutions</b>
+					</td>
+					<td>
+						<b>Programs</b>
+					</td>
+					<td>
+						<b>Courses</b>
+					</td>
+					<td>
+						<b>Agreements</b>
+					</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td align='center'>
+						<form action = "viewUsers.htm">
+							<input type="submit" value="View Users" name="viewUser" style="width:100%" onclick="" id="navigationBarButton">
+						</form>
+					</td>
+					<td align='center'>
+						<form action="">
+							<input type="submit" value="View Institutions" name="viewInstitutions" style="width:100%" onclick = "" id="navigationBarButton">
+						</form>
+					</td>
+					<td align='center'>
+						<form action="viewPrograms.htm">
+							<input type="submit" name = "viewPrograms" value="View Programs" style="width:100%" onclick="" id="navigationBarButton">
+						</form>
+					</td>	
+					<td align='center'>
+						<form action="">
+							<input type="submit" name = "viewCourses" value="View Courses" style="width:100%" onclick="" id="navigationBarButton">
+						</form>
+					</td>
+					<td align='center'>
+						<form action="">
+							<input type="submit" name = "viewAgreements" value="View Agreements" style="width:100%" onclick="" id="navigationBarButton">
+						</form>
+					</td>
+				</tr>
+				<tr>
+					<td align='center'>
+						<form action="addUsers.htm">
+							<input type="submit" value="Add Users" name="addUsers" style="width:100%" onclick="" id="navigationBarButton">
+						</form>
+					</td>
+					<td align='center'>
+						<form action="">
+							<input type="submit" value="Add Institutions" name="addInstitutions" style="width:100%" onclick = "" id="navigationBarButton">
+						</form>
+					</td>
+					<td align='center'>
+						<form action="">
+							<input type="submit" value="Add Programs" name = "addPrograms" style="width:100%" onclick="" id="navigationBarButton">
+						</form>
+					</td>
+					<td align='center'>
+						<form action="">
+							<input type="submit" value="Add Courses" name = "addCourses" style="width:100%" onclick="" id="navigationBarButton">
+						</form>
+					</td>
+					<td align='center'>
+						<form action="">
+							<input type="submit" value="Add Agreements" name = "addAgreements" style="width:100%" onclick="" id="navigationBarButton">
+						</form>
+					</td>
+				</tr>
+				</tbody>
+		</table>
+		<!--End of div navigationBar-->
+	</div>
+	<div class="viewUserContainer">
+		<div class="viewUserHeader">
+			<h4>Add User</h4>
+		</div>
+
+		<div class="addUserForm">
+			<form align="right">
+				Admin Name: 
+				<input type="text" name="adminName" placeholder="Admin Name" id="addUserInput">
+				<br>
+				Email (Work):
+				<input type="email" name="userEmail" placeholder="email address" id="addUserInput">
+				<br>
+				Telephone Number (Work):
+				<input type="number" name="telephoneWork" placeholder="Telephone Number" id="addUserInput">
+				<br>
+				Telephone Number (Mobile):
+				<input type="number" name="telephoneMobile" placeholder="Telephone Number" id="addUserInput">
+				<br>
+				
+			</form>		
+			<!--End of div addUserForm-->
+		</div>
+		<div class="institute">
+			<div class="chooseInstitute">
+				<p id="instituteLabel">Institute:</p>
+				<input type="text" name="instituteId" placeholder="Institute ID" id="searchByInstituteID">
+				Or
+				<select id="selectInstituteDropDown">
+				<option></option>
+					<option>Illinois Institute of Technology</option>
+					<option>University of Illinois At Chicago</option>
+					<option>University of Texas At San Antonio</option>
+				</select>
+			</div>
+			<div class="chooseAdminRights">
+			<form>
+			<p id="adminType">Admin Type:</p>
+			<input type="radio" name="mvccAdmin" value="MVCC Admin" id="mvccAdmin"> MVCC Admin
+			<input type="radio" name="institutionAdmin" value="Institution Admin" id="institutionAdmin"> Institution Admin
+			</form>
+			<!--end of div chooseAdminRights-->
+			</div>
+
+		<!--end of div institute-->
+		</div>
+		<!--End of div View User container-->
+	</div>
+
+		<!--End of div Container-->
+</div>
+</body>
+</html>

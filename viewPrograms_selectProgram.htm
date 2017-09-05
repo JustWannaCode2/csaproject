@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+<title>Program Name</title>
+</head>
+<body>
+<div class="container">
+	<div class="GlobalAdminsHeader">
+		<h2>Global Admin</h2>
+		<!--End of div GlobalAdminsHeader-->
+	</div>
+
+
+	<div class = "navigationBar">
+			<table id = "adminTable" align="center">
+			<thead>
+				
+				<tr>
+					<td>
+						<b>Users</b>
+					</td>
+					<td>
+						<b>Institutions</b>
+					</td>
+					<td>
+						<b>Programs</b>
+					</td>
+					<td>
+						<b>Courses</b>
+					</td>
+					<td>
+						<b>Agreements</b>
+					</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td align='center'>
+						<form action = "viewUsers.htm">
+							<input type="submit" value="View Users" name="viewUser" style="width:100%" onclick="" id="navigationBarButton">
+						</form>
+					</td>
+					<td align='center'>
+						<form action="">
+							<input type="submit" value="View Institutions" name="viewInstitutions" style="width:100%" onclick = "" id="navigationBarButton">
+						</form>
+					</td>
+					<td align='center'>
+						<form action="">
+							<input type="submit" name = "viewPrograms" value="View Programs" style="width:100%" onclick="" id="navigationBarButton">
+						</form>
+					</td>	
+					<td align='center'>
+						<form action="">
+							<input type="submit" name = "viewCourses" value="View Courses" style="width:100%" onclick="" id="navigationBarButton">
+						</form>
+					</td>
+					<td align='center'>
+						<form action="">
+							<input type="submit" name = "viewAgreements" value="View Agreements" style="width:100%" onclick="" id="navigationBarButton">
+						</form>
+					</td>
+				</tr>
+				<tr>
+					<td align='center'>
+						<form action="addUsers.htm">
+							<input type="submit" value="Add Users" name="addUsers" style="width:100%" onclick="" id="navigationBarButton">
+						</form>
+					</td>
+					<td align='center'>
+						<form action="">
+							<input type="submit" value="Add Institutions" name="addInstitutions" style="width:100%" onclick = "" id="navigationBarButton">
+						</form>
+					</td>
+					<td align='center'>
+						<form action="">
+							<input type="submit" value="Add Programs" name = "addPrograms" style="width:100%" onclick="" id="navigationBarButton">
+						</form>
+					</td>
+					<td align='center'>
+						<form action="">
+							<input type="submit" value="Add Courses" name = "addCourses" style="width:100%" onclick="" id="navigationBarButton">
+						</form>
+					</td>
+					<td align='center'>
+						<form action="">
+							<input type="submit" value="Add Agreements" name = "addAgreements" style="width:100%" onclick="" id="navigationBarButton">
+						</form>
+					</td>
+				</tr>
+				</tbody>
+		</table>
+		<!--End of div navigationBar-->
+	</div>
+	<div class="viewUserContainer">
+		<div class="viewUserHeader">
+			<h4>Program Name (Program ID)</h4>
+		</div>
+
+		<div id="programInfoInSelectProgram">
+			<form align="right">
+                <h4 id="programInformationHeader">Program Information</h4>
+				Program ID:
+				<input type="text" name="name" placeholder="Program ID" id="addProgramIDInputInSelectProgram" class="commonTxtBoxCSS">
+				<br>
+				Program Title:
+				<input type="text" name="programTitle" placeholder="Program Title" id="addProgramTitleInputInSelectProgram"  class="commonTxtBoxCSS">
+				<br><br>
+				Program Type:
+				<select id="cmbselectProgramTypeInProgramSelect" class="commonCmbBoxCSS">
+					<option></option>
+				</select>
+				<br><br>
+                CAE Designation:
+				<select id="cmbselectCAEDesignationInPorgramSelect" class="commonCmbBoxCSS">
+					<option></option>
+				</select>
+				<br>
+				<br>
+				Program URL:
+				<input type="text" placeholder="URL" id="addProgramURLInSelectProgram"  class="commonTxtBoxCSS">
+				<br>
+				Total Credit Hours:
+				<input type="text" placeholder="Number of Credits" id="addNumOfCreditsInSelectProgramName"  class="commonTxtBoxCSS">
+				<br>
+                Curriculam Code: <input type="text" placeholder="Code" id="addCurriculamCodeInSelectProgram"  class="commonTxtBoxCSS">
+                
+				
+			</form>		
+			<!--End of div addUserForm-->
+		</div>
+        
+        <br>
+        <br>
+        <div id="CareerCoursesDiv">
+        
+            <select id="selectProgramDropDown1">
+				<option></option>
+					<option></option>
+					<option></option>
+					<option></option>
+				</select>
+        <input type="text" placeholder="Program Details" id="txtBoxProgramDetailsInSelectProgram"  class="commonTxtBoxCSS">
+            <form action="" id="frmAddCourseSelectProgram" >
+				<input type="submit" value="Add Course" onclick="" id="btnAddCourseInSelectProgram" class="commonBtnInMappingPrograms">
+			</form>
+            <form action="" id="frmRemoveCourseSelectProgram" >
+				<input type="submit" value="Remove Course" onclick="" id="btnRemoveCourseInSelectProgram" class="commonBtnInMappingPrograms">
+			</form>
+            <br>
+            <div id="CareerCourseSubDiv">
+                <select id="cmbselectCAEDesignationInPorgramSelect" class="commonCmbBoxCSS">
+					<option></option>
+				</select>
+            </div>
+            
+        </div>
+        
+		<div id="mappingProgramsDiv">
+				<h4 id="mappingProgramHeader"> Mapped Programs with Transfer Agreements
+            </h4>
+				<select id="selectProgramDropDown1">
+				<option></option>
+					<option></option>
+					<option></option>
+					<option></option>
+				</select>
+			
+			<br>
+			<form action="" id="frmViewTranserInfoInSelectProgram" >
+				<input type="submit" value="View Transfer Information" onclick="" id="btnViewTransferInfo_SelectProgram" class="commonBtnInMappingPrograms">
+			</form>
+            <form action="" id="frmAddProgramInSelectProgram" >
+				<input type="submit" value="Add Program" onclick="" id="btnAddProgram_SelectProgram" class="commonBtnInMappingPrograms">
+			</form>
+            <form action="" id="frmRemoveProgramInSelectProgram" >
+				<input type="submit" value="Remove Program" onclick="" id="btnRemoveProgram_SelectProgram" class="commonBtnInMappingPrograms">
+			</form>
+            <form action="" id="frmAddTransferInformationInSelectProgram" >
+				<input type="submit" value="Add Transfer Information" onclick="" id="btnAddTransferInformation_SelectProgram" class="commonBtnInMappingPrograms">
+			</form>
+            
+		<!--end of div mappingProgramsDiv-->
+		</div>
+		<div id="saveOrCancelButtons">
+			<form action="" id="saveChangesToUserName" >
+				<input type="submit" value="Save Changes" name = "saveChangesToUserName" onclick="" id="navigationBarButton">
+			</form>
+			<form action="" id="cancelChangesToUserName">
+				<input type="submit" value="Cancel Changes" name = "cancelChangesToUserName" onclick="" id="navigationBarButton">
+			</form>
+			<!--End of save or cancel buttons div-->
+		</div>	
+		<!--End of div View User container-->
+	</div>
+		
+		<!--End of div Container-->
+</div>
+</body>
+</html>

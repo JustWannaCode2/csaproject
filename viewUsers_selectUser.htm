@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+<title>User Name</title>
+</head>
+<body>
+<div class="container">
+	<div class="GlobalAdminsHeader">
+		<h2>Global Admin</h2>
+		<!--End of div GlobalAdminsHeader-->
+	</div>
+
+
+	<div class = "navigationBar">
+			<table id = "adminTable" align="center">
+			<thead>
+				
+				<tr>
+					<td>
+						<b>Users</b>
+					</td>
+					<td>
+						<b>Institutions</b>
+					</td>
+					<td>
+						<b>Programs</b>
+					</td>
+					<td>
+						<b>Courses</b>
+					</td>
+					<td>
+						<b>Agreements</b>
+					</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td align='center'>
+						<form action = "viewUsers.htm">
+							<input type="submit" value="View Users" name="viewUser" style="width:100%" onclick="" id="navigationBarButton">
+						</form>
+					</td>
+					<td align='center'>
+						<form action="">
+							<input type="submit" value="View Institutions" name="viewInstitutions" style="width:100%" onclick = "" id="navigationBarButton">
+						</form>
+					</td>
+					<td align='center'>
+						<form action="">
+							<input type="submit" name = "viewPrograms" value="View Programs" style="width:100%" onclick="" id="navigationBarButton">
+						</form>
+					</td>	
+					<td align='center'>
+						<form action="">
+							<input type="submit" name = "viewCourses" value="View Courses" style="width:100%" onclick="" id="navigationBarButton">
+						</form>
+					</td>
+					<td align='center'>
+						<form action="">
+							<input type="submit" name = "viewAgreements" value="View Agreements" style="width:100%" onclick="" id="navigationBarButton">
+						</form>
+					</td>
+				</tr>
+				<tr>
+					<td align='center'>
+						<form action="addUsers.htm">
+							<input type="submit" value="Add Users" name="addUsers" style="width:100%" onclick="" id="navigationBarButton">
+						</form>
+					</td>
+					<td align='center'>
+						<form action="">
+							<input type="submit" value="Add Institutions" name="addInstitutions" style="width:100%" onclick = "" id="navigationBarButton">
+						</form>
+					</td>
+					<td align='center'>
+						<form action="">
+							<input type="submit" value="Add Programs" name = "addPrograms" style="width:100%" onclick="" id="navigationBarButton">
+						</form>
+					</td>
+					<td align='center'>
+						<form action="">
+							<input type="submit" value="Add Courses" name = "addCourses" style="width:100%" onclick="" id="navigationBarButton">
+						</form>
+					</td>
+					<td align='center'>
+						<form action="">
+							<input type="submit" value="Add Agreements" name = "addAgreements" style="width:100%" onclick="" id="navigationBarButton">
+						</form>
+					</td>
+				</tr>
+				</tbody>
+		</table>
+		<!--End of div navigationBar-->
+	</div>
+	<div class="viewUserContainer">
+		<div class="viewUserHeader">
+			<h4>User Name (UserID)</h4>
+		</div>
+
+		<div class="addUserForm">
+			<form align="right">
+				Name: 
+				<input type="text" name="name" placeholder="Name" id="addUserInput">
+				<br>
+				Admin Name: 
+				<input type="text" name="adminName" placeholder="Admin Name" id="addUserInput">
+				<br><br>
+				Admin Type:
+				<select id="cmbselectAdminTypeInSelectUser">
+					<option></option>
+				</select>
+				<br><br>
+				<br>
+				Telephone Number (Work):
+				<input type="number" name="telephoneWork" placeholder="Telephone Number" id="addUserInput">
+				<br>
+				Telephone Number (Mobile):
+				<input type="number" name="telephoneMobile" placeholder="Telephone Number" id="addUserInput">
+				<br>
+				
+			</form>		
+			<!--End of div addUserForm-->
+		</div>
+		<div class="institute">
+			<div class="chooseInstituteBox">
+				<p id="instituteLabelInviewUser_selectUser">Institution:</p>
+				<select id="selectInstituteDropDownInviewUser_selectUser">
+				<option></option>
+					<option></option>
+					<option></option>
+					<option></option>
+				</select>
+			
+			<br>
+			<p id="positionLabelInInstitutionBox">Position:</p>
+				<input type="text" name="positionLabel" placeholder="Position" id="addUserPosition">
+				<br>
+				<p id="linkLabelInInstitutionBox">Link: </p> 
+				<input type="text" name="linkLabel" placeholder="Add Link" id="addUserInfoLink">
+				<br>
+			
+				</div>
+		<!--end of div institute-->
+		</div>
+		<div id="saveOrCancelButtons">
+			<form action="" id="saveChangesToUserName" >
+				<input type="submit" value="Save Changes" name = "saveChangesToUserName" onclick="" id="navigationBarButton">
+			</form>
+			<form action="" id="cancelChangesToUserName">
+				<input type="submit" value="Cancel Changes" name = "cancelChangesToUserName" onclick="" id="navigationBarButton">
+			</form>
+			<!--End of save or cancel buttons div-->
+		</div>	
+		<!--End of div View User container-->
+	</div>
+		
+		<!--End of div Container-->
+</div>
+</body>
+</html>
