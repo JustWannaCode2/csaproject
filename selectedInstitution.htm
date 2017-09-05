@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="selectedInstitutionStyle.css">
+<title>View Institutions</title>
+</head>
+<body>
+<div class="container">
+<div class="GlobalAdminsHeader">
+<h2>Global Admin</h2>
+<!--End of div GlobalAdminsHeader-->
+</div>
+
+<!-- This is the div for the navigation bar ontop of every page -->
+<div class = "navigationBar">
+			<table id = "adminTable" align="center">
+			<thead>
+				
+				<tr>
+					<td>
+						<b>Users</b>
+					</td>
+					<td>
+						<b>Institutions</b>
+					</td>
+					<td>
+						<b>Programs</b>
+					</td>
+					<td>
+						<b>Courses</b>
+					</td>
+					<td>
+						<b>Agreements</b>
+					</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td align='center'>
+						<form action = "viewUsers.htm">
+							<input type="submit" value="View Users" name="viewProgram" style="width:100%" onclick="" id="navigationBarButton">
+						</form>
+					</td>
+					<td align='center'>
+						<form action="viewInstitutions.htm">
+							<input type="submit" value="View Institutions" name="viewInstitutions" style="width:100%" onclick = "" id="navigationBarButton">
+						</form>
+					</td>
+					<td align='center'>
+						<form action="viewPrograms.htm">
+							<input type="submit" name = "viewPrograms" value="View Programs" style="width:100%" onclick="" id="navigationBarButton">
+						</form>
+					</td>	
+					<td align='center'>
+						<form action="">
+							<input type="submit" name = "viewCourses" value="View Courses" style="width:100%" onclick="" id="navigationBarButton">
+						</form>
+					</td>
+					<td align='center'>
+						<form action="">
+							<input type="submit" name = "viewAgreements" value="View Agreements" style="width:100%" onclick="" id="navigationBarButton">
+						</form>
+					</td>
+				</tr>
+				<tr>
+					<td align='center'>
+						<form action="addUsers.htm">
+							<input type="submit" value="Add Users" name="addPrograms" style="width:100%" onclick="" id="navigationBarButton">
+						</form>
+					</td>
+					<td align='center'>
+						<form action="addInstitution.htm">
+							<input type="submit" value="Add Institutions" name="addInstitutions" style="width:100%" onclick = "" id="navigationBarButton">
+						</form>
+					</td>
+					<td align='center'>
+						<form action="">
+							<input type="submit" value="Add Programs" name = "addPrograms" style="width:100%" onclick="" id="navigationBarButton">
+						</form>
+					</td>
+					<td align='center'>
+						<form action="">
+							<input type="submit" value="Add Courses" name = "addCourses" style="width:100%" onclick="" id="navigationBarButton">
+						</form>
+					</td>
+					<td align='center'>
+						<form action="">
+							<input type="submit" value="Add Agreements" name = "addAgreements" style="width:100%" onclick="" id="navigationBarButton">
+						</form>
+					</td>
+				</tr>
+				</tbody>
+		</table>
+		<!--End of div navigationBar-->
+	</div>
+ 
+    
+	<div class="viewInstitutionContainer">
+		<div class="viewInstitutionHeader">
+			<h4>Institution Name (Institution ID)</h4>
+		</div>
+        </div>
+
+    <!-- This Div contains the institution information that will be pulled from the database -->
+			<div class="institutionInformationTable">
+                
+                <h2 align="center"><u>Institution Information</u></h2>
+                <table>
+                    <tr>
+                        <td>
+				            Institution Name:
+                        </td>
+                        
+                        <td>
+				            <input type="text" name="selectedInstitutionName">
+                        </td>
+                    </tr>
+				    <tr>
+                        <td>
+				            Institute ID:
+                        </td>
+                        
+                        <td>
+				            <input type="text" name="selectedInstitutionID">
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+				            Institution Type:
+                        </td>
+                        
+                        <td>
+				            <select id="selectedInstitutionType" style="width: 100%">
+					           <option></option><option></option><option></option>
+				            </select>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+				            Address:
+                        </td>
+                        
+                        <td>
+				            <input type="text" name="selectedInstitutionAddress">
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+				            City:
+                        </td>
+                        
+                        <td>
+				            <input type="text" name="selectedInstitutionCity">
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+				            State:
+                        </td>
+                        
+                        <td>
+				            <select id="selectedInstitutionState" style="width: 100%">
+					           <option></option><option></option><option></option>
+				            </select>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+				            Zip:
+                        </td>
+                        
+                        <td>
+				            <input type="text" name="selectedInstitutionZip">
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+				            Country:
+                        </td>
+                        
+                        <td>
+				            <select id="selectedInstitutionCountry" style="width: 100%">
+					           <option></option><option></option><option></option>
+				            </select>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+				            URL:
+                        </td>
+                        
+                        <td>
+				            <input type="text" name="selectedInstitutionURL">
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+				            Institution Contact:
+                        </td>
+                        
+                        <td>
+				            <select style="width:100%" id="contact"><option></option><option></option></select>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+				            Phone Number:
+                        </td>
+                        
+                        <td>
+				            <input type="text" name="selectedInstitutionContactNumber">
+                        </td>
+                    </tr>
+                    
+                </table>
+				
+                <input type="button" name="UploadInstitutionLogo" id="UploadInstitutionLogo" value = "Click to Upload the Institution Logo">
+				
+			</div>
+        <!-- End of Institution Information Table DIV-->
+
+		
+        <!-- This DIV holds the table for the CAE Designations -->
+        <div class="CAEDesignation">
+				<h2 id="CAEDesignationHeader"> <u>CAE Designation(s)</u> </h2>
+				<table>
+                    <tr>
+                        <td>
+                            <input type="checkbox" id="CAEIAE4Y" name="CAEIAE4Y">CAE/IAE 4Y- National Centers of Academic Excellence in Information Assurance Education
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td align="center">
+                            Expiration:
+                            <select name="CAEIAE4YExpiraton" id="CAEIAE4YExpiraton" style="width: 150px">
+                                <option></option>
+                                <option>2017</option>
+                                <option>2018</option>
+                                <option>2019</option>
+                                <option>2020</option>
+                                <option>2021</option>
+                                <option>2022</option>
+                                <option>2023</option>
+                                <option>2024</option>
+                                <option>2025</option>
+                            </select>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <input type="checkbox" id="CAECDE4Y" name="CAECDE4Y">CAE-CDE 4Y- National Centers of Academic Excellence in Cyber Defense Education
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td align="center">
+                            Expiration:
+                            <select name="CAEIAE4YExpiraton" id="CAEIAE4YExpiraton" style="width: 150px">
+                                <option></option>
+                                <option>2017</option>
+                                <option>2018</option>
+                                <option>2019</option>
+                                <option>2020</option>
+                                <option>2021</option>
+                                <option>2022</option>
+                                <option>2023</option>
+                                <option>2024</option>
+                                <option>2025</option>
+                            </select>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <input type="checkbox" id="CAEO4Y" name="CAEO4Y">CAE-CO 4Y- National Centers of Academic Excellence in Cyber Operations Education
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td align="center">
+                            Expiration:
+                            <select name="CAEO4YExpiraton" id="CAEO4YExpiraton" style="width: 150px">
+                                <option></option>
+                                <option>2017</option>
+                                <option>2018</option>
+                                <option>2019</option>
+                                <option>2020</option>
+                                <option>2021</option>
+                                <option>2022</option>
+                                <option>2023</option>
+                                <option>2024</option>
+                                <option>2025</option>>
+                            </select>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <input type="checkbox" id="CAEIAE2Y" name="CAEIAE2Y">CAE/IAE 2Y - National Centers of Academic Excellence in Information Assurance 2-Year Education
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td align="center">
+                            Expiration:
+                            <select name="CAEIAE2YExpiration" id="CAEIAE2YExpiration" style="width: 150px">
+                                <option></option>
+                                <option>2017</option>
+                                <option>2018</option>
+                                <option>2019</option>
+                                <option>2020</option>
+                                <option>2021</option>
+                                <option>2022</option>
+                                <option>2023</option>
+                                <option>2024</option>
+                                <option>2025</option>
+                            </select>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <input type="checkbox" id="CAECDE2Y" name="CAECDE2Y">CAE-CDE 2Y - National Centers of Academic Excellence in Cyber Defense 2-Year Education
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td align="center">
+                            Expiration:
+                            <select name="CAECDE2YExpiration" id="CAECDE2YExpiration" style="width: 150px">
+                                <option></option>
+                                <option>2017</option>
+                                <option>2018</option>
+                                <option>2019</option>
+                                <option>2020</option>
+                                <option>2021</option>
+                                <option>2022</option>
+                                <option>2023</option>
+                                <option>2024</option>
+                                <option>2025</option>
+                            </select>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <input type="checkbox" id="CAEIAR" name="CAEIAR">CAE-IA-R - National Centers of Academic Excellence in Information Assurance Research
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td align="center">
+                            Expiration:
+                            <select name="CAEIARExpiration" id="CAEIARExpiration" style="width:150px">
+                                <option></option>
+                                <option>2017</option>
+                                <option>2018</option>
+                                <option>2019</option>
+                                <option>2020</option>
+                                <option>2021</option>
+                                <option>2022</option>
+                                <option>2023</option>
+                                <option>2024</option>
+                                <option>2025</option>
+                            </select>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <input type="checkbox" id="CAER" name="CAER">CAE-R - National Centers of Academic Excellence in Cyber Defense Research
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td align="center">
+                            Expiration:
+                            <select name="CAERExpiration" id="CAERExpiration" style="width: 150px">
+                                <option></option>
+                                <option>2017</option>
+                                <option>2018</option>
+                                <option>2019</option>
+                                <option>2020</option>
+                                <option>2021</option>
+                                <option>2022</option>
+                                <option>2023</option>
+                                <option>2024</option>
+                                <option>2025</option>
+                            </select>
+                        </td>
+                    </tr>
+                    
+                </table>
+			</div>
+
+    <div align="center">
+        <input type="button" id="SaveChanges" name="SaveChanges" value="Save Changes">
+    </div>
+
+    </div>
+    <!--End of div Container-->
+</body>
+</html>

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="addCourseStyle.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script type="text/javascript" src="script.js"></script>
+    
+<title>View Institutions</title>
+</head>
+<body>
+<div class="container">
+<div class="GlobalAdminsHeader">
+<h2>Global Admin</h2>
+<!--End of div GlobalAdminsHeader-->
+</div>
+
+
+<div class = "navigationBar">
+			<table id = "adminTable" align="center">
+			<thead>
+				
+				<tr>
+					<td>
+						<b>Users</b>
+					</td>
+					<td>
+						<b>Institutions</b>
+					</td>
+					<td>
+						<b>Programs</b>
+					</td>
+					<td>
+						<b>Courses</b>
+					</td>
+					<td>
+						<b>Agreements</b>
+					</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td align='center'>
+						<form action = "viewUsers.htm">
+							<input type="submit" value="View Users" name="viewProgram" style="width:100%" onclick="" id="navigationBarButton">
+						</form>
+					</td>
+					<td align='center'>
+						<form action="">
+							<input type="submit" value="View Institutions" name="viewInstitutions" style="width:100%" onclick = "" id="navigationBarButton">
+						</form>
+					</td>
+					<td align='center'>
+						<form action="viewPrograms.htm">
+							<input type="submit" name = "viewPrograms" value="View Programs" style="width:100%" onclick="" id="navigationBarButton">
+						</form>
+					</td>	
+					<td align='center'>
+						<form action="">
+							<input type="submit" name = "viewCourses" value="View Courses" style="width:100%" onclick="" id="navigationBarButton">
+						</form>
+					</td>
+					<td align='center'>
+						<form action="">
+							<input type="submit" name = "viewAgreements" value="View Agreements" style="width:100%" onclick="" id="navigationBarButton">
+						</form>
+					</td>
+				</tr>
+				<tr>
+					<td align='center'>
+						<form action="addUsers.htm">
+							<input type="submit" value="Add Users" name="addPrograms" style="width:100%" onclick="" id="navigationBarButton">
+						</form>
+					</td>
+					<td align='center'>
+						<form action="addInstitution.htm">
+							<input type="submit" value="Add Institutions" name="addInstitutions" style="width:100%" onclick = "" id="navigationBarButton">
+						</form>
+					</td>
+					<td align='center'>
+						<form action="">
+							<input type="submit" value="Add Programs" name = "addPrograms" style="width:100%" onclick="" id="navigationBarButton">
+						</form>
+					</td>
+					<td align='center'>
+						<form action="">
+							<input type="submit" value="Add Courses" name = "addCourses" style="width:100%" onclick="" id="navigationBarButton">
+						</form>
+					</td>
+					<td align='center'>
+						<form action="">
+							<input type="submit" value="Add Agreements" name = "addAgreements" style="width:100%" onclick="" id="navigationBarButton">
+						</form>
+					</td>
+				</tr>
+				</tbody>
+		</table>
+		<!--End of div navigationBar-->
+	</div>
+	<div class="addCourseContainer">
+		<div class="addCourseHeader">
+			<h4>Add Course</h4>
+		</div>
+
+			<div class="AddCourseInformation" align="center">
+                <h3 align="center"><u>Course Information</u></h3>
+                <table>
+                    <tr>
+                        <td>
+                            Institution: 
+                        </td>
+                        <td>
+                            <select id="Institution" name="Institution" style="width:100%"><option selected>Select an Institution</option><option></option></select>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            Course Number:
+                        </td>
+                        <td>
+                            <select id="Dept" name="Dept" style="width:50%"><option selected>Department</option></select>
+                            
+                            <input type="button" id="AddDept" name="AddDept" value="Add Department">
+                        </td>
+                        
+                                                    <script>
+                                        $(document).ready(function()
+                                                          {
+                                            $("#AddDept").click(function()
+                                                           {
+                                                $("#NewDeptInfo").toggle();
+                                            })
+                                        })
+                                    </script>
+                        
+                        <td id="NewDeptInfo" style="display: none">
+                            <table style="border: 1px solid black">
+                                <thead colspan=2><th><u>New Course Information</u></th></thead>
+                                <tr>
+                                    <td>
+                                        Institution:
+                                    </td>
+                                    <td>
+                                        <select id="NewInstitution" style="width:100%"></select>
+                                    </td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>
+                                        Department Name:
+                                    </td>
+                                    <td>
+                                        <input type="text" id="NewDeptName">
+                                    </td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>
+                                        Department Prefix:
+                                    </td>
+                                    <td>
+                                        <input type="text" id="NewDeptPrefix">
+                                    </td>
+                                </tr>
+                                
+                                <tr>
+                                    <td></td>
+                                    <td>
+                                        <input type="submit" id="AddNewDept" value="Add" style="width:48%">
+                                        <input type="submit" id="CancelAddNewDept" value="Cancel" style="width:48%">
+                                    </td>
+                                </tr>
+                                
+                            </table>
+                                                       
+                       </td>
+                    </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td>
+                            <input type="text" id="CourseNum" name="CourseNum" style="width:50%" placeholder="Number">
+
+                            
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            Course Name:
+                        </td>
+                        <td>
+                            <input type="text" id="CourseName" name="CourseName" placeholder="Course Name" style="width: 80%">
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            Credit Hours:
+                        </td>
+                        <td>
+                            <select id="Credits" name="Credits" style="width:50%">
+                                <option selected>Credit Hours</option>
+                                <option value="NA"></option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            Course Description:
+                        </td>
+                        
+                        <td>
+                            <textarea style="height: 75px; width:250px" id="Description" name="description" placeholder="Enter your description here"></textarea>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            Map to Knowledge Unit: 
+                        </td>
+                        <td>
+                            <input type="radio" id="KUYes">Yes
+                            <input type="radio" id="KUYes">No
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="submit" value="Save Changes" id="SaveChanges" style="width:40%">
+                            <input type="submit" value="Cancel" id="CancelChanges" style="width:40%">
+                        </td>
+                    </tr>
+                    
+                </table>
+                
+				
+			</div>
+
+</div>
+    </div>
+</body>
+</html>
