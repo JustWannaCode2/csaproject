@@ -216,6 +216,7 @@
 				                <input type="submit" name="EditSelectedCourseButton" value="Edit Selected Course" onclick="" id="EditSelectedCourseButton"> 
                         </td>
 
+
                         <td>
                             <form action = "addCourse.htm">
 				                <input type="submit" name="addCourseButton" value="Add Course" onclick="" id="addCourseButton">
@@ -241,13 +242,51 @@
     <h2 align=center><u>Course Information</u></h2>
         
         <h4>You must click "Edit Selected Course" to make changes to this field</h4>
+        
+        
+        <script>
+                        
+                        $(document).ready(function()
+                    {
+                        $("#EditSelectedCourseButton").click(function()
+                            {
+                                document.getElementById('Institution').removeAttribute('disabled');
+                                document.getElementById('Dept').removeAttribute('disabled');
+                            
+                            document.getElementById('CourseNum').removeAttribute('disabled');
+                            
+                            document.getElementById('CourseName').removeAttribute('disabled');
+                            
+                            document.getElementById('CourseID').removeAttribute('disabled');
+                            
+                            document.getElementById('Credits').removeAttribute('disabled');
+                            
+                            document.getElementById('Description').removeAttribute('disabled');
+                            
+                            document.getElementById('KUYes').removeAttribute('disabled');
+                            
+                            document.getElementById('KUNo').removeAttribute('disabled');
+                            
+                            document.getElementById('MappedPrograms').removeAttribute('disabled');
+                            
+                            document.getElementById('SaveChanges').removeAttribute('disabled');
+                            
+                            document.getElementById('Cancel').removeAttribute('disabled');
+                            
+                            })
+                    })
+                        
+                        </script>
+        
+        
+        
     <table id="courseInformationTable" name="courseInformationTable">
                     <tr>
                         <td>
                             Institution: 
                         </td>
                         <td>
-                            <select id="Institution" name="Institution" style="width:100%"><option selected>Select an Institution</option><option></option></select>
+                            <select id="Institution" name="Institution" style="width:100%" disabled><option selected>Select an Institution</option><option></option></select>
                         </td>
                     </tr>
                     
@@ -256,8 +295,8 @@
                             Course Number:
                         </td>
                         <td>
-                            <select id="Dept" name="Dept" style="width:48%"><option selected>Department</option></select>
-                            <input type="text" id="CourseNum" name="CourseNum" style="width:48%" placeholder="Number">
+                            <select id="Dept" name="Dept" style="width:48%" disabled><option selected>Department</option></select>
+                            <input type="text" id="CourseNum" name="CourseNum" style="width:48%" placeholder="Number" disabled>
  
                         </td>
                     </tr>
@@ -267,7 +306,7 @@
                             Course Name:
                         </td>
                         <td>
-                            <input type="text" id="CourseName" name="CourseName" placeholder="Course Name" style="width: 100%">
+                            <input type="text" id="CourseName" name="CourseName" placeholder="Course Name" style="width: 100%" disabled>
                         </td>
                     </tr>
                     
@@ -276,7 +315,7 @@
                             Course ID: 
                         </td>
                         <td>
-                            <input type="text" id="CourseID" style="width:100%" placeholder="Course ID">
+                            <input type="text" id="CourseID" style="width:100%" name=CourseID placeholder="Course ID" disabled>
                         </td>
                     </tr>
                     
@@ -285,7 +324,7 @@
                             Credit Hours:
                         </td>
                         <td>
-                            <select id="Credits" name="Credits" style="width:50%">
+                            <select id="Credits" name="Credits" style="width:50%" disabled>
                                 <option selected>Credit Hours</option>
                                 <option value="NA"></option>
                                 <option value="1">1</option>
@@ -303,7 +342,7 @@
                         </td>
                         
                         <td>
-                            <textarea style="height: 75px; width:250px" id="Description" name="description" placeholder="Enter your description here"></textarea>
+                            <textarea style="height: 75px; width:250px" id="Description" name="description" placeholder="Enter your description here" disabled></textarea>
                         </td>
                     </tr>
                     
@@ -312,8 +351,8 @@
                             Map to Knowledge Unit: 
                         </td>
                         <td>
-                            <input type="radio" id="KUYes">Yes
-                            <input type="radio" id="KUYes">No
+                            <input type="radio" id="KUYes" disabled>Yes
+                            <input type="radio" id="KUNo" disabled>No
                         </td>
                     </tr>
                     
@@ -323,15 +362,15 @@
                         </td>
                         
                         <td>
-                            <select multiple id="MappedPrograms" style="width:350px; height:300px"></select>
+                            <select multiple id="MappedPrograms" style="width:350px; height:300px" disabled></select>
                         </td>
                     </tr>
                     
                     <tr>
                         <td></td>
                         <td>
-                            <input type="submit" value="Save Changes" id="SaveChanges" style="width:48%">
-                            <input type="submit" value="Cancel" id="Cancel" style="width: 48%">
+                            <input type="submit" value="Save Changes" id="SaveChanges" style="width:48%" disabled>
+                            <input type="submit" value="Cancel" id="Cancel" style="width: 48%" disabled>
                         </td>
                     </tr>
                     
