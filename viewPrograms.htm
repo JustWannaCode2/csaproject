@@ -74,7 +74,7 @@
 						</form>
 					</td>
 					<td align='center'>
-						<form action="">
+						<form action="addPrograms.htm">
 							<input type="submit" value="Add Programs" name = "addPrograms" style="width:100%" onclick="" id="navigationBarButton">
 						</form>
 					</td>
@@ -93,7 +93,7 @@
 		</table>
 		<!--End of div navigationBar-->
 	</div>
-	<div class="viewProgramContainer">
+	<div class="viewUserContainer">
 		<div class="viewProgramHeader">
 			<h4>View Programs</h4>
 		</div>
@@ -105,16 +105,17 @@
 					<option>  </option>
 				</select>
 				<br><br>
-                <form action="viewPrograms_selectProgram.htm" id="btnSelectProgramInViewPrograms">
-                    <input type="submit" name="selectProgram" value="Select Program" onclick="" id="selectProgramButton">
+                <form action="viewPrograms_selectProgram.htm" id="btnSelectProgramInViewPrograms" style="float: left">
+                    <input type="submit" name="selectProgram" value="Select Program" onclick="" id="selectProgramButton" class="commonBtnInViewPrograms">
                 </form>
-               <form action = "" id="btnAddProgramInViewPrograms">
-                <input type="submit" name="addProgram" value="Add Program" onclick="" id="addProgramButton">
+               <form action = "addPrograms.htm" id="btnAddProgramInViewPrograms" style="float: left">
+                <input type="submit" name="addProgram" value="Add Program" onclick="" id="addProgramButton" class="commonBtnInViewPrograms">
                    
                 </form>
                 
                 <form action="" id="btnRemoveProgramInViewPrograms">
-                    <input type="submit" name="removeProgram" value="Remove Program" onclick="" id="removeProgramButton">
+                    <input type="submit" name="removeProgram" value="Remove Program" onclick="" id="removeProgramButton"
+                    class="commonBtn2InViewPrograms">
                 </form>
 				
 				<br>
@@ -124,29 +125,28 @@
 			<div class="filterBy">
 				<h2 id="filterByHeader"> Filter By </h2>
 				<br>
-				<p id="instituteIDLabel"> Program ID: </p>
-				<input type="text" name="instituteIDInput" placeholder="Name of the Program">
-				<br>
-				<input type="submit" value="Search" name="searchButton">  <br>
+				<p id="lblPID_viewPrograms"> Program ID: </p>
+				<input type="text" name="instituteIDInput" placeholder="Name of the Program" class="commonTxtBoxCSS" >
+				<input type="submit" value="Search" class="commonBtn3InViewPrograms">  <br>
 				<p id="adminTypeLabel"> Filter By State </p>
-				<select id="selectAdminType">
+				<select class="commonCmbBoxCSS">
 					<option></option><option></option><option></option>
 				</select><br><br>
 				<p id="adminTypeLabel"> Filter By City: </p>
-				<select id="selectAdminTypeInFilterBy">
+				<select class="commonCmbBoxCSS">
 					<option></option><option></option><option></option>
-				</select><br><br>
-				<input type="submit" value="Apply Filter" name="searchButton" id="applyFilterButten">  <br>
+				</select>
+				<input type="submit" value="Apply Filter" class="commonBtn3InViewPrograms">  <br>
 				<p id="adminTypeLabel"> Program Type: </p>
-				<select id="selectAdminType">
+				<select class="commonCmbBoxCSS">
 					<option></option><option></option><option></option>
-				</select><br><br>
-				<input type="submit" value="Apply Filter" name="searchButton" id="applyFilterButten">  <br>
+				</select>
+				<input type="submit" value="Apply Filter" name="searchButton" class="commonBtn3InViewPrograms">  <br><br>
 				<p id="adminTypeLabel"> CAE Designation: </p>
-				<select id="selectAdminType">
+				<select class="commonCmbBoxCSS">
 					<option></option><option></option><option></option>
-				</select><br><br>
-				<input type="submit" value="Apply Filter" name="searchButton">  <br>
+				</select>
+				<input type="submit" value="Apply Filter" class="commonBtn3InViewPrograms">  <br>
 				<!--End of div filterBy -->
 			</div>
 		<!--End of div Container-->
