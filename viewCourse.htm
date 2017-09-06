@@ -104,9 +104,53 @@
         <div class="selectAnInstitution" align=center style="border: 1px solid">
             <h4 align="center">There are three ways you can select which course(s) are presented. Please select your method</h4>
             
+            <script>
+                
+                 $(document).ready(function(){
+                                        $("#OptionA").click(function(){
+                                            //Uncheck the Option B and C checkboxes
+                                            $("#OptionB").attr("checked", false);
+                                            $("#OptionC").attr("checked", false);
+                                            //Enable the Option A fields
+                                            $("#InstitutionsOptions").removeAttr('disabled');
+                                            $("#ProgramsOptions").removeAttr('disabled');
+                                            //Disable the Option B and C fields
+                                            $("#CourseIDOption").attr('disabled', true);
+                                            $("#CAEOption").attr('disabled', true);
+                                        });
+                                        
+                                        $("#OptionB").click(function(){
+                                            //Uncheck the Option A and C checkboxes
+                                            $("#OptionA").attr("checked", false);
+                                            $("#OptionC").attr("checked", false);
+                                            //Enable the Option B fields
+                                            $("#CourseIDOption").removeAttr('disabled');
+                                            //Disable the Option A and C fields
+                                            $("#InstitutionsOptions").attr('disabled', true);
+                                            $("#ProgramsOptions").attr('disabled', true);
+                                            $("#CAEOption").attr('disabled', true);
+                                        });
+                                        
+                                        $("#OptionC").click(function(){
+                                            //Uncheck the Option A and B checkboxes
+                                            $("#OptionA").attr("checked", false);
+                                            $("#OptionB").attr("checked", false);
+                                            //Enable the Option C fields
+                                            $("#CAEOption").removeAttr('disabled');
+                                            //Disable the Option A and B fields
+                                            $("#InstitutionsOptions").attr('disabled', true);
+                                            $("#ProgramsOptions").attr('disabled', true);
+                                            $("#CourseIDOption").attr('disabled', true);
+                                        });
+
+                                    });
+                
+            </script>
+
+            
             <table id="optionsTable">
                 <tr>
-                <thead><th><u><h3><input type="radio" id="OptionA">Option A: Select a Course from an Institution/ Program</h3></u></th></thead>
+                <thead><th><u><h3><input type="checkbox" id="OptionA" name="radioOptions">Option A: Select a Course from an Institution/ Program</h3></u></th></thead>
                 </tr>
                 <tr align=center>
                     <td>
@@ -115,7 +159,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <select id="InstitutionsOptions" style="width:100%"></select>
+                        <select id="InstitutionsOptions" style="width:100%" disabled></select>
                     </td>
                 </tr>
                 <tr align=center>
@@ -125,25 +169,25 @@
                 </tr>
                 <tr>
                     <td>
-                        <select id="ProgramsOptions" style="width:100%"></select>
+                        <select id="ProgramsOptions" style="width:100%" disabled></select>
                     </td>
                 </tr>
                 
                 <tr>
-                    <thead><th><u><h3><input type="radio" id="OptionB">Option B: Select a Course By it's Course ID</h3></u></th></thead>
+                    <thead><th><u><h3><input type="checkbox" id="OptionB" name="radioOptions">Option B: Select a Course By it's Course ID</h3></u></th></thead>
                 </tr>
                 
                 <tr align=center>
-                    <td><b>Course ID: </b><input type="text" id="CourseIDOption"></td>
+                    <td><b>Course ID: </b><input type="text" id="CourseIDOption" disabled></td>
                 </tr>
                 
                 <tr>
-                    <thead><th><u><h3><input type="radio" id="OptionC">Option C: Select a Course By The CAE Designation</h3></u></th></thead>
+                    <thead><th><u><h3><input type="checkbox" id="OptionC" name="radioOptions">Option C: Select a Course By The CAE Designation</h3></u></th></thead>
                 </tr>
                 
                 <tr align=center>
                     <td>
-                        <b>CAE Designation: </b><select id="CAEOption" style="width:150px"></select>
+                        <b>CAE Designation: </b><select id="CAEOption" style="width:150px" disabled></select>
                     </td>
                 </tr>            
             </table>
@@ -351,8 +395,8 @@
                             Map to Knowledge Unit: 
                         </td>
                         <td>
-                            <input type="radio" id="KUYes" disabled>Yes
-                            <input type="radio" id="KUNo" disabled>No
+                            <input type="radio" id="KUYes" name="KU" value="1" disabled>Yes
+                            <input type="radio" id="KUNo" name="KU" value="0" disabled>No
                         </td>
                     </tr>
                     

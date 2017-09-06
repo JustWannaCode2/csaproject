@@ -17,6 +17,13 @@ text-align: center;
 font-size: 18pt;
 }
 
+.testDiv
+{
+    width: 1000px;
+    height: 1000px;
+    
+}
+
 .navigationBar{
 
 	background-color: #858fa0;
