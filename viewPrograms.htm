@@ -123,31 +123,44 @@
 				<!--End of div viewProgramsMultilineSelect -->
 			</div>
 
-			<div class="filterBy">
+			<div class="filterByInViewPrograms">
 				<h2 id="filterByHeader"> Filter By </h2>
-				<br>
+				<fieldset>
+                      <legend>Program ID</legend>
 				<p id="lblPID_viewPrograms"> Program ID: </p>
 				<input type="text" name="instituteIDInput" placeholder="Name of the Program" class="commonTxtBoxCSS" >
-				<input type="submit" value="Search" class="commonBtn3InViewPrograms">  <br>
+				<input type="submit" value="Search" class="commonBtn3InViewPrograms">  
+                </fieldset>
+                <fieldset>
+                    <legend>Location</legend>
 				<p id="adminTypeLabel"> Filter By State </p>
 				<select class="commonCmbBoxCSS">
 					<option></option><option></option><option></option>
-				</select><br><br>
+				</select><br>
 				<p id="adminTypeLabel"> Filter By City: </p>
 				<select class="commonCmbBoxCSS">
 					<option></option><option></option><option></option>
 				</select>
-				<input type="submit" value="Apply Filter" class="commonBtn3InViewPrograms">  <br>
+				<input type="submit" value="Apply Filter" class="commonBtn3InViewPrograms">  
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Program Type</legend>
 				<p id="adminTypeLabel"> Program Type: </p>
 				<select class="commonCmbBoxCSS">
 					<option></option><option></option><option></option>
 				</select>
-				<input type="submit" value="Apply Filter" name="searchButton" class="commonBtn3InViewPrograms">  <br><br>
+				<input type="submit" value="Apply Filter" name="searchButton" class="commonBtn3InViewPrograms"> 
+                </fieldset>
+                <fieldset>
+                    <legend>CAE Designations</legend>
 				<p id="adminTypeLabel"> CAE Designation: </p>
 				<select class="commonCmbBoxCSS">
 					<option></option><option></option><option></option>
 				</select>
-				<input type="submit" value="Apply Filter" class="commonBtn3InViewPrograms">  <br>
+				<input type="submit" value="Apply Filter" class="commonBtn3InViewPrograms"> 
+                    </fieldset>
+                <br>
 				<!--End of div filterBy -->
 			</div>
 		<!--End of div Container-->
