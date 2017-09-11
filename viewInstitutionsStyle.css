@@ -29,8 +29,8 @@ float:left;
 select[id="selectInstitution"]{
 	margin: 10px;
 	text-align: center;
-width: 400px;
-height: 300px;
+width: 440px;
+height: 430px;
 white-space: wrap;
 font-size: 20pt;
 }

@@ -1,54 +1,165 @@
-<div class="filterBy" align=center>
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="viewInstitutionsStyle.css">
+<title>View Institutions</title>
+</head>
+<body>
+<div class="container">
+
+    <div class="viewInstitutionContainer">
+		<div class="viewInstitutionHeader">
+			<h4>View Institutions</h4>
+		</div>
+
+			<div class="viewInstitutionsMultilineSelect">
+                <table>
+                    <tr>
+                        <td>
+				<select multiple id="selectInstitution">
+					<option>  </option>
+					<option>  </option>
+					<option>  </option>
+				</select>
+                        </td>
+                    </tr>
+                </table>
+                
+                <table align=center>
+                    <tr>
+                        <td>
+                            <form action = "selectedInstitution.htm">
+				                <input type="submit" name="selectInstitution" value="Select Institution" onclick="selectedInstitution.htm" id="selectInstitutionButton">
+                            </form>
+                        </td>
+                        
+                        <td>
+                            <form action = "addInstitution.htm">
+				                <input type="submit" name="addInstitution" value="Add Institution" onclick="" id="addInstitutionButton">
+                            </form>
+                        </td>
+                        
+                        <td>
+				            <input type="submit" name="removeInstitution" value="Remove Institution" onclick="" id="removeInstitutionButton">
+                        </td>
+                    </tr>
+                </table>
+				
+				<!--End of div viewProgramsMultilineSelect -->
+			</div>
+
+			<div class="filterBy" align=center>
     
     <h3 align=center><u>Advanced Options</u></h3>
+    <table>
+        <th colspan=2 style="align: center"><u>Institution</u></th>
+        
+        <tr>
+            
+            <td>
+                Institute ID:
+            </td>
+            <td>
+                <input type="text" name="instituteIDInput" placeholder="Name of the Program">
+            </td>
+        </tr>
+        
+        <tr>
+            <td></td>
+            <td>
+                <input type="submit" value="Search" name="searchButton">
+            </td>
+        </tr>
+        
+        <tr>
+            <th colspan=2 style="align: center"><u>User ID:</u></th>
+        </tr>
+        
+        <tr>
+            <td>
+                User ID:
+            </td>
+            <td>
+                <input type="text" name="userIDInput" placeholder="User ID">
+            </td>
+        </tr>
+        
+        <tr>
+            <td></td>
+            <td>
+                <input type="submit" value="Search" name="searchButton">
+            </td>
+        </tr>
+        
+        <tr>
+            <th colspan=2 style="align: center"><u>Location</u></th>
+        </tr>
+        
+        <tr>
+            <td>
+                State:
+            </td>
+            <td>
+                <select id="State" style="width:100%">
+					<option></option><option></option><option></option>
+				</select>
+            </td>        
+        </tr>
+        <tr>
+            <td>
+                City:
+            </td>
+            <td>
+                <select id="City" style="width: 100%"><option></option><option></option><option></option></select>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" value="Apply Filter" name="searchButton"></td>
+        </tr>
+        
+        <tr>
+            <th colspan=2 style="align: center"><u>Program Type</u></th>
+        </tr>
+        
+        <tr>
+            <td>
+                Program Type:
+            </td>
+            
+            <td> 
+                <select id="ProgramType" style="width:100%">
+					<option></option><option></option><option></option>
+				</select>
+            </td>
+        </tr>
+        
+        <tr>
+            <td></td>
+            <td>
+                <input type="submit" value="Apply Filter" name="searchButton">
+            </td>
+        </tr>
+        
+        <tr>
+            <th colspan=2 style="align: center"><u>Institution Type</u></th>
+        </tr>
+        
+        <tr>
+            <td>Institution Type:</td>
+            <td><select id="InstitutionType" style="width:100%">
+					<option></option><option></option><option></option>
+				</select></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" value="Apply Filter" name="searchButton"></td>
+        </tr>
     
-    <div class='container'>
-  <h2>Disable And Enable Input Elements In A Div Block Using jQuery</h2>
-   
-  
-  <form id="pageForm">
-    <p>
-        When you click the below checkbox, all the input elements in the div are disabled, if they are enabled and vice versa.
-    </p>
-    <p>
-    Click to change: <input id="toggleElement" type="checkbox" name="toggle" onchange="toggleStatus()" />
-    </p>
-    <div id="elementsToOperateOn">
-        This is our example div block. <br />
-        Sample Text Box: <input type="text" name="name" /> <br />
-        Sample Checkbox : <input type="checkbox" name="participate" /> <br/>
-        Sample Radio : <input type="radio" name="bookEarly" /> <br />
-        Sample Select: <select name="sampleSelect">
-                            <option>Option 1</option>
-                            <option>Option 2</option>
-                        </select>
-    </div>
-</form>
-  
-       <div style="margin-top: 20px;">Sponsored by <a onclick="window.open('https://www.solargalore.com.au')">Solar Galore</a></div>
-</div>
- 
-
-</div>
-
-<script>
-$(document).ready(function() {
- 
-  handleStatusChanged();
-  
-});
-
-function handleStatusChanged() {
-    $('#toggleElement').on('change', function () {
-      toggleStatus();   
-    });
-}
-
-function toggleStatus() {
-    if ($('#toggleElement').is(':checked')) {
-        $('#elementsToOperateOn :input').attr('disabled', true);
-    } else {
-        $('#elementsToOperateOn :input').removeAttr('disabled');
-    }   
-}
-</script>
+    </table>
+				<!--End of div filterBy -->
+</div> <!-- End div filterby -->
+</div> <!-- End ViewInstitutionContainer -->
+    </div><!-- End div container -->
+</body>
+</html>

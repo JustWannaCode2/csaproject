@@ -99,12 +99,12 @@
 	</div>
 
 
-	<div class="addCourseContainer">
+	<div class="addCourseContainer" align=center>
 		<div class="addCourseHeader">
 			<h4>Add Course</h4>
 		</div>
 
-			<div class="AddCourseInformation" align="center" style="border: 1px solid;">
+			<div class="AddCourseInformation" align="center" style="border: 2px solid; width:750px; height:550px">
                 <h3 align="center"><u>Course Information</u></h3>
                 <table>
                     <tr>
@@ -112,7 +112,7 @@
                             Institution: 
                         </td>
                         <td>
-                            <select id="Institution" name="Institution" style="width:100%"><option selected>Select an Institution</option><option></option></select>
+                            <select id="Institution" name="Institution" style="width:370px"><option selected>Select an Institution</option><option></option></select>
                         </td>
                     </tr>
                     
@@ -121,10 +121,13 @@
                             Course Number:
                         </td>
                         <td>
-                            <select id="Dept" name="Dept" style="width:50%"><option selected>Department</option></select>
+                            <select id="Dept" name="Dept" style="width:120px"><option selected>Department</option></select>
                             
-                            <input type="button" id="AddDept" name="AddDept" value="Add Department">
+                            <input type="text" id="CourseNum" name="CourseNum" style="width:120px" placeholder="Number">
+                            
+                            <input type="button" id="AddDept" name="AddDept" value="New Department">
                         </td>
+                    </tr>
                         
                         
                                                     <script>
@@ -170,13 +173,13 @@
                                  })
                         </script>
                         -->
+                    
+                    <tr>
+                        
+                        <td></td>
                         <td id="NewDeptInfo" style="display: none">
                             <table style="border: 1px solid black">
-                                <tr>
-                                    <td colspan=2 align=center>
-                                        <h4><u>New Department Information</u></h4>
-                                        </td>
-                                </tr>
+                                
                                 <tr>
                                     <td>
                                         Institution:
@@ -205,28 +208,19 @@
                                 </tr>
                                 
                                 <tr>
-                                    <td></td>
-                                    <td>
+                                    <td align="center" colspan="2">
                                         <input type="submit" id="AddNewDept" value="Add" style="width:48%">
                                         <input type="submit" id="CancelAddNewDept" value="Cancel" style="width:48%">
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td><br></td>
+                                    <td></td>
                                 </tr>
                             </table>
                                                        
                        </td> 
                     </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td>
-                            <input type="text" id="CourseNum" name="CourseNum" style="width:50%" placeholder="Number">
 
-                            
-                        </td>
-                    </tr>
                     
                     <tr>
                         <td>
@@ -276,7 +270,7 @@
                     
                     <tr>
                         <td></td>
-                        <td>
+                        <td colspan="3">
                             <input type="submit" value="Save Changes" id="SaveChanges" style="width:40%">
                             <input type="submit" value="Cancel" id="CancelChanges" style="width:40%">
                         </td>
