@@ -1,11 +1,72 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="viewInstitutionsStyle.css">
+<link rel="stylesheet" href="testpage.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
 <title>View Institutions</title>
 </head>
 <body>
 <div class="container">
+<div class="GlobalAdminsHeader">
+<h2>Global Admin</h2>
+<!--End of div GlobalAdminsHeader-->
+</div>
+
+<div class="testing">
+    <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Global Admin</a>
+    </div>
+    
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Users <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">View Users</a></li>
+          <li><a href="#">Add Users</a></li>
+        </ul>
+      </li>
+      
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Institutions<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">View Institutions</a></li>
+          <li><a href="#">Add Institutions</a></li>
+        </ul>
+      </li>
+      
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Programs<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">View Programs</a></li>
+          <li><a href="#">Add Programs</a></li>
+        </ul>
+      </li>
+      
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Courses<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">View Courses</a></li>
+          <li><a href="#">Add Courses</a></li>
+        </ul>
+      </li>
+      
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Agreements<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">View Agreements</a></li>
+          <li><a href="#">Add Agreements</a></li>
+        </ul>
+      </li>
+        
+      </ul>
+      
+  </div>
+</nav>
+    </div><!-- End div testing -->
 
     <div class="viewInstitutionContainer">
 		<div class="viewInstitutionHeader">
@@ -43,10 +104,8 @@
 				            <input type="submit" name="removeInstitution" value="Remove Institution" onclick="" id="removeInstitutionButton">
                         </td>
                     </tr>
-                </table>
-				
-				<!--End of div viewProgramsMultilineSelect -->
-			</div>
+                </table>				
+			</div> <!--End of div viewProgramsMultilineSelect -->
 
 			<div class="filterBy" align=center>
     
@@ -157,9 +216,9 @@
         </tr>
     
     </table>
-				<!--End of div filterBy -->
-</div> <!-- End div filterby -->
-</div> <!-- End ViewInstitutionContainer -->
-    </div><!-- End div container -->
+				
+</div> <!-- End div class = filterBy -->
+</div> <!-- End div class="viewInstitutionContainer" -->
+    </div> <!-- End div class="container" -->
 </body>
 </html>
