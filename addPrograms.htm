@@ -73,28 +73,26 @@
 			<h4>Add Program</h4>
 		</div>
 
-		<div id="programInfoInSelectProgram">
+		<div class="programInfoInSelectProgram">
 			<form align="right">
-                <h4 id="programInformationHeader">Program Information</h4>
+                <h4 class="programInformationHeader">Program Information</h4><br>
 				Program ID:
 				<input type="text" name="name" placeholder="Program ID" class="commonTxtBoxCSS">
-				<br>
+				<br><br>
 				Program Title:
 				<input type="text" name="programTitle" placeholder="Program Title"   class="commonTxtBoxCSS">
-				<br>
+				<br><br>
 				Program Type:
 				<select class="commonCmbBoxCSS">
 					<option></option>
 				</select>
-				<br>
+				<br><br>
                 CAE Designation:
 				<select  class="commonCmbBoxCSS">
 					<option></option>
 				</select>
-				<br>
-				Program URL:
-				<input type="text" placeholder="URL" id="addProgramURLInSelectProgram"  class="commonTxtBox2CSS">
-				<br>
+				
+				<br><br>
 				Total Credit Hours:
 				<select id="addNumOfCreditsInAddProgramName"  class="commonCmbBoxCSS">
                     <option>1</option>
@@ -105,18 +103,20 @@
                     <option>6</option>
                     <option>Subject to change</option>
                 </select>
-				<br>
+				<br><br>
                 Curriculam Code: <input type="text" placeholder="Code" id="addCurriculamCodeInSelectProgram"  class="commonTxtBoxCSS">
-                
+                <br><br>
+                <p class="programURL_addProgram">Program URL:</p>
+				<input type="text" placeholder="URL" id="addProgramURLInSelectProgram"  class="commonTxtBox3CSS">
 				
 			</form>		
 			<!--End of div addUserForm-->
 		</div>
         
-        <div id="mappingProgramsDiv">
+        <div class="mappingProgramsDiv">
 				<h4 id="mappingProgramHeader"> Mapped Programs with Transfer Agreements
                 </h4>
-				<select id="selectProgramDropDown1" multiple>
+				<select class="selectProgramDropDown1" multiple>
 				<option></option>
 					<option></option>
 					<option></option>
@@ -124,13 +124,13 @@
 				</select>
 			
 			
-			<form action="" id="frmViewTranserInfoInAddProgram" >
+			<form action="" class="frmViewTranserInfoInAddProgram" >
 				<input type="submit" value="View Transfer Information" onclick="" class="commonBtnInMappingPrograms">
 			</form>
-            <form id="frmAddProgramIn_AddProgram" >
-				<input type="button" value="Add Program"  class="commonBtnInMappingPrograms">
+            <form class="frmAddProgramInAddProgram" >
+				<input type="button" value="Add Program" id="btnAddProgram_AddProgram"  class="commonBtnInMappingPrograms">
 			</form>
-            <form id="frmRemoveProgramIn_AddProgram" >
+            <form class="frmRemoveProgramIn_AddProgram" >
 				<input type="button" value="Remove Program"   class="commonBtnInMappingPrograms">
 			</form>
             <form  id="frmAddTransferInformationIn_AddProgram" >
@@ -139,7 +139,7 @@
             <script>
                 
                  $(document).ready(function(){
-                        $("#frmAddProgramIn_AddProgram").click(function(){
+                        $("#btnAddProgram_AddProgram").click(function(){
                             //Enable the Option A fields
                             $("#mappingSubDivInAddProgram").show();
                         });
@@ -175,7 +175,7 @@
         
         <div id="CareerCoursesDiv">
         <h4 class="careerCourseHeader">Career Courses:</h4>
-            <select id="selectProgramDropDown1" multiple>
+            <select class="selectProgramDropDown1" multiple>
 				<option></option>
 					<option></option>
 					<option></option>
@@ -202,12 +202,12 @@
             </script>
             
             <div id="CareerCourseSubDiv" style="display: none">
-                <select class="commonCmbBoxCSS">
+                <select class="commonCmbBox3CSS">
 					<option>Department:</option>
                     <option></option>
                     <option></option>
 				</select>
-                <select class="commonCmbBoxCSS">
+                <select class="commonCmbBox3CSS">
 					<option>Courses:</option>
                     <option></option>
                     <option></option>
@@ -227,7 +227,7 @@
         
         <div id="generalEduInSelectProgram">
         <h4 class="genEdReqHeader">General Education Requirements:</h4>
-            <select id="selectProgramDropDown1" multiple>
+            <select class="selectProgramDropDown1" multiple>
 				    <option></option>
 					<option></option>
 					<option></option>
