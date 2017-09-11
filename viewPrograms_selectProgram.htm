@@ -8,121 +8,96 @@
 </head>
 <body>
 <div class="container">
-	<div class="GlobalAdminsHeader">
-		<h2>Global Admin</h2>
-		<!--End of div GlobalAdminsHeader-->
-	</div>
 
 
-	<div class = "navigationBar">
-			<table id = "adminTable" align="center">
-			<thead>
-				
-				<tr>
-					<td>
-						<b>Users</b>
-					</td>
-					<td>
-						<b>Institutions</b>
-					</td>
-					<td>
-						<b>Programs</b>
-					</td>
-					<td>
-						<b>Courses</b>
-					</td>
-					<td>
-						<b>Agreements</b>
-					</td>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td align='center'>
-						<form action = "viewUsers.htm">
-							<input type="submit" value="View Users" name="viewUser" style="width:100%" onclick="" id="navigationBarButton">
-						</form>
-					</td>
-					<td align='center'>
-						<form action="viewInstitutions.htm">
-							<input type="submit" value="View Institutions" name="viewInstitutions" style="width:100%" onclick = "" id="navigationBarButton">
-						</form>
-					</td>
-					<td align='center'>
-						<form action="viewPrograms.htm">
-							<input type="submit" name = "viewPrograms" value="View Programs" style="width:100%" onclick="" id="navigationBarButton">
-						</form>
-					</td>	
-					<td align='center'>
-						<form action="viewCourse.htm">
-							<input type="submit" name = "viewCourses" value="View Courses" style="width:100%" onclick="" id="navigationBarButton">
-						</form>
-					</td>
-					<td align='center'>
-						<form action="">
-							<input type="submit" name = "viewAgreements" value="View Agreements" style="width:100%" onclick="" id="navigationBarButton">
-						</form>
-					</td>
-				</tr>
-				<tr>
-					<td align='center'>
-						<form action="addUsers.htm">
-							<input type="submit" value="Add Users" name="addUsers" style="width:100%" onclick="" id="navigationBarButton">
-						</form>
-					</td>
-					<td align='center'>
-						<form action="addInstitution.htm">
-							<input type="submit" value="Add Institutions" name="addInstitutions" style="width:100%" onclick = "" id="navigationBarButton">
-						</form>
-					</td>
-					<td align='center'>
-						<form action="addPrograms.htm">
-							<input type="submit" value="Add Programs" name = "addPrograms" style="width:100%" onclick="" id="navigationBarButton">
-						</form>
-					</td>
-					<td align='center'>
-						<form action="addCourse.htm">
-							<input type="submit" value="Add Courses" name = "addCourses" style="width:100%" onclick="" id="navigationBarButton">
-						</form>
-					</td>
-					<td align='center'>
-						<form action="">
-							<input type="submit" value="Add Agreements" name = "addAgreements" style="width:100%" onclick="" id="navigationBarButton">
-						</form>
-					</td>
-				</tr>
-				</tbody>
-		</table>
-		<!--End of div navigationBar-->
-	</div>
+	<!-- Beginning of the new navigation bar html code -->
+<!-- Testing, Testing: 1,2,3 -->
+<div id="DDNavBar">
+<h2 align=center>Global Admin</h2>
+   <ul>
+       <li></li>
+ <li><a href="#home">Home</a></li>
+ 
+ <li class="dropdown" style="float:right">
+   <a href="javascript:void(0)" class="dropbtn">Global Admin Profile</a>
+   <div class="dropdown-content">
+     <a href="#">View Profile</a>
+     <a href="#">Logout</a>
+   </div>
+ </li>
+ 
+ <li class="dropdown">
+   <a href="javascript:void(0)" class="dropbtn">Users</a>
+   <div class="dropdown-content">
+     <a href="viewUsers.htm">View Users</a>
+     <a href="addUsers.htm">Add Users</a>
+   </div>
+ </li>
+ 
+ <li class="dropdown">
+   <a href="javascript:void(0)" class="dropbtn">Institutions</a>
+   <div class="dropdown-content">
+     <a href="viewInstitutions.htm">View Institutions</a>
+     <a href="addInstitution.htm">Add Institutions</a>
+   </div>
+ </li>
+ 
+ <li class="dropdown">
+   <a href="javascript:void(0)" class="dropbtn">Programs</a>
+   <div class="dropdown-content">
+     <a href="viewPrograms.htm">View Programs</a>
+     <a href="addPrograms.htm">Add Programs</a>
+   </div>
+ </li>
+
+<li class="dropdown">
+   <a href="javascript:void(0)" class="dropbtn">Courses</a>
+   <div class="dropdown-content">
+     <a href="viewCourse.htm">View Courses</a>
+     <a href="addCourse.htm">Add Courses</a>
+   </div>
+ </li>
+ 
+ <li class="dropdown">
+   <a href="javascript:void(0)" class="dropbtn">Agreements</a>
+   <div class="dropdown-content">
+     <a href="#">View Agreements</a>
+     <a href="#">Add Agreements</a>
+   </div>
+ </li>
+ 
+ </ul>
+   </div><!-- End div id=DDNavBar -->
+<!-- End of new nav bar html code -->
+
+
 	<div class="selectProgramContainer_ViewProgram">
 		<div class="viewUserHeader">
 			<h4>Program Name (Program ID)</h4>
 		</div>
 
-		<div id="programInfoInSelectProgram">
+		<div class="programInfoInSelectProgram">
 			<form align="right">
-                <h4 id="programInformationHeader">Program Information</h4>
+                <h4 class="programInformationHeader">Program Information</h4>
+                <br>
 				Program ID:
 				<input type="text" name="name" placeholder="Program ID" id="addProgramIDInputInSelectProgram" class="commonTxtBoxCSS">
-				<br>
+				<br><br>
 				Program Title:
 				<input type="text" name="programTitle" placeholder="Program Title" id="addProgramTitleInputInSelectProgram"  class="commonTxtBoxCSS">
-				<br>
+				<br><br>
 				Program Type:
 				<select id="cmbselectProgramTypeInProgramSelect" class="commonCmbBoxCSS">
 					<option></option>
 				</select>
-				<br>
+				<br><br>
                 CAE Designation:
 				<select id="cmbselectCAEDesignationInPorgramSelect" class="commonCmbBoxCSS">
 					<option></option>
 				</select>
 				
-				<br>
-				Program URL:
-				<input type="text" placeholder="URL" id="addProgramURLInSelectProgram"  class="commonTxtBox2CSS">
-				<br>
+				<br><br>
+				
 				Total Credit Hours:
 				<select id="addNumOfCreditsInSelectProgramName"  class="commonCmbBoxCSS">
                     <option>1</option>
@@ -133,32 +108,35 @@
                     <option>6</option>
                     <option>Subject to change</option>
                 </select>
+                <br><br>
+                Curriculam Code: <input type="text" placeholder="Code" id="addCurriculamCodeInSelectProgram"  class="commonTxtBoxCSS"><br><br>
+                <p class="programURL_selectProgram">Program URL:</p>
                 <br>
-                Curriculam Code: <input type="text" placeholder="Code" id="addCurriculamCodeInSelectProgram"  class="commonTxtBoxCSS">
-                
+				<input type="text" placeholder="URL" id="addProgramURLInSelectProgram"  class="commonTxtBox2CSS">
+				
 				
 			</form>		
 			<!--End of div addUserForm-->
 		</div>
         
-        <div id="mappingProgramsDiv">
+        <div class="mappingProgramsDiv">
 				<h4 id="mappingProgramHeader"> Mapped Programs with Transfer Agreements
             </h4>
            
-				<select id="selectProgramDropDown1" multiple>
+				<select class="selectProgramDropDown1" multiple>
 				<option></option>
 					<option></option>
 					<option></option>
 					<option></option>
 				</select>
             
-			<form action="" id="frmViewTranserInfoInSelectProgram" >
+			<form action="" class="frmViewTranserInfoInSelectProgram" >
 				<input type="submit" value="View Transfer Information" id="btnViewTransferInfo_SelectProgram" class="commonBtnInMappingPrograms">
 			</form>
             <form action="" id="frmAddProgramInSelectProgram" >
 				<input type="button" value="Add Program" id="btnAddProgram_SelectProgram" class="commonBtnInMappingPrograms">
 			</form>
-            <form action="" id="frmRemoveProgramInSelectProgram" >
+            <form action="" class="frmRemoveProgramInSelectProgram" >
 				<input type="button" value="Remove Program"  id="btnRemoveProgram_SelectProgram" class="commonBtnInMappingPrograms">
 			</form>
             <form action="" id="frmAddTransferInformationInSelectProgram" >
@@ -205,7 +183,7 @@
         <div id="CareerCoursesDiv">
         
             <h4 class="careerCourseHeader">Career Courses:</h4>
-            <select id="selectProgramDropDown1" multiple>
+            <select class="selectProgramDropDown1" multiple>
 				<option></option>
 					<option></option>
 					<option></option>
@@ -232,12 +210,12 @@
             </script>
             
             <div id="CareerCourseSubDiv" style="display: none">
-                <select class="commonCmbBoxCSS" >
+                <select class="commonCmbBox3CSS" >
 					<option>Department:</option>
                     <option></option>
                     <option></option>
 				</select>
-                <select class="commonCmbBoxCSS">
+                <select class="commonCmbBox3CSS">
 					<option>Courses:</option>
                     <option></option>
                     <option></option>
@@ -257,7 +235,7 @@
         
         <div id="generalEduInSelectProgram">
             <h4 class="genEdReqHeader">General Education Requirements:</h4>
-            <select id="selectProgramDropDown1" multiple>
+            <select class="selectProgramDropDown1" multiple>
 				    <option></option>
             </select>
             

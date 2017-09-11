@@ -6,94 +6,68 @@
 </head>
 <body>
 <div class="container">
-	<div class="GlobalAdminsHeader">
-		<h2>Global Admin</h2>
-		<!--End of div GlobalAdminsHeader-->
-	</div>
+	<!-- Beginning of the new navigation bar html code -->
+<!-- Testing, Testing: 1,2,3 -->
+<div id="DDNavBar">
+<h2 align=center>Global Admin</h2>
+   <ul>
+       <li></li>
+ <li><a href="#home">Home</a></li>
+ 
+ <li class="dropdown" style="float:right">
+   <a href="javascript:void(0)" class="dropbtn">Global Admin Profile</a>
+   <div class="dropdown-content">
+     <a href="#">View Profile</a>
+     <a href="#">Logout</a>
+   </div>
+ </li>
+ 
+ <li class="dropdown">
+   <a href="javascript:void(0)" class="dropbtn">Users</a>
+   <div class="dropdown-content">
+     <a href="viewUsers.htm">View Users</a>
+     <a href="addUsers.htm">Add Users</a>
+   </div>
+ </li>
+ 
+ <li class="dropdown">
+   <a href="javascript:void(0)" class="dropbtn">Institutions</a>
+   <div class="dropdown-content">
+     <a href="viewInstitutions.htm">View Institutions</a>
+     <a href="addInstitution.htm">Add Institutions</a>
+   </div>
+ </li>
+ 
+ <li class="dropdown">
+   <a href="javascript:void(0)" class="dropbtn">Programs</a>
+   <div class="dropdown-content">
+     <a href="viewPrograms.htm">View Programs</a>
+     <a href="addPrograms.htm">Add Programs</a>
+   </div>
+ </li>
+
+<li class="dropdown">
+   <a href="javascript:void(0)" class="dropbtn">Courses</a>
+   <div class="dropdown-content">
+     <a href="viewCourse.htm">View Courses</a>
+     <a href="addCourse.htm">Add Courses</a>
+   </div>
+ </li>
+ 
+ <li class="dropdown">
+   <a href="javascript:void(0)" class="dropbtn">Agreements</a>
+   <div class="dropdown-content">
+     <a href="#">View Agreements</a>
+     <a href="#">Add Agreements</a>
+   </div>
+ </li>
+ 
+ </ul>
+   </div><!-- End div id=DDNavBar -->
+<!-- End of new nav bar html code -->
 
 
-	<div class = "navigationBar">
-			<table id = "adminTable" align="center">
-			<thead>
-				
-				<tr>
-					<td>
-						<b>Users</b>
-					</td>
-					<td>
-						<b>Institutions</b>
-					</td>
-					<td>
-						<b>Programs</b>
-					</td>
-					<td>
-						<b>Courses</b>
-					</td>
-					<td>
-						<b>Agreements</b>
-					</td>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td align='center'>
-						<form action = "viewUsers.htm">
-							<input type="submit" value="View Users" name="viewUser" style="width:100%" onclick="" id="navigationBarButton">
-						</form>
-					</td>
-					<td align='center'>
-						<form action="viewInstitutions.htm">
-							<input type="submit" value="View Institutions" name="viewInstitutions" style="width:100%" onclick = "" id="navigationBarButton">
-						</form>
-					</td>
-					<td align='center'>
-						<form action="viewPrograms.htm">
-							<input type="submit" name = "viewPrograms" value="View Programs" style="width:100%" onclick="" id="navigationBarButton">
-						</form>
-					</td>	
-					<td align='center'>
-						<form action="viewCourse.htm">
-							<input type="submit" name = "viewCourses" value="View Courses" style="width:100%" onclick="" id="navigationBarButton">
-						</form>
-					</td>
-					<td align='center'>
-						<form action="">
-							<input type="submit" name = "viewAgreements" value="View Agreements" style="width:100%" onclick="" id="navigationBarButton">
-						</form>
-					</td>
-				</tr>
-				<tr>
-					<td align='center'>
-						<form action="addUsers.htm">
-							<input type="submit" value="Add Users" name="addUsers" style="width:100%" onclick="" id="navigationBarButton">
-						</form>
-					</td>
-					<td align='center'>
-						<form action="addInstitution.htm">
-							<input type="submit" value="Add Institutions" name="addInstitutions" style="width:100%" onclick = "" id="navigationBarButton">
-						</form>
-					</td>
-					<td align='center'>
-						<form action="addPrograms.htm">
-							<input type="submit" value="Add Programs" name = "addPrograms" style="width:100%" onclick="" id="navigationBarButton">
-						</form>
-					</td>
-					<td align='center'>
-						<form action="addCourse.htm">
-							<input type="submit" value="Add Courses" name = "addCourses" style="width:100%" onclick="" id="navigationBarButton">
-						</form>
-					</td>
-					<td align='center'>
-						<form action="">
-							<input type="submit" value="Add Agreements" name = "addAgreements" style="width:100%" onclick="" id="navigationBarButton">
-						</form>
-					</td>
-				</tr>
-				</tbody>
-		</table>
-		<!--End of div navigationBar-->
-	</div>
-	<div class="viewUserContainer">
+    <div class="viewUserContainer">
 		<div class="viewUserHeader">
 			<h4>Add User</h4>
 		</div>
@@ -116,24 +90,25 @@
 			</form>		
 			<!--End of div addUserForm-->
 		</div>
-		<div class="institute">
-			<div class="chooseInstitute">
-				<p id="instituteLabel">Institute:</p>
-				<input type="text" name="instituteId" placeholder="Institute ID" id="searchByInstituteID">
-				Or
-				<select id="selectInstituteDropDownInAddUser" class="commonCmbBoxCSS">
+		<div class="institute_addUser">
+			<fieldset>
+				<legend > Institute</legend>
+				<input type="text" name="instituteId" placeholder="Institute ID" class="commonTxtBox2CSS">
+                <br>
+				<p>OR</p>
+				<select id="selectInstituteDropDownInAddUser" class="commonCmbBox3CSS">
 				<option></option>
 					<option></option>
 					<option></option>
 					<option></option>
 				</select>
-			</div>
-			<div class="chooseAdminRights">
-			<form>
-			<p id="adminType">Admin Type:</p>
+			</fieldset>
+			<fieldset>
+            <legend>Admin Type:</legend>
 			<input type="radio" name="group1" value="MVCC Admin" id="mvccAdmin"> MVCC Admin
 			<input type="radio" name="group1" value="Institution Admin" id="institutionAdmin"> Institution Admin
-			</form>
+            </fieldset>
+            
 			<!--end of div chooseAdminRights-->
 			</div>
 
