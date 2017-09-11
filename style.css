@@ -9,17 +9,46 @@ width: 976px;
 text-align: center;
 
 }
+/*Beginning of new nav bar css code */
+/*Testing 1,2,3 */
 
-.navigationBar{
-	width: 876px;
-	background-color: #858fa0;
-	font-size: 18pt;
-	border-style: solid;
-border-width: 2px;
-border-color: black;
-border-radius: 10px;
-margin: 20px 50px;
+ul {
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
+   background-color: #333;
 }
+
+li {
+   float: left;
+}
+
+li a, .dropbtn {
+   display: inline-block;
+   color: white;
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+   background-color: black;
+}
+
+li.dropdown {
+   display: inline-block;
+}
+
+.dropdown-content {
+   display: none;
+   position: absolute;
+   background-color: #f9f9f9;
+   min-width: 160px;
+   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+   z-index: 1;
+}
+
 #adminTable{
 	text-align: center;
 	color: #2b1459;
@@ -67,9 +96,7 @@ display: inline-block;
 	height: 43px;
 }
 
-.chooseAdminRights{
-	padding: 10px;
-}
+
 
 /* This is div viewUserMultiLineSelect for viewUsers page */
 .viewUsersMultilineSelect{
@@ -105,19 +132,20 @@ input[id="selectUserButton"]{
 	border-style: solid;
 	border-width: 1px;
 	border-color: black;
-	border-radius: 10px;
+	border-radius: 5px;
 }
 form[id="addUserButtonForm"]{
-	width: 120px;
+	width: 100px;
 	float: left;
+    margin: 0px 12px 0px 12px;
 }
 input[id="addUserButton"]{
 	font-size: 20px;
-
+   /* margin: 0px 10px 0px 20px;*/
 	border-style: solid;
 	border-width: 1px;
 	border-color: black;
-	border-radius: 10px;
+	border-radius: 5px;
 }
 form[id="removeUserButtonForm"]{
 	width: 120px;
@@ -129,7 +157,7 @@ input[id="removeUserButton"]{
 	border-style: solid;
 	border-width: 1px;
 	border-color: black;
-	border-radius: 10px;
+	border-radius: 5px;
 }
 
 /* End of div viewUserMultiLineSelect for viewUsers page */
@@ -161,7 +189,7 @@ float:right;
 	padding: 0px;
 	border: 0px;
 	width: 80px;
-	margin: 5px 5px 10px 35px;
+	margin: 5px 5px 5px 35px;
 }
 
 p[id="instituteIDLabelInFilterBy"]{
@@ -170,52 +198,55 @@ p[id="instituteIDLabelInFilterBy"]{
 	font-size: 20px;
 	padding: 0px;
 	border: 0px;
-	width: 130px;
-	margin: 5px 5px 10px 05px;
+	width: 100px;
+	margin: 15px 5px 10px 15px;
 }
-input[id="InstituteIdFilterTextBoxInFilterBy"]{
-	width: 200px;
-	height: 25px;
+input[class="InstituteIdFilterTextBoxInFilterBy"]{
+	width: 250px;
+	height: 35px;
     border-width: 1px;
 	border-style: solid;
 	border-color: black;
 	border-radius: 4px;
 	box-sizing: border-box;
-	margin: 2px;
+	margin: 5px 5px 5px 5px;
     padding: 5px 7px;
 }
 
 input[id="applyFilterButtonInFilterBy"]{
-    	font-size: 20px;
+    font-size: 15px;
 	border-style: solid;
 	border-width: 1px;
 	border-color: black;
-	border-radius: 10px;
+	border-radius: 5px;
     margin: 5px;
+    padding: 3px;
 }
-p[id="adminTypeLabelInFilterBy"]{
-	margin: 5px 2px 5px 30px;
-	width: 85px;
+p[class="adminTypeLabelInFilterBy"]{
+	margin: 10px 05px 5px 0px;
+	width: 115px;
 	padding: 0px;
 	float:left;
+    font-size: 20px;
 }
 
 p[id="UserIDLabelInFilterBy"]{
-	margin: 15px 5px 15px 60px;
-	width: 60px;
+	margin: 15px 5px 15px 40px;
+	width: 70px;
 	padding: 0px;
     float:  left;
+    font-size: 20px;
 }
 
-input[id="selectUserTextBoxInFilterBy"]{
-    width: 200px;
-	height: 25px;
+input[class="selectUserTextBoxInFilterBy"]{
+   	width: 250px;
+	height: 35px;
     border-width: 1px;
 	border-style: solid;
 	border-color: black;
 	border-radius: 4px;
 	box-sizing: border-box;
-	margin: 12px 5px 15px 2px;
+	margin: 5px 5px 5px 5px;
     padding: 5px 7px;
     
 }
@@ -237,7 +268,20 @@ input[id="searchButtonInFilterBy"]{
 .addUserForm{
 	align-content:  right;
 	width: 450px;
-    height: 300px;
+    height: 220px;
+	background-color: #858fa0;
+	padding: 10px;
+	float: left;
+	margin: 20px;
+	border-style: solid;
+	border-color: black;
+	border-width: 1px;
+	border-radius: 10px;
+}
+.selectUserForm{
+	align-content:  right;
+	width: 450px;
+    height: 280px;
 	background-color: #858fa0;
 	padding: 10px;
 	float: left;
@@ -249,10 +293,23 @@ input[id="searchButtonInFilterBy"]{
 }
 
 /*  start div addUserForm right in viewUser_SelectUser */
-.institute{
+.institute_addUser{
 	background-color: #858fa0;
 	width: 400px;
-	height: 300px;
+	height: 220px;
+	padding: 12px 20px;
+	float: right;
+	border-color:black;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 10px;
+	margin: 20px 15px 0px 2px;
+
+}
+.institute_selectUser{
+	background-color: #858fa0;
+	width: 400px;
+	height: 280px;
 	padding: 12px 20px;
 	float: right;
 	border-color:black;
@@ -274,7 +331,7 @@ p[id="instituteLabelInviewUser_selectUser"]{
     margin: 8px 25px 8px 10px;
     font-size: 20px;
 }
-select[id="selectInstituteDropDownInviewUser_selectUser"]
+select[class="selectInstituteDropDownInviewUser_selectUser"]
 {
 	text-align: center;
 	float:left;
@@ -304,7 +361,7 @@ input[id="addUserPosition"]{
 	border-radius: 4px;
 	box-sizing: border-box;
 	margin: 2px;
-	width: 200px;
+	width: 300px;
 	height: 43px;
 	margin: 15px 2px 2px 5px;
 }
@@ -316,7 +373,7 @@ p[id="linkLabelInInstitutionBox"]{
 	border: 0px;
 	width: 50px;
 	float:left;
-	margin: 25px 10px 0px 45px;
+	margin: 30px 10px 0px 45px;
 }
 
 input[id="addUserInfoLink"]{
@@ -430,7 +487,7 @@ div[class="selectProgramContainer_ViewProgram"]{
 	margin: 28px 0px 0px 0px;
 }
 select[id="cmbselectAdminTypeInSelectUser"]{
-    margin: 0px 0px 0px 5px;
+    margin: 0px 5px 0px 5px;
 	padding: 0px;
     text-align: center;
     width: 200px;
@@ -454,10 +511,10 @@ input[id="searchByInstituteID"]{
 }
 
 /* Start div in viewProgram_SelectProgram */
-div[id="programInfoInSelectProgram"]{
+div[class="programInfoInSelectProgram"]{
     align-content:  right;
 	width: 450px;
-    height: 480px;
+    height: 500px;
 	background-color: #858fa0;
 	padding: 10px;
 	float: left;
@@ -481,7 +538,7 @@ input[class="commonTxtBoxCSS"]{
 	height: 43px;
 }
 input[class="commonTxtBox2CSS"]{
-    display: inline-block;
+    display: block;
 		font-size: 10pt;
 	padding: 3px 10px;
 	border-width: 2px;
@@ -489,10 +546,11 @@ input[class="commonTxtBox2CSS"]{
 	border-color: black;
 	border-radius: 4px;
 	box-sizing: border-box;
-	margin: 2px;
+	margin: auto;
 	width: 300px;
 	height: 43px;
 }
+
 select[class="commonCmbBoxCSS"]{
     margin: 0px 0px 0px 5px;
 	padding: 0px;
@@ -513,9 +571,19 @@ select[class="commonCmbBox2CSS"]{
     font-size: 20pt;
     border-width:1px; 
 }
+select[class="commonCmbBox3CSS"]{
+    margin: 0px 0px 0px 5px;
+	padding: 0px;
+    text-align: center;
+    width: 300px;
+    border-radius: 5px;
+    font-size: 20pt;
+    border-width: 1px; 
+}
 
 
-h4[id="programInformationHeader"]{
+h4[class="programInformationHeader"]{
+    margin:0px;
     text-align: center;
 }
 
@@ -556,10 +624,10 @@ div[id="CareerCourseSubDiv"]{
 
 
 /* Start div in mappingPrograms_SelectProgram */
-div[id="mappingProgramsDiv"]{
+div[class="mappingProgramsDiv"]{
     align-content:  right;
 	width: 420px;
-    height: 480px;
+    height: 500px;
 	background-color: #858fa0;
 	padding: 10px;
 	float: right;
@@ -572,6 +640,8 @@ div[id="mappingProgramsDiv"]{
 
 h4[id="mappingProgramHeader"]{
     text-align: center;
+    margin: 0px;
+   
 }
 
 /* Start div in Sub mapping Programs_SelectProgram */
@@ -642,10 +712,14 @@ font-size: 20pt;
 
 /* End div in mappingPrograms_SelectProgram */
 
-select[id="selectProgramDropDown1"]{
-    width: 200px;
+select[class="selectProgramDropDown1"]{
+    width: 400px;
     height: 150px;
     float: left;
+    border-style: solid;
+    border-width: 1px;
+    border-color:black;
+    border-radius: 5px;
 }
 input[class="commonBtnInMappingPrograms"]{
     font-size: 15px;
@@ -653,7 +727,7 @@ input[class="commonBtnInMappingPrograms"]{
 	border-width: 1px;
 	border-color: black;
 	border-radius: 10px;
-    width: 200px;
+    width: 180px;
     height: 30px;
     margin: 5px;
 }
@@ -682,7 +756,7 @@ div[id="generalEduInSelectProgram"]{
     width: 120px;
     height: 30px;
     margin: 5px;
-    float: left;
+    float:left;
 }
 
 input[class="commonBtnInViewPrograms"]{
@@ -733,8 +807,8 @@ p[id="lblPID_viewPrograms"]{
 }
 
 textarea[class="textarea1InSelectProgram"]{
-    width:200px;
-    height: 150px;
+    width:380px;
+    height: 80px;
     border-width: 1px;
 	border-color: black;
 	border-radius: 5px;
@@ -750,7 +824,27 @@ textarea[class="textarea1InAddProgram"]{
 }
 h4[class="careerCourseHeader"]{
     text-align: center;
+    margin: 0px;
 }
 h4[class="genEdReqHeader"]{
     text-align: center;
+    margin: 0px;
+}
+p[class="programURL_selectProgram"]{
+    margin: 0px;
+    text-align: center;
+}
+form[class="frmViewTranserInfoInSelectProgram"]{
+    display: block;
+    margin: auto;
+    width: 190px;
+    height: 40px;
+    float:left;
+}
+form[class="frmRemoveProgramInSelectProgram"]{
+    display: block;
+    margin: auto;
+    width: 190px;
+    height: 40px;
+    float:left;
 }
