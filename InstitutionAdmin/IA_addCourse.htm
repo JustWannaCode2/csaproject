@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="addCourseStyle.css">
+<link rel="stylesheet" href="IA_addCourseStyle.css">
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
 <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 <script type="text/javascript" src="script.js"></script>
@@ -14,13 +14,13 @@
     
   <!-- Testing, Testing: 1,2,3 -->
 <div id="DDNavBar"> <!-- Dropdown navigation bar -->
-<h2 align=center>Global Admin</h2>
+<h2 align=center>Institution Admin</h2>
     <ul>
         <li></li>
-  <li><a href="index.htm">Home</a></li>
+  <li><a href="IA_Index.htm">Home</a></li>
   
   <li class="dropdown" style="float:right">
-    <a href="javascript:void(0)" class="dropbtn">Global Admin Profile</a>
+    <a href="javascript:void(0)" class="dropbtn">Institution Admin Profile</a>
     <div class="dropdown-content">
       <a href="#">View Profile</a>
       <a href="#">Logout</a>
@@ -30,32 +30,32 @@
   <li class="dropdown">
     <a href="javascript:void(0)" class="dropbtn">Users</a>
     <div class="dropdown-content">
-      <a href="viewUsers.htm">View Users</a>
-      <a href="addUsers.htm">Add Users</a>
+      <a href="#">View Users</a>
+      <!-- <a href="#">Add Users</a> -->
     </div>
   </li>
   
   <li class="dropdown">
     <a href="javascript:void(0)" class="dropbtn">Institutions</a>
     <div class="dropdown-content">
-      <a href="viewInstitutions.htm">View Institutions</a>
-      <a href="addInstitution.htm">Add Institutions</a>
+      <a href="IA_viewInstitutions.htm">View Institutions</a>
+      <!-- <a href="addInstitution.htm">Add Institutions</a> -->
     </div>
   </li>
   
   <li class="dropdown">
     <a href="javascript:void(0)" class="dropbtn">Programs</a>
     <div class="dropdown-content">
-      <a href="viewPrograms.htm">View Programs</a>
-      <a href="addPrograms.htm">Add Programs</a>
+      <a href="#">View Programs</a>
+      <!-- <a href="#">Add Programs</a> -->
     </div>
   </li>
 
 <li class="dropdown">
     <a href="javascript:void(0)" class="dropbtn">Courses</a>
     <div class="dropdown-content">
-      <a href="viewCourse.htm">View Courses</a>
-      <a href="addCourse.htm">Add Courses</a>
+      <a href="IA_viewCourse.htm">View Courses</a>
+      <a href="IA_addCourse.htm">Add Courses</a>
     </div>
   </li>
   
@@ -84,7 +84,7 @@
                             Institution: 
                         </td>
                         <td>
-                            <select id="Institution" name="Institution" style="width:370px"><option selected>Select an Institution</option><option></option></select>
+                            <select id="Institution" name="Institution" style="width:370px" disabled><option selected>Select an Institution</option><option></option></select>
                         </td>
                     </tr>
                     
@@ -151,7 +151,8 @@
                         
                         <td></td>
                         <td id="NewDeptInfo" style="display: none">
-                            <table style="border: 1px solid black">                                
+                            <table style="border: 1px solid black">
+                                                                
                                 <tr>
                                     <td>
                                         Department Name:
