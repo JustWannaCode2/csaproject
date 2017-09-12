@@ -4,7 +4,7 @@
 <link class="jsbin" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
 <script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 <script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.0/jquery-ui.min.js"></script>
-<link rel="stylesheet" href="selectedInstitutionStyle.css">
+<link rel="stylesheet" href="IA_editInstitutionStyle.css">
 <title>View Institutions</title>
 </head>
 <body>
@@ -12,15 +12,16 @@
 
     <!-- Testing, Testing: 1,2,3 -->
 <div id="DDNavBar">
-<h2 align=center>Global Admin</h2>
+<h2 align=center>Institution Admin</h2>
     <ul>
         <li></li>
-  <li><a href="index.htm">Home</a></li>
+  <li><a href="IA_Index.htm">Home</a></li>
   
   <li class="dropdown" style="float:right">
-    <a href="javascript:void(0)" class="dropbtn">Global Admin Profile</a>
+    <a href="javascript:void(0)" class="dropbtn">Institution Admin Profile</a>
     <div class="dropdown-content">
-      <a href="#">View Profile</a>
+      <a href="#">View User Profile</a>
+      <a href="#">View Institution Profile</a>
       <a href="#">Logout</a>
     </div>
   </li>
@@ -28,32 +29,32 @@
   <li class="dropdown">
     <a href="javascript:void(0)" class="dropbtn">Users</a>
     <div class="dropdown-content">
-      <a href="viewUsers.htm">View Users</a>
-      <a href="addUsers.htm">Add Users</a>
+      <a href="IA_viewUsers.htm">View All Users</a>
+      <a href="IA_addInstitutionUsers.htm">Add Institution Users</a>
     </div>
   </li>
   
   <li class="dropdown">
     <a href="javascript:void(0)" class="dropbtn">Institutions</a>
     <div class="dropdown-content">
-      <a href="viewInstitutions.htm">View Institutions</a>
-      <a href="addInstitution.htm">Add Institutions</a>
+      <a href="IA_viewInstitutions.htm">View All Institutions</a>
+      <a href="IA_editInstitutions.htm">Edit Your Institution</a>
     </div>
   </li>
   
   <li class="dropdown">
     <a href="javascript:void(0)" class="dropbtn">Programs</a>
     <div class="dropdown-content">
-      <a href="viewPrograms.htm">View Programs</a>
-      <a href="addPrograms.htm">Add Programs</a>
+      <a href="IA_viewPrograms.htm">View All Programs</a>
+      <a href="IA_editPrograms.htm">Edit Your Programs</a>
     </div>
   </li>
 
 <li class="dropdown">
     <a href="javascript:void(0)" class="dropbtn">Courses</a>
     <div class="dropdown-content">
-      <a href="viewCourse.htm">View Courses</a>
-      <a href="addCourse.htm">Add Courses</a>
+      <a href="IA_viewCourse.htm">View All Courses</a>
+      <a href="IA_addCourse.htm">Add A Course To Your Program</a>
     </div>
   </li>
   
@@ -67,16 +68,12 @@
   
   </ul>
     </div><!-- End div id=DDNavBar -->
-
  
     
 	<div class="viewInstitutionContainer">
 		<div class="viewInstitutionHeader">
 			<h4>Institution Name (Institution ID)</h4>
 		</div>
-        <div>
-            <h3 align=center><a href="viewInstitutions.htm">Select A Different Institution</a></h3>
-        </div>
         </div>
 
     <!-- This Div contains the institution information that will be pulled from the database -->
