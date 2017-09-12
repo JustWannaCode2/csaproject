@@ -4,7 +4,7 @@
 <link class="jsbin" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
 <script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 <script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.0/jquery-ui.min.js"></script>
-<link rel="stylesheet" href="IA_selectedInstitutionStyle.css">
+<link rel="stylesheet" href="IA_editInstitutionStyle.css">
 <title>View Institutions</title>
 </head>
 <body>
@@ -68,15 +68,12 @@
   
   </ul>
     </div><!-- End div id=DDNavBar -->
-
  
     
 	<div class="viewInstitutionContainer">
 		<div class="viewInstitutionHeader">
 			<h4>Institution Name (Institution ID)</h4>
 		</div>
-        
-        <h4 align=center><a href ="IA_viewInstitutions.htm">Select A Different Institution</a></h4>
         </div>
 
     <!-- This Div contains the institution information that will be pulled from the database -->
@@ -90,7 +87,7 @@
                         </td>
                         
                         <td>
-				            <input type="text" name="selectedInstitutionName" disabled>
+				            <input type="text" name="selectedInstitutionName">
                         </td>
                     </tr>
 				    <tr>
@@ -99,7 +96,7 @@
                         </td>
                         
                         <td>
-				            <input type="text" name="selectedInstitutionID" disabled>
+				            <input type="text" name="selectedInstitutionID">
                         </td>
                     </tr>
                     
@@ -109,7 +106,7 @@
                         </td>
                         
                         <td>
-				            <select id="selectedInstitutionType" style="width: 100%" disabled>
+				            <select id="selectedInstitutionType" style="width: 100%">
 					           <option></option><option></option><option></option>
 				            </select>
                         </td>
@@ -121,7 +118,7 @@
                         </td>
                         
                         <td>
-				            <input type="text" name="selectedInstitutionAddress" disabled>
+				            <input type="text" name="selectedInstitutionAddress">
                         </td>
                     </tr>
                     
@@ -131,7 +128,7 @@
                         </td>
                         
                         <td>
-				            <input type="text" name="selectedInstitutionCity" disabled>
+				            <input type="text" name="selectedInstitutionCity">
                         </td>
                     </tr>
                     
@@ -141,7 +138,7 @@
                         </td>
                         
                         <td>
-				            <select id="selectedInstitutionState" style="width: 100%" disabled>
+				            <select id="selectedInstitutionState" style="width: 100%">
 					           <option></option><option></option><option></option>
 				            </select>
                         </td>
@@ -153,7 +150,7 @@
                         </td>
                         
                         <td>
-				            <input type="text" name="selectedInstitutionZip" disabled>
+				            <input type="text" name="selectedInstitutionZip">
                         </td>
                     </tr>
                     
@@ -163,7 +160,7 @@
                         </td>
                         
                         <td>
-				            <select id="selectedInstitutionCountry" style="width: 100%" disabled>
+				            <select id="selectedInstitutionCountry" style="width: 100%">
 					           <option></option><option></option><option></option>
 				            </select>
                         </td>
@@ -175,7 +172,7 @@
                         </td>
                         
                         <td>
-				            <input type="text" name="selectedInstitutionURL" disabled>
+				            <input type="text" name="selectedInstitutionURL">
                         </td>
                     </tr>
                     
@@ -185,7 +182,7 @@
                         </td>
                         
                         <td>
-				            <select style="width:100%" id="contact" disabled><option></option><option></option></select>
+				            <select style="width:100%" id="contact"><option></option><option></option></select>
                         </td>
                     </tr>
                     
@@ -195,7 +192,7 @@
                         </td>
                         
                         <td>
-				            <input type="text" name="selectedInstitutionContactNumber" disabled>
+				            <input type="text" name="selectedInstitutionContactNumber">
                         </td>
                     </tr>
                    <!-- 
@@ -214,8 +211,8 @@
                 
                 <div id="InstituteLogoDiv" style="height:315px; width:450px border:1px solid" align=center>
                     <p align="center">
-                    <b><u><h3>Institution Logo</h3></u></b><input type="file" name="InstitutionLogo" onchange="readURL(this);" disabled>
-                    <img id="pic" src="#" disabled/>
+                    <b><u><h3>Institution Logo</h3></u></b><input type="file" name="InstitutionLogo" onchange="readURL(this);">
+                    <img id="pic" src="#" />
                     </p>
                 </div>
                 
@@ -246,14 +243,14 @@
 				<table>
                     <tr>
                         <td>
-                            <input type="checkbox" id="CAEIAE4Y" name="CAEIAE4Y" disabled>CAE/IAE 4Y- National Centers of Academic Excellence in Information Assurance Education
+                            <input type="checkbox" id="CAEIAE4Y" name="CAEIAE4Y">CAE/IAE 4Y- National Centers of Academic Excellence in Information Assurance Education
                         </td>
                     </tr>
                     
                     <tr>
                         <td align="center">
                             Expiration:
-                            <select name="CAEIAE4YExpiraton" id="CAEIAE4YExpiraton" style="width: 150px" disabled>
+                            <select name="CAEIAE4YExpiraton" id="CAEIAE4YExpiraton" style="width: 150px">
                                 <option></option>
                                 <option>2017</option>
                                 <option>2018</option>
@@ -270,14 +267,14 @@
                     
                     <tr>
                         <td>
-                            <input type="checkbox" id="CAECDE4Y" name="CAECDE4Y" disabled>CAE-CDE 4Y- National Centers of Academic Excellence in Cyber Defense Education
+                            <input type="checkbox" id="CAECDE4Y" name="CAECDE4Y">CAE-CDE 4Y- National Centers of Academic Excellence in Cyber Defense Education
                         </td>
                     </tr>
                     
                     <tr>
                         <td align="center">
                             Expiration:
-                            <select name="CAEIAE4YExpiraton" id="CAEIAE4YExpiraton" style="width: 150px" disabled>
+                            <select name="CAEIAE4YExpiraton" id="CAEIAE4YExpiraton" style="width: 150px">
                                 <option></option>
                                 <option>2017</option>
                                 <option>2018</option>
@@ -294,14 +291,14 @@
                     
                     <tr>
                         <td>
-                            <input type="checkbox" id="CAEO4Y" name="CAEO4Y" disabled>CAE-CO 4Y- National Centers of Academic Excellence in Cyber Operations Education
+                            <input type="checkbox" id="CAEO4Y" name="CAEO4Y">CAE-CO 4Y- National Centers of Academic Excellence in Cyber Operations Education
                         </td>
                     </tr>
                     
                     <tr>
                         <td align="center">
                             Expiration:
-                            <select name="CAEO4YExpiraton" id="CAEO4YExpiraton" style="width: 150px" disabled>
+                            <select name="CAEO4YExpiraton" id="CAEO4YExpiraton" style="width: 150px">
                                 <option></option>
                                 <option>2017</option>
                                 <option>2018</option>
@@ -318,14 +315,14 @@
                     
                     <tr>
                         <td>
-                            <input type="checkbox" id="CAEIAE2Y" name="CAEIAE2Y" disabled>CAE/IAE 2Y - National Centers of Academic Excellence in Information Assurance 2-Year Education
+                            <input type="checkbox" id="CAEIAE2Y" name="CAEIAE2Y">CAE/IAE 2Y - National Centers of Academic Excellence in Information Assurance 2-Year Education
                         </td>
                     </tr>
                     
                     <tr>
                         <td align="center">
                             Expiration:
-                            <select name="CAEIAE2YExpiration" id="CAEIAE2YExpiration" style="width: 150px" disabled>
+                            <select name="CAEIAE2YExpiration" id="CAEIAE2YExpiration" style="width: 150px">
                                 <option></option>
                                 <option>2017</option>
                                 <option>2018</option>
@@ -342,14 +339,14 @@
                     
                     <tr>
                         <td>
-                            <input type="checkbox" id="CAECDE2Y" name="CAECDE2Y" disabled>CAE-CDE 2Y - National Centers of Academic Excellence in Cyber Defense 2-Year Education
+                            <input type="checkbox" id="CAECDE2Y" name="CAECDE2Y">CAE-CDE 2Y - National Centers of Academic Excellence in Cyber Defense 2-Year Education
                         </td>
                     </tr>
                     
                     <tr>
                         <td align="center">
                             Expiration:
-                            <select name="CAECDE2YExpiration" id="CAECDE2YExpiration" style="width: 150px" disabled>
+                            <select name="CAECDE2YExpiration" id="CAECDE2YExpiration" style="width: 150px">
                                 <option></option>
                                 <option>2017</option>
                                 <option>2018</option>
@@ -366,14 +363,14 @@
                     
                     <tr>
                         <td>
-                            <input type="checkbox" id="CAEIAR" name="CAEIAR" disabled>CAE-IA-R - National Centers of Academic Excellence in Information Assurance Research
+                            <input type="checkbox" id="CAEIAR" name="CAEIAR">CAE-IA-R - National Centers of Academic Excellence in Information Assurance Research
                         </td>
                     </tr>
                     
                     <tr>
                         <td align="center">
                             Expiration:
-                            <select name="CAEIARExpiration" id="CAEIARExpiration" style="width:150px" disabled>
+                            <select name="CAEIARExpiration" id="CAEIARExpiration" style="width:150px">
                                 <option></option>
                                 <option>2017</option>
                                 <option>2018</option>
@@ -390,14 +387,14 @@
                     
                     <tr>
                         <td>
-                            <input type="checkbox" id="CAER" name="CAER" disabled>CAE-R - National Centers of Academic Excellence in Cyber Defense Research
+                            <input type="checkbox" id="CAER" name="CAER">CAE-R - National Centers of Academic Excellence in Cyber Defense Research
                         </td>
                     </tr>
                     
                     <tr>
                         <td align="center">
                             Expiration:
-                            <select name="CAERExpiration" id="CAERExpiration" style="width: 150px" disabled>
+                            <select name="CAERExpiration" id="CAERExpiration" style="width: 150px">
                                 <option></option>
                                 <option>2017</option>
                                 <option>2018</option>
@@ -415,9 +412,9 @@
                 </table>
 			</div>
 
-   <!-- <div align="center">
-        <input type="button" id="SelectDifferentInstituton" name="SelectDifferentInstitution" value="Save Changes">
-    </div> -->
+    <div align="center">
+        <input type="button" id="SaveChanges" name="SaveChanges" value="Save Changes">
+    </div>
 
     </div>
     <!--End of div Container-->
