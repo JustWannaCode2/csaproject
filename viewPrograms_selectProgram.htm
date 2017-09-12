@@ -139,8 +139,8 @@
             <form action="" class="frmRemoveProgramInSelectProgram" >
 				<input type="button" value="Remove Program"  id="btnRemoveProgram_SelectProgram" class="commonBtnInMappingPrograms">
 			</form>
-            <form action="" id="frmAddTransferInformationInSelectProgram" >
-				<input type="submit" value="Add Transfer Information" onclick="" id="btnAddTransferInformation_SelectProgram" class="commonBtnInMappingPrograms">
+            <form action="" id="frmAddTransferInformationInSelectProgram" ><label for="btnAddTransferInformation_SelectProgram">Add Transfer Information</label>
+				<input type="file" name="Add Transfer Information" id="btnAddTransferInformation_SelectProgram" class="btnAddTransferInformationInSelectedProgram">
 			</form>
             
             <script>
@@ -239,7 +239,7 @@
 				    <option></option>
             </select>
             
-            <textarea class="textarea1InSelectProgram" placeholder="General Education Requirements"></textarea>
+            <textarea class="textarea1InSelectProgram" placeholder="Course Details"></textarea>
              <form action="" id="frmAddCourseInSelectProgram" >
 				<input type="button" value="Add Course" id="addCourseInGenEdReq" class="commonBtnInMappingPrograms">
 			</form>
@@ -247,8 +247,38 @@
 				<input type="button" value="Remove Course"  class="commonBtnInCareerCourses">
 			</form>
             
-        <!--End of div general Education Requirements-->
-        </div>
+            <script>
+                
+                 $(document).ready(function(){
+                        $("#addCourseInGenEdReq").click(function(){
+                            //Enable the Option A fields
+                            $("#GeneralEducationSubDiv").show();
+                        });
+                });
+                
+            </script>
+            
+            <div id="GeneralEducationSubDiv" style="display: none">
+                <select class="commonCmbBox3CSS" >
+					<option>Department:</option>
+                    <option></option>
+                    <option></option>
+				</select>
+                <select class="commonCmbBox3CSS">
+					<option>Courses:</option>
+                    <option></option>
+                    <option></option>
+				</select>
+                <br>
+                <form id="frmAddCourseSelectProgram" >
+				<input type="submit" value="Add Course" class="commonBtnInCareerCourses">
+			     </form>
+                <form id="frmRemoveCourseSelectProgram" >
+				<input type="submit" value="Cancel"  class="commonBtnInCareerCourses">
+			</form>
+            </div> <!--End of div general Education Sub Div -->
+        
+        </div> <!--End of div general Education Requirements-->
         
         
 		<div id="saveOrCancelButtons">
