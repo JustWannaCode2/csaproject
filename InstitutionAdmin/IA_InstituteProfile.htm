@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="IA_InstituteProfile.css"
+      .>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<title>Institute Profile</title>
+</head>
+<body>
+<div class="container">
+    
+  <!-- Testing, Testing: 1,2,3 -->
+<div id="DDNavBar">
+<h2 align=center>Institution Admin</h2>
+    <ul>
+        <li></li>
+  <li><a href="IA_Index.htm">Home</a></li>
+  
+  <li class="dropdown" style="float:right">
+    <a href="javascript:void(0)" class="dropbtn">Institution Admin Profile</a>
+    <div class="dropdown-content">
+      <a href="#">View User Profile</a>
+      <a href="#">View Institution Profile</a>
+      <a href="#">Logout</a>
+    </div>
+  </li>
+  
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Users</a>
+    <div class="dropdown-content">
+      <a href="IA_viewUsers.htm">View All Users</a>
+      <a href="IA_addInstitutionUsers.htm">Add Institution Users</a>
+    </div>
+  </li>
+  
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Institutions</a>
+    <div class="dropdown-content">
+      <a href="IA_viewInstitutions.htm">View All Institutions</a>
+      <a href="IA_editInstitutions.htm">Edit Your Institution</a>
+    </div>
+  </li>
+  
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Programs</a>
+    <div class="dropdown-content">
+      <a href="IA_viewPrograms.htm">View All Programs</a>
+      <a href="IA_editPrograms.htm">Edit Your Programs</a>
+    </div>
+  </li>
+
+<li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Courses</a>
+    <div class="dropdown-content">
+      <a href="IA_viewCourse.htm">View All Courses</a>
+      <a href="IA_addCourse.htm">Add A Course To Your Program</a>
+    </div>
+  </li>
+  
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Agreements</a>
+    <div class="dropdown-content">
+      <a href="#">View Agreements</a>
+      <a href="#">Add Agreements</a>
+    </div>
+  </li>
+  
+  </ul>
+    </div><!-- End div id=DDNavBar -->
+  
+
+	<div class="addCourseContainer" align=center>
+		<div class="addCourseHeader">
+			<h4>Institute Profile</h4>
+		</div>
+
+			<div class="users">
+                <h3 align="center">Users</h3>
+                <table>
+                    <tr>
+                        
+                        <td>
+                            <select style="width:240px;height:150px " multiple ><option selected>Select an User</option><option></option></select>
+                       
+                        </td>
+ 
+                        
+                    </tr>
+                    <tr>
+                    
+                        <td>
+                         <input type="button" value="Select User" style="height: 40px; width: 100px; margin: auto" >
+                        </td>
+                    </tr>
+                </table>
+                   
+                <h4>User Info:</h4>
+                <table align=center>
+                   
+                    <tr>
+                        <td>
+                        First Name:
+                        </td>
+                        <td>
+                            <input type="text" placeholder="First Name">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        Last Name:
+                        </td>
+                        <td>
+                            <input type="text" placeholder="Last Name">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Admin ID:</td>
+                        <td><input type="text" placeholder="Admin ID"></td>    
+                    </tr>
+                    <tr>
+                        <td>Admin Type:</td>
+                        <td>
+                            <input type="text" placeholder="Admin Type">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Work Number:</td>
+                        <td>
+                            <input type="text" placeholder="Work Number">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Mobile Number:</td>
+                        <td>
+                            <input type="text" placeholder="Mobile Number">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Institution:</td>
+                        <td>
+                            <input type="text" placeholder="Institution">   
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Position:</td>
+                        <td><input type="text" placeholder="Position of the User">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Link:</td>
+                        <td><input type="text" placeholder="Link">
+                        </td>
+                    </tr>
+                       
+                </table>
+                
+                <div class="Instition Logo">
+                    <marquee>Logo goes here</marquee>
+                    <marquee>Change size of this div</marquee>
+                </div>
+				
+			</div>
+        <div class="programs">
+            <h3 align="center">Programs</h3>
+            
+                    <div class="selectInstitutediv">
+                            <select multiple style="width: 200px; height: 200px;">
+                                <option>Select Institute</option>
+                                <option></option>
+                                <option></option>
+                            </select>
+                            <input type="button" value="Select Program">
+                     </div>
+                     <div class="divProgramInfo">
+                         <table>
+                            <tr>
+                                <td>Program ID:</td>    
+                                <td> 
+                                    <input type="text" placeholder="Program ID">
+                                </td>
+                                <td> CAE Designation:</td>
+                                <td>
+                                    <input type="text" placeholder="CAE Designation">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Program Title:</td>
+                                <td>
+                                    <input type="text" placeholder="Program Title">
+                                </td>   
+                                <td>Credit Hours:</td>
+                                <td>
+                                    <input type="text" placeholder="Credit Hours">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Program Type:</td>    
+                                <td>
+                                    <input type="text" placeholder="Program Type">
+                                </td>
+                                <td>Curriculam Code:</td>
+                                <td>
+                                    <input type="text" placeholder="Curriculam Code:">
+                                </td>
+                            </tr>
+                            <tr>
+                                
+                                <td colspan="4" align="center">URL:
+                                    <input type="text" placeholder="URL" class="txtBoxForURL">
+                                </td>
+                            </tr>
+                         </table>
+                    </div> <!--End of Div Program Info-->
+            <div class="divSub_Programs">
+                <table>
+                    <tr>
+                <th colspan="2"> Career Course: </th>
+                <th colspan="2"> General Education Course:</th>  
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <select multiple style="width: 250px;height: 100px; margin: 0px 10px;">
+                                <option disabled>Career Courses</option>
+                                <option></option>
+                                <option></option>
+                            </select>    
+                        </td>
+                         <td colspan="2">
+                            <select multiple style="width: 250px;height: 100px; margin: 0px 10px;">
+                                <option disabled>General Education Courses</option>
+                                <option></option>
+                                <option></option>
+                            </select>    
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                        <textarea id="test1" placeholder="Course Details" style="width: 240px; height: 50px; margin: 0px 10px;">
+                        
+                        </textarea>
+                        </td>
+                        <td colspan="2">
+                        <textarea id="test1" placeholder="Course Details" style="width: 240px; height: 50px; margin: 0px 10px;">
+                        
+                        </textarea>
+                        </td>
+                    </tr>
+                    <br>
+                    <tr align="center">
+                        <th colspan="4">Mapped Programs With Transfer Agreements</th>
+                    </tr>
+                    <tr align="center">
+                        <td colspan="4">
+                            <select multiple style="width: 500px;height: 160px;">
+                                <option disabled>
+                                Choose an Option</option>
+                                <option></option><option></option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div> <!--End of div Program-->
+        </div> <!--End of Add Course Container -->
+    </div> <!--End of Container-->
+</body>
+</html>
