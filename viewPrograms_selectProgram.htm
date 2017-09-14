@@ -77,108 +77,64 @@
 		</div>
 
 		<div class="programInfoInSelectProgram">
-			<form align="right">
-                <h4 class="programInformationHeader">Program Information</h4>
+			<table align="center">
+                <tr align="center">
+                    <td colspan="5"><h4 class="programInformationHeader">Program Information</h4></td>
+                </tr>
                 <br>
-				Program ID:
-				<input type="text" name="name" placeholder="Program ID" id="addProgramIDInputInSelectProgram" class="commonTxtBoxCSS">
-				<br><br>
-				Program Title:
-				<input type="text" name="programTitle" placeholder="Program Title" id="addProgramTitleInputInSelectProgram"  class="commonTxtBoxCSS">
-				<br><br>
-				Program Type:
-				<select id="cmbselectProgramTypeInProgramSelect" class="commonCmbBoxCSS">
-					<option></option>
-				</select>
-				<br><br>
-                CAE Designation:
-				<select id="cmbselectCAEDesignationInPorgramSelect" class="commonCmbBoxCSS">
-					<option></option>
-				</select>
-				
-				<br><br>
-				
-				Total Credit Hours:
-				<select id="addNumOfCreditsInSelectProgramName"  class="commonCmbBoxCSS">
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                    <option>6</option>
-                    <option>Subject to change</option>
-                </select>
-                <br><br>
-                Curriculam Code: <input type="text" placeholder="Code" id="addCurriculamCodeInSelectProgram"  class="commonTxtBoxCSS"><br><br><br>
-                <p class="programURL_selectProgram">Program URL:</p>
-                <br>
-				<input type="text" placeholder="URL" id="addProgramURLInSelectProgram"  class="commonTxtBox3CSS">
-				
-				
-			</form>		
+				<tr>
+                    <td colspan="1">Program ID:</td>
+                    <td>
+                        <input type="text" name="name" placeholder="Program ID" id="addProgramIDInputInSelectProgram" class="commonTxtBoxCSS">
+                    </td>
+                    <td>CAE Designation:</td>
+                    <td>
+                        <select id="cmbselectCAEDesignationInPorgramSelect" class="commonCmbBoxCSS">
+					       <option></option>
+				        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Program Title:</td>
+                    <td>
+                        <input type="text" name="programTitle" placeholder="Program Title" id="addProgramTitleInputInSelectProgram"  class="commonTxtBoxCSS">
+                    </td>
+                    <td>Total Credit Hours:</td>
+                    <td>
+                        <select id="addNumOfCreditsInSelectProgramName"  class="commonCmbBoxCSS">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>Subject to change</option>
+                        </select>
+                    </td>
+                </tr>
+				<tr>
+                    <td>Program Type:</td>
+                    <td>
+                        <select id="cmbselectProgramTypeInProgramSelect" class="commonCmbBoxCSS">
+					       <option></option>
+				        </select>
+                    </td>
+                    <td> Curriculam Code:</td>
+                    <td>
+                        <input type="text" placeholder="Code" id="addCurriculamCodeInSelectProgram"  class="commonTxtBoxCSS">
+                    </td>
+                </tr>
+				<tr align="center">
+                    <td colspan="6">Program URL:</td>
+                </tr>
+                <tr align="center">
+                   <td colspan="6">
+                        <input type="text" placeholder="URL" id="addProgramURLInSelectProgram"  class="commonTxtBox3CSS">
+                    </td>
+				</tr>
+            </table>		
 			<!--End of div addUserForm-->
 		</div>
-        
-        <div class="mappingProgramsDiv">
-				<h4 id="mappingProgramHeader"> Mapped Programs with Transfer Agreements
-            </h4>
-           
-				<select class="selectProgramDropDown1" multiple>
-				<option></option>
-					<option></option>
-					<option></option>
-					<option></option>
-				</select>
-            
-			<form action="" class="frmViewTranserInfoInSelectProgram" >
-				<input type="submit" value="View Transfer Information" id="btnViewTransferInfo_SelectProgram" class="commonBtnInMappingPrograms">
-			</form>
-            <form action="" id="frmAddProgramInSelectProgram" >
-				<input type="button" value="Add Program" id="btnAddProgram_SelectProgram" class="commonBtnInMappingPrograms">
-			</form>
-            <form action="" class="frmRemoveProgramInSelectProgram" >
-				<input type="button" value="Remove Program"  id="btnRemoveProgram_SelectProgram" class="commonBtnInMappingPrograms">
-			</form>
-            <form id="frmAddTransferInformationInSelectProgram" ><label for="btnAddTransferInformation_SelectProgram">Add Transfer Information</label>
-				<input type="file" name="Add Transfer Information" id="btnAddTransferInformation_SelectProgram" class="btnAddTransferInformationInSelectedProgram">
-			</form>
-            
-            <script>
-                
-                 $(document).ready(function(){
-                        $("#btnAddProgram_SelectProgram").click(function(){
-                            //Enable the Option A fields
-                            $("#mappingSubDivInSelectProgram").show();
-                        });
-                });
-            </script>
-            <div id="mappingSubDivInSelectProgram" class="divMappingSub" style="display: none"><br>
-                <h4 class="mappingSubHeader">Add Mapped Program Institution</h4>
-                
-                <fieldset>
-                <legend>Institution</legend>
-                    <select class="selectInstituteDropDownInSubMapping_selectProgram">
-                        <option>Choose an option</option>
-                        <option></option>
-                    </select>
-                </fieldset>
-                <fieldset>
-                <legend>Program</legend>
-                    <select class="selectProgramDropDownInSubMapping_selectProgram">
-                        <option>Choose an option</option>
-                        <option></option>
-                    </select>
-                </fieldset>
-                <br>
-                <input type="radio" class="radTransferToProgram" name="mapping">Transfer To Program
-                <input type="radio" class="radTransferFromProgram" name="mapping">Transfer From Program
-                
-                <input type="button" value="Add Course" class="commonBtnInMappingPrograms" style="float: left">
-            </div>
-            
-		<!--end of div mappingProgramsDiv-->
-		</div>
-        
         
         <div id="CareerCoursesDiv">
         

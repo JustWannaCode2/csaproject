@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="IA_viewUsers.css">
+<title>View Users</title>
+</head>
+<body>
+<div class="container">
+<!-- Beginning of the new navigation bar html code -->
+<!-- Testing, Testing: 1,2,3 -->
+<div id="DDNavBar">
+<h2 align=center>Institute Admin</h2>
+   <ul>
+       <li></li>
+ <li><a href="#home">Home</a></li>
+ 
+ <li class="dropdown" style="float:right">
+   <a href="javascript:void(0)" class="dropbtn">Institute Admin Profile</a>
+   <div class="dropdown-content">
+     <a href="#">View Profile</a>
+     <a href="#">Logout</a>
+   </div>
+ </li>
+ 
+ <li class="dropdown">
+   <a href="javascript:void(0)" class="dropbtn">Users</a>
+   <div class="dropdown-content">
+     <a href="IA_viewUsers.htm">View Users</a>
+     <a href="IA_addUsers.htm">Add Users</a>
+   </div>
+ </li>
+ 
+ <li class="dropdown">
+   <a href="javascript:void(0)" class="dropbtn">Institutions</a>
+   <div class="dropdown-content">
+     <a href="IA_viewInstitutions.htm">View Institutions</a>
+     <a href="IA_addInstitution.htm">Add Institutions</a>
+   </div>
+ </li>
+ 
+ <li class="dropdown">
+   <a href="javascript:void(0)" class="dropbtn">Programs</a>
+   <div class="dropdown-content">
+     <a href="IA_viewPrograms.htm">View Programs</a>
+     <a href="IA_addPrograms.htm">Add Programs</a>
+   </div>
+ </li>
+
+<li class="dropdown">
+   <a href="javascript:void(0)" class="dropbtn">Courses</a>
+   <div class="dropdown-content">
+     <a href="IA_viewCourse.htm">View Courses</a>
+     <a href="IA_addCourse.htm">Add Courses</a>
+   </div>
+ </li>
+ 
+ <li class="dropdown">
+   <a href="javascript:void(0)" class="dropbtn">Agreements</a>
+   <div class="dropdown-content">
+     <a href="#">View Agreements</a>
+     <a href="#">Add Agreements</a>
+   </div>
+ </li>
+ 
+ </ul>
+   </div><!-- End div id=DDNavBar -->
+<!-- End of new nav bar html code -->
+
+
+    <div class="viewUserContainer">
+		<div class="viewUserHeader">
+			<h4>View User</h4>
+		</div>
+
+			<div class="viewUsersMultilineSelect">
+				<select multiple id="lstBoxselectUserInViewUser">
+					<option disabled> Select a User </option>
+					<option>  </option>
+					<option>  </option>
+				</select>
+				<br><br>
+				<form action="IA_editInstitutionUser.htm" id="selectUserButtonForm" >
+				<input type="submit" name="selectUser" value="Select User"  id="selectUserButton" >
+				</form>
+				<form action="addUsers.htm" id="addUserButtonForm" disabled>
+				<input type="submit" name="addUser" value="Add User" id="addUserButton" disabled>
+				</form>
+				<form id="removeUserButtonForm" disabled>
+				<input type="submit" name="removeUser" value="Remove User" id="removeUserButton" disabled>
+				</form>
+				<br>
+				<!--End of div viewUsersMultilineSelect -->
+			</div>
+
+			<div class="filterByInViewUsers">
+				<h2 id="filterByHeader"> Filter By </h2>
+				<fieldset>
+				<p id="instituteLabelInFilterBy"> Institute: </p>
+				<select class="commonCmbBox2CSS">
+					<option></option><option></option><option></option><option></option>
+				</select>
+				<br>
+				<p id="instituteIDLabelInFilterBy"> Institute ID: </p>
+				<input type="text" name="instituteIDInput" placeholder="Name of the Institute" class="InstituteIdFilterTextBoxInFilterBy">
+				<br>
+				<input type="button" value="Apply Filter" name="applyFilterButton" class="commonBtnInViewPrograms"><br>
+                </fieldset>
+                <fieldset>
+				<p class="adminTypeLabelInFilterBy"> Admin Type: </p>
+				<select class="commonCmbBox2CSS">
+					<option></option><option></option><option></option>
+				</select>
+                        <input type="button" value="Apply Filter" class="commonBtnInViewPrograms">
+                </fieldset>
+                <fieldset>
+				<p id="UserIDLabelInFilterBy"> User ID: </p>
+				<input type="text" name="userIDInput" placeholder="Name of the user" class="selectUserTextBoxInFilterBy"><br>
+				<input type="submit" value="Search" name="searchButton" class="commonBtnInViewPrograms">
+                </fieldset>
+				<!--End of div filterBy -->
+			</div>
+    </div>
+    
+		<!--End of div Container-->
+</div>
+</body>
+</html>

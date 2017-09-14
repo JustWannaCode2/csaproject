@@ -56,7 +56,7 @@ li.dropdown {
 
 .container{
 width: 976px;
-height: 1050px;
+height: 850px;
 margin-left: auto;
 margin-right: auto;
 background-color: #b3c1d6;
@@ -160,7 +160,7 @@ h4[id="mappingProgramHeader"]{
 div[id="generalEduInSelectProgram"]{
      align-content:  right;
 	width: 420px;
-    height: 420px;
+    height: 270px;
 	background-color: #858fa0;
 	padding: 10px;
 	float: right;
@@ -303,7 +303,7 @@ h4[class="careerCourseHeader"]{
 div[id="CareerCoursesDiv"]{
     
    	width: 450px;
-    height: 420px;
+    height: 270px;
 	background-color: #858fa0;
 	padding: 10px;
 	float: left;
