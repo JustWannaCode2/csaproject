@@ -17,9 +17,6 @@ text-align: center;
 font-size: 18pt;
 }
 
-.AddCourseInformation{
-
-}
 
 .testDiv
 {
@@ -28,15 +25,12 @@ font-size: 18pt;
     
 }
 
-.navigationBar{
-
-	
-	background-color: #858fa0;
-	font-size: 18pt;
+.navigationBar{	
+background-color: #858fa0;
+font-size: 18pt;
 border-style: solid;
 padding: 20px;
 margin: 20px;
-
 }
 #adminTable{
 	text-align: center;
@@ -46,7 +40,7 @@ border-color: red;
 }
 .container{
 width: 1333px;
-height: 1050px;
+height: 1100px;
 margin-left: auto;
 margin-right: auto;
 background-color: #b3c1d6;
@@ -116,9 +110,23 @@ li.dropdown {
 div[class="users"]
 {
     float: left;
-      border: 2px solid; 
-    width:475px; height:980px"
-        
+      border: 2px solid black; 
+    width:475px; 
+    height:880px;
+    margin: 0px 0px 5px 10px;
+}
+select[class="selectTheUser"]
+{
+    border: 1px solid black;
+    border-radius: 5px;
+    width:370px;
+    height:150px;
+    padding: 2px;
+}
+div input[type="text"]{
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 2px;
 }
 
 div[class="Instition Logo"]{
@@ -128,7 +136,7 @@ div[class="Instition Logo"]{
 }
 .users input[type="text"]{
     width: 170px;
-   
+   height: 20px;
 }
 
 
@@ -141,14 +149,16 @@ div[class="programs"]{
     width: 820px;
     height: 800px;
     float:right;
+    margin: 0px 10px 0px 0px;
 }
 
 div[class="selectInstitutediv"]{
     border: 1px solid black;
-    width: 430px;
+    width: 420px;
     height: 230px;
     float: left;
-    margin: auto;
+    margin: 0px 0px 0px 10px;;
+    
 }
 
 div[class="divProgramInfo"]{
@@ -156,8 +166,8 @@ div[class="divProgramInfo"]{
     width: 370px;
     height: 230px;
     float: right;
-    margin: auto;
-}
+    margin: 0px 8px 0px 0px;
+} 
 
 .divProgramInfo input[type="text"]{
     width: 180px;
@@ -167,7 +177,28 @@ div[class="divProgramInfo"]{
     width: 300px;
     column-span: 4;
 }
+select[class="selectCareerCourse"]{
+    width: 250px;
+    height: 100px; 
+    margin: 0px 10px;
+    border: 1px solid black;
+}
+select[class="SelectGenerealCourse"]{
+   width: 250px;
+    height: 100px; 
+    margin: 0px 10px;
+    border: 1px solid black; 
+}
 
+select[class="MappedPrograms"]{
+    border:1px solid black;
+    width: 500px;
+    height: 160px;
+}
+textarea{
+    border:1px solid black;
+    
+}
 /* Start of Div sub Programs */
 div[class="divSub_Programs"]{
     border: 3px solid black;
@@ -177,6 +208,5 @@ div[class="divSub_Programs"]{
     display: block;
     margin: 15px;
 }
-
 
 /* End of Div sub Programs  */
