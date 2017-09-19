@@ -1,18 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="viewAgreementsIndex.css">
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
-<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-<script type="text/javascript" src="script.js"></script>
-<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-<title>View Transfer Agreements</title>
+<link rel="stylesheet" href="removeAgreementStyle.css">
+<title>View Institutions</title>
 </head>
 <body>
 <div class="container">
-    
-<!-- Testing, Testing: 1,2,3 -->
+
+    <!-- Testing, Testing: 1,2,3 -->
 <div id="DDNavBar">
 <h2 align=center>Global Admin</h2>
     <ul>
@@ -71,43 +66,68 @@
   </ul>
     </div><!-- End div id=DDNavBar -->
 
-  
 
-	<div class="viewAgreementContainer" align=center>
-		<div class="viewAgreementHeader">
-			<h4>View Transfer Agreement</h4>
+    <div class="removeAgreementContainer"> <!-- Contains the Institution List and the filters -->
+		<div class="removeAgreementHeader">
+			<h4>Remove Transfer Agreement</h4>
 		</div>
 
-<!--############################### This Div Is To Select if You Are Using the ViewByCourses or ViewByPrograms Option ##############-->
-			<div class="HowToView" id="HowToView" align="center" style="width:960px; height:200px">             
+			<div class="viewAgreements"> <!-- Institution List div -->
+                <h3 align=center><u>Select A Transfer Agreement To Remove:</u></h3>
                 <table>
                     <tr>
                         <td>
-                            <h3>How Would You Like to View Your Transfer Agreements:</h3>
+				<select multiple id="selectAgreement"> <!-- the select multiple for the institutions -->
+					<option>  </option>
+					<option>  </option>
+					<option>  </option>
+				</select>
                         </td>
                     </tr>
-                    <tr>
-                        <td align=center>
-                            <form action="viewAgreementsByCourses.htm" style="display:inline">
-                            <input type="submit" id="ViewByCourses" value="View By Courses" style="width:300px;height:50px" onclick="viewAgreementsByCourses.htm">
-                            </form>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td align=center>
-                            <form action="viewAgreementsByPrograms.htm" style="display:inline">
-                            <input type="submit" id="ViewByPrograms" value="View By Programs" style="width:300px;height:50px" onclick="viewAgreementsByPrograms.htm">
-                                </form>
+                    <tr align=center>
+                        <td>
+                            <input type="submit" id="removeButton" value="Remove Transfer Agreement">
                         </td>
                     </tr>
                 </table>
+                			
+			</div> <!--End of div viewAgreements -->
 
-
-                
-			</div> <!-- end div class=HowToView -->
-        <p><br></p>
+			<div class="filterBy" align=center> <!-- Filters for the institutions -->
+    
+    <h3 align=center><u>Filters</u></h3>
+                <table style="margin:50px 0px">
+        <tr>
+            
+            <td>
+                Institution:
+            </td>
+            <td>
+                <select id="Institution" style="width:300px"></select>
+            </td>
+        </tr>
         
-     </div>
-    </div>
+        <tr>
+            <td>
+                Program:
+            </td>
+            
+            <td> 
+                <select id="Program" style="width:300px">
+					<option></option><option></option><option></option>
+				</select>
+            </td>
+        </tr>
+        
+        <tr>
+            <td align=center colspan=2>
+                <input type="submit" value="Apply Filter" name="searchButton">
+            </td>
+        </tr>
+    </table>
+				
+</div> <!-- End div class = filterBy -->
+</div> <!-- End div class="removeAgreementContainer" -->
+    </div> <!-- End div class="container" -->
 </body>
 </html>

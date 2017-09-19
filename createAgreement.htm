@@ -64,11 +64,13 @@
     <div class="dropdown-content">
       <a href="viewAgreementsIndex.htm">View Transfer Agreements</a>
       <a href="createAgreement.htm">Create Transfer Agreements</a>
+        <a href="removeAgreement.htm">Remove Transfer Agreements</a>
     </div>
   </li>
   
   </ul>
     </div><!-- End div id=DDNavBar -->
+
   
 
 	<div class="createAgreementContainer" align=center>
@@ -162,8 +164,27 @@
                 </tr>
                 <tr>
                     <td>
-                        <select multiple id="InstituteFromCourseList" style="width:450px; height: 300px"></select>
+                        <select size=10 id="InstituteFromCourseList" style="width:450px; height: 300px"></select>
                     </td>
+                    
+                    <script>
+                        
+                        $(document).ready(function()
+                            {
+                                $("#SelectEquivalentCourse").click(function()
+                                    {
+                                        $("#InstituteFromCourseList").attr('disabled', true);
+                                    })
+                            
+                            
+                                $("#CancelEquivalence").click(function()
+                                    {
+                                        document.getElementById('InstituteFromCourseList').removeAttribute('disabled');
+                                    })
+                            })
+                    
+                    </script>
+                    
                     
                     <td>
                         <p>
@@ -174,7 +195,7 @@
                     </td>
                     
                     <td>
-                        <select multiple id="InstituteToCourseList" style="width:450px; height: 300px"></select>
+                        <select size=10 id="InstituteToCourseList" style="width:450px; height: 300px" ></select>
                     </td>
                 </tr>
                 
