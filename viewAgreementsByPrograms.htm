@@ -64,12 +64,13 @@
     <div class="dropdown-content">
       <a href="viewAgreementsIndex.htm">View Transfer Agreements</a>
       <a href="createAgreement.htm">Create Transfer Agreements</a>
+        <a href="removeAgreement.htm">Remove Transfer Agreements</a>
     </div>
   </li>
   
   </ul>
     </div><!-- End div id=DDNavBar -->
-  
+
 
 	<div class="viewAgreementContainer" align=center>
 		<div class="viewAgreementHeader">
@@ -129,13 +130,19 @@
                     $("#vbp_generateCourses").click(function()
                        {
                             $("#viewByPrograms2").show();
-                        })                                            
+                            $("#viewByPrograms1").hide();
+                        })
+                    $("#SelectDifferentProgram").click(function()
+                       {
+                            $("#viewByPrograms1").show();
+                            $("#viewByPrograms2").hide();
+                        }) 
                     })
             </script>
             
 <!--############################## This shows the courses from the two institutions you will be comparing ##################################-->            
             <div id="viewByPrograms2" class="viewByPrograms2" style="display:none">
-                    
+                <a href="#" id="SelectDifferentProgram"><h3>Select A Different Program</h3></a>    
                 <table id="vbp_InstituteA" class="vbp_InstituteA" style="border:1px solid">
                     <tr align=center>
                         <td>

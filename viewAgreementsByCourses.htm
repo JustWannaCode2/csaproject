@@ -64,6 +64,7 @@
     <div class="dropdown-content">
       <a href="viewAgreementsIndex.htm">View Transfer Agreements</a>
       <a href="createAgreement.htm">Create Transfer Agreements</a>
+        <a href="removeAgreement.htm">Remove Transfer Agreements</a>
     </div>
   </li>
   
@@ -107,12 +108,20 @@
                     $("#vbc_generateCourses").click(function()
                        {
                             $("#viewByCourses2").show();
-                        })                                            
+                            $("#viewByCourses1").hide();
+                        })  
+                
+                    $("#SelectDifferentInstitution").click(function()
+                       {
+                            $("#viewByCourses1").show();
+                            $("#viewByCourses2").hide();
+                        }) 
                     })
             </script>
             
 <!--############################## This shows the courses from the two institutions you will be comparing ##################################-->            
             <div id="viewByCourses2" class="viewByCourses2" style="display:none">
+                <a href="#" id="SelectDifferentInstitution"><h3>Select A Different Institution</h3></a>
                 <table id="vbc_InstitutionComparison" class="vbc_InstitutionComparison">
                     <tr align=center>
                         <td>
@@ -125,7 +134,7 @@
                     </tr>
                     <tr align=center>
                         <td>
-                            <select multiple id="vbc_instituteACourses" style="width:400px; height:350px"></select>
+                            <select size=10 id="vbc_instituteACourses" style="width:400px; height:350px"></select>
                         </td>
                         <td><h3>Select a Mapped Institution:</h3>
                             <p>
@@ -136,7 +145,7 @@
                         </td>
                         
                         <td>
-                            <select multiple id="vbc_instituteBCourses" style="width:400px; height:350px"></select>
+                            <select size=10 id="vbc_instituteBCourses" style="width:400px; height:350px"></select>
                         </td>
                         
                     </tr>
