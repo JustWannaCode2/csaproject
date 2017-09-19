@@ -12,7 +12,7 @@ text-align: center;
 .viewAgreementHeader{
 	background-color: #bfefff;
 	color: #2b1459;
-width: 976px;
+width: 1200px;
 text-align: center;
 font-size: 18pt;
 }
@@ -35,7 +35,7 @@ border-color: red;
 }
 .container{
 width: 1200px;
-height: 1300px;
+height: 1400px;
 margin-left: auto;
 margin-right: auto;
 background-color: #b3c1d6;
@@ -63,13 +63,13 @@ border-color: black;
 .vbp_InstituteA
 {
    float:left;
-    margin:0px 0px 0px 300px;
+    margin:0px 0px 0px 30px;
 }
 
 .vbp_InstituteB
 {
     float:right;
-    margin:0px 300px 0px 0px;
+    margin:0px 30px 0px 0px;
 }
 
 /*Testing 1,2,3 */
