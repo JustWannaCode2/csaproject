@@ -1,0 +1,174 @@
+/*Beginning of new nav bar css code */
+/*Testing 1,2,3 */
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: black;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*End Testing */
+
+
+.container{
+width: 976px;
+height: 650px;
+margin-left: auto;
+margin-right: auto;
+background-color: #b3c1d6;
+border-style: solid;
+border-width: 2px;
+border-color: black;
+}
+.viewProgramHeader{
+	background-color: #bfefff;
+	color: #2b1459;
+width: 976px;
+text-align: center;
+font-size: 18pt;
+}
+/* Start of div multiLine select in view Programs */
+.viewProgramsMultilineSelect{
+    background-color: #858fa0;
+border-style: solid;
+border-width: 1px;
+border-radius: 10px;
+width: 450px;
+height: 400px;
+margin: 20px;
+float:left;
+}
+select[id="selectProgram"]{
+	margin: 10px;
+	text-align: center;
+    width: 400px;
+    height: 300px;
+    font-size: 20pt;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: black;
+}
+
+input[class="commonBtn2InViewPrograms"]{
+       font-size: 15px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: black;
+	border-radius: 3px;
+    width: 130px;
+    height: 25px;
+    margin: 4px;
+}
+h2[id="filterByHeader"]{
+	margin: 5px;
+	text-align: center;
+	padding: 0px;
+}
+
+
+/* end of div multiLine select in view Programs */ 
+
+/* Start of Filter by in View Programs */
+
+div[class="filterByInViewPrograms"]{
+background-color: #858fa0; 
+	border-style: solid;
+border-width: 1px;
+border-radius: 10px;
+width: 450px;
+height: 400px;
+margin: 20px 10px 20px 0px;
+float:right;
+}
+input[class="commonTxtBoxCSS"]{
+    display: inline-block;
+		font-size: 10pt;
+	padding: 3px 10px;
+	border-width: 2px;
+	border-style: solid;
+	border-color: black;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin: 2px;
+	width: 200px;
+	height: 43px;
+}
+
+p[id="lblPID_viewPrograms"]{
+    margin: 15px 3px 10px 25px;
+    float: left
+}
+input[class="commonBtn3InViewPrograms"]{
+     font-size: 10px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: black;
+	border-radius: 3px;
+    width: 70px;
+    height: 20px;
+    margin: 2px;
+}
+select[class="commonCmbBoxCSS"]{
+    margin: 0px 0px 0px 5px;
+	padding: 0px;
+    text-align: center;
+    width: 200px;
+    border-radius: 5px;
+    font-size: 20pt;
+    border-width:1px;
+    border-color: black;
+    margin: 2px;
+}
+
+p[id="adminTypeLabel"]{
+	margin: 5px;
+	width: 100px;
+	padding: 0px;
+	float:left;
+}

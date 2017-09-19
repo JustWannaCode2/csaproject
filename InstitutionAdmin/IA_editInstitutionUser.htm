@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="IA_editnIstitutionUser.css">
+<title>Edit Institute Users</title>
+</head>
+<body>
+<div class="container">
+	<!-- Beginning of the new navigation bar html code -->
+<!-- Testing, Testing: 1,2,3 -->
+<div id="DDNavBar">
+<h2 align=center>Institution Admin</h2>
+    <ul>
+        <li></li>
+  <li><a href="IA_Index.htm">Home</a></li>
+  
+  <li class="dropdown" style="float:right">
+    <a href="javascript:void(0)" class="dropbtn">Institution Admin Profile</a>
+    <div class="dropdown-content">
+      <a href="#">View User Profile</a>
+      <a href="IA_InstituteProfile.htm">View Institution Profile</a>
+      <a href="#">Logout</a>
+    </div>
+  </li>
+  
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Users</a>
+    <div class="dropdown-content">
+      <a href="IA_viewUsers.htm">View All Users</a>
+      <a href="IA_addInstitutionUsers.htm">Add Institution Users</a>
+    </div>
+  </li>
+  
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Institutions</a>
+    <div class="dropdown-content">
+      <a href="IA_viewInstitutions.htm">View All Institutions</a>
+      <a href="IA_editInstitutions.htm">Edit Your Institution</a>
+    </div>
+  </li>
+  
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Programs</a>
+    <div class="dropdown-content">
+      <a href="IA_viewPrograms.htm">View All Programs</a>
+      <a href="IA_editProgramsInYourInstitute.htm">Edit Your Programs</a>
+    </div>
+  </li>
+
+<li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Courses</a>
+    <div class="dropdown-content">
+      <a href="IA_viewCourse.htm">View All Courses</a>
+      <a href="IA_addCourse.htm">Add A Course To Your Program</a>
+    </div>
+  </li>
+  
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Agreements</a>
+    <div class="dropdown-content">
+      <a href="#">View Agreements</a>
+      <a href="#">Add Agreements</a>
+    </div>
+  </li>
+  
+  </ul>
+    </div><!-- End div id=DDNavBar -->
+    
+<a href="IA_viewUsers.htm" align="center">Edit different User</a>
+    <div class="viewUserContainer">
+		<div class="viewUserHeader">
+			<h4>Edit Institute User</h4>
+		</div>
+
+		<div class="addUserForm">
+			<form align="right">
+				First Name: 
+				<input type="text" name="adminName" placeholder="First Name" id="addUserInput">
+				<br>
+                Last Name: 
+				<input type="text" name="adminName" placeholder="Last Name" id="addUserInput">
+				<br>
+				Email (Work):
+				<input type="email" name="userEmail" placeholder="email address" id="addUserInput">
+				<br>
+				Telephone Number (Work):
+				<input type="number" name="telephoneWork" placeholder="Telephone Number" id="addUserInput">
+				<br>
+				Telephone Number (Mobile):
+				<input type="number" name="telephoneMobile" placeholder="Telephone Number" id="addUserInput">
+				<br>
+				
+			</form>		
+			<!--End of div addUserForm-->
+		</div>
+		<div class="institute_addUser">
+			<table align="center">
+                <tr align="center" style="width: 280px;">
+                    <td>Position:</td>
+                    <td>
+                        <input type="text" id="addUserInput" placeholder="The Position of the User">
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center">Link:</td>
+                    <td> 
+                       <input type="text" id="addUserInput" placeholder="Position of User in Institute">
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center">Additional Info:</td>
+                    <td><textarea placeholder="Add any comments about this user (Optional)" style="width: 200px; height: 100px;"></textarea></td>
+                </tr>
+            </table>
+			
+			</div><!--end of div institute add user-->
+
+		
+		
+	</div><!--End of div View User container-->
+  <div id="saveOrCancelButtons">
+			<form action="IA_viewUsers.htm" class="saveChangesToUserName" >
+				<input type="submit" value="Save Changes" class="commonBtn2InViewPrograms">
+			</form>
+			<form action="IA_viewUsers.htm" class="cancelChangesToUserName">
+				<input type="submit" value="Cancel Changes" class="commonBtn2InViewPrograms">
+			</form>
+			
+		</div>	<!--End of save or cancel buttons div-->
+</div><!--End of div Container-->
+</body>
+</html>

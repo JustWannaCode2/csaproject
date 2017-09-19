@@ -23,7 +23,7 @@
     <a href="javascript:void(0)" class="dropbtn">Institution Admin Profile</a>
     <div class="dropdown-content">
       <a href="#">View User Profile</a>
-      <a href="#">View Institution Profile</a>
+      <a href="IA_InstituteProfile.htm">View Institution Profile</a>
       <a href="#">Logout</a>
     </div>
   </li>
@@ -48,7 +48,7 @@
     <a href="javascript:void(0)" class="dropbtn">Programs</a>
     <div class="dropdown-content">
       <a href="IA_viewPrograms.htm">View All Programs</a>
-      <a href="IA_editPrograms.htm">Edit Your Programs</a>
+      <a href="IA_editProgramsInYourInstitute.htm">Edit Your Programs</a>
     </div>
   </li>
 
@@ -70,8 +70,7 @@
   
   </ul>
     </div><!-- End div id=DDNavBar -->
-  
-
+    
 	<div class="addCourseContainer" align=center>
 		<div class="addCourseHeader">
 			<h4>Institute Profile</h4>
@@ -83,13 +82,14 @@
                     <tr>
                         
                         <td>
-                            <select style="width:240px;height:150px " multiple ><option selected>Select an User</option><option></option></select>
+                            <select class="selectTheUser" style=" " multiple ><option disabled>Select an User</option><option></option>
+                            <option></option></select>
                        
                         </td>
  
                         
                     </tr>
-                    <tr>
+                    <tr align="center">
                     
                         <td>
                          <input type="button" value="Select User" style="height: 40px; width: 100px; margin: auto" >
@@ -97,7 +97,7 @@
                     </tr>
                 </table>
                    
-                <h4>User Info:</h4>
+                <h4 >User Info:</h4>
                 <table align=center>
                    
                     <tr>
@@ -156,10 +156,9 @@
                     </tr>
                        
                 </table>
-                
+                <br>
                 <div class="Instition Logo">
-                    <marquee>Logo goes here</marquee>
-                    <marquee>Change size of this div</marquee>
+                    <p>Logo goes here</p>
                 </div>
 				
 			</div>
@@ -167,8 +166,8 @@
             <h3 align="center">Programs</h3>
             
                     <div class="selectInstitutediv">
-                            <select multiple style="width: 200px; height: 200px;">
-                                <option>Select Institute</option>
+                            <select multiple style="width: 420px; height: 200px;">
+                                <option disabled>Select Program</option>
                                 <option></option>
                                 <option></option>
                             </select>
@@ -181,6 +180,8 @@
                                 <td> 
                                     <input type="text" placeholder="Program ID">
                                 </td>
+                             </tr>
+                             <tr>
                                 <td> CAE Designation:</td>
                                 <td>
                                     <input type="text" placeholder="CAE Designation">
@@ -190,7 +191,9 @@
                                 <td>Program Title:</td>
                                 <td>
                                     <input type="text" placeholder="Program Title">
-                                </td>   
+                                </td>
+                             </tr>
+                             <tr>
                                 <td>Credit Hours:</td>
                                 <td>
                                     <input type="text" placeholder="Credit Hours">
@@ -201,6 +204,8 @@
                                 <td>
                                     <input type="text" placeholder="Program Type">
                                 </td>
+                             </tr>
+                             <tr>
                                 <td>Curriculam Code:</td>
                                 <td>
                                     <input type="text" placeholder="Curriculam Code:">
@@ -220,16 +225,16 @@
                 <th colspan="2"> Career Course: </th>
                 <th colspan="2"> General Education Course:</th>  
                     </tr>
-                    <tr>
+                    <tr align="center">
                         <td colspan="2">
-                            <select multiple style="width: 250px;height: 100px; margin: 0px 10px;">
+                            <select class="selectCareerCourse" multiple>
                                 <option disabled>Career Courses</option>
                                 <option></option>
                                 <option></option>
                             </select>    
                         </td>
                          <td colspan="2">
-                            <select multiple style="width: 250px;height: 100px; margin: 0px 10px;">
+                            <select class="SelectGenerealCourse" multiple>
                                 <option disabled>General Education Courses</option>
                                 <option></option>
                                 <option></option>
@@ -238,14 +243,10 @@
                     </tr>
                     <tr>
                         <td colspan="2">
-                        <textarea id="test1" placeholder="Course Details" style="width: 240px; height: 50px; margin: 0px 10px;">
-                        
-                        </textarea>
+                        <textarea placeholder="Course Details" style="width: 340px; height: 80px; margin: 10px 10px;"></textarea>
                         </td>
                         <td colspan="2">
-                        <textarea id="test1" placeholder="Course Details" style="width: 240px; height: 50px; margin: 0px 10px;">
-                        
-                        </textarea>
+                        <textarea style="width: 340px; height: 80px; margin: 10px 10px;" placeholder="Course Details"></textarea>
                         </td>
                     </tr>
                     <br>
@@ -254,7 +255,7 @@
                     </tr>
                     <tr align="center">
                         <td colspan="4">
-                            <select multiple style="width: 500px;height: 160px;">
+                            <select class="MappedPrograms" multiple>
                                 <option disabled>
                                 Choose an Option</option>
                                 <option></option><option></option>
