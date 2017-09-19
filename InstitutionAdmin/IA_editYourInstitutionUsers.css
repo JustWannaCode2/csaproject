@@ -1,0 +1,175 @@
+/*Beginning of new nav bar css code */
+/*Testing 1,2,3 */
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: black;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*End Testing */
+.container{
+width: 976px;
+height: 580px;
+margin-left: auto;
+margin-right: auto;
+background-color: #b3c1d6;
+border-style: solid;
+border-width: 2px;
+border-color: black;
+}
+.viewUserHeader{
+	background-color: #bfefff;
+	color: #2b1459;
+width: 974px;
+text-align: center;
+font-size: 18pt;
+}
+
+.addUserForm{
+	align-content:  right;
+	width: 450px;
+    height: 250px;
+	background-color: #858fa0;
+	padding: 10px;
+	float: left;
+	margin: 20px;
+	border-style: solid;
+	border-color: black;
+	border-width: 1px;
+	border-radius: 10px;
+}
+input[id="addUserInput"]{
+display: inline-block;
+		font-size: 10pt;
+	padding: 3px 10px;
+	border-width: 2px;
+	border-style: solid;
+	border-color: black;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin: 2px;
+	width: 200px;
+	height: 43px;
+}
+
+/* Institution   */
+.institute_addUser{
+	background-color: #858fa0;
+	width: 400px;
+	height: 250px;
+	padding: 12px 20px;
+	float: right;
+	border-color:black;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 10px;
+	margin: 20px 15px 0px 2px;
+
+}
+input[class="commonTxtBox2CSS"]{
+    display: block;
+		font-size: 10pt;
+	padding: 3px 10px;
+	border-width: 2px;
+	border-style: solid;
+	border-color: black;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin: auto;
+	width: 300px;
+	height: 43px;
+}
+select[class="commonCmbBox3CSS"]{
+    margin: 0px 0px 0px 35px;
+	padding: 0px;
+    text-align: center;
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 18pt;
+    border-width: 1px; 
+    font-size: 15px;
+}
+textarea{
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+/* Start Div Save or Cancel Button */
+
+div[id="saveOrCancelButtons"]{
+	width:900px;
+	height: 50px;
+	float: right;
+}
+
+form[class="saveChangesToUserName"]{
+	text-align: center;
+	width: 160px;
+	margin: 0px 0px 0px 260px; 
+	float: left;
+}
+form[class="cancelChangesToUserName"]{
+	text-align: center;
+	width: 160px;
+	margin: 0px 300px 0px 00px; 
+	float: right;
+}
+
+input[class="commonBtn2InViewPrograms"]{
+     font-size: 15px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: black;
+	border-radius: 10px;
+    width: 150px;
+    height: 30px;
+    margin: 5px;
+}
+/* End div save or cancel button*/

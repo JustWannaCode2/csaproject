@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="IA_viewAgreementsByPrograms.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script type="text/javascript" src="script.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<title>View Transfer Agreements</title>
+</head>
+<body>
+<div class="container">
+    
+  <!-- Testing, Testing: 1,2,3 -->
+<div id="DDNavBar">
+<h2 align=center>Institution Admin</h2>
+    <ul>
+        <li></li>
+  <li><a href="IA_Index.htm">Home</a></li>
+  
+  <li class="dropdown" style="float:right">
+    <a href="javascript:void(0)" class="dropbtn">Institution Admin Profile</a>
+    <div class="dropdown-content">
+      <a href="#">View User Profile</a>
+      <a href="IA_InstituteProfile.htm">View Institution Profile</a>
+      <a href="#">Logout</a>
+    </div>
+  </li>
+  
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Users</a>
+    <div class="dropdown-content">
+      <a href="IA_viewUsers.htm">View All Users</a>
+      <a href="IA_editYourInstitutionUsers.htm">Edit Your Institution User</a>
+      <a href="IA_addInstitutionUsers.htm">Add Institution Users</a>
+    </div>
+  </li>
+  
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Institutions</a>
+    <div class="dropdown-content">
+      <a href="IA_viewInstitutions.htm">View All Institutions</a>
+      <a href="IA_editInstitutions.htm">Edit Your Institution</a>
+    </div>
+  </li>
+  
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Programs</a>
+    <div class="dropdown-content">
+      <a href="IA_viewPrograms.htm">View All Programs</a>
+      <a href="IA_editProgramsInYourInstitute.htm">Edit Your Programs</a>
+    </div>
+  </li>
+
+<li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Courses</a>
+    <div class="dropdown-content">
+      <a href="IA_viewCourse.htm">View All Courses</a>
+      <a href="IA_addCourse.htm">Add A Course To Your Program</a>
+    </div>
+  </li>
+  
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Agreements</a>
+    <div class="dropdown-content">
+      <a href="IA_viewAgreementsIndex.htm">View Transfer Agreements</a>
+      <a href="IA_createAgreement.htm">Create Transfer Agreements</a>
+    </div>
+  </li>
+  
+  </ul>
+    </div><!-- End div id=DDNavBar -->
+  
+
+	<div class="viewAgreementContainer" align=center>
+		<div class="viewAgreementHeader">
+			<h4>View Transfer Agreement</h4>
+		</div>
+
+ <!--########################################################################################################################################-->
+                                        <!--This holds all of the fields for viewing agreements by programs-->
+ <!--#######################################################################################################################################-->  
+        
+        <div id="viewByProgramsContainer" style="">
+            
+            <div id="viewByPrograms1"><!-- start by selecting your institution, the program from that institution, and the programs mapped to that institution -->
+                <p><br></p>
+                <table>
+                    <tr align=center>
+                        <td><h3 style="display:inline">Select Your Institution:</h3></td>
+                    </tr>
+                    <tr align=center>
+                        <td>
+                            <select id="vbp_selectedInstitution" style="width:600px; height:30px"></select>
+                        </td>
+                    </tr>
+                    <tr align=center>
+                        <td>
+                            <h3 style="display:inline">Select the Program From That Institution:</h3>
+                        </td>
+                    </tr>
+                    <tr align=center>
+                        <td>
+                            <select id="vbp_selectedProgram" style="width:600px; height:30px"></select>
+                        </td>
+                    </tr>
+                    <tr align=center>
+                        <td>
+                            <h3 style="display:inline">Select A Mapped Program:</h3>
+                        </td>
+                    </tr>
+                    <tr align=center>
+                        <td>
+                            <select id="vbp_selectedMappedProgram" style="width:600px; height:30px"></select>
+                        </td>
+                    </tr>
+                    <tr align=center>
+                        <td><br>
+                            <input type="button" value="Generate Courses" id="vbp_generateCourses" style="width:200px;height:25px">
+                        </td>
+                    </tr>
+                </table>
+                <p><br></p>
+            </div><!-- end div id="viewByPrograms1 (where we select the institution, program, and mapped program) -->
+            
+            <script>
+            //this script is used to show the criteria for viewing by courses
+            $(document).ready(function()
+                  {
+                    $("#vbp_generateCourses").click(function()
+                       {
+                            $("#viewByPrograms2").show();
+                        })                                            
+                    })
+            </script>
+            
+<!--############################## This shows the courses from the two institutions you will be comparing ##################################-->            
+            <div id="viewByPrograms2" class="viewByPrograms2" style="display:none">
+                    
+                <table id="vbp_InstituteA" class="vbp_InstituteA" style="border:1px solid">
+                    <tr align=center>
+                        <td>
+                            <h3>Institute A Courses</h3>
+                        </td>
+
+                    </tr>
+                    <tr align=center>
+                        <td>
+                            <select multiple id="vbp_InstituteACourses" style="width:550px; height:400px"></select>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <table align=center> <!-- Course selected from institute A -->
+                                <tr align=center>
+                                    <td colspan=4>
+                                        <h3>Course A Information</h3>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align=right>
+                                        Department:
+                                    </td>
+                                    <td>
+                                        <input type="text" id="vbp_CourseADept" readonly>
+                                    </td>
+                                </tr>
+                    
+                                <tr>
+                                    <td align=right>
+                                        Course Number:
+                                    </td>
+                                    <td>
+                                        <input type="text" id="vbp_CourseACourseNumber" readonly>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align=right>
+                                        Course Name:
+                                    </td>
+                                    <td>
+                                    <input type="text" id="vbp_CourseACourseName" readonly> 
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align=right>Credit Hours:</td>
+                                    <td><input type="text" id="vbp_CourseACreditHours" readonly> </td>
+                                </tr>
+                                <tr>
+                                    <td colspan=2 align=center>
+                                        <h3>Course Description:</h3>
+                                    </td>
+                                </tr>
+                                <tr align=center>
+                                    <td colspan=2>
+                                        <textarea id="vbp_CourseACourseDescription" style="width:400px;height:150px" readonly></textarea>
+                                    </td>
+                                </tr>
+                            </table><!-- end of course a info table -->
+
+                        </td>
+      
+                    </tr>
+                </table><!-- end table id="vbp_InstituteA" -->
+                
+                
+                <table id="vbp_InstituteB" class="vbp_InstituteB" style="border:1px solid">
+                    <tr align=center>
+                        <td>
+                            <h3>Institute B Courses</h3>
+                        </td>
+
+                    </tr>
+                    <tr align=center>
+                        <td>
+                            <select multiple id="vbp_InstituteBCourses" style="width:550px; height:400px"></select>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <table align=center> <!-- Course selected from institute B -->
+                                <tr align=center>
+                                    <td colspan=4>
+                                        <h3>Course B Information</h3>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align=right>
+                                        Department:
+                                    </td>
+                                    <td>
+                                        <input type="text" id="vbp_CourseBDept" readonly>
+                                    </td>
+                                </tr>
+                    
+                                <tr>
+                                    <td align=right>
+                                        Course Number:
+                                    </td>
+                                    <td>
+                                        <input type="text" id="vbp_CourseBCourseNumber" readonly>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align=right>
+                                        Course Name:
+                                    </td>
+                                    <td>
+                                    <input type="text" id="vbp_CourseBCourseName" readonly> 
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align=right>Credit Hours:</td>
+                                    <td><input type="text" id="vbp_CourseBCreditHours" readonly> </td>
+                                </tr>
+                                <tr>
+                                    <td colspan=2 align=center>
+                                        <h3>Course Description:</h3>
+                                    </td>
+                                </tr>
+                                <tr align=center>
+                                    <td colspan=2>
+                                        <textarea id="vbp_CourseBCourseDescription" style="width:400px;height:150px" readonly></textarea>
+                                    </td>
+                                </tr>
+                            </table><!-- end of course a info table -->
+
+                        </td>
+      
+                    </tr>
+                </table><!-- end table id="vbp_InstituteA" -->
+                
+            </div><!-- end div id=viewByPrograms2 -->
+        </div> <!-- view by programs container -->
+        
+<!--###################################################################################################################################-->
+</div> <!-- End div class="viewAgreementContainer" -->
+    </div>
+</body>
+</html>
