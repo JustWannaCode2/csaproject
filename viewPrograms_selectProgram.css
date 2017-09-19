@@ -345,6 +345,15 @@ input[class="commonBtnInCareerCourses"]{
 }
 
 
+/*General Education*/
+
+h4[class="genEdReqHeader"]{
+    text-align: center;
+    margin: 0px;
+}
+
+/* End of General Education*/
+
 /* Save or Cancel button*/
 
 div[id="saveOrCancelButtons"]{
