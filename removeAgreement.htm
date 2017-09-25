@@ -1,133 +1,128 @@
 <!DOCTYPE html>
 <html>
-<head>
-<link rel="stylesheet" href="removeAgreementStyle.css">
-<title>View Institutions</title>
-</head>
-<body>
-<div class="container">
-
-    <!-- Testing, Testing: 1,2,3 -->
-<div id="DDNavBar">
-<h2 align=center>Global Admin</h2>
-    <ul>
-        <li></li>
-  <li><a href="index.htm">Home</a></li>
-  
-  <li class="dropdown" style="float:right">
-    <a href="javascript:void(0)" class="dropbtn">Global Admin Profile</a>
-    <div class="dropdown-content">
-      <a href="#">View Profile</a>
-      <a href="#">Logout</a>
-    </div>
-  </li>
-  
-  <li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">Users</a>
-    <div class="dropdown-content">
-      <a href="viewUsers.htm">View Users</a>
-      <a href="addUsers.htm">Add Users</a>
-    </div>
-  </li>
-  
-  <li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">Institutions</a>
-    <div class="dropdown-content">
-      <a href="viewInstitutions.htm">View Institutions</a>
-      <a href="addInstitution.htm">Add Institutions</a>
-    </div>
-  </li>
-  
-  <li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">Programs</a>
-    <div class="dropdown-content">
-      <a href="viewPrograms.htm">View Programs</a>
-      <a href="addPrograms.htm">Add Programs</a>
-    </div>
-  </li>
-
-<li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">Courses</a>
-    <div class="dropdown-content">
-      <a href="viewCourse.htm">View Courses</a>
-      <a href="addCourse.htm">Add Courses</a>
-    </div>
-  </li>
-  
-  <li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">Agreements</a>
-    <div class="dropdown-content">
-      <a href="viewAgreementsIndex.htm">View Transfer Agreements</a>
-      <a href="createAgreement.htm">Create Transfer Agreements</a>
-        <a href="removeAgreement.htm">Remove Transfer Agreements</a>
-    </div>
-  </li>
-  
-  </ul>
-    </div><!-- End div id=DDNavBar -->
-
-
-    <div class="removeAgreementContainer"> <!-- Contains the Institution List and the filters -->
-		<div class="removeAgreementHeader">
-			<h4>Remove Transfer Agreement</h4>
-		</div>
-
-			<div class="viewAgreements"> <!-- Institution List div -->
-                <h3 align=center><u>Select A Transfer Agreement To Remove:</u></h3>
-                <table>
-                    <tr>
-                        <td>
-				<select multiple id="selectAgreement"> <!-- the select multiple for the institutions -->
-					<option>  </option>
-					<option>  </option>
-					<option>  </option>
-				</select>
-                        </td>
-                    </tr>
-                    <tr align=center>
-                        <td>
-                            <input type="submit" id="removeButton" value="Remove Transfer Agreement">
-                        </td>
-                    </tr>
-                </table>
-                			
-			</div> <!--End of div viewAgreements -->
-
-			<div class="filterBy" align=center> <!-- Filters for the institutions -->
+   <head>
+      <link rel="stylesheet" href="jointStyle.css">
+      <title>Remove Transfer Agreement</title>
+   </head>
     
-    <h3 align=center><u>Filters</u></h3>
-                <table style="margin:50px 0px">
-        <tr>
+   <body>
+      <div class="container">
+          
+         <!-- Testing, Testing: 1,2,3 -->
+         <div id="DDNavBar">
+            <h2 align=center>Global Admin</h2>
+            <ul>
+               <li></li>
+               <li><a href="index.htm">Home</a></li>
+               <li class="dropdown" style="float:right">
+                  <a href="javascript:void(0)" class="dropbtn">Global Admin Profile</a>
+                  <div class="dropdown-content">
+                     <a href="#">View Profile</a>
+                     <a href="#">Logout</a>
+                  </div>
+               </li>
+               <li class="dropdown">
+                  <a href="javascript:void(0)" class="dropbtn">Users</a>
+                  <div class="dropdown-content">
+                     <a href="viewUsers.htm">View Users</a>
+                     <a href="addUsers.htm">Add Users</a>
+                  </div>
+               </li>
+               <li class="dropdown">
+                  <a href="javascript:void(0)" class="dropbtn">Institutions</a>
+                  <div class="dropdown-content">
+                     <a href="viewInstitutions.htm">View Institutions</a>
+                     <a href="addInstitution.htm">Add Institutions</a>
+                  </div>
+               </li>
+               <li class="dropdown">
+                  <a href="javascript:void(0)" class="dropbtn">Programs</a>
+                  <div class="dropdown-content">
+                     <a href="viewPrograms.htm">View Programs</a>
+                     <a href="addPrograms.htm">Add Programs</a>
+                  </div>
+               </li>
+               <li class="dropdown">
+                  <a href="javascript:void(0)" class="dropbtn">Courses</a>
+                  <div class="dropdown-content">
+                     <a href="viewCourse.htm">View Courses</a>
+                     <a href="addCourse.htm">Add Courses</a>
+                  </div>
+               </li>
+               <li class="dropdown">
+                  <a href="javascript:void(0)" class="dropbtn">Agreements</a>
+                  <div class="dropdown-content">
+                     <a href="viewAgreementsIndex.htm">View Transfer Agreements</a>
+                     <a href="createAgreement.htm">Create Transfer Agreements</a>
+                     <a href="removeAgreement.htm">Remove Transfer Agreements</a>
+                  </div>
+               </li>
+            </ul>
+         </div>
+         <!-- End div id=DDNavBar -->
+          
+          
+         <div class="removeAgreementContainer"><!-- Contains the Institution List and the filters -->
             
-            <td>
-                Institution:
-            </td>
-            <td>
-                <select id="Institution" style="width:300px"></select>
-            </td>
-        </tr>
-        
-        <tr>
-            <td>
-                Program:
-            </td>
+            <div class="TitleHeader">
+               <h4>Remove Transfer Agreement</h4>
+            </div> <!-- End div class="removeAgreementHeader" -->
+             
+            <div class="viewAgreements"><!-- Institution List div -->
+               <h3 align=center><u>Select A Transfer Agreement To Remove:</u></h3>
+               <table>
+                  <tr>
+                     <td>
+                        <select size=10 id="selectAgreement">
+                           <!-- the select multiple for the institutions -->
+                           <option>  </option>
+                           <option>  </option>
+                           <option>  </option>
+                        </select>
+                     </td>
+                  </tr>
+                  <tr align=center>
+                     <td>
+                        <input type="submit" id="removeButton" value="Remove Transfer Agreement">
+                     </td>
+                  </tr>
+               </table>
+            </div><!--End of div viewAgreements -->
             
-            <td> 
-                <select id="Program" style="width:300px">
-					<option></option><option></option><option></option>
-				</select>
-            </td>
-        </tr>
-        
-        <tr>
-            <td align=center colspan=2>
-                <input type="submit" value="Apply Filter" name="searchButton">
-            </td>
-        </tr>
-    </table>
-				
-</div> <!-- End div class = filterBy -->
-</div> <!-- End div class="removeAgreementContainer" -->
-    </div> <!-- End div class="container" -->
-</body>
+            <div class="filterBy" align=center> <!-- Filters for the institutions -->
+               <h3 align=center><u>Filters</u></h3>
+               <table style="margin:50px 0px">
+                  <tr>
+                     <td>
+                        Institution:
+                     </td>
+                     <td>
+                        <select id="Institution" style="width:300px"></select>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        Program:
+                     </td>
+                     <td>
+                        <select id="Program" style="width:300px">
+                           <option></option>
+                           <option></option>
+                           <option></option>
+                        </select>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align=center colspan=2>
+                        <input type="submit" value="Apply Filter" name="searchButton">
+                     </td>
+                  </tr>
+               </table>
+            </div> <!-- End div class = filterBy -->
+            
+         </div> <!-- End div class="removeAgreementContainer" -->
+         
+      </div> <!-- End div class="container" -->
+      
+   </body>
 </html>

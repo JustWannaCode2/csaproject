@@ -1,174 +1,161 @@
 <!DOCTYPE html>
 <html>
-<head>
-<link rel="stylesheet" href="createAgreementStyle.css">
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
-<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-<script type="text/javascript" src="script.js"></script>
-<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-<title>Create Transfer Agreement</title>
-</head>
-<body>
-<div class="container">
+   <head>
+      <link rel="stylesheet" href="jointStyle.css">
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+      <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+      <script type="text/javascript" src="script.js"></script>
+      <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+      <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+      <title>Create Transfer Agreement</title>
+   </head>
     
-<!-- Testing, Testing: 1,2,3 -->
-<div id="DDNavBar">
-<h2 align=center>Global Admin</h2>
-    <ul>
-        <li></li>
-  <li><a href="index.htm">Home</a></li>
-  
-  <li class="dropdown" style="float:right">
-    <a href="javascript:void(0)" class="dropbtn">Global Admin Profile</a>
-    <div class="dropdown-content">
-      <a href="#">View Profile</a>
-      <a href="#">Logout</a>
-    </div>
-  </li>
-  
-  <li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">Users</a>
-    <div class="dropdown-content">
-      <a href="viewUsers.htm">View Users</a>
-      <a href="addUsers.htm">Add Users</a>
-    </div>
-  </li>
-  
-  <li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">Institutions</a>
-    <div class="dropdown-content">
-      <a href="viewInstitutions.htm">View Institutions</a>
-      <a href="addInstitution.htm">Add Institutions</a>
-    </div>
-  </li>
-  
-  <li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">Programs</a>
-    <div class="dropdown-content">
-      <a href="viewPrograms.htm">View Programs</a>
-      <a href="addPrograms.htm">Add Programs</a>
-    </div>
-  </li>
-
-<li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">Courses</a>
-    <div class="dropdown-content">
-      <a href="viewCourse.htm">View Courses</a>
-      <a href="addCourse.htm">Add Courses</a>
-    </div>
-  </li>
-  
-  <li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">Agreements</a>
-    <div class="dropdown-content">
-      <a href="viewAgreementsIndex.htm">View Transfer Agreements</a>
-      <a href="createAgreement.htm">Create Transfer Agreements</a>
-        <a href="removeAgreement.htm">Remove Transfer Agreements</a>
-    </div>
-  </li>
-  
-  </ul>
-    </div><!-- End div id=DDNavBar -->
-
-  
-
-	<div class="createAgreementContainer" align=center>
-		<div class="createAgreementHeader">
-			<h4>Create A Transfer Agreement</h4>
-		</div>
-
-			<div class="SelectInstitutions" id="SelectInstitutions" align="center" style="border: 2px solid; width:1100px; height:200px"><!-- div to select which institutions you are mapping -->
-                
-                <div class="FromInstitute" id="FromInstitute" style="float:left; width:400px"> <!-- div table for the institute and program you are transferring from -->
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Choose the Institution to Transfer Courses From:</th>
-                            </tr>
-                        </thead>
+   <body>
+      <div class="container">
+          
+         <!-- Testing, Testing: 1,2,3 -->
+         <div id="DDNavBar">
+            <h2 align=center>Global Admin</h2>
+            <ul>
+               <li></li>
+               <li><a href="index.htm">Home</a></li>
+               <li class="dropdown" style="float:right">
+                  <a href="javascript:void(0)" class="dropbtn">Global Admin Profile</a>
+                  <div class="dropdown-content">
+                     <a href="#">View Profile</a>
+                     <a href="#">Logout</a>
+                  </div>
+               </li>
+               <li class="dropdown">
+                  <a href="javascript:void(0)" class="dropbtn">Users</a>
+                  <div class="dropdown-content">
+                     <a href="viewUsers.htm">View Users</a>
+                     <a href="addUsers.htm">Add Users</a>
+                  </div>
+               </li>
+               <li class="dropdown">
+                  <a href="javascript:void(0)" class="dropbtn">Institutions</a>
+                  <div class="dropdown-content">
+                     <a href="viewInstitutions.htm">View Institutions</a>
+                     <a href="addInstitution.htm">Add Institutions</a>
+                  </div>
+               </li>
+               <li class="dropdown">
+                  <a href="javascript:void(0)" class="dropbtn">Programs</a>
+                  <div class="dropdown-content">
+                     <a href="viewPrograms.htm">View Programs</a>
+                     <a href="addPrograms.htm">Add Programs</a>
+                  </div>
+               </li>
+               <li class="dropdown">
+                  <a href="javascript:void(0)" class="dropbtn">Courses</a>
+                  <div class="dropdown-content">
+                     <a href="viewCourse.htm">View Courses</a>
+                     <a href="addCourse.htm">Add Courses</a>
+                  </div>
+               </li>
+               <li class="dropdown">
+                  <a href="javascript:void(0)" class="dropbtn">Agreements</a>
+                  <div class="dropdown-content">
+                     <a href="viewAgreementsIndex.htm">View Transfer Agreements</a>
+                     <a href="createAgreement.htm">Create Transfer Agreements</a>
+                     <a href="removeAgreement.htm">Remove Transfer Agreements</a>
+                  </div>
+               </li>
+            </ul>
+         </div> <!-- End div id=DDNavBar -->
+         
+         <div class="createAgreementContainer" align=center>
+             
+            <div class="TitleHeader">
+               <h4>Create A Transfer Agreement</h4>
+            </div> <!-- End div class="createAgreementHeader" -->
+             
+            <div class="SelectInstitutions" id="SelectInstitutions" align="center" style="border: 2px solid; width:1100px; height:200px"><!-- div to select which institutions you are mapping -->
+               
+               <div class="FromInstitute" id="FromInstitute" style="float:left; width:400px"> <!-- div table for the institute and program you are transferring from -->
+                  <table>
+                     <thead>
                         <tr>
-                            <td>
-                                <select id="TransferFromInstitution" style="width:100%"></select>
-                            </td>
+                           <th>Choose the Institution to Transfer Courses From:</th>
                         </tr>
-                        
-                        <thead>
-                            <tr>
-                                <th>Select a Program From That Instution:</th>
-                            </tr>
-                        </thead>
+                     </thead>
+                     <tr>
+                        <td>
+                           <select id="TransferFromInstitution" style="width:100%"></select>
+                        </td>
+                     </tr>
+                     <thead>
                         <tr>
-                            <td>
-                                <select id="TransferFromProgram" style="width:100%"></select>
-                            </td>
+                           <th>Select a Program From That Instution:</th>
                         </tr>
-                    </table>
-                </div><!-- End div class="FromInstitute" -->
-                
-                <div class="ToInstitute" id="ToInstitute" style="float:right; width: 400px"> <!-- div table for the institute and program you are transferring to -->
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Choose the Institution to Transfer Courses To:</th>
-                            </tr>
-                        </thead>
+                     </thead>
+                     <tr>
+                        <td>
+                           <select id="TransferFromProgram" style="width:100%"></select>
+                        </td>
+                     </tr>
+                  </table>
+               </div> <!-- End div class="FromInstitute" -->
+               
+               <div class="ToInstitute" id="ToInstitute" style="float:right; width: 400px"> <!-- div table for the institute and program you are transferring to -->
+                  <table>
+                     <thead>
                         <tr>
-                            <td>
-                                <select id="TransferFromInstitution" style="width:100%"></select>
-                            </td>
+                           <th>Choose the Institution to Transfer Courses To:</th>
                         </tr>
-                        
-                        <thead>
-                            <tr>
-                                <th>Select a Program From That Instution:</th>
-                            </tr>
-                        </thead>
+                     </thead>
+                     <tr>
+                        <td>
+                           <select id="TransferFromInstitution" style="width:100%"></select>
+                        </td>
+                     </tr>
+                     <thead>
                         <tr>
-                            <td>
-                                <select id="TransferFromProgram" style="width:100%"></select>
-                            </td>
+                           <th>Select a Program From That Instution:</th>
                         </tr>
-                    </table>
-                </div><!-- End div class="ToInstitute" -->
+                     </thead>
+                     <tr>
+                        <td>
+                           <select id="TransferFromProgram" style="width:100%"></select>
+                        </td>
+                     </tr>
+                  </table>
+               </div><!-- End div class="ToInstitute" -->
+               
+               <input type="button" id="Continue" value="Continue">
                 
-                <input type="button" id="Continue" value="Continue">
+               <script>
+                  //this script is used to show the mapping div
+                      $(document).ready(function()
+                                        {
+                          $("#Continue").click(function()
+                                         {
+                              $("#CourseEquivalencies").show();
+                          })                                            
+                      })
+               </script>
                 
-                <script>
-                                    //this script is used to show the mapping div
-                                        $(document).ready(function()
-                                                          {
-                                            $("#Continue").click(function()
-                                                           {
-                                                $("#CourseEquivalencies").show();
-                                            })                                            
-                                        })
-                                    </script>
-
-                
-			</div> <!-- end div class=SelectInstitutions -->
-        <p><br></p>
-        <div id="CourseEquivalencies" style="border: 2px solid; width:1100px; height:1000px; align:center; display:none" > <!-- div to map the courses from each institution -->
+            </div><!-- end div class=SelectInstitutions -->
             
-            <table id="InstituteInformation">
-                <tr>
-                    <td>
+            <p><br></p>
+            <div id="CourseEquivalencies" style="border: 2px solid; width:1100px; height:1000px; align:center; display:none" >
+               <!-- div to map the courses from each institution -->
+               <table id="InstituteInformation">
+                  <tr>
+                     <td>
                         <h3 align="center">(From Institute Name)</h3>
-                    </td>
-                    
-                    <td></td>
-                    
-                    <td>
+                     </td>
+                     <td></td>
+                     <td>
                         <h3 align="center">(To Institute Name)</h3>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
                         <select size=10 id="InstituteFromCourseList" style="width:450px; height: 300px"></select>
-                    </td>
-                    
-                    <script>
-                        
+                     </td>
+                     <script>
                         $(document).ready(function()
                             {
                                 $("#SelectEquivalentCourse").click(function()
@@ -182,62 +169,57 @@
                                         document.getElementById('InstituteFromCourseList').removeAttribute('disabled');
                                     })
                             })
-                    
-                    </script>
-                    
-                    
-                    <td>
+                        
+                     </script>
+                     <td>
                         <p>
-                            <button type="submit" id="SelectEquivalentCourse" style="width:120px; height:60px">Select A Course Equivalence</button>
-                            <br><br>
-                            <button type="submit" id="CancelEquivalence" style="width:120px; height:60px">Cancel</button>
+                           <button type="submit" id="SelectEquivalentCourse" style="width:120px; height:60px">Select A Course Equivalence</button>
+                           <br><br>
+                           <button type="submit" id="CancelEquivalence" style="width:120px; height:60px">Cancel</button>
                         </p>
-                    </td>
-                    
-                    <td>
+                     </td>
+                     <td>
                         <select size=10 id="InstituteToCourseList" style="width:450px; height: 300px" ></select>
-                    </td>
-                </tr>
-                
-                <tr>
-                    <td></td><td></td>
-                    <td align=center>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td></td>
+                     <td></td>
+                     <td align=center>
                         <button type="submit" id="AddCourseMapping" style="width:150px; height:60px">Add Course Mapping</button>
-                    </td>
-                </tr>
-
-            </table>
+                     </td>
+                  </tr>
+               </table><!-- End table id="InstituteInformation" -->
                 
-            <table>
-                <tr >
-                    <td colspan=2>
+               <table id="CurrentTransferAgreementTable">
+                  <tr >
+                     <td colspan=2>
                         <h2 align=center>Current Transfer Agreement</h2>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
                         <select multiple id="CurrentTransferAgreement" style="width:900px; height:400px"></select>
-                    </td>
-                    <td>
+                     </td>
+                     <td>
                         <p>
-                            <button type="submit" id="UploadTransferDoc" style="width:150px; height:60px">Upload Transfer Document</button>
-                            <br><br>
-                            <button type="submit" id="RemoveTransferSet" style="width:150px; height:60px">Remove Transfer Set</button>
+                           <button type="submit" id="UploadTransferDoc" style="width:150px; height:60px">Upload Transfer Document</button>
+                           <br><br>
+                           <button type="submit" id="RemoveTransferSet" style="width:150px; height:60px">Remove Transfer Set</button>
                         </p>
-                    </td>
-                </tr>
-                <tr>
-                    <td align="center" colspan=2>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="center" colspan=2>
                         <button type="submit" id="SaveAndGenerate" style="width:150px; height:60px">Save and Generate Report</button>
-                    </td>
-                </tr>
-            </table>
-                    
-        </div><!-- End div id="CourseEquivalencies" -->
-        
-        
-
-</div> <!-- End div class="createAgreementContainer" -->
-    </div>
-</body>
+                     </td>
+                  </tr>
+               </table> <!-- End table id="CurrentTransferAgreementTable" -->
+                
+            </div><!-- End div id="CourseEquivalencies" -->
+             
+         </div><!-- End div class="createAgreementContainer" -->
+          
+      </div> <!-- div class="container" -->
+   </body>
 </html>
