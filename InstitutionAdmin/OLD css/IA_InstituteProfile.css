@@ -176,7 +176,7 @@ li.dropdown {
 }
 /* Start of Div sub Programs */
 .institutionProfileContainer div[class="divSub_Programs"]{
-    border: 3px solid black;
+    border: 2px solid black;
     width: 780px;
     height: 460px;
     float:left;

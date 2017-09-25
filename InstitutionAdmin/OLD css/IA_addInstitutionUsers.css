@@ -71,7 +71,7 @@ text-align: center;
 font-size: 18pt;
 }
 
-.addUserForm{
+.IA_addInstitutionUserContainer .addUserForm{
 	align-content:  right;
 	width: 450px;
     height: 250px;
@@ -84,9 +84,9 @@ font-size: 18pt;
 	border-width: 1px;
 	border-radius: 10px;
 }
-input[id="addUserInput"]{
-display: inline-block;
-		font-size: 10pt;
+.IA_addInstitutionUserContainer input[id="addUserInput"]{
+    display: inline-block;
+    font-size: 10pt;
 	padding: 3px 10px;
 	border-width: 2px;
 	border-style: solid;
@@ -99,7 +99,7 @@ display: inline-block;
 }
 
 /* Institution   */
-.institute_addUser{
+.IA_addInstitutionUserContainer .institute_addUser{
 	background-color: #858fa0;
 	width: 400px;
 	height: 250px;
@@ -112,9 +112,9 @@ display: inline-block;
 	margin: 20px 15px 0px 2px;
 
 }
-input[class="commonTxtBox2CSS"]{
+.IA_addInstitutionUserContainer input[class="commonTxtBox2CSS"]{
     display: block;
-		font-size: 10pt;
+    font-size: 10pt;
 	padding: 3px 10px;
 	border-width: 2px;
 	border-style: solid;
@@ -125,7 +125,7 @@ input[class="commonTxtBox2CSS"]{
 	width: 300px;
 	height: 43px;
 }
-select[class="commonCmbBox3CSS"]{
+.IA_addInstitutionUserContainer select[class="commonCmbBox3CSS"]{
     margin: 0px 0px 0px 35px;
 	padding: 0px;
     text-align: center;
@@ -136,33 +136,33 @@ select[class="commonCmbBox3CSS"]{
     border-width: 1px; 
     font-size: 15px;
 }
-textarea{
+.IA_addInstitutionUserContainer textarea{
     border: 2px solid black;
     border-radius: 5px;
 }
 
 /* Start Div Save or Cancel Button */
 
-div[id="saveOrCancelButtons"]{
+.IA_addInstitutionUserContainer div[id="saveOrCancelButtons"]{
 	width:900px;
 	height: 50px;
 	float: right;
 }
 
-form[class="saveChangesToUserName"]{
+.IA_addInstitutionUserContainer form[class="saveChangesToUserName"]{
 	text-align: center;
 	width: 160px;
 	margin: 0px 0px 0px 260px; 
 	float: left;
 }
-form[class="cancelChangesToUserName"]{
+.IA_addInstitutionUserContainer form[class="cancelChangesToUserName"]{
 	text-align: center;
 	width: 160px;
 	margin: 0px 300px 0px 00px; 
 	float: right;
 }
 
-input[class="commonBtn2InViewPrograms"]{
+.IA_addInstitutionUserContainer input[class="commonBtn2InViewPrograms"]{
      font-size: 15px;
 	border-style: solid;
 	border-width: 1px;

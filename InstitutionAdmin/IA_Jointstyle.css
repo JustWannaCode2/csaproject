@@ -1,0 +1,980 @@
+.container{
+width: 1333px;
+height: 1100px;
+margin-left: auto;
+margin-right: auto;
+background-color: #b3c1d6;
+border-style: solid;
+border-width: 2px;
+border-color: black;
+}
+
+
+/*Testing 1,2,3 */
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: black;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/*End Testing */
+
+div[class="TitleHeader"]{
+    background-color: #bfefff;
+	color: #2b1459;
+    width: 1333px;
+    text-align: center;
+    font-size: 18pt;
+}
+
+/*########################################################### CSS Files from Kevin #################################*/
+
+/*------------------------------  start IA  View Users  ----------------------------------------------------------------*/
+
+/* This is div viewUserMultiLineSelect for viewUsers page */
+
+.IA_viewUserContainer .viewUsersMultilineSelect{
+    background-color: #858fa0;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    width: 450px;
+    height: 400px;
+    margin: 20px 00px 20px 200px;
+    float:left;
+}
+
+.IA_viewUserContainer select[id="lstBoxselectUserInViewUser"]{
+	margin: 10px;
+	text-align: center;
+    width: 400px;
+    height: 300px;
+    font-size: 20pt;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: black;
+}
+
+.IA_viewUserContainer form[id="selectUserButtonForm"]{
+	width: 120px;
+	float: left;
+	margin: 0px 5px 0px 20px;
+}
+.IA_viewUserContainer input[id="selectUserButton"]{
+	font-size: 20px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: black;
+	border-radius: 5px;
+}
+.IA_viewUserContainer form[id="addUserButtonForm"]{
+	width: 100px;
+	float: left;
+    margin: 0px 12px 0px 12px;
+}
+.IA_viewUserContainer input[id="addUserButton"]{
+	font-size: 20px;
+   /* margin: 0px 10px 0px 20px;*/
+	border-style: solid;
+	border-width: 1px;
+	border-color: black;
+	border-radius: 5px;
+}
+.IA_viewUserContainer form[id="removeUserButtonForm"]{
+	width: 120px;
+	float: left;
+}
+.IA_viewUserContainer input[id="removeUserButton"]{
+	font-size: 20px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: black;
+	border-radius: 5px;
+}
+
+/* End of div viewUserMultiLineSelect for viewUsers page */
+
+
+/* This is for Div filterBy in viewUserPage*/
+
+.IA_viewUserContainer div[class="filterByInViewUsers"]{
+    background-color: #858fa0; 
+	border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    width: 450px;
+    height: 400px;
+    margin: 20px 200px 20px 0px;
+    float:right;
+}
+.IA_viewUserContainer h2[id="filterByHeader"]{
+	margin: 5px;
+	text-align: center;
+	padding: 0px;
+}
+.IA_viewUserContainer #instituteLabelInFilterBy{
+	float:left;
+	text-align: center;
+	font-size: 20px;
+	padding: 0px;
+	border: 0px;
+	width: 80px;
+	margin: 5px 5px 0px 35px;
+}
+.IA_viewUserContainer p[id="instituteIDLabelInFilterBy"]{
+	float:left;
+	text-align: center;
+	font-size: 20px;
+	padding: 0px;
+	border: 0px;
+	width: 100px;
+	margin: 15px 5px 10px 15px;
+}
+
+
+
+.IA_viewUserContainer input[class="InstituteIdFilterTextBoxInFilterBy"]{
+	width: 250px;
+	height: 35px;
+    border-width: 1px;
+	border-style: solid;
+	border-color: black;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin: 5px 5px 5px 5px;
+    padding: 5px 7px;
+}
+
+.IA_viewUserContainer p[class="adminTypeLabelInFilterBy"]{
+	margin: 10px 05px 5px 0px;
+	width: 115px;
+	padding: 0px;
+	float:left;
+    font-size: 20px;
+}
+
+.IA_viewUserContainer select[class="commonCmbBox2CSS"]{
+    margin: 0px 0px 0px 5px;
+	padding: 0px;
+    text-align: center;
+    width: 250px;
+    border-radius: 5px;
+    font-size: 20pt;
+    border-width:1px; 
+}
+.IA_viewUserContainer input[class="commonBtnInViewPrograms"]{
+     font-size: 15px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: black;
+	border-radius: 10px;
+    width: 120px;
+    height: 30px;
+    margin: 5px;
+}
+
+.IA_viewUserContainer p[id="UserIDLabelInFilterBy"]{
+	margin: 15px 5px 15px 40px;
+	width: 70px;
+	padding: 0px;
+    float:  left;
+    font-size: 20px;
+}
+
+.IA_viewUserContainer input[class="selectUserTextBoxInFilterBy"]{
+   	width: 250px;
+	height: 35px;
+    border-width: 1px;
+	border-style: solid;
+	border-color: black;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin: 5px 5px 5px 5px;
+    padding: 5px 7px;
+    
+}
+
+
+/*------------------------------  End of IA  View Users  ----------------------------------------------------------------*/
+
+/*------------------------------  start IA  View Programs  ----------------------------------------------------------------*/
+
+/* Start of div multiLine select in view Programs */
+.viewProgramsContainer .viewProgramsMultilineSelect{
+    background-color: #858fa0;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    width: 450px;
+    height: 400px;
+    margin: 20px 0px 20px 200px;
+    float:left;
+}
+.viewProgramsContainer select[id="selectProgram"]{
+	margin: 10px;
+	text-align: center;
+    width: 400px;
+    height: 300px;
+    font-size: 20pt;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: black;
+}
+
+.viewProgramsContainer input[class="commonBtn2InViewPrograms"]{
+       font-size: 15px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: black;
+	border-radius: 3px;
+    width: 130px;
+    height: 25px;
+    margin: 4px;
+}
+.viewProgramsContainer h2[id="filterByHeader"]{
+	margin: 5px;
+	text-align: center;
+	padding: 0px;
+}
+
+
+/* end of div multiLine select in view Programs */ 
+
+/* Start of Filter by in View Programs */
+
+.viewProgramsContainer div[class="filterByInViewPrograms"]{
+    background-color: #858fa0; 
+	border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    width: 450px;
+    height: 400px;
+    margin: 20px 200px 20px 0px;
+    float:right;
+}
+.viewProgramsContainer input[class="commonTxtBoxCSS"]{
+    display: inline-block;
+		font-size: 10pt;
+	padding: 3px 10px;
+	border-width: 2px;
+	border-style: solid;
+	border-color: black;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin: 2px;
+	width: 200px;
+	height: 43px;
+}
+
+.viewProgramsContainer p[id="lblPID_viewPrograms"]{
+    margin: 15px 3px 10px 25px;
+    float: left
+}
+.viewProgramsContainer input[class="commonBtn3InViewPrograms"]{
+     font-size: 10px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: black;
+	border-radius: 3px;
+    width: 80px;
+    height: 30px;
+    margin: 2px;
+}
+.viewProgramsContainer select[class="commonCmbBoxCSS"]{
+    margin: 0px 0px 0px 5px;
+	padding: 0px;
+    text-align: center;
+    width: 200px;
+    border-radius: 5px;
+    font-size: 20pt;
+    border-width:1px;
+    border-color: black;
+    margin: 2px;
+}
+
+.viewProgramsContainer p[id="adminTypeLabel"]{
+	margin: 5px;
+	width: 100px;
+	padding: 0px;
+	float:left;
+}
+
+/*------------------------------  End of IA  View Programs  ----------------------------------------------------------------*/
+
+/*------------------------------  Start IA  Selected Programs  ----------------------------------------------------------------*/
+
+.IA_selectProgramContainer div[class="programInfoInSelectProgram"]{
+    align-content:  right;
+	width: 1270px;
+    height: 260px;
+	background-color: #858fa0;
+	padding: 10px;
+	float: left;
+	margin: 20px 20px 20px 20px;
+	border-style: solid;
+	border-color: black;
+	border-width: 1px;
+	border-radius: 10px;
+}
+
+.IA_selectProgramContainer h4[class="programInformationHeader"]{
+    margin:0px;
+    text-align: center;
+}
+.IA_selectProgramContainer input[class="commonTxtBoxCSS"]{
+    display: inline-block;
+		font-size: 10pt;
+	padding: 3px 10px;
+	border-width: 2px;
+	border-style: solid;
+	border-color: black;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin: 2px;
+	width: 200px;
+	height: 43px;
+}
+.IA_selectProgramContainer select[class="commonCmbBoxCSS"]{
+    margin: 0px 0px 0px 5px;
+	padding: 0px;
+    text-align: center;
+    width: 200px;
+    border-radius: 5px;
+    font-size: 20pt;
+    border-width:1px;
+    border-color: black;
+    margin: 2px;
+}
+
+.IA_selectProgramContainer input[class="commonTxtBox3CSS"]{
+    display: block;
+		font-size: 10pt;
+	padding: 3px 10px;
+	border-width: 2px;
+	border-style: solid;
+	border-color: black;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin: auto;
+	width: 380px;
+	height: 43px;
+}
+
+
+/* Start Career Course Div */
+
+.IA_selectProgramContainer h4[class="careerCourseHeader"]{
+    text-align: center;
+    margin: 0px;
+}
+
+
+.IA_selectProgramContainer div[id="CareerCoursesDiv"]{
+    
+   	width: 450px;
+    height: 270px;
+	background-color: #858fa0;
+	padding: 10px;
+	float: left;
+	margin: 20px 0px 20px 200px;
+	border-style: solid;
+	border-color: black;
+	border-width: 1px;
+	border-radius: 10px;
+}
+.IA_selectProgramContainer select[class="selectProgramDropDown1"]{
+    width: 400px;
+    height: 150px;
+    float: left;
+    border-style: solid;
+    border-width: 1px;
+    border-color:black;
+    border-radius: 5px;
+}
+
+.IA_selectProgramContainer textarea[class="textarea1InAddProgram"]{
+  width:380px;
+    height: 80px;
+    border-width: 1px;
+	border-color: black;
+	border-radius: 5px;
+    margin: 5px;
+}
+
+/* End Career Course Div */
+
+/* Start General education div */
+
+.IA_selectProgramContainer div[id="generalEduInSelectProgram"]{
+     align-content:  right;
+	width: 420px;
+    height: 270px;
+	background-color: #858fa0;
+	padding: 10px;
+	float: right;
+	margin: 20px 200px 20px 0px;
+	border-style: solid;
+	border-color: black;
+	border-width: 1px;
+	border-radius: 10px;
+}
+
+
+.IA_selectProgramContainer h4[class="genEdReqHeader"]{
+    text-align: center;
+    margin: 0px;
+}
+
+/* End General education div */
+
+/*------------------------------  End of IA  Selected Programs  ----------------------------------------------------------------*/
+
+/*------------------------------  Start IA  Institute Profile  ----------------------------------------------------------------*/
+/* Users */
+.institutionProfileContainer div[class="users"]
+{
+    float: left;
+      border: 2px solid black; 
+    width:475px; 
+    height:880px;
+    margin: 0px 0px 5px 10px;
+}
+.institutionProfileContainer select[class="selectTheUser"]
+{
+    border: 1px solid black;
+    border-radius: 5px;
+    width:370px;
+    height:150px;
+    padding: 2px;
+}
+.institutionProfileContainer div input[type="text"]{
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+.institutionProfileContainer div[class="Instition Logo"]{
+    border: 1px solid black;
+    width: 470px;
+    height: 250px;
+}
+.institutionProfileContainer .users input[type="text"]{
+    width: 170px;
+   height: 20px;
+}
+
+
+/*  End Users */
+/* Programs */
+
+
+.institutionProfileContainer div[class="programs"]{
+    border: 2px solid black;
+    width: 820px;
+    height: 800px;
+    float:right;
+    margin: 0px 10px 0px 0px;
+}
+
+.institutionProfileContainer div[class="selectInstitutediv"]{
+    border: 1px solid black;
+    width: 420px;
+    height: 230px;
+    float: left;
+    margin: 0px 0px 0px 10px;;
+    
+}
+
+.institutionProfileContainer div[class="divProgramInfo"]{
+    border: 1px solid black;
+    width: 370px;
+    height: 230px;
+    float: right;
+    margin: 0px 8px 0px 0px;
+} 
+
+
+.institutionProfileContainer input[class="txtBoxForURL"]{
+    width: 300px;
+    column-span: 4;
+}
+/* Start of Div sub Programs */
+.institutionProfileContainer div[class="divSub_Programs"]{
+    border: 2px solid black;
+    width: 780px;
+    height: 460px;
+    float:left;
+    display: block;
+    margin: 15px;
+}
+.institutionProfileContainer select[class="selectCareerCourse"]{
+    width: 250px;
+    height: 100px; 
+    margin: 0px 10px;
+    border: 1px solid black;
+}
+.institutionProfileContainer select[class="SelectGenerealCourse"]{
+   width: 250px;
+    height: 100px; 
+    margin: 0px 10px;
+    border: 1px solid black; 
+}
+
+.institutionProfileContainer select[class="MappedPrograms"]{
+    border:1px solid black;
+    width: 500px;
+    height: 160px;
+}
+.institutionProfileContainer textarea{
+    border:1px solid black;
+    
+}
+
+
+/* End of Div sub Programs  */
+/*End of Programs div */
+
+/*------------------------------  End of IA  Institution Profile  ----------------------------------------------------------------*/
+
+/*------------------------------  Start IA Edit Your Institution User  ----------------------------------------------------------------*/
+
+/*Start of AddUser form in Edit your Institution User*/
+.IA_editYourInstitutionUserContainer .addUserForm{
+	align-content:  right;
+	width: 450px;
+    height: 250px;
+	background-color: #858fa0;
+	padding: 10px;
+	float: left;
+	margin: 20px 0px 20px 180px;
+	border-style: solid;
+	border-color: black;
+	border-width: 1px;
+	border-radius: 10px;
+}
+.IA_editYourInstitutionUserContainer input[id="addUserInput"]{
+display: inline-block;
+		font-size: 10pt;
+	padding: 3px 10px;
+	border-width: 2px;
+	border-style: solid;
+	border-color: black;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin: 2px;
+	width: 200px;
+	height: 43px;
+}
+
+/*Start Institution div in Edit Your Institution User  */
+.IA_editYourInstitutionUserContainer .institute_addUser{
+	background-color: #858fa0;
+	width: 400px;
+	height: 250px;
+	padding: 12px 20px;
+	float: right;
+	border-color:black;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 10px;
+	margin: 20px 200px 20px 0px;
+
+}
+
+.IA_editYourInstitutionUserContainer textarea{
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 5px
+}
+
+/*End of Institution div in Edit Your Institution User*/
+/* Start Div Save or Cancel Button in Edit Your Institution User*/
+
+.IA_editYourInstitutionUserContainer div[id="saveOrCancelButtons"]{
+	width:1333px;
+	height: 50px;
+	float: right;
+}
+
+.IA_editYourInstitutionUserContainer form[class="saveChangesToUserName"]{
+	text-align: center;
+	width: 160px;
+	margin: 0px 0px 0px 500px; 
+	float: left;
+}
+.IA_editYourInstitutionUserContainer form[class="cancelChangesToUserName"]{
+	text-align: center;
+	width: 160px;
+	margin: 0px 500px 0px 0px; 
+	float: right;
+}
+
+.IA_editYourInstitutionUserContainer input[class="commonBtn2InViewPrograms"]{
+     font-size: 15px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: black;
+	border-radius: 10px;
+    width: 150px;
+    height: 30px;
+    margin: 5px;
+}
+/* End div save or cancel button in Edit Your Institution User */
+
+/*------------------------------  End of IA Edit Your Institution User  ----------------------------------------------------------------*/
+
+/*------------------------------  Start IA Edit Programs in your Institution ------------------------------------------------------------*/
+
+.IA_editProgramInYourInstituteContainer div[class="programInfomation"]{
+    align-content:  right;
+	width: 1270px;
+    height: 260px;
+	background-color: #858fa0;
+	padding: 10px;
+	float: left;
+	margin: 20px 20px 20px 20px;
+	border-style: solid;
+	border-color: black;
+	border-width: 1px;
+	border-radius: 10px;
+}
+
+.IA_editProgramInYourInstituteContainer h4[class="programInformationHeader"]{
+    margin:0px;
+    text-align: center;
+}
+.IA_editProgramInYourInstituteContainer input[class="commonTxtBoxCSS"]{
+    display: inline-block;
+	font-size: 10pt;
+	padding: 3px 10px;
+	border-width: 2px;
+	border-style: solid;
+	border-color: black;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin: 2px;
+	width: 200px;
+	height: 43px;
+}
+.IA_editProgramInYourInstituteContainer select[class="commonCmbBoxCSS"]{
+    margin: 0px 0px 0px 5px;
+	padding: 0px;
+    text-align: center;
+    width: 200px;
+    border-radius: 5px;
+    font-size: 20pt;
+    border-width:1px;
+    border-color: black;
+    margin: 2px;
+}
+.IA_editProgramInYourInstituteContainer  p[class="programURL"]{
+    margin: 0px;
+    text-align: center;
+}
+.IA_editProgramInYourInstituteContainer input[class="commonTxtBox3CSS"]{
+    display: block;
+		font-size: 10pt;
+	padding: 3px 10px;
+	border-width: 2px;
+	border-style: solid;
+	border-color: black;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin: auto;
+	width: 380px;
+	height: 43px;
+}
+
+
+
+/* Start Career Course Div */
+
+h4[class="careerCourseHeader"]{
+    text-align: center;
+    margin: 0px;
+}
+
+
+div[id="CareerCoursesDiv"]{
+   	width: 450px;
+    height: 420px;
+	background-color: #858fa0;
+	padding: 10px;
+	float: left;
+	margin: 20px 0px 20px 200px;
+	border-style: solid;
+	border-color: black;
+	border-width: 1px;
+	border-radius: 10px;
+}
+
+div[id="CareerCourseSubDiv"]{
+    margin: 25px 5px 10px 5px;
+    width: 400px;
+    height: 110px;
+}
+
+
+textarea[class="textarea1InAddProgram"]{
+  width:380px;
+    height: 80px;
+    border-width: 1px;
+	border-color: black;
+	border-radius: 5px;
+    margin: 5px;
+}
+input[class="commonBtnInCareerCourses"]{
+    font-size: 15px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: black;
+	border-radius: 10px;
+    width: 120px;
+    height: 30px;
+    margin: 5px;
+    float: left;
+}
+
+div[id="CareerCourseSubDiv"]{
+    margin: 25px 5px 10px 5px;
+    width: 400px;
+    height: 110px;
+}
+
+select[class="commonCmbBox3CSS"]{
+    margin: 0px 0px 0px 5px;
+	padding: 0px;
+    text-align: center;
+    width: 300px;
+    border-radius: 5px;
+    font-size: 18pt;
+    border-width: 1px; 
+}
+
+
+/* End Career Course Div in Edit Programs In your institute */
+
+/*start of General Education div in Edit Programs in Your institution */
+
+div[id="generalEduInSelectProgram"]{
+    align-content:  right;
+	width: 420px;
+    height: 420px;
+	background-color: #858fa0;
+	padding: 10px;
+	float: right;
+	margin: 20px 200px 20px 0px;
+	border-style: solid;
+	border-color: black;
+	border-width: 1px;
+	border-radius: 10px;
+}
+h4[class="genEdReqHeader"]{
+    text-align: center;
+    margin: 0px;
+}
+select[class="selectProgramDropDown1"]{
+    width: 400px;
+    height: 150px;
+    float: left;
+    border-style: solid;
+    border-width: 1px;
+    border-color:black;
+    border-radius: 5px;
+}
+
+/*End of general Education Div in Edit Programs In your institute*/
+
+
+/*  Start Save and cancel buttons in Edit Programs In your institute */
+div[id="saveOrCancelButtons"]{
+	width: 1333px;
+	height: 50px;
+	float: right;
+}
+form[class="saveChangesToUserName"]{
+	text-align: center;
+	width: 160px;
+	margin: 0px 0px 0px 500px; 
+	float: left;
+}
+form[class="cancelChangesToUserName"]{
+	text-align: center;
+	width: 160px;
+	margin: 0px 460px 0px 00px; 
+	float: right;
+}
+
+input[class="commonBtn2InViewPrograms"]{
+     font-size: 15px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: black;
+	border-radius: 10px;
+    width: 150px;
+    height: 30px;
+    margin: 5px;
+}
+/*  end Save and cancel buttons in Edit Programs In your institute */
+
+/*------------------------------  End IA Edit Programs in your Institution ------------------------------------------------------------*/
+
+/*------------------------------  Start edit Institution user -------------------------------------------------------------------*/ 
+
+
+
+/*------------------------------  End edit Institution user -------------------------------------------------------------------*/
+
+/*------------------------------  Start add Institution user -------------------------------------------------------------------*/ 
+
+.IA_addInstitutionUserContainer .addUserForm{
+	align-content:  right;
+	width: 450px;
+    height: 250px;
+	background-color: #858fa0;
+	padding: 10px;
+	float: left;
+	margin: 20px 0px 20px 200px;
+	border-style: solid;
+	border-color: black;
+	border-width: 1px;
+	border-radius: 10px;
+}
+.IA_addInstitutionUserContainer input[id="addUserInput"]{
+    display: inline-block;
+    font-size: 10pt;
+	padding: 3px 10px;
+	border-width: 2px;
+	border-style: solid;
+	border-color: black;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin: 2px;
+	width: 200px;
+	height: 43px;
+}
+
+/* Institution   */
+.IA_addInstitutionUserContainer .institute_addUser{
+	background-color: #858fa0;
+	width: 400px;
+	height: 250px;
+	padding: 12px 20px;
+	float: right;
+	border-color:black;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 10px;
+	margin: 20px 200px 20px 0px;
+
+}
+.IA_addInstitutionUserContainer input[class="commonTxtBox2CSS"]{
+    display: block;
+    font-size: 10pt;
+	padding: 3px 10px;
+	border-width: 2px;
+	border-style: solid;
+	border-color: black;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin: auto;
+	width: 300px;
+	height: 43px;
+}
+.IA_addInstitutionUserContainer select[class="commonCmbBox3CSS"]{
+    margin: 0px 0px 0px 35px;
+	padding: 0px;
+    text-align: center;
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 18pt;
+    border-width: 1px; 
+    font-size: 15px;
+}
+.IA_addInstitutionUserContainer textarea{
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+/* Start Div Save or Cancel Button */
+
+.IA_addInstitutionUserContainer div[id="saveOrCancelButtons"]{
+	width: 1333px;
+	height: 50px;
+	float: right;
+}
+
+.IA_addInstitutionUserContainer form[class="saveChangesToUserName"]{
+	text-align: center;
+	width: 160px;
+	margin: 0px 0px 0px 500px; 
+	float: left;
+}
+.IA_addInstitutionUserContainer form[class="cancelChangesToUserName"]{
+	text-align: center;
+	width: 160px;
+	margin: 0px 470px 0px 00px; 
+	float: right;
+}
+
+.IA_addInstitutionUserContainer input[class="commonBtn2InViewPrograms"]{
+     font-size: 15px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: black;
+	border-radius: 10px;
+    width: 150px;
+    height: 30px;
+    margin: 5px;
+}
+/* End div save or cancel button*/
+
+/*------------------------------  End of add Institution user -------------------------------------------------------------------*/ 
