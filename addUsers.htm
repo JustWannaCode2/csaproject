@@ -68,10 +68,10 @@
 <!-- End of new nav bar html code -->
 
 
-    <div class="viewUserContainer">
-		<div class="viewUserHeader">
+    <div class="addUserContainer">
+		<div class="addUserHeader">
 			<h4>Add User</h4>
-		</div>
+		</div> <!--End of Add User Header-->
 
 		<div class="addUserForm">
 			<form align="right">
@@ -117,16 +117,24 @@
 			<input type="radio" name="group1" value="MVCC Admin" id="mvccAdmin"> MVCC Admin
 			<input type="radio" name="group1" value="Institution Admin" id="institutionAdmin"> Institution Admin
             </fieldset>
+            <br>
+            <div align="center" style="width: 370px; margin: 15px;">
+                <form style="width: 170px; float: left">
+                    <input type="submit" value="Add User" class="addUserButton">
+                </form>
+                <form action="viewUsers.htm" style="width: 160px;">
+                    <input type="submit" value="Cancel" class="btnCancel">
+                </form>
+            </div>
             
-			<!--end of div chooseAdminRights-->
-			</div>
+			
+			</div><!--end of div Institute Add_user-->
 
-		<!--end of div institute-->
-		</div>
-		<!--End of div View User container-->
-	</div>
-
-		<!--End of div Container-->
-</div>
+	
+		
+	</div><!--End of div add User container-->
+    
+		
+</div><!--End of div Container-->
 </body>
 </html>

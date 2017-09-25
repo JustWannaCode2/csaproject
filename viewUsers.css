@@ -79,8 +79,9 @@ width: 974px;
 text-align: center;
 font-size: 18pt;
 }
+
 /* This is div viewUserMultiLineSelect for viewUsers page */
-.viewUsersMultilineSelect{
+.viewUserContainer .viewUsersMultilineSelect{
     background-color: #858fa0;
 border-style: solid;
 border-width: 1px;
@@ -91,7 +92,7 @@ margin: 20px;
 float:left;
 }
 
-select[id="lstBoxselectUserInViewUser"]{
+.viewUserContainer select[id="lstBoxselectUser_ViewUser"]{
 	margin: 10px;
 	text-align: center;
     width: 400px;
@@ -103,39 +104,37 @@ select[id="lstBoxselectUserInViewUser"]{
     border-color: black;
 }
 
-form[id="selectUserButtonForm"]{
+.viewUserContainer form[id="selectUserButtonForm"]{
 	width: 120px;
 	float: left;
 	margin: 0px 5px 0px 20px;
 }
-input[id="selectUserButton"]{
+.viewUserContainer input[id="selectUserButton"]{
 	font-size: 20px;
 	border-style: solid;
 	border-width: 1px;
 	border-color: black;
 	border-radius: 5px;
 }
-form[id="addUserButtonForm"]{
+.viewUserContainer form[id="addUserButtonForm"]{
 	width: 100px;
 	float: left;
     margin: 0px 12px 0px 12px;
 }
-input[id="addUserButton"]{
+.viewUserContainer input[id="addUserButton"]{
 	font-size: 20px;
-   /* margin: 0px 10px 0px 20px;*/
 	border-style: solid;
 	border-width: 1px;
 	border-color: black;
 	border-radius: 5px;
 }
-form[id="removeUserButtonForm"]{
-	width: 120px;
+.viewUserContainer form[id="removeUserButtonForm"]{
+	width: 140px;
 	float: left;
 }
-input[id="removeUserButton"]{
+.viewUserContainer input[id="removeUserButton"]{
 	font-size: 20px;
-
-	border-style: solid;
+    border-style: solid;
 	border-width: 1px;
 	border-color: black;
 	border-radius: 5px;
@@ -146,7 +145,7 @@ input[id="removeUserButton"]{
 
 /* This is for Div filterBy in viewUserPage*/
 
-div[class="filterByInViewUsers"]{
+.viewUserContainer div[class="filterByInViewUsers"]{
     background-color: #858fa0; 
 	border-style: solid;
 border-width: 1px;
@@ -156,7 +155,7 @@ height: 400px;
 margin: 20px 10px 20px 0px;
 float:right;
 }
-#instituteLabelInFilterBy{
+.viewUserContainer #instituteLabelInFilterBy{
 	float:left;
 	text-align: center;
 	font-size: 20px;
@@ -166,7 +165,7 @@ float:right;
 	margin: 5px 5px 0px 35px;
 }
 
-p[id="instituteIDLabelInFilterBy"]{
+.viewUserContainer p[id="instituteIDLabelInFilterBy"]{
 	float:left;
 	text-align: center;
 	font-size: 20px;
@@ -175,7 +174,7 @@ p[id="instituteIDLabelInFilterBy"]{
 	width: 100px;
 	margin: 15px 5px 10px 15px;
 }
-input[class="InstituteIdFilterTextBoxInFilterBy"]{
+.viewUserContainer input[class="InstituteIdFilterTextBoxInFilterBy"]{
 	width: 250px;
 	height: 35px;
     border-width: 1px;
@@ -187,16 +186,7 @@ input[class="InstituteIdFilterTextBoxInFilterBy"]{
     padding: 5px 7px;
 }
 
-input[id="applyFilterButtonInFilterBy"]{
-    font-size: 15px;
-	border-style: solid;
-	border-width: 1px;
-	border-color: black;
-	border-radius: 5px;
-    margin: 5px;
-    padding: 3px;
-}
-p[class="adminTypeLabelInFilterBy"]{
+.viewUserContainer p[class="adminTypeLabelInFilterBy"]{
 	margin: 10px 05px 5px 0px;
 	width: 115px;
 	padding: 0px;
@@ -204,7 +194,7 @@ p[class="adminTypeLabelInFilterBy"]{
     font-size: 20px;
 }
 
-p[id="UserIDLabelInFilterBy"]{
+.viewUserContainer p[id="UserIDLabelInFilterBy"]{
 	margin: 15px 5px 15px 40px;
 	width: 70px;
 	padding: 0px;
@@ -212,7 +202,7 @@ p[id="UserIDLabelInFilterBy"]{
     font-size: 20px;
 }
 
-input[class="selectUserTextBoxInFilterBy"]{
+.viewUserContainer input[class="selectUserTextBoxInFilterBy"]{
    	width: 250px;
 	height: 35px;
     border-width: 1px;
@@ -224,23 +214,13 @@ input[class="selectUserTextBoxInFilterBy"]{
     padding: 5px 7px;
     
 }
-input[id="searchButtonInFilterBy"]{
-    font-size: 20px;
-	border-style: solid;
-	border-width: 1px;
-	border-color: black;
-	border-radius: 10px;
-    width: 80px;
-    margin: 2px 2px 2px 150px; 
-}
-/* This is end of div filterBy in view User*/
 
-h2[id="filterByHeader"]{
+.viewUserContainer h2[id="filterByHeader"]{
 	margin: 5px;
 	text-align: center;
 	padding: 0px;
 }
-select[class="commonCmbBox2CSS"]{
+.viewUserContainer select[class="commonCmbBox2CSS"]{
     margin: 0px 0px 0px 5px;
 	padding: 0px;
     text-align: center;
@@ -249,7 +229,7 @@ select[class="commonCmbBox2CSS"]{
     font-size: 20pt;
     border-width:1px; 
 }
-input[class="commonBtnInViewPrograms"]{
+.viewUserContainer input[class="commonBtnInViewPrograms"]{
      font-size: 15px;
 	border-style: solid;
 	border-width: 1px;
@@ -259,3 +239,4 @@ input[class="commonBtnInViewPrograms"]{
     height: 30px;
     margin: 5px;
 }
+/* This is end of div filterBy in view User*/
