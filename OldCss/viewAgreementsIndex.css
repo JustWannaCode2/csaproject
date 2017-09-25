@@ -9,34 +9,17 @@ width: 976px;
 text-align: center;
 }
 
-.createAgreementHeader{
+.viewAgreementHeader{
 	background-color: #bfefff;
 	color: #2b1459;
-width: 1200px;
+width: 960px;
 text-align: center;
 font-size: 18pt;
 }
 
-
-.navigationBar{
-
-	
-	background-color: #858fa0;
-	font-size: 18pt;
-border-style: solid;
-padding: 20px;
-margin: 20px;
-
-}
-#adminTable{
-	text-align: center;
-	color: #002056;
-border-width: 2px;
-border-color: red;
-}
 .container{
-width: 1200px;
-height: 1500px;
+width: 960px;
+height: 790px;
 margin-left: auto;
 margin-right: auto;
 background-color: #b3c1d6;
@@ -60,26 +43,18 @@ border-color: black;
     margin: 20px;
 }
 
-/*#InstituteFromInformation
+
+.vbp_InstituteA
 {
-    float:left;
-    margin: 0px 30px;
+   float:left;
+    margin:0px 0px 0px 300px;
 }
 
-#InstituteToInformation
+.vbp_InstituteB
 {
-   float:right; 
-    margin: 0px 30px;
+    float:right;
+    margin:0px 300px 0px 0px;
 }
-
-
-#SelectEquivalentCourse
-{
-    margin: 0px 0px 0px 0px;
-}
-
-*/
-
 
 /*Testing 1,2,3 */
 

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="viewAgreementsByPrograms.css">
+<link rel="stylesheet" href="jointStyle.css">
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
 <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 <script type="text/javascript" src="script.js"></script>
@@ -73,9 +73,9 @@
 
 
 	<div class="viewAgreementContainer" align=center>
-		<div class="viewAgreementHeader">
+		<div class="TitleHeader">
 			<h4>View Transfer Agreement</h4>
-		</div>
+		</div><!-- end div class="viewAgreementHeader -->
 
  <!--########################################################################################################################################-->
                                         <!--This holds all of the fields for viewing agreements by programs-->
@@ -169,7 +169,7 @@
                                         Department:
                                     </td>
                                     <td>
-                                        <input type="text" id="vbp_CourseADept">
+                                        <input type="text" id="vbp_CourseADept" readonly>
                                     </td>
                                 </tr>
                     
@@ -178,7 +178,7 @@
                                         Course Number:
                                     </td>
                                     <td>
-                                        <input type="text" id="vbp_CourseACourseNumber">
+                                        <input type="text" id="vbp_CourseACourseNumber" readonly>
                                     </td>
                                 </tr>
                                 <tr>
@@ -186,12 +186,12 @@
                                         Course Name:
                                     </td>
                                     <td>
-                                    <input type="text" id="vbp_CourseACourseName"> 
+                                    <input type="text" id="vbp_CourseACourseName" readonly> 
                                     </td>
                                 </tr>
                                 <tr>
                                     <td align=right>Credit Hours:</td>
-                                    <td><input type="text" id="vbp_CourseACreditHours"> </td>
+                                    <td><input type="text" id="vbp_CourseACreditHours" readonly> </td>
                                 </tr>
                                 <tr>
                                     <td colspan=2 align=center>
@@ -200,7 +200,7 @@
                                 </tr>
                                 <tr align=center>
                                     <td colspan=2>
-                                        <textarea id="vbp_CourseACourseDescription" style="width:400px;height:150px"></textarea>
+                                        <textarea id="vbp_CourseACourseDescription" style="width:400px;height:150px" readonly></textarea>
                                     </td>
                                 </tr>
                             </table><!-- end of course a info table -->
@@ -237,7 +237,7 @@
                                         Department:
                                     </td>
                                     <td>
-                                        <input type="text" id="vbp_CourseBDept">
+                                        <input type="text" id="vbp_CourseBDept" readonly>
                                     </td>
                                 </tr>
                     
@@ -246,7 +246,7 @@
                                         Course Number:
                                     </td>
                                     <td>
-                                        <input type="text" id="vbp_CourseBCourseNumber">
+                                        <input type="text" id="vbp_CourseBCourseNumber" readonly>
                                     </td>
                                 </tr>
                                 <tr>
@@ -254,12 +254,12 @@
                                         Course Name:
                                     </td>
                                     <td>
-                                    <input type="text" id="vbp_CourseBCourseName"> 
+                                    <input type="text" id="vbp_CourseBCourseName" readonly> 
                                     </td>
                                 </tr>
                                 <tr>
                                     <td align=right>Credit Hours:</td>
-                                    <td><input type="text" id="vbp_CourseBCreditHours"> </td>
+                                    <td><input type="text" id="vbp_CourseBCreditHours" readonly> </td>
                                 </tr>
                                 <tr>
                                     <td colspan=2 align=center>
@@ -268,7 +268,7 @@
                                 </tr>
                                 <tr align=center>
                                     <td colspan=2>
-                                        <textarea id="vbp_CourseBCourseDescription" style="width:400px;height:150px"></textarea>
+                                        <textarea id="vbp_CourseBCourseDescription" style="width:400px;height:150px" readonly></textarea>
                                     </td>
                                 </tr>
                             </table><!-- end of course a info table -->
@@ -283,6 +283,6 @@
         
 <!--###################################################################################################################################-->
 </div> <!-- End div class="viewAgreementContainer" -->
-    </div>
+    </div> <!-- end div class="container" -->
 </body>
 </html>

@@ -1,0 +1,226 @@
+/*addCourse.htm, addInstitution.htm, createAgreement.htm, index.htm, removeAgreement.htm, selectedInstitution.htm, viewAgreementsByCourses.htm, viewAgreementsByPrograms.htm, viewAgreementsIndex.htm, viewCourse.htm, viewInstitutions.htm,   */
+
+
+/* Style For All Pages */
+
+body{
+background-color: #f4f5f7;
+}
+
+.TitleHeader{
+	background-color: #bfefff;
+	color: #2b1459;
+width: 1200px;
+text-align: center;
+font-size: 18pt;
+}
+
+.container{
+width: 1200px;
+height: 1500px;
+margin-left: auto;
+margin-right: auto;
+background-color: #b3c1d6;
+border-style: solid;
+border-width: 2px;
+border-color: black;
+}
+
+/*Testing 1,2,3 (Navigation Bar) */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: black;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/*End Testing */
+
+/*End Style for all pages */
+
+
+/*Add Institution/ Selected Institution*/
+.institutionInformationTable{
+border-style: solid;
+border-width: 2px;
+width: 500px;
+height: 700px;
+margin: 16px;
+float:left;
+}
+.CAEDesignation{
+border-style: solid;
+border-width: 2px;
+width: 625px;
+height: 700px;
+margin: 16px;
+float:right;
+}
+h2[id="CAEDesignationHeader"]{
+	margin: 5px;
+	text-align: center;
+	padding: 0px;
+}
+/*End Add Institution*/
+
+/*Create Agreement*/
+.FromInstitute{
+    margin:30px 0px 30px 110px;
+}
+
+.ToInstitute
+{
+    margin: 30px 100px 30px 30px;
+}
+
+#Continue
+{
+    margin: 20px;
+}
+
+/*End Create Agreement*/
+
+/* Remove Agreement */
+.viewAgreements{
+border-style: solid;
+border-width: 2px;
+width: 470px;
+height: 550px;
+margin: 60px;
+float:left;
+}
+
+.filterBy{
+	border-style: solid;
+border-width: 2px;
+width: 470px;
+height: 550px;
+margin: 60px;
+float:right;
+}
+
+select[id="selectAgreement"]{
+	margin: 10px;
+	text-align: center;
+width: 440px;
+height: 430px;
+white-space: wrap;
+font-size: 20pt;
+}
+/* End Remove Agreement */
+
+/* View Agreements By Programs.htm */
+.vbp_InstituteA
+{
+   float:left;
+    margin:0px 0px 0px 30px;
+}
+
+.vbp_InstituteB
+{
+    float:right;
+    margin:0px 30px 0px 0px;
+}
+/* End viewAgreementsByPrograms.htm */
+
+/* View Course */
+select[id="selectInstitution"]{
+	margin: 10px;
+	text-align: center;
+width: 400px;
+height: 300px;
+white-space: wrap;
+font-size: 20pt;
+}
+
+.courseListDiv{
+border-style: solid;
+border-width: 2px;
+width: 470px;
+height: 700px;
+margin: 43px;
+float:left;
+}
+
+.courseInfo{
+border-style: solid;
+border-width: 2px;
+width: 550px;
+height: 700px;
+margin: 43px;
+float:right;
+}
+/* End viewCourse.htm */
+
+/* View Institution */
+.vi_selectInstituteDiv{
+border-style: solid;
+border-width: 2px;
+width: 520px;
+height: 500px;
+margin: 20px;
+float:left;
+}
+
+select[id="vi_selectInstitution"]{
+	margin: 10px;
+	text-align: center;
+width: 500px;
+height: 430px;
+white-space: wrap;
+font-size: 20pt;
+}
+
+.AdvancedOptions{
+	border-style: solid;
+border-width: 2px;
+width: 520px;
+height: 500px;
+margin: 20px;
+float:right;
+}
+
+/* End View Institution */

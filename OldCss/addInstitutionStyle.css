@@ -2,14 +2,7 @@ body{
 background-color: #f4f5f7;
 }
 
-.GlobalAdminsHeader{
-	background-color: #bfefff;
-	color: #2b1459;
-width: 976px;
-text-align: center;
-}
-
-.removeAgreementHeader{
+.AddInstitutionHeader{
 	background-color: #bfefff;
 	color: #2b1459;
 width: 976px;
@@ -17,42 +10,18 @@ text-align: center;
 font-size: 18pt;
 }
 
-.viewAgreements{
+.institutionInformationTable{
 border-style: solid;
 border-width: 2px;
 width: 470px;
-height: 550px;
+height: 650px;
 margin: 20px;
 float:left;
 }
 
-select[id="selectAgreement"]{
-	margin: 10px;
-	text-align: center;
-width: 440px;
-height: 430px;
-white-space: wrap;
-font-size: 20pt;
-}
-
-
-.navigationBar{
-background-color: #858fa0;
-font-size: 18pt;
-border-style: solid;
-padding: 20px;
-margin: 20px;
-
-}
-#adminTable{
-	text-align: center;
-	color: #002056;
-border-width: 2px;
-border-color: red;
-}
 .container{
 width: 976px;
-height: 800px;
+height: 1100px;
 margin-left: auto;
 margin-right: auto;
 background-color: #b3c1d6;
@@ -61,58 +30,22 @@ border-width: 2px;
 border-color: black;
 }
 
-.filterBy{
-	border-style: solid;
+.CAEDesignation{
+border-style: solid;
 border-width: 2px;
 width: 400px;
-height: 550px;
+height: 650px;
 margin: 20px;
 float:right;
 }
 
 
-input[id="navigationBarButton"]{
-	font-size: 12pt;
-	border-style: solid;
-	border-radius: 5px;
-	border-color: black;
-	border-width: 1px;
-	margin: 2px;
-	height: 30px;
-}
-
-h2[id="filterByHeader"]{
+h2[id="CAEDesignationHeader"]{
 	margin: 5px;
 	text-align: center;
 	padding: 0px;
 }
 
-p[id="instituteIDLabel"]{
-	margin: 5px;
-	width: 100px;
-	padding: 0px;
-	float:left;
-}
-
-p[id="userIDLabel"]{
-	margin: 5px;
-	width: 100px;
-	padding: 0px;
-	float:left;
-}
-
-p[id="adminTypeLabel"]{
-	margin: 5px;
-	width: 100px;
-	padding: 0px;
-	float:left;
-}
-select[id="selectAdminType"]{
-		margin: 5px 80px 5px 5px;
-	width: 200px;
-	padding: 0px;
-	float:right;
-}
 
 /*Testing 1,2,3 */
 
@@ -166,4 +99,5 @@ li.dropdown {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
 /*End Testing */
