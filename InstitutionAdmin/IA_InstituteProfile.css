@@ -9,7 +9,7 @@ width: 976px;
 text-align: center;
 }
 
-.addCourseHeader{
+.InstitutionProfileHeader{
 	background-color: #bfefff;
 	color: #2b1459;
 width: 1333px;
@@ -107,7 +107,7 @@ li.dropdown {
 
 
 /* Users */
-div[class="users"]
+.institutionProfileContainer div[class="users"]
 {
     float: left;
       border: 2px solid black; 
@@ -115,7 +115,7 @@ div[class="users"]
     height:880px;
     margin: 0px 0px 5px 10px;
 }
-select[class="selectTheUser"]
+.institutionProfileContainer select[class="selectTheUser"]
 {
     border: 1px solid black;
     border-radius: 5px;
@@ -123,18 +123,18 @@ select[class="selectTheUser"]
     height:150px;
     padding: 2px;
 }
-div input[type="text"]{
+.institutionProfileContainer div input[type="text"]{
     border: 2px solid black;
     border-radius: 5px;
     padding: 2px;
 }
 
-div[class="Instition Logo"]{
+.institutionProfileContainer div[class="Instition Logo"]{
     border: 1px solid black;
     width: 470px;
     height: 250px;
 }
-.users input[type="text"]{
+.institutionProfileContainer .users input[type="text"]{
     width: 170px;
    height: 20px;
 }
@@ -144,7 +144,7 @@ div[class="Instition Logo"]{
 /* Programs */
 
 
-div[class="programs"]{
+.institutionProfileContainer div[class="programs"]{
     border: 2px solid black;
     width: 820px;
     height: 800px;
@@ -152,7 +152,7 @@ div[class="programs"]{
     margin: 0px 10px 0px 0px;
 }
 
-div[class="selectInstitutediv"]{
+.institutionProfileContainer div[class="selectInstitutediv"]{
     border: 1px solid black;
     width: 420px;
     height: 230px;
@@ -161,7 +161,7 @@ div[class="selectInstitutediv"]{
     
 }
 
-div[class="divProgramInfo"]{
+.institutionProfileContainer div[class="divProgramInfo"]{
     border: 1px solid black;
     width: 370px;
     height: 230px;
@@ -169,38 +169,13 @@ div[class="divProgramInfo"]{
     margin: 0px 8px 0px 0px;
 } 
 
-.divProgramInfo input[type="text"]{
-    width: 180px;
-}
 
-.divProgramInfo input[class="txtBoxForURL"]{
+.institutionProfileContainer input[class="txtBoxForURL"]{
     width: 300px;
     column-span: 4;
 }
-select[class="selectCareerCourse"]{
-    width: 250px;
-    height: 100px; 
-    margin: 0px 10px;
-    border: 1px solid black;
-}
-select[class="SelectGenerealCourse"]{
-   width: 250px;
-    height: 100px; 
-    margin: 0px 10px;
-    border: 1px solid black; 
-}
-
-select[class="MappedPrograms"]{
-    border:1px solid black;
-    width: 500px;
-    height: 160px;
-}
-textarea{
-    border:1px solid black;
-    
-}
 /* Start of Div sub Programs */
-div[class="divSub_Programs"]{
+.institutionProfileContainer div[class="divSub_Programs"]{
     border: 3px solid black;
     width: 780px;
     height: 460px;
@@ -208,5 +183,29 @@ div[class="divSub_Programs"]{
     display: block;
     margin: 15px;
 }
+.institutionProfileContainer select[class="selectCareerCourse"]{
+    width: 250px;
+    height: 100px; 
+    margin: 0px 10px;
+    border: 1px solid black;
+}
+.institutionProfileContainer select[class="SelectGenerealCourse"]{
+   width: 250px;
+    height: 100px; 
+    margin: 0px 10px;
+    border: 1px solid black; 
+}
+
+.institutionProfileContainer select[class="MappedPrograms"]{
+    border:1px solid black;
+    width: 500px;
+    height: 160px;
+}
+.institutionProfileContainer textarea{
+    border:1px solid black;
+    
+}
+
 
 /* End of Div sub Programs  */
+/*End of Programs div */

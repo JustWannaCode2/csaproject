@@ -65,15 +65,16 @@ border-style: solid;
 border-width: 2px;
 border-color: black;
 }
-.viewProgramHeader{
+.viewProgramContainer .viewProgramHeader{
 	background-color: #bfefff;
 	color: #2b1459;
 width: 976px;
 text-align: center;
 font-size: 18pt;
 }
+
 /* Start of div multiLine select in view Programs */
-.viewProgramsMultilineSelect{
+.viewProgramContainer .viewProgramsMultilineSelect{
     background-color: #858fa0;
 border-style: solid;
 border-width: 1px;
@@ -83,7 +84,7 @@ height: 400px;
 margin: 20px;
 float:left;
 }
-select[id="selectProgram"]{
+.viewProgramContainer select[id="selectProgram"]{
 	margin: 10px;
 	text-align: center;
     width: 400px;
@@ -95,7 +96,7 @@ select[id="selectProgram"]{
     border-color: black;
 }
 
-input[class="commonBtn2InViewPrograms"]{
+.viewProgramContainer input[class="commonBtn2InViewPrograms"]{
        font-size: 15px;
 	border-style: solid;
 	border-width: 1px;
@@ -105,7 +106,7 @@ input[class="commonBtn2InViewPrograms"]{
     height: 25px;
     margin: 4px;
 }
-h2[id="filterByHeader"]{
+.viewProgramContainer h2[id="filterByHeader"]{
 	margin: 5px;
 	text-align: center;
 	padding: 0px;
@@ -116,19 +117,19 @@ h2[id="filterByHeader"]{
 
 /* Start of Filter by in View Programs */
 
-div[class="filterByInViewPrograms"]{
-background-color: #858fa0; 
-	border-style: solid;
-border-width: 1px;
-border-radius: 10px;
-width: 450px;
-height: 400px;
-margin: 20px 10px 20px 0px;
-float:right;
+.viewProgramContainer div[class="filterByInViewPrograms"]{
+    background-color: #858fa0; 
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    width: 450px;
+    height: 400px;
+    margin: 20px 10px 20px 0px;
+    float:right;
 }
-input[class="commonTxtBoxCSS"]{
+.viewProgramContainer input[class="commonTxtBoxCSS"]{
     display: inline-block;
-		font-size: 10pt;
+    font-size: 10pt;
 	padding: 3px 10px;
 	border-width: 2px;
 	border-style: solid;
@@ -140,11 +141,12 @@ input[class="commonTxtBoxCSS"]{
 	height: 43px;
 }
 
-p[id="lblPID_viewPrograms"]{
+.viewProgramContainer p[id="lblPID_viewPrograms"]{
     margin: 15px 3px 10px 25px;
-    float: left
+    float: left;
+    text-align: center;
 }
-input[class="commonBtn3InViewPrograms"]{
+.viewProgramContainer input[class="commonBtn3InViewPrograms"]{
      font-size: 10px;
 	border-style: solid;
 	border-width: 1px;
@@ -154,7 +156,7 @@ input[class="commonBtn3InViewPrograms"]{
     height: 30px;
     margin: 2px;
 }
-select[class="commonCmbBoxCSS"]{
+.viewProgramContainer select[class="commonCmbBoxCSS"]{
     margin: 0px 0px 0px 5px;
 	padding: 0px;
     text-align: center;
@@ -166,9 +168,10 @@ select[class="commonCmbBoxCSS"]{
     margin: 2px;
 }
 
-p[id="adminTypeLabel"]{
+.viewProgramContainer p[id="adminTypeLabel"]{
 	margin: 5px;
 	width: 100px;
 	padding: 0px;
 	float:left;
+    text-align: center;
 }

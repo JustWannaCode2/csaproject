@@ -73,7 +73,7 @@ text-align: center;
 font-size: 18pt;
 }
 /* Start of div multiLine select in view Programs */
-.viewProgramsMultilineSelect{
+.viewProgramsContainer .viewProgramsMultilineSelect{
     background-color: #858fa0;
 border-style: solid;
 border-width: 1px;
@@ -83,7 +83,7 @@ height: 400px;
 margin: 20px;
 float:left;
 }
-select[id="selectProgram"]{
+.viewProgramsContainer select[id="selectProgram"]{
 	margin: 10px;
 	text-align: center;
     width: 400px;
@@ -95,7 +95,7 @@ select[id="selectProgram"]{
     border-color: black;
 }
 
-input[class="commonBtn2InViewPrograms"]{
+.viewProgramsContainer input[class="commonBtn2InViewPrograms"]{
        font-size: 15px;
 	border-style: solid;
 	border-width: 1px;
@@ -105,7 +105,7 @@ input[class="commonBtn2InViewPrograms"]{
     height: 25px;
     margin: 4px;
 }
-h2[id="filterByHeader"]{
+.viewProgramsContainer h2[id="filterByHeader"]{
 	margin: 5px;
 	text-align: center;
 	padding: 0px;
@@ -116,7 +116,7 @@ h2[id="filterByHeader"]{
 
 /* Start of Filter by in View Programs */
 
-div[class="filterByInViewPrograms"]{
+.viewProgramsContainer div[class="filterByInViewPrograms"]{
 background-color: #858fa0; 
 	border-style: solid;
 border-width: 1px;
@@ -126,7 +126,7 @@ height: 400px;
 margin: 20px 10px 20px 0px;
 float:right;
 }
-input[class="commonTxtBoxCSS"]{
+.viewProgramsContainer input[class="commonTxtBoxCSS"]{
     display: inline-block;
 		font-size: 10pt;
 	padding: 3px 10px;
@@ -140,21 +140,21 @@ input[class="commonTxtBoxCSS"]{
 	height: 43px;
 }
 
-p[id="lblPID_viewPrograms"]{
+.viewProgramsContainer p[id="lblPID_viewPrograms"]{
     margin: 15px 3px 10px 25px;
     float: left
 }
-input[class="commonBtn3InViewPrograms"]{
+.viewProgramsContainer input[class="commonBtn3InViewPrograms"]{
      font-size: 10px;
 	border-style: solid;
 	border-width: 1px;
 	border-color: black;
 	border-radius: 3px;
-    width: 70px;
-    height: 20px;
+    width: 80px;
+    height: 30px;
     margin: 2px;
 }
-select[class="commonCmbBoxCSS"]{
+.viewProgramsContainer select[class="commonCmbBoxCSS"]{
     margin: 0px 0px 0px 5px;
 	padding: 0px;
     text-align: center;
@@ -166,7 +166,7 @@ select[class="commonCmbBoxCSS"]{
     margin: 2px;
 }
 
-p[id="adminTypeLabel"]{
+.viewProgramsContainer p[id="adminTypeLabel"]{
 	margin: 5px;
 	width: 100px;
 	padding: 0px;

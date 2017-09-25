@@ -70,12 +70,13 @@
 		<div class="viewUserHeader">
 			<h4>View User</h4>
 		</div>
-
+            
+            <!--Start of div view Users Multiline Select -->
 			<div class="viewUsersMultilineSelect">
-				<select multiple id="lstBoxselectUserInViewUser">
-					<option>  </option>
-					<option>  </option>
-					<option>  </option>
+				<select multiple id="lstBoxselectUser_ViewUser">
+					<option></option>
+					<option></option>
+					<option></option>
 				</select>
 				<br><br>
 				<form action="viewUsers_selectUser.htm" id="selectUserButtonForm">
@@ -88,9 +89,10 @@
 				<input type="submit" name="removeUser" value="Remove User" id="removeUserButton">
 				</form>
 				<br>
-				<!--End of div viewUsersMultilineSelect -->
-			</div>
+				
+			</div><!--End of div viewUsersMultilineSelect -->
 
+            <!--Start of div filterBy -->
 			<div class="filterByInViewUsers">
 				<h2 id="filterByHeader"> Filter By </h2>
 				<fieldset>
@@ -116,8 +118,8 @@
 				<input type="text" name="userIDInput" placeholder="Name of the user" class="selectUserTextBoxInFilterBy"><br>
 				<input type="submit" value="Search" name="searchButton" class="commonBtnInViewPrograms">
                 </fieldset>
-				<!--End of div filterBy -->
-			</div>
+				
+			</div><!--End of div filterBy -->
     </div>
     
 		<!--End of div Container-->
