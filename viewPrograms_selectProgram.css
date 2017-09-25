@@ -124,6 +124,7 @@ font-size: 18pt;
     border-width:1px;
     border-color: black;
     margin: 2px;
+    float:left;
 }
 
 
@@ -228,6 +229,7 @@ font-size: 18pt;
     text-align: center;
     margin: 0px;
 }
+
 
 /* End of General Education*/
 

@@ -64,15 +64,15 @@ border-style: solid;
 border-width: 2px;
 border-color: black;
 }
-.viewUserHeader{
+.IA_editProgramInYourInstituteContainer .TitleHeader{
 	background-color: #bfefff;
 	color: #2b1459;
-width: 974px;
-text-align: center;
-font-size: 18pt;
+    width: 974px;
+    text-align: center;
+    font-size: 18pt;
 }
 
-div[class="programInfoInSelectProgram"]{
+.IA_editProgramInYourInstituteContainer div[class="programInfomation"]{
     align-content:  right;
 	width: 900px;
     height: 260px;
@@ -86,11 +86,11 @@ div[class="programInfoInSelectProgram"]{
 	border-radius: 10px;
 }
 
-h4[class="programInformationHeader"]{
+.IA_editProgramInYourInstituteContainer h4[class="programInformationHeader"]{
     margin:0px;
     text-align: center;
 }
-input[class="commonTxtBoxCSS"]{
+.IA_editProgramInYourInstituteContainer input[class="commonTxtBoxCSS"]{
     display: inline-block;
 		font-size: 10pt;
 	padding: 3px 10px;
@@ -103,7 +103,7 @@ input[class="commonTxtBoxCSS"]{
 	width: 200px;
 	height: 43px;
 }
-select[class="commonCmbBoxCSS"]{
+.IA_editProgramInYourInstituteContainer select[class="commonCmbBoxCSS"]{
     margin: 0px 0px 0px 5px;
 	padding: 0px;
     text-align: center;
@@ -114,11 +114,11 @@ select[class="commonCmbBoxCSS"]{
     border-color: black;
     margin: 2px;
 }
-p[class="programURL"]{
+.IA_editProgramInYourInstituteContainer  p[class="programURL"]{
     margin: 0px;
     text-align: center;
 }
-input[class="commonTxtBox3CSS"]{
+.IA_editProgramInYourInstituteContainer input[class="commonTxtBox3CSS"]{
     display: block;
 		font-size: 10pt;
 	padding: 3px 10px;
@@ -133,29 +133,7 @@ input[class="commonTxtBox3CSS"]{
 }
 
 
-/* Start div in mappingPrograms_SelectProgram */
-div[class="mappingProgramsDiv"]{
-    align-content:  right;
-	width: 420px;
-    height: 530px;
-	background-color: #858fa0;
-	padding: 10px;
-	float: right;
-	margin: 20px 20px 20px 5px;
-	border-style: solid;
-	border-color: black;
-	border-width: 1px;
-	border-radius: 10px;
-}
-
-h4[id="mappingProgramHeader"]{
-    text-align: center;
-    margin: 0px;
-   
-}
-
-/* Start div in Sub mapping Programs_SelectProgram */
-
+/*start of General Education div in Edit Programs in Your institution */
 
 div[id="generalEduInSelectProgram"]{
      align-content:  right;
@@ -170,6 +148,10 @@ div[id="generalEduInSelectProgram"]{
 	border-width: 1px;
 	border-radius: 10px;
 }
+h4[class="genEdReqHeader"]{
+    text-align: center;
+    margin: 0px;
+}
 select[class="selectProgramDropDown1"]{
     width: 400px;
     height: 150px;
@@ -179,119 +161,8 @@ select[class="selectProgramDropDown1"]{
     border-color:black;
     border-radius: 5px;
 }
-form[class="frmViewTranserInfoInSelectProgram"]{
-    display: block;
-    margin: auto;
-    width: 190px;
-    height: 40px;
-    float:left;
-}
-input[class="commonBtnInMappingPrograms"]{
-    font-size: 15px;
-	border-style: solid;
-	border-width: 1px;
-	border-color: black;
-	border-radius: 10px;
-    width: 180px;
-    height: 30px;
-    margin: 5px;
-}
-form[class="frmRemoveProgramInSelectProgram"]{
-    display: block;
-    margin: auto;
-    width: 190px;
-    height: 40px;
-    float:left;
-}
-input[class="btnAddTransferInformationInSelectedProgram"]{
-    font-size: 15px;
-	border-style: solid;
-	border-width: 1px;
-	border-color: black;
-	border-radius: 5px;
-    width: 100px;
-    height: 23px;
-    margin: 5px;
-}
-/* End div in mappingPrograms_SelectProgram */
 
-#mappingSubDivInSelectProgram.divMappingSub{
-    
-    width:420px;
-    height: 270px;
-    border-color: black;
-    border-width: 1px;
-    border-style: solid;
-    border-radius: 5px;
-}
-
-#mappingSubDivInAddProgram.divMappingSub{
-    width:420px;
-    height: 250px;
-    border-color: black;
-    border-width: 1px;
-    border-style: solid;
-    border-radius: 5px;
-}
-h4.mappingSubHeader{
-    text-align: center;
-    margin: 5px 0;
-}
-select[class="selectInstituteDropDownInSubMapping_selectProgram"]{
-    text-align: center;
-	float:left;
-width: 380px;
-border-radius: 5px;
-    border-width: 2px;
-    border-color: black;
-font-size: 15pt;
-    margin: 5px;
-}
-select[class="selectProgramDropDownInSubMapping_selectProgram"]{
-    text-align: center;
-	float:left;
-width: 380px;
-border-radius: 5px;
-    border-width: 2px;
-    border-color: black;
-font-size: 15pt;
-    margin: 5px;
-}
-
-form[class="frmViewTranserInfoInAddProgram"]{
-    display: block;
-    margin: auto;
-    width: 190px;
-    height: 40px;
-    float:left;
-}
-form[class="frmRemoveProgramIn_AddProgram"]{
-    display: block;
-    margin: auto;
-    width: 190px;
-    height: 40px;
-    float:left;
-}
-select[class="selectInstituteDropDownInSubMapping_AddProgram"]{
-    text-align: center;
-	float:left;
-width: 380px;
-border-radius: 5px;
-    border-width: 2px;
-    border-color: black;
-font-size: 15pt;
-    margin: 5px;
-}
-select[class="selectProgramDropDownInSubMapping_AddProgram"]{
-    text-align: center;
-	float:left;
-width: 380px;
-border-radius: 5px;
-    border-width: 2px;
-    border-color: black;
-font-size: 15pt;
-    margin: 5px;
-}
+/*End of general Education Div in Edit Programs In your institute*/
 /* Start Career Course Div */
 
 h4[class="careerCourseHeader"]{
@@ -358,15 +229,12 @@ select[class="commonCmbBox3CSS"]{
 }
 
 
-/* End Career Course Div */
-
-h4[class="genEdReqHeader"]{
-    text-align: center;
-    margin: 0px;
-}
+/* End Career Course Div in Edit Programs In your institute */
 
 
-/*  Start Save and cancel buttons */
+
+
+/*  Start Save and cancel buttons in Edit Programs In your institute */
 div[id="saveOrCancelButtons"]{
 	width:900px;
 	height: 50px;
@@ -395,3 +263,4 @@ input[class="commonBtn2InViewPrograms"]{
     height: 30px;
     margin: 5px;
 }
+/*  end Save and cancel buttons in Edit Programs In your institute */

@@ -71,6 +71,7 @@ text-align: center;
 font-size: 18pt;
 }
 
+/*Start of AddUser form in Edit your Institution User*/
 .IA_editYourInstitutionUserContainer .addUserForm{
 	align-content:  right;
 	width: 450px;
@@ -98,7 +99,7 @@ display: inline-block;
 	height: 43px;
 }
 
-/* Institution   */
+/*Start Institution div in Edit Your Institution User  */
 .IA_editYourInstitutionUserContainer .institute_addUser{
 	background-color: #858fa0;
 	width: 400px;
@@ -116,10 +117,11 @@ display: inline-block;
 .IA_editYourInstitutionUserContainer textarea{
     border: 2px solid black;
     border-radius: 5px;
+    padding: 5px
 }
 
 /*End of Institution div in Edit Your Institution User*/
-/* Start Div Save or Cancel Button */
+/* Start Div Save or Cancel Button in Edit Your Institution User*/
 
 .IA_editYourInstitutionUserContainer div[id="saveOrCancelButtons"]{
 	width:900px;
@@ -150,4 +152,4 @@ display: inline-block;
     height: 30px;
     margin: 5px;
 }
-/* End div save or cancel button*/
+/* End div save or cancel button in Edit Your Institution User */
