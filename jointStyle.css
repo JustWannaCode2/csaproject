@@ -107,16 +107,16 @@ h2[id="CAEDesignationHeader"]{
 /*End Add Institution*/
 
 /*Create Agreement*/
-.FromInstitute{
+.createAgreementContainer .FromInstitute{
     margin:30px 0px 30px 110px;
 }
 
-.ToInstitute
+.createAgreementContainer .ToInstitute
 {
     margin: 30px 100px 30px 30px;
 }
 
-#Continue
+.createAgreementContainer #Continue
 {
     margin: 20px;
 }
@@ -124,7 +124,7 @@ h2[id="CAEDesignationHeader"]{
 /*End Create Agreement*/
 
 /* Remove Agreement */
-.viewAgreements{
+.removeAgreementContainer .viewAgreements{
 border-style: solid;
 border-width: 2px;
 width: 470px;
@@ -133,7 +133,7 @@ margin: 60px;
 float:left;
 }
 
-.filterBy{
+.removeAgreementContainer .filterBy{
 	border-style: solid;
 border-width: 2px;
 width: 470px;
@@ -142,7 +142,7 @@ margin: 60px;
 float:right;
 }
 
-select[id="selectAgreement"]{
+.removeAgreementContainer select[id="selectAgreement"]{
 	margin: 10px;
 	text-align: center;
 width: 440px;
@@ -153,13 +153,13 @@ font-size: 20pt;
 /* End Remove Agreement */
 
 /* View Agreements By Programs.htm */
-.vbp_InstituteA
+.vbp_Container .vbp_InstituteA
 {
    float:left;
     margin:0px 0px 0px 30px;
 }
 
-.vbp_InstituteB
+.vbp_Container .vbp_InstituteB
 {
     float:right;
     margin:0px 30px 0px 0px;
@@ -167,16 +167,16 @@ font-size: 20pt;
 /* End viewAgreementsByPrograms.htm */
 
 /* View Course */
-select[id="selectInstitution"]{
-	margin: 10px;
-	text-align: center;
+.viewCoursesContainer select[id="selectInstitution"]{
+margin: 10px;
+text-align: center;
 width: 400px;
 height: 300px;
 white-space: wrap;
 font-size: 20pt;
 }
 
-.courseListDiv{
+.viewCoursesContainer .courseListDiv{
 border-style: solid;
 border-width: 2px;
 width: 470px;
@@ -185,7 +185,7 @@ margin: 43px;
 float:left;
 }
 
-.courseInfo{
+.viewCoursesContainer .courseInfo{
 border-style: solid;
 border-width: 2px;
 width: 550px;
@@ -196,7 +196,7 @@ float:right;
 /* End viewCourse.htm */
 
 /* View Institution */
-.vi_selectInstituteDiv{
+.viewInstitutionContainer .vi_selectInstituteDiv{
 border-style: solid;
 border-width: 2px;
 width: 520px;
@@ -205,17 +205,17 @@ margin: 20px;
 float:left;
 }
 
-select[id="vi_selectInstitution"]{
-	margin: 10px;
-	text-align: center;
+.viewInstitutionContainer select[id="vi_selectInstitution"]{
+margin: 10px;
+text-align: center;
 width: 500px;
 height: 430px;
 white-space: wrap;
 font-size: 20pt;
 }
 
-.AdvancedOptions{
-	border-style: solid;
+.viewInstitutionContainer .AdvancedOptions{
+border-style: solid;
 border-width: 2px;
 width: 520px;
 height: 500px;
