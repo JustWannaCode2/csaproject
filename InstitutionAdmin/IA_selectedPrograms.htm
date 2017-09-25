@@ -29,6 +29,7 @@
     <a href="javascript:void(0)" class="dropbtn">Users</a>
     <div class="dropdown-content">
       <a href="IA_viewUsers.htm">View All Users</a>
+      <a href="IA_editYourInstitutionUsers.htm">Edit Your Institution User</a>
       <a href="IA_addInstitutionUsers.htm">Add Institution Users</a>
     </div>
   </li>
@@ -60,8 +61,8 @@
   <li class="dropdown">
     <a href="javascript:void(0)" class="dropbtn">Agreements</a>
     <div class="dropdown-content">
-      <a href="#">View Agreements</a>
-      <a href="#">Add Agreements</a>
+      <a href="IA_viewAgreementsIndex.htm">View Transfer Agreements</a>
+      <a href="IA_createAgreement.htm">Create Transfer Agreements</a>
     </div>
   </li>
   
@@ -70,7 +71,7 @@
     
 <div class="selectProgramContainer_ViewProgram">
 		<div class="viewUserHeader">
-			<h4>Selected Programs</h4>
+			<h4>Selected Programs Name goes here</h4>
 		</div>
 
 		<div class="programInfoInSelectProgram">
@@ -81,11 +82,11 @@
                 <tr>
                     <td>Program ID:</td>
                     <td>
-                        <input type="text" name="name" placeholder="Program ID" class="commonTxtBoxCSS" disabled>
+                        <input type="text" name="name" placeholder="Program ID" class="commonTxtBoxCSS" readonly>
                     </td>
                     <td> CAE Designation:</td>
                     <td>
-                        <select  class="commonCmbBoxCSS" disabled>
+                        <select  class="commonCmbBoxCSS" readonly>
 					       <option></option>
 				        </select>
                     </td>
@@ -93,11 +94,11 @@
 				<tr>
                     <td>Program Title:</td>
                     <td>
-                        <input type="text" name="programTitle" placeholder="Program Title"   class="commonTxtBoxCSS" disabled>
+                        <input type="text" name="programTitle" placeholder="Program Title"   class="commonTxtBoxCSS" readonly>
                     </td>
                     <td>Total Credit Hours:</td>
                     <td>
-                        <select id="addNumOfCreditsInAddProgramName"  class="commonCmbBoxCSS" disabled>
+                        <select id="addNumOfCreditsInAddProgramName"  class="commonCmbBoxCSS" readonly>
                             <option>1</option>
                             <option>2</option>
                             <option>3</option>
@@ -111,13 +112,13 @@
                 <tr>
                     <td>Program Type:</td>
                     <td>
-                        <select class="commonCmbBoxCSS" disabled>
+                        <select class="commonCmbBoxCSS" readonly>
 					       <option></option>
 				        </select>
                     </td>
                     <td>Curriculam Code:</td>
                     <td>
-                        <input type="text" placeholder="Code" id="addCurriculamCodeInSelectProgram"  class="commonTxtBoxCSS" disabled>
+                        <input type="text" placeholder="Code" id="addCurriculamCodeInSelectProgram"  class="commonTxtBoxCSS" readonly>
                     </td>
                 </tr>
 				<tr align="center">
@@ -127,7 +128,7 @@
                 </tr>
 				<tr>
                     <td colspan="5">
-                    <input type="text" placeholder="URL" id="addProgramURLInSelectProgram"  class="commonTxtBox3CSS" disabled>
+                    <input type="text" placeholder="URL" id="addProgramURLInSelectProgram"  class="commonTxtBox3CSS" readonly>
                     </td>
 				</tr>
         	</table>		
@@ -143,7 +144,7 @@
 					<option></option>
 					<option></option>
 				</select>
-            <textarea class="textarea1InAddProgram" placeholder="Course details" disabled></textarea>
+            <textarea class="textarea1InAddProgram" placeholder="Course details" readonly></textarea>
         </div>
         
 		
@@ -157,7 +158,7 @@
 					<option></option>
             </select>
             
-            <textarea class="textarea1InAddProgram" placeholder="Course Details" disabled></textarea>
+            <textarea class="textarea1InAddProgram" placeholder="Course Details" readonly></textarea>
              
         <!--End of div general Education Requirements-->
         </div>

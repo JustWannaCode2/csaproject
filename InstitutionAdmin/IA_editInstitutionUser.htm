@@ -27,6 +27,7 @@
     <a href="javascript:void(0)" class="dropbtn">Users</a>
     <div class="dropdown-content">
       <a href="IA_viewUsers.htm">View All Users</a>
+      <a href="IA_editYourInstitutionUsers.htm">Edit Your Institution User</a>
       <a href="IA_addInstitutionUsers.htm">Add Institution Users</a>
     </div>
   </li>
@@ -58,36 +59,35 @@
   <li class="dropdown">
     <a href="javascript:void(0)" class="dropbtn">Agreements</a>
     <div class="dropdown-content">
-      <a href="#">View Agreements</a>
-      <a href="#">Add Agreements</a>
+      <a href="IA_viewAgreementsIndex.htm">View Transfer Agreements</a>
+      <a href="IA_createAgreement.htm">Create Transfer Agreements</a>
     </div>
   </li>
   
   </ul>
     </div><!-- End div id=DDNavBar -->
     
-<a href="IA_viewUsers.htm" align="center">Edit different User</a>
     <div class="viewUserContainer">
 		<div class="viewUserHeader">
-			<h4>Edit Institute User</h4>
+			<h4>Institute User Name goes here</h4>
 		</div>
 
 		<div class="addUserForm">
 			<form align="right">
 				First Name: 
-				<input type="text" name="adminName" placeholder="First Name" id="addUserInput">
+				<input type="text" name="adminName" placeholder="First Name" id="addUserInput" readonly>
 				<br>
                 Last Name: 
-				<input type="text" name="adminName" placeholder="Last Name" id="addUserInput">
+				<input type="text" name="adminName" placeholder="Last Name" id="addUserInput" readonly>
 				<br>
 				Email (Work):
-				<input type="email" name="userEmail" placeholder="email address" id="addUserInput">
+				<input type="email" name="userEmail" placeholder="email address" id="addUserInput" readonly> 
 				<br>
 				Telephone Number (Work):
-				<input type="number" name="telephoneWork" placeholder="Telephone Number" id="addUserInput">
+				<input type="text" name="telephoneWork" placeholder="Telephone Number" id="addUserInput" readonly>
 				<br>
 				Telephone Number (Mobile):
-				<input type="number" name="telephoneMobile" placeholder="Telephone Number" id="addUserInput">
+				<input type="text" name="telephoneMobile" placeholder="Telephone Number" id="addUserInput" readonly>
 				<br>
 				
 			</form>		
@@ -98,18 +98,18 @@
                 <tr align="center" style="width: 280px;">
                     <td>Position:</td>
                     <td>
-                        <input type="text" id="addUserInput" placeholder="The Position of the User">
+                        <input type="text" id="addUserInput" placeholder="The Position of the User" readonly>
                     </td>
                 </tr>
                 <tr>
                     <td align="center">Link:</td>
                     <td> 
-                       <input type="text" id="addUserInput" placeholder="Position of User in Institute">
+                       <input type="text" id="addUserInput" placeholder="Position of User in Institute" readonly>
                     </td>
                 </tr>
                 <tr>
                     <td align="center">Additional Info:</td>
-                    <td><textarea placeholder="Add any comments about this user (Optional)" style="width: 200px; height: 100px;"></textarea></td>
+                    <td><textarea placeholder="Add any comments about this user (Optional)" style="width: 200px; height: 100px;" readonly></textarea></td>
                 </tr>
             </table>
 			

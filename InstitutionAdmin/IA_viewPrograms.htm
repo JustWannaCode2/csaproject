@@ -27,6 +27,7 @@
     <a href="javascript:void(0)" class="dropbtn">Users</a>
     <div class="dropdown-content">
       <a href="IA_viewUsers.htm">View All Users</a>
+      <a href="IA_editYourInstitutionUsers.htm">Edit Your Institution User</a>
       <a href="IA_addInstitutionUsers.htm">Add Institution Users</a>
     </div>
   </li>
@@ -58,8 +59,8 @@
   <li class="dropdown">
     <a href="javascript:void(0)" class="dropbtn">Agreements</a>
     <div class="dropdown-content">
-      <a href="#">View Agreements</a>
-      <a href="#">Add Agreements</a>
+      <a href="IA_viewAgreementsIndex.htm">View Transfer Agreements</a>
+      <a href="IA_createAgreement.htm">Create Transfer Agreements</a>
     </div>
   </li>
   
@@ -74,20 +75,20 @@
 
 			<div class="viewProgramsMultilineSelect">
 				<select multiple id="selectProgram">
-					<option>  </option>
-					<option>  </option>
-					<option>  </option>
+					<option></option>
+					<option></option>
+					<option></option>
 				</select>
 				<br><br>
-                <form action="IA_selectedPrograms.htm" id="btnSelectProgramInViewPrograms" style="float: left" disabled>
+                <form action="IA_selectedPrograms.htm" id="btnSelectProgramInViewPrograms" style="float: left">
                     <input type="submit" name="selectProgram" value="Select Program" onclick="" id="selectProgramButton" class="commonBtn2InViewPrograms" >
                 </form>
-               <form action = "addPrograms.htm" id="btnAddProgramInViewPrograms" style="float: left" disabled>
+               <form action = "#" id="btnAddProgramInViewPrograms" style="float: left" >
                 <input type="submit" name="addProgram" value="Add Program" onclick="" id="addProgramButton" class="commonBtn2InViewPrograms" disabled>
                    
                 </form>
                 
-                <form action="" id="btnRemoveProgramInViewPrograms" disabled>
+                <form action="#" id="btnRemoveProgramInViewPrograms" disabled>
                     <input type="submit" name="removeProgram" value="Remove Program" onclick="" id="removeProgramButton"
                     class="commonBtn2InViewPrograms" disabled>
                 </form>
