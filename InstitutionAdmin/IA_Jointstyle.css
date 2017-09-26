@@ -1,6 +1,6 @@
 .container{
 width: 1333px;
-height: 1100px;
+height: 1500px;
 margin-left: auto;
 margin-right: auto;
 background-color: #b3c1d6;
@@ -524,7 +524,7 @@ div[class="TitleHeader"]{
 }
 
 .institutionProfileContainer div[class="selectInstitutediv"]{
-    border: 1px solid black;
+    /*border: 1px solid black;*/
     width: 420px;
     height: 230px;
     float: left;
@@ -533,7 +533,7 @@ div[class="TitleHeader"]{
 }
 
 .institutionProfileContainer div[class="divProgramInfo"]{
-    border: 1px solid black;
+    /*border: 1px solid black;*/
     width: 370px;
     height: 230px;
     float: right;
@@ -978,3 +978,55 @@ input[class="commonBtn2InViewPrograms"]{
 /* End div save or cancel button*/
 
 /*------------------------------  End of add Institution user -------------------------------------------------------------------*/ 
+
+/*------------------------------------------- Clarks Code ------------------------------------------------------------------------*/
+
+/*---------------------------------------- Edit Institution -----------------------------------------------------------------------*/
+
+.editInstitutionsContainer .CAEDesignationDiv{
+	border-style: solid;
+border-width: 2px;
+width: 650px;
+height: 700px;
+margin: 20px;
+float:right;
+}
+
+.editInstitutionsContainer .institutionInformationDiv{
+border-style: solid;
+border-width: 2px;
+width: 575px;
+height: 700px;
+margin: 20px;
+float:left;
+}
+
+.editInstitutionsContainer h2[id="CAEDesignationHeader"]{
+	margin: 5px;
+	text-align: center;
+	padding: 0px;
+}
+
+/*---------------------------------------- End Edit Institution -----------------------------------------------------------------------*/
+
+/*---------------------------------------- Start Selected Institution -----------------------------------------------------------------------*/
+
+.selectedInstitutionContainer .CAEDesignationDiv{
+	border-style: solid;
+border-width: 2px;
+width: 650px;
+height: 700px;
+margin: 20px;
+float:right;
+}
+
+.selectedInstitutionContainer .institutionInformationDiv{
+border-style: solid;
+border-width: 2px;
+width: 575px;
+height: 700px;
+margin: 20px;
+float:left;
+}
+
+/*---------------------------------------- End Selectd Institution -----------------------------------------------------------------------*/
