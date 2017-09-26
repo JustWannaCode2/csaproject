@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="IA_viewInstitutionsStyle.css">
+<link rel="stylesheet" href="IA_Jointstyle.css">
 <title>View Institutions</title>
 </head>
 <body>
@@ -68,12 +68,13 @@
 
 
     <div class="viewInstitutionContainer"> <!-- Contains the Institution List and the filters -->
-		<div class="viewInstitutionHeader">
+		<div class="TitleHeader">
 			<h4>View Institutions</h4>
 		</div>
 
-			<div class="viewInstitutionsMultilineSelect"> <!-- Institution List div -->
-                <table>
+			<div class="InstitutionListDiv"> <!-- Institution List div -->
+                <h3 align=center><u>Select An Institution</u></h3>
+                <table align=center>
                     <tr>
                         <td>
 				<select multiple id="selectInstitution"> <!-- the select multiple for the institutions -->
@@ -92,21 +93,12 @@
 				                <input type="submit" name="selectInstitution" value="Select Institution" onclick="IA_selectedInstitution.htm" id="selectInstitutionButton">
                             </form>
                         </td>
-                        
-                        <td>
-                            <form action = "#" disabled>
-				                <input type="submit" disabled name="addInstitution" value="Add Institution" onclick="" id="addInstitutionButton">
-                            </form>
-                        </td>
-                        
-                        <td>
-				            <input type="submit" name="removeInstitution" disabled value="Remove Institution" onclick="" id="removeInstitutionButton">
-                        </td>
+
                     </tr>
                 </table>				
 			</div> <!--End of div viewProgramsMultilineSelect -->
 
-			<div class="filterBy" align=center> <!-- Filters for the institutions -->
+			<div class="AdvancedOptionsDiv" align=center> <!-- Filters for the institutions -->
     
     <h3 align=center><u>Advanced Options</u></h3>
     <table>
