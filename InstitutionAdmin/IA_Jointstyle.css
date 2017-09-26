@@ -3,10 +3,26 @@ width: 1333px;
 height: 1500px;
 margin-left: auto;
 margin-right: auto;
-background-color: #b3c1d6;
+background-color: white;
 border-style: solid;
-border-width: 2px;
-border-color: black;
+border-width: 1px;
+border-color: grey;
+}
+
+
+/*To Disable resize of text area*/
+textarea{
+    resize: none;
+}
+
+/*
+    Logo for CRRC
+*/
+img[class="CRRClogo"]{
+    width: 390px; height: 130px;
+    margin-left: auto;
+    margin-right: auto;
+    float: center;
 }
 
 
@@ -17,7 +33,8 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: #085646;
+
 }
 
 li {
@@ -33,7 +50,7 @@ li a, .dropbtn {
 }
 
 li a:hover, .dropdown:hover .dropbtn {
-    background-color: black;
+    background-color: #007ec7;
 }
 
 li.dropdown {
@@ -43,21 +60,21 @@ li.dropdown {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
+    background-color: #007ec7;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
 
 .dropdown-content a {
-    color: black;
+    color: white;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
     text-align: left;
 }
 
-.dropdown-content a:hover {background-color: #f1f1f1}
+.dropdown-content a:hover {background-color: #007ec7;color:#8bdbf6 }
 
 .dropdown:hover .dropdown-content {
     display: block;
@@ -65,11 +82,12 @@ li.dropdown {
 /*End Testing */
 
 div[class="TitleHeader"]{
-    background-color: #bfefff;
+    /*background-color: #007ec7;*/
 	color: #2b1459;
     width: 1333px;
     text-align: center;
     font-size: 18pt;
+    
 }
 
 /*########################################################### CSS Files from Kevin #################################*/
@@ -78,15 +96,19 @@ div[class="TitleHeader"]{
 
 /* This is div viewUserMultiLineSelect for viewUsers page */
 
+div[class="IA_viewUserContainer"]{
+   /* background-color: red;*/
+}
+
 .IA_viewUserContainer .viewUsersMultilineSelect{
-    background-color: #858fa0;
-    border-style: solid;
-    border-width: 1px;
+    /*background-color: #858fa0;*/
+   /* border: solid 1px black;*/
     border-radius: 10px;
     width: 450px;
     height: 400px;
     margin: 20px 00px 20px 200px;
     float:left;
+    
 }
 
 .IA_viewUserContainer select[id="lstBoxselectUserInViewUser"]{
@@ -99,6 +121,7 @@ div[class="TitleHeader"]{
     border-style: solid;
     border-radius: 5px;
     border-color: black;
+    
 }
 
 .IA_viewUserContainer form[id="selectUserButtonForm"]{
@@ -144,10 +167,8 @@ div[class="TitleHeader"]{
 /* This is for Div filterBy in viewUserPage*/
 
 .IA_viewUserContainer div[class="filterByInViewUsers"]{
-    background-color: #858fa0; 
-	border-style: solid;
-    border-width: 1px;
-    border-radius: 10px;
+    /*background-color: #858fa0; */
+	/*border: 1px solid black;*/
     width: 450px;
     height: 400px;
     margin: 20px 200px 20px 0px;
@@ -736,13 +757,13 @@ display: inline-block;
 
 /* Start Career Course Div */
 
-h4[class="careerCourseHeader"]{
+.IA_editProgramInYourInstituteContainer h4[class="careerCourseHeader"]{
     text-align: center;
     margin: 0px;
 }
 
 
-div[id="CareerCoursesDiv"]{
+.IA_editProgramInYourInstituteContainer div[id="CareerCoursesDiv"]{
    	width: 450px;
     height: 420px;
 	background-color: #858fa0;
@@ -755,14 +776,14 @@ div[id="CareerCoursesDiv"]{
 	border-radius: 10px;
 }
 
-div[id="CareerCourseSubDiv"]{
+.IA_editProgramInYourInstituteContainer div[id="CareerCourseSubDiv"]{
     margin: 25px 5px 10px 5px;
     width: 400px;
     height: 110px;
 }
 
 
-textarea[class="textarea1InAddProgram"]{
+.IA_editProgramInYourInstituteContainer textarea[class="textarea1InAddProgram"]{
   width:380px;
     height: 80px;
     border-width: 1px;
@@ -770,7 +791,7 @@ textarea[class="textarea1InAddProgram"]{
 	border-radius: 5px;
     margin: 5px;
 }
-input[class="commonBtnInCareerCourses"]{
+.IA_editProgramInYourInstituteContainer input[class="commonBtnInCareerCourses"]{
     font-size: 15px;
 	border-style: solid;
 	border-width: 1px;
@@ -782,13 +803,13 @@ input[class="commonBtnInCareerCourses"]{
     float: left;
 }
 
-div[id="CareerCourseSubDiv"]{
+.IA_editProgramInYourInstituteContainer div[id="CareerCourseSubDiv"]{
     margin: 25px 5px 10px 5px;
     width: 400px;
     height: 110px;
 }
 
-select[class="commonCmbBox3CSS"]{
+.IA_editProgramInYourInstituteContainer select[class="commonCmbBox3CSS"]{
     margin: 0px 0px 0px 5px;
 	padding: 0px;
     text-align: center;
@@ -803,7 +824,7 @@ select[class="commonCmbBox3CSS"]{
 
 /*start of General Education div in Edit Programs in Your institution */
 
-div[id="generalEduInSelectProgram"]{
+.IA_editProgramInYourInstituteContainer div[id="generalEduInSelectProgram"]{
     align-content:  right;
 	width: 420px;
     height: 420px;
@@ -816,11 +837,11 @@ div[id="generalEduInSelectProgram"]{
 	border-width: 1px;
 	border-radius: 10px;
 }
-h4[class="genEdReqHeader"]{
+.IA_editProgramInYourInstituteContainer h4[class="genEdReqHeader"]{
     text-align: center;
     margin: 0px;
 }
-select[class="selectProgramDropDown1"]{
+.IA_editProgramInYourInstituteContainer select[class="selectProgramDropDown1"]{
     width: 400px;
     height: 150px;
     float: left;
@@ -834,25 +855,25 @@ select[class="selectProgramDropDown1"]{
 
 
 /*  Start Save and cancel buttons in Edit Programs In your institute */
-div[id="saveOrCancelButtons"]{
+.IA_editProgramInYourInstituteContainer div[id="saveOrCancelButtons"]{
 	width: 1333px;
 	height: 50px;
 	float: right;
 }
-form[class="saveChangesToUserName"]{
+.IA_editProgramInYourInstituteContainer form[class="saveChangesToUserName"]{
 	text-align: center;
 	width: 160px;
 	margin: 0px 0px 0px 500px; 
 	float: left;
 }
-form[class="cancelChangesToUserName"]{
+.IA_editProgramInYourInstituteContainer form[class="cancelChangesToUserName"]{
 	text-align: center;
 	width: 160px;
 	margin: 0px 460px 0px 00px; 
 	float: right;
 }
 
-input[class="commonBtn2InViewPrograms"]{
+.IA_editProgramInYourInstituteContainer input[class="commonBtn2InViewPrograms"]{
      font-size: 15px;
 	border-style: solid;
 	border-width: 1px;
@@ -868,7 +889,111 @@ input[class="commonBtn2InViewPrograms"]{
 
 /*------------------------------  Start edit Institution user -------------------------------------------------------------------*/ 
 
+/*Start of select user*/
 
+.IA_editInstitutionUserContainer div[class="viewAllInstituteUser"]{
+    width: 1332px;
+   background-color: #858fa0; 
+    border: 1px solid black; 
+}
+
+.IA_editInstitutionUserContainer select{
+    width: 500px;
+    height: 200px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.IA_editInstitutionUserContainer input[class="commonbtn"]{
+     font-size: 10px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: black;
+	border-radius: 3px;
+    width: 80px;
+    height: 30px;
+    margin: 0px 20px 0px 20px;
+}
+/*End of select user*/
+.IA_editInstitutionUserContainer .addUserForm{
+	align-content:  right;
+	width: 450px;
+    height: 250px;
+	background-color: #858fa0;
+	padding: 10px;
+	float: left;
+	margin: 20px 15px 20px 200px;
+	border-style: solid;
+	border-color: black;
+	border-width: 1px;
+	border-radius: 10px;
+}
+.IA_editInstitutionUserContainer input[id="addUserInput"]{
+    display: inline-block;
+    font-size: 10pt;
+	padding: 3px 10px;
+	border-width: 2px;
+	border-style: solid;
+	border-color: black;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin: 2px;
+	width: 200px;
+	height: 43px;
+}
+
+/* Institution   */
+.IA_editInstitutionUserContainer .institute_addUser{
+	background-color: #858fa0;
+	width: 400px;
+	height: 250px;
+	padding: 12px 20px;
+	float: right;
+	border-color:black;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 10px;
+	margin: 20px 200px 20px 0px;
+
+}
+
+.IA_editInstitutionUserContainer textarea{
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+/* Start Div Save or Cancel Button */
+.IA_editInstitutionUserContainer div[id="saveOrCancelButtons"]{
+	width: 1300px;
+	height: 50px;
+	float: 0px auto;
+}
+
+form[class="saveChangesToUserName"]{
+	text-align: center;
+	width: 160px;
+	margin: 0px 0px 0px 500px; 
+	float: left;
+}
+form[class="cancelChangesToUserName"]{
+	text-align: center;
+	width: 160px;
+	margin: 0px 470px 0px 00px; 
+	float: right;
+}
+
+input[class="commonBtn2InViewPrograms"]{
+     font-size: 15px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: black;
+	border-radius: 10px;
+    width: 150px;
+    height: 30px;
+    margin: 5px;
+}
+
+/* End div save or cancel button*/
 
 /*------------------------------  End edit Institution user -------------------------------------------------------------------*/
 
