@@ -4,12 +4,11 @@
 <link rel="stylesheet" href="jointStyle.css">
 <title>Add Users</title>
 </head>
-<body>
-<div class="container">
-	<!-- Beginning of the new navigation bar html code -->
+    <header>
+    	<!-- Beginning of the new navigation bar html code -->
 <!-- Testing, Testing: 1,2,3 -->
 <div id="DDNavBar">
-<h2 align=center>Global Admin</h2>
+ <h2 align="center" style="margin: 0px"><img src="Images/CRRC%20Logo_Color-01.png"  class="CRRClogo"></h2>
     <ul>
         <li></li>
   <li><a href="index.htm">Home</a></li>
@@ -67,6 +66,10 @@
     </div><!-- End div id=DDNavBar -->
 <!-- End of new nav bar html code -->
 
+    </header>
+<body>
+<div class="container">
+
 
     <div class="addUserContainer">
 		<div class="TitleHeader">
@@ -76,30 +79,30 @@
 		<div class="addUserForm">
 			<form align="right">
 				First Name: 
-				<input type="text" placeholder="First Name" id="addUserInput">
+				<input type="text" placeholder="First Name" class="addUserInput">
 				<br>
                 Last Name: 
-				<input type="text"  placeholder="Last Name" id="addUserInput">
+				<input type="text"  placeholder="Last Name" class="addUserInput">
 				<br>
 				Email (Work):
-				<input type="email" placeholder="email address" id="addUserInput">
+				<input type="email" placeholder="email address" class="addUserInput">
 				<br>
 				Telephone Number (Work):
-				<input type="text" placeholder="Telephone Number" id="addUserInput">
+				<input type="text" placeholder="Telephone Number" class="addUserInput">
 				<br>
 				Telephone Number (Mobile):
-				<input type="text" placeholder="Telephone Number" id="addUserInput">
+				<input type="text" placeholder="Telephone Number" class="addUserInput">
 				<br>
                 Position:
-				<input type="text" placeholder="Telephone Number" id="addUserInput">
+				<input type="text" placeholder="Telephone Number" class="addUserInput">
 				<br>
 				Link:
-				<input type="text" placeholder="Link" id="addUserInput">
+				<input type="text" placeholder="Link" class="addUserInput">
 				<br>
 				
 			</form>		
-			<!--End of div addUserForm-->
-		</div>
+			
+		</div><!--End of div addUserForm-->
 		<div class="institute_addUser">
 			<fieldset>
 				<legend > Institute</legend>
@@ -117,24 +120,34 @@
 			<input type="radio" name="group1" value="MVCC Admin" id="mvccAdmin"> MVCC Admin
 			<input type="radio" name="group1" value="Institution Admin" id="institutionAdmin"> Institution Admin
             </fieldset>
-            <br>
-            <div align="center" style="width: 370px; margin: 15px;">
-                <form style="width: 170px; float: left">
+            </div><!--end of div Institute Add_user-->
+        <br>
+        <div class="userNameAndPwd">
+            <form align="center">
+                Username: <input type="text" placeholder="Enter Username" class="addUserInput">
+                <br>
+                Password: <input type="password" placeholder="Enter User Password" class="addUserInput">
+                
+                <!--<input type="password" placeholder="Enter User Password" class="addUserInput"  min="5" maxlength="15" required>-->
+                
+                <br><br>
                     <input type="submit" value="Add User" class="addUserButton">
-                </form>
-                <form action="viewUsers.htm" style="width: 160px;">
                     <input type="submit" value="Cancel" class="btnCancel">
-                </form>
-            </div>
-            
-			
-			</div><!--end of div Institute Add_user-->
-
+                
+            </form>
+        </div> <!--End of div user name and password-->
 	
 		
 	</div><!--End of div add User container-->
     
 		
 </div><!--End of div Container-->
+    <footer>
+   <h2 align="center" style="margin: 0px"> <img src="Images/cae_logo-transparent-stroke.png" style="width: 180px;height: 180px">    
+        <img src="Images/MVCC-logo.png" style="height: 180px;">
+        <img src="Images/DHSlogo.png" style="width: 180px;height: 180px">
+        <img src="Images/NSAlogo.png" style="height: 180px">
+   </h2>
+</footer>
 </body>
 </html>

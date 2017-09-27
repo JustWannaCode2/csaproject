@@ -27,7 +27,7 @@
     <a href="javascript:void(0)" class="dropbtn">Users</a>
     <div class="dropdown-content">
       <a href="IA_viewUsers.htm">View All Users</a>
-      <a href="IA_editYourInstitutionUsers.htm">Edit Your Institution User</a>
+      <a href="IA_editInstitutionUser.htm">Edit Your Institution User</a>
       <a href="IA_addInstitutionUsers.htm">Add Institution Users</a>
     </div>
   </li>
@@ -74,19 +74,19 @@
 		<div class="addUserForm">
 			<form align="right">
 				First Name: 
-				<input type="text" name="adminName" placeholder="First Name" id="addUserInput">
+				<input type="text" name="adminName" placeholder="First Name" class="addUserInput">
 				<br>
                 Last Name: 
-				<input type="text" name="adminName" placeholder="Last Name" id="addUserInput">
+				<input type="text" name="adminName" placeholder="Last Name" class="addUserInput">
 				<br>
 				Email (Work):
-				<input type="email" name="userEmail" placeholder="email address" id="addUserInput">
+				<input type="email" name="userEmail" placeholder="email address" class="addUserInput">
 				<br>
 				Telephone Number (Work):
-				<input type="text" name="telephoneWork" placeholder="Telephone Number" id="addUserInput">
+				<input type="text" name="telephoneWork" placeholder="Telephone Number" class="addUserInput">
 				<br>
 				Telephone Number (Mobile):
-				<input type="text" name="telephoneMobile" placeholder="Telephone Number" id="addUserInput">
+				<input type="text" name="telephoneMobile" placeholder="Telephone Number" class="addUserInput">
 				<br>
 				
 			</form>		
@@ -97,13 +97,13 @@
                 <tr align="center" style="width: 280px;">
                     <td>Position:</td>
                     <td>
-                        <input type="text" id="addUserInput" placeholder="The Position of the User">
+                        <input type="text" class="addUserInput" placeholder="The Position of the User">
                     </td>
                 </tr>
                 <tr>
                     <td align="center">Link:</td>
                     <td> 
-                       <input type="text" id="addUserInput" placeholder="Position of User in Institute">
+                       <input type="text" class="addUserInput" placeholder="Position of User in Institute">
                     </td>
                 </tr>
                 <tr>
@@ -113,7 +113,16 @@
             </table>
 			
 			</div><!--end of div Institution add user-->
-
+         <div class="userNameAndPwd">
+            <form align="center">
+                Username: <input type="text" placeholder="Enter Username" class="addUserInput">
+                <br>
+                Password: <input type="password" placeholder="Enter User Password" class="addUserInput">
+                
+                <!--<input type="password" placeholder="Enter User Password" class="addUserInput"  min="5" maxlength="15" required>-->
+                          
+            </form>
+        </div> <!--End of div user name and password-->
 		<div id="saveOrCancelButtons">
 			<form action="IA_viewUsers.htm" class="saveChangesToUserName" >
 				<input type="submit" value="Save Changes" class="commonBtn2InViewPrograms">
