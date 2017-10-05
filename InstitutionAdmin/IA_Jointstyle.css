@@ -1091,3 +1091,19 @@ height: 550px;
 margin: 55px;
 float:right;
 }
+
+/*--------------------------------------- End View Institutions  ---------------------------------------------------------------------*/
+
+/*--------------------------------------------------View By Programs--------------------------------------------------------------------*/
+.vbp_Container .vbp_InstituteA
+{
+   float:left;
+    margin:0px 0px 0px 100px;
+}
+
+.vbp_Container .vbp_InstituteB
+{
+    float:right;
+    margin:0px 100px 0px 0px;
+}
+/* End viewAgreementsByPrograms.htm */

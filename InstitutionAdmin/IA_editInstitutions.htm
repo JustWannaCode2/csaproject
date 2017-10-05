@@ -7,60 +7,72 @@
       <link rel="stylesheet" href="IA_Jointstyle.css">
       <title>View Institutions</title>
    </head>
+    
+    <header>
+    <!-- Testing, Testing: 1,2,3 -->
+<div id="DDNavBar">
+<h2 align=center>CSSIA Database</h2>
+    <ul>
+        <li></li>
+  <li><a href="IA_Index.htm">Home</a></li>
+  
+  <li class="dropdown" style="float:right">
+    <a href="javascript:void(0)" class="dropbtn">Institution Admin Profile</a>
+    <div class="dropdown-content">
+      <a href="#">View User Profile</a>
+      <a href="IA_InstituteProfile.htm">View Institution Profile</a>
+      <a href="#">Logout</a>
+    </div>
+  </li>
+  
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Users</a>
+    <div class="dropdown-content">
+      <a href="IA_viewUsers.htm">View All Users</a>
+      <a href="IA_editYourInstitutionUsers.htm">Edit Your Institution User</a>
+      <a href="IA_addInstitutionUsers.htm">Add Institution Users</a>
+    </div>
+  </li>
+  
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Institutions</a>
+    <div class="dropdown-content">
+      <a href="IA_viewInstitutions.htm">View All Institutions</a>
+      <a href="IA_editInstitutions.htm">Edit Your Institution</a>
+    </div>
+  </li>
+  
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Programs</a>
+    <div class="dropdown-content">
+      <a href="IA_viewPrograms.htm">View All Programs</a>
+      <a href="IA_editProgramsInYourInstitute.htm">Edit Your Programs</a>
+    </div>
+  </li>
+
+<li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Courses</a>
+    <div class="dropdown-content">
+      <a href="IA_viewCourse.htm">View All Courses</a>
+      <a href="IA_addCourse.htm">Add A Course To Your Program</a>
+    </div>
+  </li>
+  
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Agreements</a>
+    <div class="dropdown-content">
+      <a href="IA_viewAgreementsIndex.htm">View Transfer Agreements</a>
+      <a href="IA_createAgreement.htm">Create Transfer Agreements</a>
+    </div>
+  </li>
+  
+  </ul>
+    </div><!-- End div id=DDNavBar -->
+</header>
+    
+    
    <body>
       <div class="container">
-         <!-- Testing, Testing: 1,2,3 -->
-         <div id="DDNavBar">
-            <h2 align=center>Institution Admin</h2>
-            <ul>
-               <li></li>
-               <li><a href="IA_Index.htm">Home</a></li>
-               <li class="dropdown" style="float:right">
-                  <a href="javascript:void(0)" class="dropbtn">Institution Admin Profile</a>
-                  <div class="dropdown-content">
-                     <a href="#">View User Profile</a>
-                     <a href="#">View Institution Profile</a>
-                     <a href="#">Logout</a>
-                  </div>
-               </li>
-               <li class="dropdown">
-                  <a href="javascript:void(0)" class="dropbtn">Users</a>
-                  <div class="dropdown-content">
-                     <a href="IA_viewUsers.htm">View All Users</a>
-                     <a href="IA_addInstitutionUsers.htm">Add Institution Users</a>
-                  </div>
-               </li>
-               <li class="dropdown">
-                  <a href="javascript:void(0)" class="dropbtn">Institutions</a>
-                  <div class="dropdown-content">
-                     <a href="IA_viewInstitutions.htm">View All Institutions</a>
-                     <a href="IA_editInstitutions.htm">Edit Your Institution</a>
-                  </div>
-               </li>
-               <li class="dropdown">
-                  <a href="javascript:void(0)" class="dropbtn">Programs</a>
-                  <div class="dropdown-content">
-                     <a href="IA_viewPrograms.htm">View All Programs</a>
-                     <a href="IA_editPrograms.htm">Edit Your Programs</a>
-                  </div>
-               </li>
-               <li class="dropdown">
-                  <a href="javascript:void(0)" class="dropbtn">Courses</a>
-                  <div class="dropdown-content">
-                     <a href="IA_viewCourse.htm">View All Courses</a>
-                     <a href="IA_addCourse.htm">Add A Course To Your Program</a>
-                  </div>
-               </li>
-               <li class="dropdown">
-                  <a href="javascript:void(0)" class="dropbtn">Agreements</a>
-                  <div class="dropdown-content">
-                     <a href="#">View Agreements</a>
-                     <a href="#">Add Agreements</a>
-                  </div>
-               </li>
-            </ul>
-         </div><!-- End div id=DDNavBar -->
-         
          <div class="editInstitutionsContainer">
             <div class="TitleHeader">
                <h4>Institution Name (Institution ID)</h4>
