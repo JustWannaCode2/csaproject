@@ -1,183 +1,175 @@
 <!DOCTYPE html>
 <html>
-<head>
-   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
-<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-<link rel="stylesheet" href="IA_Jointstyle.css">
-<title>Selected Program</title>
-</head>
-<body>
-<div class="container">
-	<!-- Beginning of the new navigation bar html code -->
-<!-- Testing, Testing: 1,2,3 -->
-<div id="DDNavBar">
-<h2 align=center>Institution Admin</h2>
-    <ul>
-        <li></li>
-  <li><a href="IA_Index.htm">Home</a></li>
-  
-  <li class="dropdown" style="float:right">
-    <a href="javascript:void(0)" class="dropbtn">Institution Admin Profile</a>
-    <div class="dropdown-content">
-      <a href="#">View User Profile</a>
-      <a href="IA_InstituteProfile.htm">View Institution Profile</a>
-      <a href="#">Logout</a>
-    </div>
-  </li>
-  
-  <li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">Users</a>
-    <div class="dropdown-content">
-      <a href="IA_viewUsers.htm">View All Users</a>
-      <a href="IA_editYourInstitutionUsers.htm">Edit Your Institution User</a>
-      <a href="IA_addInstitutionUsers.htm">Add Institution Users</a>
-    </div>
-  </li>
-  
-  <li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">Institutions</a>
-    <div class="dropdown-content">
-      <a href="IA_viewInstitutions.htm">View All Institutions</a>
-      <a href="IA_editInstitutions.htm">Edit Your Institution</a>
-    </div>
-  </li>
-  
-  <li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">Programs</a>
-    <div class="dropdown-content">
-      <a href="IA_viewPrograms.htm">View All Programs</a>
-      <a href="IA_editProgramsInYourInstitute.htm">Edit Your Programs</a>
-    </div>
-  </li>
-
-<li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">Courses</a>
-    <div class="dropdown-content">
-      <a href="IA_viewCourse.htm">View All Courses</a>
-      <a href="IA_addCourse.htm">Add A Course To Your Program</a>
-    </div>
-  </li>
-  
-  <li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">Agreements</a>
-    <div class="dropdown-content">
-      <a href="IA_viewAgreementsIndex.htm">View Transfer Agreements</a>
-      <a href="IA_createAgreement.htm">Create Transfer Agreements</a>
-    </div>
-  </li>
-  
-  </ul>
-    </div><!-- End div id=DDNavBar -->
-    
-<div class="IA_selectProgramContainer">
-		<div class="TitleHeader">
-			<h4>Selected Programs Name goes here</h4>
-		</div>
-
-		<div class="programInfoInSelectProgram">
-			<table align="center">
-                <tr>
-                <h4 class="programInformationHeader">Program Information</h4><br>
-                </tr>
-                <tr>
-                    <td>Program ID:</td>
-                    <td>
+   <head>
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+      <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+      <link rel="stylesheet" href="IA_Jointstyle.css">
+      <title>Selected Program</title>
+   </head>
+   <header>
+      <!-- Beginning of the new navigation bar html code -->
+      <!-- Testing, Testing: 1,2,3 -->
+      <div id="DDNavBar">
+         <h2 align="center" style="margin: 0px"><img src="Images/CRRC%20Logo_Color-01.png"  class="CRRClogo"></h2>
+         <ul>
+            <li></li>
+            <li><a href="IA_Index.htm">Home</a></li>
+            <li class="dropdown" style="float:right">
+               <a href="javascript:void(0)" class="dropbtn">Institution Admin Profile</a>
+               <div class="dropdown-content">
+                  <a href="#">View User Profile</a>
+                  <a href="IA_InstituteProfile.htm">View Institution Profile</a>
+                  <a href="#">Logout</a>
+               </div>
+            </li>
+            <li class="dropdown">
+               <a href="javascript:void(0)" class="dropbtn">Users</a>
+               <div class="dropdown-content">
+                  <a href="IA_viewUsers.htm">View All Users</a>
+                  <a href="IA_editInstitutionUser.htm">Edit Your Institution User</a>
+                  <a href="IA_addInstitutionUsers.htm">Add Institution Users</a>
+               </div>
+            </li>
+            <li class="dropdown">
+               <a href="javascript:void(0)" class="dropbtn">Institutions</a>
+               <div class="dropdown-content">
+                  <a href="IA_viewInstitutions.htm">View All Institutions</a>
+                  <a href="IA_editInstitutions.htm">Edit Your Institution</a>
+               </div>
+            </li>
+            <li class="dropdown">
+               <a href="javascript:void(0)" class="dropbtn">Programs</a>
+               <div class="dropdown-content">
+                  <a href="IA_viewPrograms.htm">View All Programs</a>
+                  <a href="IA_editProgramsInYourInstitute.htm">Edit Your Programs</a>
+               </div>
+            </li>
+            <li class="dropdown">
+               <a href="javascript:void(0)" class="dropbtn">Courses</a>
+               <div class="dropdown-content">
+                  <a href="IA_viewCourse.htm">View All Courses</a>
+                  <a href="IA_addCourse.htm">Add A Course To Your Program</a>
+               </div>
+            </li>
+            <li class="dropdown">
+               <a href="javascript:void(0)" class="dropbtn">Agreements</a>
+               <div class="dropdown-content">
+                  <a href="IA_viewAgreementsIndex.htm">View Transfer Agreements</a>
+                  <a href="IA_createAgreement.htm">Create Transfer Agreements</a>
+               </div>
+            </li>
+         </ul>
+      </div>
+      <!-- End div id=DDNavBar -->
+   </header>
+   <body>
+      <div class="container">
+         <div class="IA_selectProgramContainer">
+            <div class="TitleHeader">
+               <h4>Selected Programs Name goes here</h4>
+            </div>
+            <div class="programInfoInSelectProgram">
+               <table align="center">
+                  <tr>
+                     <h4 class="programInformationHeader">Program Information</h4>
+                     <br>
+                  </tr>
+                  <tr>
+                     <td>Program ID:</td>
+                     <td>
                         <input type="text" name="name" placeholder="Program ID" class="commonTxtBoxCSS" readonly>
-                    </td>
-                    <td> CAE Designation:</td>
-                    <td>
+                     </td>
+                     <td> CAE Designation:</td>
+                     <td>
                         <select  class="commonCmbBoxCSS" readonly>
-					       <option></option>
-				        </select>
-                    </td>
-                </tr>
-				<tr>
-                    <td>Program Title:</td>
-                    <td>
-                        <input type="text" name="programTitle" placeholder="Program Title"   class="commonTxtBoxCSS" readonly>
-                    </td>
-                    <td>Total Credit Hours:</td>
-                    <td>
-                        <select id="addNumOfCreditsInAddProgramName"  class="commonCmbBoxCSS" readonly>
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                            <option>6</option>
-                            <option>Subject to change</option>
+                           <option></option>
                         </select>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Program Type:</td>
-                    <td>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>Program Title:</td>
+                     <td>
+                        <input type="text" name="programTitle" placeholder="Program Title"   class="commonTxtBoxCSS" readonly>
+                     </td>
+                     <td>Total Credit Hours:</td>
+                     <td>
+                        <select id="addNumOfCreditsInAddProgramName"  class="commonCmbBoxCSS" readonly>
+                           <option>1</option>
+                           <option>2</option>
+                           <option>3</option>
+                           <option>4</option>
+                           <option>5</option>
+                           <option>6</option>
+                           <option>Subject to change</option>
+                        </select>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>Program Type:</td>
+                     <td>
                         <select class="commonCmbBoxCSS" readonly>
-					       <option></option>
-				        </select>
-                    </td>
-                    <td>Curriculam Code:</td>
-                    <td>
+                           <option></option>
+                        </select>
+                     </td>
+                     <td>Curriculam Code:</td>
+                     <td>
                         <input type="text" placeholder="Code" id="addCurriculamCodeInSelectProgram"  class="commonTxtBoxCSS" readonly>
-                    </td>
-                </tr>
-				<tr align="center">
-                    <td colspan="6">
+                     </td>
+                  </tr>
+                  <tr align="center">
+                     <td colspan="6">
                         Program URL:
-                    </td>
-                </tr>
-				<tr>
-                    <td colspan="5">
-                    <input type="text" placeholder="URL" id="addProgramURLInSelectProgram"  class="commonTxtBox3CSS" readonly>
-                    </td>
-				</tr>
-        	</table>		
-		</div> 
-        
-      
-        
-        <div id="CareerCoursesDiv">
-        <h4 class="careerCourseHeader">Career Courses:</h4>
-            <select class="selectProgramDropDown1" multiple>
-				<option></option>
-					<option></option>
-					<option></option>
-					<option></option>
-				</select>
-            <textarea class="textarea1InAddProgram" placeholder="Course details" readonly></textarea>
-        </div>
-        
-		
-        
-        <div id="generalEduInSelectProgram">
-        <h4 class="genEdReqHeader">General Education Requirements:</h4>
-            <select class="selectProgramDropDown1" multiple>
-				    <option></option>
-					<option></option>
-					<option></option>
-					<option></option>
-            </select>
-            
-            <textarea class="textarea1InAddProgram" placeholder="Course Details" readonly></textarea>
-             
-        <!--End of div general Education Requirements-->
-        </div>
-        
-        
-		<div id="saveOrCancelButtons" style="display: none">
-			<form action="" class="saveChangesToUserName" >
-				<input type="submit" value="Save Changes" class="commonBtn2InViewPrograms">
-			</form>
-			<form action="" class="cancelChangesToUserName">
-				<input type="submit" value="Cancel Changes" class="commonBtn2InViewPrograms">
-			</form>
-			
-		</div>	<!--End of save or cancel buttons div-->
-		
-	</div><!--End of div View User container-->
-    
-		
-		
-</div> <!--End of div Container-->
-</body> <!--End of Body tag-->
-</html><!--End of HTML tag-->
+                     </td>
+                  </tr>
+                  <tr>
+                     <td colspan="5">
+                        <input type="text" placeholder="URL" id="addProgramURLInSelectProgram"  class="commonTxtBox3CSS" readonly>
+                     </td>
+                  </tr>
+               </table>
+            </div>
+            <div id="CareerCoursesDiv">
+               <h4 class="careerCourseHeader">Career Courses:</h4>
+               <select class="selectProgramDropDown1" multiple>
+                  <option></option>
+                  <option></option>
+                  <option></option>
+                  <option></option>
+               </select>
+               <textarea class="textarea1InAddProgram" placeholder="Course details" readonly></textarea>
+            </div>
+            <div id="generalEduInSelectProgram">
+               <h4 class="genEdReqHeader">General Education Requirements:</h4>
+               <select class="selectProgramDropDown1" multiple>
+                  <option></option>
+                  <option></option>
+                  <option></option>
+                  <option></option>
+               </select>
+               <textarea class="textarea1InAddProgram" placeholder="Course Details" readonly></textarea>
+               <!--End of div general Education Requirements-->
+            </div>
+            <div id="saveOrCancelButtons" style="display: none">
+               <form action="" class="saveChangesToUserName" >
+                  <input type="submit" value="Save Changes" class="commonBtn2InViewPrograms">
+               </form>
+               <form action="" class="cancelChangesToUserName">
+                  <input type="submit" value="Cancel Changes" class="commonBtn2InViewPrograms">
+               </form>
+            </div>
+            <!--End of save or cancel buttons div-->
+         </div>
+         <!--End of div View User container-->
+      </div>
+      <!--End of div Container-->
+   </body>
+   <!--End of Body tag-->
+   <footer>
+      <h2 align="center" style="margin: 0px"> <img src="Images/cae_logo-transparent-stroke.png" style="width: 180px;height: 180px">    
+         <img src="Images/MVCC-logo.png" style="height: 180px;">
+         <img src="Images/DHSlogo.jpg" style="width: 180px;height: 180px">
+         <img src="Images/NSAlogo.png" style="height: 180px">
+      </h2>
+   </footer>
+</html>
+<!--End of HTML tag-->

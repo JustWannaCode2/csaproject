@@ -6,12 +6,11 @@
 <link rel="stylesheet" href="jointStyle.css">
 <title>Add Program</title>
 </head>
-<body>
-<div class="container">
-	<!-- Beginning of the new navigation bar html code -->
-<!-- Testing, Testing: 1,2,3 -->
+<header>
+    <!-- Beginning of the new navigation bar html code -->
+    <!-- Testing, Testing: 1,2,3 -->
 <div id="DDNavBar">
-<h2 align=center>Global Admin</h2>
+ <h2 align="center" style="margin: 0px"><img src="Images/CRRC%20Logo_Color-01.png"  class="CRRClogo"></h2>
     <ul>
         <li></li>
   <li><a href="index.htm">Home</a></li>
@@ -68,6 +67,11 @@
   </ul>
     </div><!-- End div id=DDNavBar -->
 <!-- End of new nav bar html code -->
+
+</header>
+<body>
+<div class="container">
+	
 
 <div class="addProgramContainer">
 		<div class="TitleHeader">
@@ -153,17 +157,17 @@
 			</form>
             <br>
             <script>
-                /*
+                
                  $(document).ready(function(){
                         $("#btnAddCourseInAddProgram").click(function(){
                             //Enable the Option A fields
                             $("#CareerCourseSubDiv").show();
                         });
                 });
-                */
+                
             </script>
             
-            <div id="CareerCourseSubDiv">
+            <div id="CareerCourseSubDiv" style="display: none">
                 <select class="commonCmbBox3CSS">
 					<option>Department:</option>
                     <option></option>
@@ -205,17 +209,17 @@
 			</form>
             
             <script>
-                /*
+                
                  $(document).ready(function(){
                         $("#addCourseInGenEdReq").click(function(){
                             //Enable the Option A fields
                             $("#GeneralEducationSubDiv").show();
                         });
                 });
-                */
+                
             </script>
             
-            <div id="GeneralEducationSubDiv">
+            <div id="GeneralEducationSubDiv" style="display: none;">
                 <select class="commonCmbBox3CSS" >
 					<option>Department:</option>
                     <option></option>
@@ -255,4 +259,11 @@
 		
 </div> <!--End of div Container-->
 </body> <!--End of Body tag-->
+       <footer>
+   <h2 align="center" style="margin: 0px"> <img src="Images/cae_logo-transparent-stroke.png" style="width: 180px;height: 180px">    
+        <img src="Images/MVCC-logo.png" style="height: 180px;">
+        <img src="Images/DHSlogo.png" style="width: 180px;height: 180px">
+        <img src="Images/NSAlogo.png" style="height: 180px">
+   </h2>
+</footer>
 </html><!--End of HTML tag-->
