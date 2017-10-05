@@ -7,6 +7,20 @@ background-color: white;
 border: 0px solid grey;
 }
 
+body
+{
+    background-color: #858fa0;
+}
+
+header
+{
+    background-color: white;
+}
+
+footer
+{
+    background-color: white;
+}
 
 /*To Disable resize of text area*/
 textarea{
