@@ -1,140 +1,134 @@
 <!DOCTYPE html>
 <html>
-<head>
-<link rel="stylesheet" href="jointStyle.css">
-<title>User Name</title>
-</head>
-<header>
-    <!-- Beginning of the new navigation bar html code -->
-<!-- Testing, Testing: 1,2,3 -->
-<div id="DDNavBar">
-<h2 align="center" style="margin: 0px"><img src="Images/CRRC%20Logo_Color-01.png"  class="CRRClogo"></h2>
-    <ul>
-        <li></li>
-  <li><a href="index.htm">Home</a></li>
-  
-  <li class="dropdown" style="float:right">
-    <a href="javascript:void(0)" class="dropbtn">Global Admin Profile</a>
-    <div class="dropdown-content">
-      <a href="#">View Profile</a>
-      <a href="#">Logout</a>
-    </div>
-  </li>
-  
-  <li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">Users</a>
-    <div class="dropdown-content">
-      <a href="viewUsers.htm">View Users</a>
-      <a href="addUsers.htm">Add Users</a>
-    </div>
-  </li>
-  
-  <li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">Institutions</a>
-    <div class="dropdown-content">
-      <a href="viewInstitutions.htm">View Institutions</a>
-      <a href="addInstitution.htm">Add Institutions</a>
-    </div>
-  </li>
-  
-  <li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">Programs</a>
-    <div class="dropdown-content">
-      <a href="viewPrograms.htm">View Programs</a>
-      <a href="addPrograms.htm">Add Programs</a>
-    </div>
-  </li>
-
-<li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">Courses</a>
-    <div class="dropdown-content">
-      <a href="viewCourse.htm">View Courses</a>
-      <a href="addCourse.htm">Add Courses</a>
-    </div>
-  </li>
-  
-  <li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">Agreements</a>
-    <div class="dropdown-content">
-      <a href="viewAgreementsIndex.htm">View Transfer Agreements</a>
-      <a href="createAgreement.htm">Create Transfer Agreements</a>
-        <a href="removeAgreement.htm">Remove Transfer Agreements</a>
-    </div>
-  </li>
-  
-  </ul>
-    </div><!-- End div id=DDNavBar -->
-<!-- End of new nav bar html code -->
-</header>
-<body>
-<div class="container">
-	
-
-<div class="selectedUserContainer">
-		<div class="TitleHeader">
-			<h4>Selected User Name goes here </h4>
-		</div>
-
-		<div class="selectUserForm">
-			<form align="right">
-				First Name: 
-				<input type="text" placeholder="Name" id="addUserInput">
-				<br>
-                Last Name: 
-				<input type="text" placeholder="Name" id="addUserInput">
-				<br>
-				Admin ID: 
-				<input type="text" placeholder="Admin ID" id="addUserInput">
-				<br>
-				Admin Type:
-				<select id="cmbselectAdminTypeInSelectUser">
-					<option></option>
-				</select>
-				<br>
-				Telephone Number (Work):
-				<input type="text"  placeholder="Telephone Number" id="addUserInput">
-				<br>
-				Telephone Number (Mobile):
-				<input type="text" placeholder="Telephone Number" id="addUserInput">
-				<br>
-				
-			</form>		
-			<!--End of div addUserForm-->
-		</div>
-		<div class="institute_selectUser">
-			<div class="chooseInstituteBox">
-				<p id="instituteLabelInviewUser_selectUser">Institution:</p>
-				<select class="selectInstituteDropDownInviewUser_selectUser">
-				<option></option>
-					<option></option>
-					<option></option>
-					<option></option>
-				</select>
-			
-			<br>
-			<p id="positionLabelInInstitutionBox">Position:</p>
-				<input type="text" name="positionLabel" placeholder="Position" id="addUserPosition">
-				<br>
-				<p id="linkLabelInInstitutionBox">Link: </p> 
-				<input type="text" name="linkLabel" placeholder="Add Link" id="addUserInfoLink">
-				<br>
-			
-				</div>
-		<!--end of div institute-->
-		</div>
-		<div align="center" id="saveOrCancelButtons">
-			<form action="" id="saveChangesToUserName" >
-				<input type="submit" value="Save Changes" class="btnSaveChanges">
-			</form>
-			<form action="" id="cancelChangesToUserName">
-				<input type="submit" value="Cancel Changes" name = "cancelChangesToUserName" class="btnCancelChanges">
-			</form>
-			<!--End of save or cancel buttons div-->
-		</div>	
-		<!--End of div View User container-->
-	</div>
-		
-		<!--End of div Container-->
-</div>
-</body>
+   <head>
+      <link rel="stylesheet" href="jointStyle.css">
+      <title>User Name</title>
+   </head>
+   <header>
+      <!-- Beginning of the new navigation bar html code -->
+      <!-- Testing, Testing: 1,2,3 -->
+      <div id="DDNavBar">
+         <h2 align="center" style="margin: 0px"><img src="Images/CRRC%20Logo_Color-01.png"  class="CRRClogo"></h2>
+         <ul>
+            <li></li>
+            <li><a href="index.htm">Home</a></li>
+            <li class="dropdown" style="float:right">
+               <a href="javascript:void(0)" class="dropbtn">Global Admin Profile</a>
+               <div class="dropdown-content">
+                  <a href="#">View Profile</a>
+                  <a href="#">Logout</a>
+               </div>
+            </li>
+            <li class="dropdown">
+               <a href="javascript:void(0)" class="dropbtn">Users</a>
+               <div class="dropdown-content">
+                  <a href="viewUsers.htm">View Users</a>
+                  <a href="addUsers.htm">Add Users</a>
+               </div>
+            </li>
+            <li class="dropdown">
+               <a href="javascript:void(0)" class="dropbtn">Institutions</a>
+               <div class="dropdown-content">
+                  <a href="viewInstitutions.htm">View Institutions</a>
+                  <a href="addInstitution.htm">Add Institutions</a>
+               </div>
+            </li>
+            <li class="dropdown">
+               <a href="javascript:void(0)" class="dropbtn">Programs</a>
+               <div class="dropdown-content">
+                  <a href="viewPrograms.htm">View Programs</a>
+                  <a href="addPrograms.htm">Add Programs</a>
+               </div>
+            </li>
+            <li class="dropdown">
+               <a href="javascript:void(0)" class="dropbtn">Courses</a>
+               <div class="dropdown-content">
+                  <a href="viewCourse.htm">View Courses</a>
+                  <a href="addCourse.htm">Add Courses</a>
+               </div>
+            </li>
+            <li class="dropdown">
+               <a href="javascript:void(0)" class="dropbtn">Agreements</a>
+               <div class="dropdown-content">
+                  <a href="viewAgreementsIndex.htm">View Transfer Agreements</a>
+                  <a href="createAgreement.htm">Create Transfer Agreements</a>
+                  <a href="removeAgreement.htm">Remove Transfer Agreements</a>
+               </div>
+            </li>
+         </ul>
+      </div>
+      <!-- End div id=DDNavBar -->
+      <!-- End of new nav bar html code -->
+   </header>
+   <body>
+      <div class="container">
+         <div class="selectedUserContainer">
+            <div class="TitleHeader">
+               <h4>Selected User Name goes here </h4>
+            </div>
+            <div class="selectUserForm">
+               <form align="right">
+                  First Name: 
+                  <input type="text" placeholder="Name" id="addUserInput">
+                  <br>
+                  Last Name: 
+                  <input type="text" placeholder="Name" id="addUserInput">
+                  <br>
+                  Admin ID: 
+                  <input type="text" placeholder="Admin ID" id="addUserInput">
+                  <br>
+                  Admin Type:
+                  <select id="cmbselectAdminTypeInSelectUser">
+                     <option></option>
+                  </select>
+                  <br>
+                  Telephone Number (Work):
+                  <input type="text"  placeholder="Telephone Number" id="addUserInput">
+                  <br>
+                  Telephone Number (Mobile):
+                  <input type="text" placeholder="Telephone Number" id="addUserInput">
+                  <br>
+               </form>
+               <!--End of div addUserForm-->
+            </div>
+            <div class="institute_selectUser">
+               <div class="chooseInstituteBox">
+                  <p id="instituteLabelInviewUser_selectUser">Institution:</p>
+                  <select class="selectInstituteDropDownInviewUser_selectUser">
+                     <option></option>
+                     <option></option>
+                     <option></option>
+                     <option></option>
+                  </select>
+                  <br>
+                  <p id="positionLabelInInstitutionBox">Position:</p>
+                  <input type="text" name="positionLabel" placeholder="Position" id="addUserPosition">
+                  <br>
+                  <p id="linkLabelInInstitutionBox">Link: </p>
+                  <input type="text" name="linkLabel" placeholder="Add Link" id="addUserInfoLink">
+                  <br>
+               </div>
+               <!--end of div institute-->
+            </div>
+            <div align="center" id="saveOrCancelButtons">
+               <form action="" id="saveChangesToUserName" >
+                  <input type="submit" value="Save Changes" class="btnSaveChanges">
+               </form>
+               <form action="" id="cancelChangesToUserName">
+                  <input type="submit" value="Cancel Changes" name = "cancelChangesToUserName" class="btnCancelChanges">
+               </form>
+               <!--End of save or cancel buttons div-->
+            </div>
+            <!--End of div View User container-->
+         </div>
+         <!--End of div Container-->
+      </div>
+   </body>
+   <footer>
+      <h2 align="center" style="margin: 0px"> <img src="Images/cae_logo-transparent-stroke.png" style="width: 180px;height: 180px">    
+         <img src="Images/MVCC-logo.png" style="height: 180px;">
+         <img src="Images/DHSlogo.png" style="width: 180px;height: 180px">
+         <img src="Images/NSAlogo.png" style="height: 180px">
+      </h2>
+   </footer>
 </html>

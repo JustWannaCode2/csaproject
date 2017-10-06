@@ -5,16 +5,27 @@ margin-left: auto;
 margin-right: auto;
 background-color: white;
 border: 0px solid grey;
+margin-top: 0px;
+padding: 20px 2px 2px 2px;
+
 }
 
 body
 {
     background-color: #858fa0;
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+    
 }
+
 
 header
 {
     background-color: white;
+    width: 100%;
+    margin: 0px;
+   
 }
 
 footer
@@ -37,7 +48,19 @@ img[class="CRRClogo"]{
     float: center;
 }
 
+/* For JavaScript*/
+.nav-placeholder{
+    margin: 0px;
+}
 
+.fixed{
+    position: fixed;
+    top: 0;
+    min-width: 100%;
+}
+
+
+/*End classes for JavaScript */
 /*Testing 1,2,3 */
 
 ul {
@@ -528,8 +551,8 @@ div[class="IA_viewUserContainer"]{
     padding: 2px;
 }
 .institutionProfileContainer div input[type="text"]{
-    border: 2px solid black;
-    border-radius: 5px;
+    border: 1px solid black;
+    border-radius: 3px;
     padding: 2px;
 }
 
@@ -551,7 +574,7 @@ div[class="IA_viewUserContainer"]{
 .institutionProfileContainer div[class="programs"]{
     border: 2px solid black;
     width: 820px;
-    height: 800px;
+    height: 880px;
     float:right;
     margin: 0px 10px 0px 0px;
 }
@@ -580,12 +603,13 @@ div[class="IA_viewUserContainer"]{
 }
 /* Start of Div sub Programs */
 .institutionProfileContainer div[class="divSub_Programs"]{
-    border: 2px solid black;
+    border: 5px solid gray;
+    /*border-style:inset*/
     width: 780px;
     height: 460px;
     float:left;
     display: block;
-    margin: 15px;
+    margin: 100px 15px 15px 15px;
 }
 .institutionProfileContainer select[class="selectCareerCourse"]{
     width: 250px;
@@ -707,12 +731,14 @@ display: inline-block;
 
 .IA_editProgramInYourInstituteContainer div[class="programInfomation"]{
     align-content:  right;
-	width: 1270px;
+	width: 920px;
     height: 260px;
 	background-color: #858fa0;
 	padding: 10px;
-	float: left;
-	margin: 20px 20px 20px 20px;
+	/*float: left;*/
+    margin-left: auto;
+    margin-right: auto;
+	/*margin: 20px 20px 20px 20px;*/
 	border-style: solid;
 	border-color: black;
 	border-width: 1px;
@@ -904,9 +930,13 @@ display: inline-block;
 /*Start of select user*/
 
 .IA_editInstitutionUserContainer div[class="viewAllInstituteUser"]{
-    width: 1332px;
+    width: 932px;
+    margin-left: auto;
+    margin-right: auto;
    background-color: #858fa0; 
     border: 1px solid black; 
+    padding: 10px;
+    border-radius: 2px;
 }
 
 .IA_editInstitutionUserContainer select{
@@ -938,7 +968,7 @@ display: inline-block;
 	border-style: solid;
 	border-color: black;
 	border-width: 1px;
-	border-radius: 10px;
+	border-radius: 2px;
 }
 .IA_editInstitutionUserContainer input[id="addUserInput"]{
     display: inline-block;
@@ -947,7 +977,7 @@ display: inline-block;
 	border-width: 2px;
 	border-style: solid;
 	border-color: black;
-	border-radius: 4px;
+	border-radius: 2px;
 	box-sizing: border-box;
 	margin: 2px;
 	width: 200px;
@@ -964,14 +994,14 @@ display: inline-block;
 	border-color:black;
 	border-style: solid;
 	border-width: 1px;
-	border-radius: 10px;
+	border-radius: 2px;
 	margin: 20px 200px 20px 0px;
 
 }
 
 .IA_editInstitutionUserContainer textarea{
     border: 2px solid black;
-    border-radius: 5px;
+    border-radius: 2px;
 }
 
 /* Start Div Save or Cancel Button */
@@ -999,7 +1029,7 @@ input[class="commonBtn2InViewPrograms"]{
 	border-style: solid;
 	border-width: 1px;
 	border-color: black;
-	border-radius: 10px;
+	border-radius: 2px;
     width: 150px;
     height: 30px;
     margin: 5px;

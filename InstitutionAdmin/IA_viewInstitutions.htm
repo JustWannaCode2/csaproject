@@ -1,222 +1,220 @@
 <!DOCTYPE html>
 <html>
-    
-<head>
-<link rel="stylesheet" href="IA_Jointstyle.css">
-<title>View Institutions</title>
-</head>
-    
-<header>
-    <!-- Testing, Testing: 1,2,3 -->
-<div id="DDNavBar">
-<h2 align=center>CSSIA Database</h2>
-    <ul>
-        <li></li>
-  <li><a href="IA_Index.htm">Home</a></li>
-  
-  <li class="dropdown" style="float:right">
-    <a href="javascript:void(0)" class="dropbtn">Institution Admin Profile</a>
-    <div class="dropdown-content">
-      <a href="#">View User Profile</a>
-      <a href="#">View Institution Profile</a>
-      <a href="#">Logout</a>
-    </div>
-  </li>
-  
-  <li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">Users</a>
-    <div class="dropdown-content">
-      <a href="IA_viewUsers.htm">View All Users</a>
-      <a href="IA_addInstitutionUsers.htm">Add Institution Users</a>
-    </div>
-  </li>
-  
-  <li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">Institutions</a>
-    <div class="dropdown-content">
-      <a href="IA_viewInstitutions.htm">View All Institutions</a>
-      <a href="IA_editInstitutions.htm">Edit Your Institution</a>
-    </div>
-  </li>
-  
-  <li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">Programs</a>
-    <div class="dropdown-content">
-      <a href="IA_viewPrograms.htm">View All Programs</a>
-      <a href="IA_editPrograms.htm">Edit Your Programs</a>
-    </div>
-  </li>
-
-<li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">Courses</a>
-    <div class="dropdown-content">
-      <a href="IA_viewCourse.htm">View All Courses</a>
-      <a href="IA_addCourse.htm">Add A Course To Your Program</a>
-    </div>
-  </li>
-  
-  <li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">Agreements</a>
-    <div class="dropdown-content">
-      <a href="#">View Agreements</a>
-      <a href="#">Add Agreements</a>
-    </div>
-  </li>
-  
-  </ul>
-    </div>
-<!-- End div id=DDNavBar -->
-</header>
-    
-<body>
-<div class="container">
-    <div class="viewInstitutionContainer"> <!-- Contains the Institution List and the filters -->
-		<div class="TitleHeader">
-			<h4>View Institutions</h4>
-		</div>
-
-			<div class="InstitutionListDiv"> <!-- Institution List div -->
-                <h3 align=center><u>Select An Institution</u></h3>
-                <table align=center>
-                    <tr>
-                        <td>
-				<select multiple id="selectInstitution"> <!-- the select multiple for the institutions -->
-					<option>  </option>
-					<option>  </option>
-					<option>  </option>
-				</select>
-                        </td>
-                    </tr>
-                </table>
-                
-                <table align=center> <!-- table holding the buttons for selecting, adding and removing an institution -->
-                    <tr>
-                        <td>
-                            <form action = "IA_selectedInstitution.htm">
-				                <input type="submit" name="selectInstitution" value="Select Institution" onclick="IA_selectedInstitution.htm" id="selectInstitutionButton">
-                            </form>
-                        </td>
-
-                    </tr>
-                </table>				
-			</div> <!--End of div viewProgramsMultilineSelect -->
-
-			<div class="AdvancedOptionsDiv" align=center> <!-- Filters for the institutions -->
-    
-    <h3 align=center><u>Advanced Options</u></h3>
-    <table>
-        <th colspan=2 style="align: center"><u>Institution</u></th>
-        
-        <tr>
-            
-            <td>
-                Institute ID:
-            </td>
-            <td>
-                <input type="text" name="instituteIDInput" placeholder="Name of the Program">
-            </td>
-        </tr>
-        
-        <tr>
-            <td></td>
-            <td>
-                <input type="submit" value="Search" name="searchButton">
-            </td>
-        </tr>
-        
-        <tr>
-            <th colspan=2 style="align: center"><u>User ID:</u></th>
-        </tr>
-        
-        <tr>
-            <td>
-                User ID:
-            </td>
-            <td>
-                <input type="text" name="userIDInput" placeholder="User ID">
-            </td>
-        </tr>
-        
-        <tr>
-            <td></td>
-            <td>
-                <input type="submit" value="Search" name="searchButton">
-            </td>
-        </tr>
-        
-        <tr>
-            <th colspan=2 style="align: center"><u>Location</u></th>
-        </tr>
-        
-        <tr>
-            <td>
-                State:
-            </td>
-            <td>
-                <select id="State" style="width:100%">
-					<option></option><option></option><option></option>
-				</select>
-            </td>        
-        </tr>
-        <tr>
-            <td>
-                City:
-            </td>
-            <td>
-                <select id="City" style="width: 100%"><option></option><option></option><option></option></select>
-            </td>
-        </tr>
-        <tr>
-            <td></td>
-            <td><input type="submit" value="Apply Filter" name="searchButton"></td>
-        </tr>
-        
-        <tr>
-            <th colspan=2 style="align: center"><u>Program Type</u></th>
-        </tr>
-        
-        <tr>
-            <td>
-                Program Type:
-            </td>
-            
-            <td> 
-                <select id="ProgramType" style="width:100%">
-					<option></option><option></option><option></option>
-				</select>
-            </td>
-        </tr>
-        
-        <tr>
-            <td></td>
-            <td>
-                <input type="submit" value="Apply Filter" name="searchButton">
-            </td>
-        </tr>
-        
-        <tr>
-            <th colspan=2 style="align: center"><u>Institution Type</u></th>
-        </tr>
-        
-        <tr>
-            <td>Institution Type:</td>
-            <td><select id="InstitutionType" style="width:100%">
-					<option></option><option></option><option></option>
-				</select></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td><input type="submit" value="Apply Filter" name="searchButton"></td>
-        </tr>
-    
-    </table>
-				
-</div> <!-- End div class = filterBy -->
-</div> <!-- End div class="viewInstitutionContainer" -->
-    </div> <!-- End div class="container" -->
-</body>
-    
-    <footer>
-        
-    </footer>
+   <head>
+      <link rel="stylesheet" href="IA_Jointstyle.css">
+      <title>View Institutions</title>
+       <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+      <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+      <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+      <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+      <script type="text/javascript" src="Script/IA_script.js"></script>
+   </head>
+   <header>
+      <!-- Testing, Testing: 1,2,3 -->
+      <h2 align="center" style="margin: 0px"><img src="Images/CRRC%20Logo_Color-01.png"  class="CRRClogo"></h2>
+      <div id="DDNavBar">
+         <ul>
+            <li></li>
+            <li><a href="IA_Index.htm">Home</a></li>
+            <li class="dropdown" style="float:right">
+               <a href="javascript:void(0)" class="dropbtn">Institution Admin Profile</a>
+               <div class="dropdown-content">
+                  <a href="#">View User Profile</a>
+                  <a href="#">View Institution Profile</a>
+                  <a href="#">Logout</a>
+               </div>
+            </li>
+            <li class="dropdown">
+               <a href="javascript:void(0)" class="dropbtn">Users</a>
+               <div class="dropdown-content">
+                  <a href="IA_viewUsers.htm">View All Users</a>
+                  <a href="IA_addInstitutionUsers.htm">Add Institution Users</a>
+               </div>
+            </li>
+            <li class="dropdown">
+               <a href="javascript:void(0)" class="dropbtn">Institutions</a>
+               <div class="dropdown-content">
+                  <a href="IA_viewInstitutions.htm">View All Institutions</a>
+                  <a href="IA_editInstitutions.htm">Edit Your Institution</a>
+               </div>
+            </li>
+            <li class="dropdown">
+               <a href="javascript:void(0)" class="dropbtn">Programs</a>
+               <div class="dropdown-content">
+                  <a href="IA_viewPrograms.htm">View All Programs</a>
+                  <a href="IA_editPrograms.htm">Edit Your Programs</a>
+               </div>
+            </li>
+            <li class="dropdown">
+               <a href="javascript:void(0)" class="dropbtn">Courses</a>
+               <div class="dropdown-content">
+                  <a href="IA_viewCourse.htm">View All Courses</a>
+                  <a href="IA_addCourse.htm">Add A Course To Your Program</a>
+               </div>
+            </li>
+            <li class="dropdown">
+               <a href="javascript:void(0)" class="dropbtn">Agreements</a>
+               <div class="dropdown-content">
+                  <a href="#">View Agreements</a>
+                  <a href="#">Add Agreements</a>
+               </div>
+            </li>
+         </ul>
+      </div>
+      <!-- End div id=DDNavBar -->
+   </header>
+   <body>
+      <div class="container">
+         <div class="viewInstitutionContainer">
+            <!-- Contains the Institution List and the filters -->
+            <div class="TitleHeader">
+               <h4>View Institutions</h4>
+            </div>
+            <div class="InstitutionListDiv">
+               <!-- Institution List div -->
+               <h3 align=center><u>Select An Institution</u></h3>
+               <table align=center>
+                  <tr>
+                     <td>
+                        <select multiple id="selectInstitution">
+                           <!-- the select multiple for the institutions -->
+                           <option>  </option>
+                           <option>  </option>
+                           <option>  </option>
+                        </select>
+                     </td>
+                  </tr>
+               </table>
+               <table align=center>
+                  <!-- table holding the buttons for selecting, adding and removing an institution -->
+                  <tr>
+                     <td>
+                        <form action = "IA_selectedInstitution.htm">
+                           <input type="submit" name="selectInstitution" value="Select Institution" onclick="IA_selectedInstitution.htm" id="selectInstitutionButton">
+                        </form>
+                     </td>
+                  </tr>
+               </table>
+            </div>
+            <!--End of div viewProgramsMultilineSelect -->
+            <div class="AdvancedOptionsDiv" align=center>
+               <!-- Filters for the institutions -->
+               <h3 align=center><u>Advanced Options</u></h3>
+               <table>
+                  <th colspan=2 style="align: center"><u>Institution</u></th>
+                  <tr>
+                     <td>
+                        Institute ID:
+                     </td>
+                     <td>
+                        <input type="text" name="instituteIDInput" placeholder="Name of the Program">
+                     </td>
+                  </tr>
+                  <tr>
+                     <td></td>
+                     <td>
+                        <input type="submit" value="Search" name="searchButton">
+                     </td>
+                  </tr>
+                  <tr>
+                     <th colspan=2 style="align: center"><u>User ID:</u></th>
+                  </tr>
+                  <tr>
+                     <td>
+                        User ID:
+                     </td>
+                     <td>
+                        <input type="text" name="userIDInput" placeholder="User ID">
+                     </td>
+                  </tr>
+                  <tr>
+                     <td></td>
+                     <td>
+                        <input type="submit" value="Search" name="searchButton">
+                     </td>
+                  </tr>
+                  <tr>
+                     <th colspan=2 style="align: center"><u>Location</u></th>
+                  </tr>
+                  <tr>
+                     <td>
+                        State:
+                     </td>
+                     <td>
+                        <select id="State" style="width:100%">
+                           <option></option>
+                           <option></option>
+                           <option></option>
+                        </select>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        City:
+                     </td>
+                     <td>
+                        <select id="City" style="width: 100%">
+                           <option></option>
+                           <option></option>
+                           <option></option>
+                        </select>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td></td>
+                     <td><input type="submit" value="Apply Filter" name="searchButton"></td>
+                  </tr>
+                  <tr>
+                     <th colspan=2 style="align: center"><u>Program Type</u></th>
+                  </tr>
+                  <tr>
+                     <td>
+                        Program Type:
+                     </td>
+                     <td>
+                        <select id="ProgramType" style="width:100%">
+                           <option></option>
+                           <option></option>
+                           <option></option>
+                        </select>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td></td>
+                     <td>
+                        <input type="submit" value="Apply Filter" name="searchButton">
+                     </td>
+                  </tr>
+                  <tr>
+                     <th colspan=2 style="align: center"><u>Institution Type</u></th>
+                  </tr>
+                  <tr>
+                     <td>Institution Type:</td>
+                     <td>
+                        <select id="InstitutionType" style="width:100%">
+                           <option></option>
+                           <option></option>
+                           <option></option>
+                        </select>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td></td>
+                     <td><input type="submit" value="Apply Filter" name="searchButton"></td>
+                  </tr>
+               </table>
+            </div>
+            <!-- End div class = filterBy -->
+         </div>
+         <!-- End div class="viewInstitutionContainer" -->
+      </div>
+      <!-- End div class="container" -->
+   </body>
+   <footer>
+      <h2 align="center" style="margin: 0px"> <img src="Images/cae_logo-transparent-stroke.png" style="width: 180px;height: 180px">    
+         <img src="Images/MVCC-logo.png" style="height: 180px;">
+         <img src="Images/DHSlogo.jpg" style="width: 180px;height: 180px">
+         <img src="Images/NSAlogo.png" style="height: 180px">
+      </h2>
+   </footer>
 </html>
