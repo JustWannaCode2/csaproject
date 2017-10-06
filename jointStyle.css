@@ -9,6 +9,21 @@ textarea{
 }
 
 
+/* For JavaScript*/
+.nav-placeholder{
+    margin: 0px;
+}
+
+.fixed{
+    position: fixed;
+    top: 0;
+    min-width: 100%;
+}
+
+
+/*End classes for JavaScript */
+
+
 /*
     Logo for CRRC
 */

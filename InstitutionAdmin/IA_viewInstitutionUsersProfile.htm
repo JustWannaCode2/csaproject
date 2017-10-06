@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html>
    <head>
-     
+       <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+      <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
       <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-      <script type="text/javascript" src="Script/IA_script.js"></script>
+      <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script type="text/javascript" src="Script/IA_script.js"></script>
       <link rel="stylesheet" href="IA_Jointstyle.css">
-      <title>Edit Institute Users</title>
-      <link rel="icon" type="image/png" href="Images/cae_logo-transparent-stroke.png" />
+      <title>View Users Profile</title>
+       <script type="text/javascript" src="Script/IA_script.js"></script>
    </head>
-   <header>
-      <!-- Beginning of the new navigation bar html code -->
-      <!-- Testing, Testing: 1,2,3 -->
-       <h2 align="center" style="margin: 0px"><img src="Images/CRRC%20Logo_Color-01.png"  class="CRRClogo"></h2>
-       <div id="DDNavBar">
+  <header>
+      <h2 align="center" style="margin: 0px"><img src="Images/CRRC%20Logo_Color-01.png"  class="CRRClogo"></h2>
+      <div id="DDNavBar">
          <ul>
             <li></li>
             <li><a href="IA_Index.htm">Home</a></li>
@@ -28,7 +28,7 @@
                <a href="javascript:void(0)" class="dropbtn">Users</a>
                <div class="dropdown-content">
                   <a href="IA_viewUsers.htm">View All Users</a>
-                  <a href="IA_editInstitutionUser.htm">Edit Your Institution User</a>
+                  <a href="IA_editInstitutionUser.htm">View and Edit Institution User</a>
                   <a href="IA_addInstitutionUsers.htm">Add Institution Users</a>
                </div>
             </li>
@@ -66,81 +66,83 @@
    </header>
    <body>
       <div class="container">
-         <div class="IA_editInstitutionUserContainer">
+         <div class="IA_viewInstitutionUserProfileContainer">
             <div class="TitleHeader">
-               <h4>Institute Name goes here</h4>
+               <h4>Institution User</h4>
             </div>
-            <div align="center" class="viewAllInstituteUser">
-               <select size="5" style="padding: 5px;">
-                  <option disabled>Select A User to Edit</option>
-                  <option></option>
-                  <option></option>
-                  <option></option>
-               </select>
-               <form> 
-                  <input type="button" class="commonbtn" id="btnSelectUser" value="Select">
-               </form>
-               <script>
-                  $(document).ready(function(){
-                            $("#btnSelectUser").click(function(){
-                                //Enable the Option A fields
-                                $("#addUserForm").show(),$("#institute_addUser").show(),$("#saveOrCancelButtons").show();
-                            });
-                    });
-               </script>
-            </div>
-            <div id="addUserForm" class="addUserForm" style="display: none;">
+            <div class="addUserForm">
                <form align="right">
                   First Name: 
-                  <input type="text" name="adminName" placeholder="First Name" id="addUserInput" readonly>
+                  <input type="text" name="adminName" placeholder="First Name" class="addUserInput" readonly>
                   <br>
                   Last Name: 
-                  <input type="text" name="adminName" placeholder="Last Name" id="addUserInput" readonly>
+                  <input type="text" name="adminName" placeholder="Last Name" class="addUserInput" readonly>
                   <br>
                   Email (Work):
-                  <input type="email" name="userEmail" placeholder="email address" id="addUserInput" readonly> 
+                  <input type="email" name="userEmail" placeholder="email address" class="addUserInput" readonly>
                   <br>
                   Telephone Number (Work):
-                  <input type="text" name="telephoneWork" placeholder="Telephone Number" id="addUserInput" readonly>
+                  <input type="text" name="telephoneWork" placeholder="Telephone Number" class="addUserInput" readonly>
                   <br>
                   Telephone Number (Mobile):
-                  <input type="text" name="telephoneMobile" placeholder="Telephone Number" id="addUserInput" readonly>
+                  <input type="text" name="telephoneMobile" placeholder="Telephone Number" class="addUserInput" readonly>
                   <br>
                </form>
-               <!--End of div addUserForm-->
             </div>
-            <div id="institute_addUser" class="institute_addUser" style="display: none;">
+            <!--End of div addUserForm-->
+            <div class="institute_addUser">
                <table align="center">
                   <tr align="center" style="width: 280px;">
                      <td>Position:</td>
                      <td>
-                        <input type="text" id="addUserInput" placeholder="The Position of the User" readonly>
+                        <input type="text" class="addUserInput" placeholder="The Position of the User" readonly>
                      </td>
                   </tr>
-                  <tr align="center" style="width: 280px;">
+                  <tr>
                      <td align="center">Link:</td>
                      <td> 
-                        <input type="text" id="addUserInput" placeholder="Web link of User" readonly>
+                        <input type="text" class="addUserInput" placeholder="Position of User in Institute" readonly>
                      </td>
                   </tr>
-                  <tr align="center" style="width: 280px;">
+                  <tr>
                      <td align="center">Additional Info:</td>
-                     <td><textarea placeholder="Add any comments about this user (Optional)" style="width: 200px; height: 100px;" readonly></textarea></td>
+                     <td><textarea placeholder="Add any comments about this user (Optional)" style="width: 200px; height: 100px" readonly></textarea></td>
                   </tr>
                </table>
             </div>
-            <!--end of div institute add user-->
+            <!--end of div Institution add user-->
+            <div class="userNameAndPwd">
+               <form align="center">
+                  Username: <input type="text" placeholder="Enter Username" class="addUserInput" readonly>
+                  <br>
+                  <!--Password:--> <input type="password" placeholder="Enter User Password" class="addUserInput" style="display: none;">
+                  <!--<input type="password" placeholder="Enter User Password" class="addUserInput"  min="5" maxlength="15" required>-->
+               </form>
+            </div>
+            <!--End of div user name and password-->
+            <div id="saveOrCancelButtons">
+                <table align="center">
+                    <tr>
+                        <td><form action="IA_viewUsers.htm" class="saveChangesToUserName" >
+                                <input type="submit" value="Save Changes" class="commonBtn2InViewPrograms">
+                            </form>
+                        </td>
+                        <td>
+                            <form action="IA_viewUsers.htm" class="cancelChangesToUserName">
+                                 <input type="submit" value="Cancel Changes" class="commonBtn2InViewPrograms">
+                            </form>
+                        </td>
+                        <td>
+                            <form action="#" class="" style="width: 160px;">
+                                  <input type="submit" value="Password Reset" class="commonBtn2InViewPrograms">
+                            </form> 
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <!--End of save or cancel buttons div-->
          </div>
          <!--End of div View User container-->
-         <div id="saveOrCancelButtons" style="display: none;">
-            <form action="IA_viewUsers.htm" class="saveChangesToUserName" >
-               <input type="submit" value="Save Changes" class="commonBtn2InViewPrograms">
-            </form>
-            <form action="IA_viewUsers.htm" class="cancelChangesToUserName">
-               <input type="submit" value="Cancel Changes" class="commonBtn2InViewPrograms">
-            </form>
-         </div>
-         <!--End of save or cancel buttons div-->
       </div>
       <!--End of div Container-->
    </body>

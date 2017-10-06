@@ -657,12 +657,9 @@ div[class="IA_viewUserContainer"]{
 	border-radius: 10px;
 }
 .IA_editYourInstitutionUserContainer input[id="addUserInput"]{
-display: inline-block;
-		font-size: 10pt;
+    font-size: 10pt;
 	padding: 3px 10px;
-	border-width: 2px;
-	border-style: solid;
-	border-color: black;
+	border: 1px solid gray;
 	border-radius: 4px;
 	box-sizing: border-box;
 	margin: 2px;
@@ -974,9 +971,7 @@ display: inline-block;
     display: inline-block;
     font-size: 10pt;
 	padding: 3px 10px;
-	border-width: 2px;
-	border-style: solid;
-	border-color: black;
+	border: 1px solid gray;
 	border-radius: 2px;
 	box-sizing: border-box;
 	margin: 2px;
@@ -1000,8 +995,9 @@ display: inline-block;
 }
 
 .IA_editInstitutionUserContainer textarea{
-    border: 2px solid black;
+    border: 1px solid gray;
     border-radius: 2px;
+    padding: 5px;
 }
 
 /* Start Div Save or Cancel Button */
@@ -1011,20 +1007,20 @@ display: inline-block;
 	float: 0px auto;
 }
 
-form[class="saveChangesToUserName"]{
+.IA_editInstitutionUserContainer form[class="saveChangesToUserName"]{
 	text-align: center;
 	width: 160px;
 	margin: 0px 0px 0px 500px; 
 	float: left;
 }
-form[class="cancelChangesToUserName"]{
+.IA_editInstitutionUserContainer form[class="cancelChangesToUserName"]{
 	text-align: center;
 	width: 160px;
 	margin: 0px 470px 0px 00px; 
 	float: right;
 }
 
-input[class="commonBtn2InViewPrograms"]{
+.IA_editInstitutionUserContainer input[class="commonBtn2InViewPrograms"]{
      font-size: 15px;
 	border-style: solid;
 	border-width: 1px;
@@ -1058,7 +1054,7 @@ input[class="commonBtn2InViewPrograms"]{
     display: inline-block;
     font-size: 10pt;
 	padding: 3px 10px;
-	border-width: 2px;
+	border-width: 1px;
 	border-style: solid;
 	border-color: black;
 	border-radius: 4px;
@@ -1158,6 +1154,116 @@ div[class="userNameAndPwd"]{
 /* End div save or cancel button*/
 
 /*------------------------------  End of add Institution user -------------------------------------------------------------------*/ 
+
+/*------------------------------  Start view Institution user Profile -------------------------------------------------------------------*/ 
+
+.IA_viewInstitutionUserProfileContainer .addUserForm{
+	align-content:  right;
+	width: 450px;
+    height: 250px;
+	background-color: #858fa0;
+	padding: 10px;
+	float: left;
+	margin: 20px 0px 20px 200px;
+	border-style: solid;
+	border-color: black;
+	border-width: 1px;
+	border-radius: 10px;
+}
+.IA_viewInstitutionUserProfileContainer input[class="addUserInput"]{
+    display: inline-block;
+    font-size: 10pt;
+	padding: 3px 10px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: black;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin: 2px;
+	width: 200px;
+	height: 43px;
+}
+
+/* Institution   */
+.IA_viewInstitutionUserProfileContainer .institute_addUser{
+	background-color: #858fa0;
+	width: 400px;
+	height: 250px;
+	padding: 12px 20px;
+	float: right;
+	border-color:black;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 10px;
+	margin: 20px 200px 20px 0px;
+
+}
+.IA_viewInstitutionUserProfileContainer input[class="commonTxtBox2CSS"]{
+    display: block;
+    font-size: 10pt;
+	padding: 3px 10px;
+	border-width: 2px;
+	border-style: solid;
+	border-color: black;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin: auto;
+	width: 300px;
+	height: 43px;
+}
+.IA_viewInstitutionUserProfileContainer select[class="commonCmbBox3CSS"]{
+    margin: 0px 0px 0px 35px;
+	padding: 0px;
+    text-align: center;
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 18pt;
+    border-width: 1px; 
+    font-size: 15px;
+}
+.IA_viewInstitutionUserProfileContainer textarea{
+    border: 1px solid black;
+    border-radius: 5px;
+}
+/*User Name and Password*/
+
+.IA_viewInstitutionUserProfileContainer div[class="userNameAndPwd"]{
+    text-align: center;
+    background-color: #858fa0;
+    width: 500px;
+    height: 150px;
+    margin: 0px 0px 0px 400px;
+    float: left;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+/* end of user name and password in add user*/
+/* Start Div Save or Cancel Button */
+
+.IA_viewInstitutionUserProfileContainer div[id="saveOrCancelButtons"]{
+
+}
+
+.IA_viewInstitutionUserProfileContainer form[class="saveChangesToUserName"]{
+}
+.IA_viewInstitutionUserProfileContainer form[class="cancelChangesToUserName"]{
+}
+
+.IA_viewInstitutionUserProfileContainer input[class="commonBtn2InViewPrograms"]{
+     font-size: 15px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: black;
+	border-radius: 10px;
+    width: 150px;
+    height: 30px;
+    margin: 5px;
+}
+/* End div save or cancel button*/
+
+/*------------------------------  End of view Institution user Profile-------------------------------------------------------------------*/ 
 
 /*------------------------------------------- Clarks Code ------------------------------------------------------------------------*/
 

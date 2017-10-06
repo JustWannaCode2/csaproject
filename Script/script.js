@@ -20,11 +20,13 @@ jQuery(document).ready(function(){
         //If you scroll to the beginning of the navigation bar. This only works at certain threshold.
 	if (scrollPos >= navOffset) {
 		jQuery("#DDNavBar").addClass("fixed");
+        
 	}
         
     // Remove the class and use initial position. e.g. relative or static
 	else {
 		jQuery("#DDNavBar").removeClass("fixed");
+        
 	}
 });	
 });
