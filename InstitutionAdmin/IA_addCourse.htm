@@ -79,7 +79,7 @@
             <div class="TitleHeader">
                <h4>Add Course</h4>
             </div>
-            <div class="AddCourseInformation" align="center" style="border: 2px solid; width:750px; height:550px">
+            <div class="AddCourseInformation" align="center" style="border: 2px solid; width:750px; height:680px">
                <h3 align="center"><u>Course Information</u></h3>
                <table>
                   <tr>
@@ -158,6 +158,14 @@
                         </table>
                      </td>
                   </tr>
+                   <tr>
+                       <td>
+                           Course Letter (Optional): 
+                       </td>
+                       <td>
+                           <input type="text" id="CourseLetter" style="width:115px">
+                       </td>
+                   </tr>
                   <tr>
                      <td>
                         Course Name:
@@ -190,20 +198,99 @@
                         <textarea style="height: 75px; width:250px" id="Description" name="description" placeholder="Enter your description here"></textarea>
                      </td>
                   </tr>
+                   <tr>
+                       <td>
+                           Is There A Lab: 
+                       </td>
+                       <td>
+                        <input type="radio" id="LabYes" name="Lab" value="1">Yes
+                        <input type="radio" id="LabNo" name="Lab" value="0">No
+                       </td>
+                   </tr>
+                   <tr>
+                       <td>Prerequisites:</td>
+                       <td>
+                           <select id="Prereqs" size="5" style="width:257px"></select>
+                           <input type="submit" value="+" id="PlusPre" style="text-align: center">
+                           <input type="submit" value="-" id="MinusPre" style="text-align: center">
+                       </td>
+                       
+                       <script>
+                     //this script is used to toggle the new prereq info
+                     $(document).ready(function()
+                       {
+                     $("#PlusPre").click(function()
+                        {
+                     $("#NewPrereqInfo").toggle();
+                     })
+                     
+                     $("#AddPre").click(function()
+                        {
+                     $("#NewPrereqInfo").hide();
+                     })
+                     
+                     $("#CancelAddPre").click(function()
+                        {
+                     $("#NewPrereqInfo").hide();
+                     })                                            
+                     
+                     })
+                  </script>
+                   </tr>
+                   <tr>
+                       <td></td>
+                       <td id="NewPrereqInfo" style="display: none">
+                           <table style="border: 1px solid black">
+                           <tr>
+                              <td>
+                                 Department:
+                                 <select id="PreDept" style="width:257px"></select>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td>
+                                 Course Number/ Letter:
+                                 <select id="PreCourseNumber" style="width:100px"></select>
+                                 <select id="PreCourseLetter" style="width:80px"></select> 
+                              </td>
+                           </tr>
+                           <tr>
+                              <td align="center" colspan="2">
+                                 <input type="submit" id="AddPre" value="Add" style="width:48%">
+                                 <input type="submit" id="CancelAddPre" value="Cancel" style="width:48%">
+                              </td>
+                           </tr>
+                        </table>
+                       </td>
+                   </tr>
+                   <tr>
+                       <td>
+                           Prerequisite Options:
+                       </td>
+                       <td>
+                           <select id="PreOptions" style="width:260px">
+                               <option value="0">All Prerequisites Required</option>
+                               <option value="1">One Prerequisite is Required</option>
+                           </select>
+                       </td>
+                   </tr>
                   <tr>
                      <td>
                         Map to Knowledge Unit: 
                      </td>
                      <td>
                         <input type="radio" id="KUYes" name="KU" value="1">Yes
-                        <input type="radio" id="KUYes" name="KU" value="0">No
+                        <input type="radio" id="KUNo" name="KU" value="0">No
                      </td>
                   </tr>
                   <tr>
                      <td></td>
                      <td colspan="3">
-                        <input type="submit" value="Save Changes" id="SaveChanges" style="width:40%">
-                        <input type="submit" value="Cancel" id="CancelChanges" style="width:40%">
+                         <p>
+                             <br>
+                            <input type="submit" value="Save Changes" id="SaveChanges" style="width:40%">
+                            <input type="submit" value="Cancel" id="CancelChanges" style="width:40%">
+                        </p>
                      </td>
                   </tr>
                </table>
