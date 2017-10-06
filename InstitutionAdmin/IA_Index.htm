@@ -1,105 +1,109 @@
 <!DOCTYPE html>
- <html> 
- <head> 
- <link rel="stylesheet" href="IA_Jointstyle.css">
-<title>CSSIA Database</title> 
-</head>
-     <header>
-        <div id="DDNavBar">
-<h2 align="center" style="margin: 0px"><img src="Images/CRRC%20Logo_Color-01.png"  class="CRRClogo"></h2>
-    <ul>
-        <li></li>
-  <li><a href="IA_Index.htm">Home</a></li>
-  
-  <li class="dropdown" style="float:right">
-    <a href="javascript:void(0)" class="dropbtn">Institution Admin Profile</a>
-    <div class="dropdown-content">
-      <a href="#">View User Profile</a>
-      <a href="IA_InstituteProfile.htm">View Institution Profile</a>
-      <a href="#">Logout</a>
-    </div>
-  </li>
-  
-  <li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">Users</a>
-    <div class="dropdown-content">
-      <a href="IA_viewUsers.htm">View All Users</a>
-      <a href="IA_editInstitutionUser.htm">View and Edit Institution User</a>
-      <a href="IA_addInstitutionUsers.htm">Add Institution Users</a>
-    </div>
-  </li>
-  
-  <li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">Institutions</a>
-    <div class="dropdown-content">
-      <a href="IA_viewInstitutions.htm">View All Institutions</a>
-      <a href="IA_editInstitutions.htm">Edit Your Institution</a>
-    </div>
-  </li>
-  
-  <li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">Programs</a>
-    <div class="dropdown-content">
-      <a href="IA_viewPrograms.htm">View All Programs</a>
-      <a href="IA_editProgramsInYourInstitute.htm">Edit Your Programs</a>
-    </div>
-  </li>
-
-<li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">Courses</a>
-    <div class="dropdown-content">
-      <a href="IA_viewCourse.htm">View All Courses</a>
-      <a href="IA_addCourse.htm">Add A Course To Your Program</a>
-    </div>
-  </li>
-  
-  <li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">Agreements</a>
-    <div class="dropdown-content">
-      <a href="IA_viewAgreementsIndex.htm">View Transfer Agreements</a>
-      <a href="IA_createAgreement.htm">Create Transfer Agreements</a>
-    </div>
-  </li>
-  
-  </ul>
-    </div><!-- End div id=DDNavBar -->
-     </header>
-<body> 
-<div class="container">
-
-<!-- Testing, Testing: 1,2,3 -->
-
-    
-    
-    <div id="About">
-        <h4>About this tool:</h4>
-        <p>This is website made for viewing, adding and editing information about the Center of Academic Excellence(CAE) Programs in your website.</p>
-        <p>You are currently logged in as an Institution Admin. Your access to this website is limited.</p>
-        <h4>You have access to following:</h4>
-        <ol>
-            <li>View for all designated Institutions</li><br>
-            <li>View all the User in every Institution</li><br>
-            <li>Search for the Program/s from all designated Institutions</li><br>
-            <li>View Courses in the Programs</li><br>
-            <li>View Transfer Agreements between Institutes</li>
-        </ol>
-        <h4>You can also:</h4>
-        <ol>
-            <li>Change information about your Institute</li><br>
-            <li>Add or Edit Users to Your Institute</li><br>
-            <li>Edit Programs to your Institute</li><br>
-            <li>Add or Edit Courses in the Programs</li><br>
-            <li>Add or Edit Tranfer Agreement between your Institution.</li>
-        </ol>
-    </div> <!-- End div id="About" -->
-	
-</div><!--End of div Container-->
-</body>
-     <footer>
-   <h2 align="center" style="margin: 0px"> <img src="Images/cae_logo-transparent-stroke.png" style="width: 180px;height: 180px">    
-        <img src="Images/MVCC-logo.png" style="height: 180px;">
-        <img src="Images/DHSlogo.jpg" style="width: 180px;height: 180px">
-        <img src="Images/NSAlogo.png" style="height: 180px">
-   </h2>
-</footer>
+<html>
+   <head>
+      <link rel="stylesheet" href="IA_Jointstyle.css">
+      <title>CSSIA Database</title>
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+      <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+      <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+      <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+      <script type="text/javascript" src="Script/IA_script.js"></script>
+   </head>
+   <header>
+      <h2 align="center" style="margin: 0px"><img src="Images/CRRC%20Logo_Color-01.png"  class="CRRClogo"></h2>
+      <div id="DDNavBar">
+         <ul>
+            <li></li>
+            <li><a href="IA_Index.htm">Home</a></li>
+            <li class="dropdown" style="float:right">
+               <a href="javascript:void(0)" class="dropbtn">Institution Admin Profile</a>
+               <div class="dropdown-content">
+                  <a href="#">View User Profile</a>
+                  <a href="IA_InstituteProfile.htm">View Institution Profile</a>
+                  <a href="#">Logout</a>
+               </div>
+            </li>
+            <li class="dropdown">
+               <a href="javascript:void(0)" class="dropbtn">Users</a>
+               <div class="dropdown-content">
+                  <a href="IA_viewUsers.htm">View All Users</a>
+                  <a href="IA_editInstitutionUser.htm">View and Edit Institution User</a>
+                  <a href="IA_addInstitutionUsers.htm">Add Institution Users</a>
+               </div>
+            </li>
+            <li class="dropdown">
+               <a href="javascript:void(0)" class="dropbtn">Institutions</a>
+               <div class="dropdown-content">
+                  <a href="IA_viewInstitutions.htm">View All Institutions</a>
+                  <a href="IA_editInstitutions.htm">Edit Your Institution</a>
+               </div>
+            </li>
+            <li class="dropdown">
+               <a href="javascript:void(0)" class="dropbtn">Programs</a>
+               <div class="dropdown-content">
+                  <a href="IA_viewPrograms.htm">View All Programs</a>
+                  <a href="IA_editProgramsInYourInstitute.htm">Edit Your Programs</a>
+               </div>
+            </li>
+            <li class="dropdown">
+               <a href="javascript:void(0)" class="dropbtn">Courses</a>
+               <div class="dropdown-content">
+                  <a href="IA_viewCourse.htm">View All Courses</a>
+                  <a href="IA_addCourse.htm">Add A Course To Your Program</a>
+               </div>
+            </li>
+            <li class="dropdown">
+               <a href="javascript:void(0)" class="dropbtn">Agreements</a>
+               <div class="dropdown-content">
+                  <a href="IA_viewAgreementsIndex.htm">View Transfer Agreements</a>
+                  <a href="IA_createAgreement.htm">Create Transfer Agreements</a>
+               </div>
+            </li>
+         </ul>
+      </div>
+      <!-- End div id=DDNavBar -->
+   </header>
+   <body>
+      <div class="container">
+         <!-- Testing, Testing: 1,2,3 -->
+         <div id="About">
+            <h4>About this tool:</h4>
+            <p>This is website made for viewing, adding and editing information about the Center of Academic Excellence(CAE) Programs in your website.</p>
+            <p>You are currently logged in as an Institution Admin. Your access to this website is limited.</p>
+            <h4>You have access to following:</h4>
+            <ol>
+               <li>View for all designated Institutions</li>
+               <br>
+               <li>View all the User in every Institution</li>
+               <br>
+               <li>Search for the Program/s from all designated Institutions</li>
+               <br>
+               <li>View Courses in the Programs</li>
+               <br>
+               <li>View Transfer Agreements between Institutes</li>
+            </ol>
+            <h4>You can also:</h4>
+            <ol>
+               <li>Change information about your Institute</li>
+               <br>
+               <li>Add or Edit Users to Your Institute</li>
+               <br>
+               <li>Edit Programs to your Institute</li>
+               <br>
+               <li>Add or Edit Courses in the Programs</li>
+               <br>
+               <li>Add or Edit Tranfer Agreement between your Institution.</li>
+            </ol>
+         </div>
+         <!-- End div id="About" -->
+      </div>
+      <!--End of div Container-->
+   </body>
+   <footer>
+      <h2 align="center" style="margin: 0px"> <img src="Images/cae_logo-transparent-stroke.png" style="width: 180px;height: 180px">    
+         <img src="Images/MVCC-logo.png" style="height: 180px;">
+         <img src="Images/DHSlogo.jpg" style="width: 180px;height: 180px">
+         <img src="Images/NSAlogo.png" style="height: 180px">
+      </h2>
+   </footer>
 </html>
