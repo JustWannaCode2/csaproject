@@ -1,153 +1,144 @@
 <!DOCTYPE html>
 <html>
-<head>
-<link rel="stylesheet" href="jointStyle.css">
-<title>Add Users</title>
-</head>
-    <header>
-    	<!-- Beginning of the new navigation bar html code -->
-<!-- Testing, Testing: 1,2,3 -->
-<div id="DDNavBar">
- <h2 align="center" style="margin: 0px"><img src="Images/CRRC%20Logo_Color-01.png"  class="CRRClogo"></h2>
-    <ul>
-        <li></li>
-  <li><a href="index.htm">Home</a></li>
-  
-  <li class="dropdown" style="float:right">
-    <a href="javascript:void(0)" class="dropbtn">Global Admin Profile</a>
-    <div class="dropdown-content">
-      <a href="#">View Profile</a>
-      <a href="#">Logout</a>
-    </div>
-  </li>
-  
-  <li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">Users</a>
-    <div class="dropdown-content">
-      <a href="viewUsers.htm">View Users</a>
-      <a href="addUsers.htm">Add Users</a>
-    </div>
-  </li>
-  
-  <li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">Institutions</a>
-    <div class="dropdown-content">
-      <a href="viewInstitutions.htm">View Institutions</a>
-      <a href="addInstitution.htm">Add Institutions</a>
-    </div>
-  </li>
-  
-  <li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">Programs</a>
-    <div class="dropdown-content">
-      <a href="viewPrograms.htm">View Programs</a>
-      <a href="addPrograms.htm">Add Programs</a>
-    </div>
-  </li>
-
-<li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">Courses</a>
-    <div class="dropdown-content">
-      <a href="viewCourse.htm">View Courses</a>
-      <a href="addCourse.htm">Add Courses</a>
-    </div>
-  </li>
-  
-  <li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">Agreements</a>
-    <div class="dropdown-content">
-      <a href="viewAgreementsIndex.htm">View Transfer Agreements</a>
-      <a href="createAgreement.htm">Create Transfer Agreements</a>
-        <a href="removeAgreement.htm">Remove Transfer Agreements</a>
-    </div>
-  </li>
-  
-  </ul>
-    </div><!-- End div id=DDNavBar -->
-<!-- End of new nav bar html code -->
-
-    </header>
-<body>
-<div class="container">
-
-
-    <div class="addUserContainer">
-		<div class="TitleHeader">
-			<h4>Add User</h4>
-		</div> <!--End of Add User Header-->
-
-		<div class="addUserForm">
-			<form align="right">
-				First Name: 
-				<input type="text" placeholder="First Name" class="addUserInput">
-				<br>
-                Last Name: 
-				<input type="text"  placeholder="Last Name" class="addUserInput">
-				<br>
-				Email (Work):
-				<input type="email" placeholder="email address" class="addUserInput">
-				<br>
-				Telephone Number (Work):
-				<input type="text" placeholder="Telephone Number" class="addUserInput">
-				<br>
-				Telephone Number (Mobile):
-				<input type="text" placeholder="Telephone Number" class="addUserInput">
-				<br>
-                Position:
-				<input type="text" placeholder="Telephone Number" class="addUserInput">
-				<br>
-				Link:
-				<input type="text" placeholder="Link" class="addUserInput">
-				<br>
-				
-			</form>		
-			
-		</div><!--End of div addUserForm-->
-		<div class="institute_addUser">
-			<fieldset>
-				<legend > Institute</legend>
-				<input type="text" name="instituteId" placeholder="Institute ID" class="commonTxtBox2CSS">
-                <p>OR</p>
-				<select id="selectInstituteDropDownInAddUser" class="commonCmbBox3CSS">
-				    <option disabled selected> Select an Institution</option>
-					<option></option>
-					<option></option>
-					<option></option>
-				</select><br>
-			</fieldset><br>
-			<fieldset>
-            <legend>Admin Type:</legend>
-			<input type="radio" name="group1" value="MVCC Admin" id="mvccAdmin"> MVCC Admin
-			<input type="radio" name="group1" value="Institution Admin" id="institutionAdmin"> Institution Admin
-            </fieldset>
-            </div><!--end of div Institute Add_user-->
-        <br>
-        <div class="userNameAndPwd">
-            <form align="center">
-                Username: <input type="text" placeholder="Enter Username" class="addUserInput">
-                <br>
-                Password: <input type="password" placeholder="Enter User Password" class="addUserInput">
-                
-                <!--<input type="password" placeholder="Enter User Password" class="addUserInput"  min="5" maxlength="15" required>-->
-                
-                <br><br>
-                    <input type="submit" value="Add User" class="addUserButton">
-                    <input type="submit" value="Cancel" class="btnCancel">
-                
-            </form>
-        </div> <!--End of div user name and password-->
-	
-		
-	</div><!--End of div add User container-->
-    
-		
-</div><!--End of div Container-->
-    <footer>
-   <h2 align="center" style="margin: 0px"> <img src="Images/cae_logo-transparent-stroke.png" style="width: 180px;height: 180px">    
-        <img src="Images/MVCC-logo.png" style="height: 180px;">
-        <img src="Images/DHSlogo.png" style="width: 180px;height: 180px">
-        <img src="Images/NSAlogo.png" style="height: 180px">
-   </h2>
-</footer>
-</body>
+   <head>
+      <link rel="stylesheet" href="jointStyle.css">
+      <title>Add Users</title>
+      <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+      <script type="text/javascript" src="Script/script.js"></script>
+   </head>
+   <header>
+      <!-- Beginning of the new navigation bar html code -->
+      <!-- Testing, Testing: 1,2,3 -->
+      <h2 align="center" style="margin: 0px"><img src="Images/CRRC%20Logo_Color-01.png"  class="CRRClogo"></h2>
+      <div id="DDNavBar">
+         <ul>
+            <li></li>
+            <li><a href="index.htm">Home</a></li>
+            <li class="dropdown" style="float:right">
+               <a href="javascript:void(0)" class="dropbtn">Global Admin Profile</a>
+               <div class="dropdown-content">
+                  <a href="#">View Profile</a>
+                  <a href="#">Logout</a>
+               </div>
+            </li>
+            <li class="dropdown">
+               <a href="javascript:void(0)" class="dropbtn">Users</a>
+               <div class="dropdown-content">
+                  <a href="viewUsers.htm">View Users</a>
+                  <a href="addUsers.htm">Add Users</a>
+               </div>
+            </li>
+            <li class="dropdown">
+               <a href="javascript:void(0)" class="dropbtn">Institutions</a>
+               <div class="dropdown-content">
+                  <a href="viewInstitutions.htm">View Institutions</a>
+                  <a href="addInstitution.htm">Add Institutions</a>
+               </div>
+            </li>
+            <li class="dropdown">
+               <a href="javascript:void(0)" class="dropbtn">Programs</a>
+               <div class="dropdown-content">
+                  <a href="viewPrograms.htm">View Programs</a>
+                  <a href="addPrograms.htm">Add Programs</a>
+               </div>
+            </li>
+            <li class="dropdown">
+               <a href="javascript:void(0)" class="dropbtn">Courses</a>
+               <div class="dropdown-content">
+                  <a href="viewCourse.htm">View Courses</a>
+                  <a href="addCourse.htm">Add Courses</a>
+               </div>
+            </li>
+            <li class="dropdown">
+               <a href="javascript:void(0)" class="dropbtn">Agreements</a>
+               <div class="dropdown-content">
+                  <a href="viewAgreementsIndex.htm">View Transfer Agreements</a>
+                  <a href="createAgreement.htm">Create Transfer Agreements</a>
+                  <a href="removeAgreement.htm">Remove Transfer Agreements</a>
+               </div>
+            </li>
+         </ul>
+      </div>
+      <!-- End div id=DDNavBar -->
+      <!-- End of new nav bar html code -->
+   </header>
+   <body>
+      <div class="container">
+         <div class="addUserContainer">
+            <div class="TitleHeader">
+               <h4>Add User</h4>
+            </div>
+            <!--End of Add User Header-->
+            <div class="addUserForm">
+               <form align="right">
+                  First Name: 
+                  <input type="text" placeholder="First Name" class="addUserInput">
+                  <br>
+                  Last Name: 
+                  <input type="text"  placeholder="Last Name" class="addUserInput">
+                  <br>
+                  Email (Work):
+                  <input type="email" placeholder="email address" class="addUserInput">
+                  <br>
+                  Telephone Number (Work):
+                  <input type="text" placeholder="Telephone Number" class="addUserInput">
+                  <br>
+                  Telephone Number (Mobile):
+                  <input type="text" placeholder="Telephone Number" class="addUserInput">
+                  <br>
+                  Position:
+                  <input type="text" placeholder="Telephone Number" class="addUserInput">
+                  <br>
+                  Link:
+                  <input type="text" placeholder="Link" class="addUserInput">
+                  <br>
+               </form>
+            </div>
+            <!--End of div addUserForm-->
+            <div class="institute_addUser">
+               <fieldset>
+                  <legend > Institute</legend>
+                  <input type="text" name="instituteId" placeholder="Institute ID" class="commonTxtBox2CSS">
+                  <p>OR</p>
+                  <select id="selectInstituteDropDownInAddUser" class="commonCmbBox3CSS">
+                     <option disabled selected> Select an Institution</option>
+                     <option></option>
+                     <option></option>
+                     <option></option>
+                  </select>
+                  <br>
+               </fieldset>
+               <br>
+               <fieldset>
+                  <legend>Admin Type:</legend>
+                  <input type="radio" name="group1" value="MVCC Admin" id="mvccAdmin"> MVCC Admin
+                  <input type="radio" name="group1" value="Institution Admin" id="institutionAdmin"> Institution Admin
+               </fieldset>
+            </div>
+            <!--end of div Institute Add_user-->
+            <br>
+            <div class="userNameAndPwd">
+               <form align="center">
+                  Username: <input type="text" placeholder="Enter Username" class="addUserInput">
+                  <br>
+                  Password: <input type="password" placeholder="Enter User Password" class="addUserInput">
+                  <!--<input type="password" placeholder="Enter User Password" class="addUserInput"  min="5" maxlength="15" required>-->
+                  <br><br>
+                  <input type="submit" value="Add User" class="addUserButton">
+                  <input type="submit" value="Cancel" class="btnCancel">
+               </form>
+            </div> <!--End of div user name and password-->
+           
+         </div> <!--End of div add User container-->
+        
+      </div> <!--End of div Container-->
+     
+      <footer>
+         <h2 align="center" style="margin: 0px"> <img src="Images/cae_logo-transparent-stroke.png" style="width: 180px;height: 180px">    
+            <img src="Images/MVCC-logo.png" style="height: 180px;">
+            <img src="Images/DHSlogo.png" style="width: 180px;height: 180px">
+            <img src="Images/NSAlogo.png" style="height: 180px">
+         </h2>
+      </footer>
+   </body>
 </html>

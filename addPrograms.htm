@@ -1,269 +1,247 @@
 <!DOCTYPE html>
 <html>
-<head>
-   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
-<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-<link rel="stylesheet" href="jointStyle.css">
-<title>Add Program</title>
-</head>
-<header>
-    <!-- Beginning of the new navigation bar html code -->
-    <!-- Testing, Testing: 1,2,3 -->
-<div id="DDNavBar">
- <h2 align="center" style="margin: 0px"><img src="Images/CRRC%20Logo_Color-01.png"  class="CRRClogo"></h2>
-    <ul>
-        <li></li>
-  <li><a href="index.htm">Home</a></li>
-  
-  <li class="dropdown" style="float:right">
-    <a href="javascript:void(0)" class="dropbtn">Global Admin Profile</a>
-    <div class="dropdown-content">
-      <a href="#">View Profile</a>
-      <a href="#">Logout</a>
-    </div>
-  </li>
-  
-  <li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">Users</a>
-    <div class="dropdown-content">
-      <a href="viewUsers.htm">View Users</a>
-      <a href="addUsers.htm">Add Users</a>
-    </div>
-  </li>
-  
-  <li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">Institutions</a>
-    <div class="dropdown-content">
-      <a href="viewInstitutions.htm">View Institutions</a>
-      <a href="addInstitution.htm">Add Institutions</a>
-    </div>
-  </li>
-  
-  <li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">Programs</a>
-    <div class="dropdown-content">
-      <a href="viewPrograms.htm">View Programs</a>
-      <a href="addPrograms.htm">Add Programs</a>
-    </div>
-  </li>
-
-<li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">Courses</a>
-    <div class="dropdown-content">
-      <a href="viewCourse.htm">View Courses</a>
-      <a href="addCourse.htm">Add Courses</a>
-    </div>
-  </li>
-  
-  <li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">Agreements</a>
-    <div class="dropdown-content">
-      <a href="viewAgreementsIndex.htm">View Transfer Agreements</a>
-      <a href="createAgreement.htm">Create Transfer Agreements</a>
-        <a href="removeAgreement.htm">Remove Transfer Agreements</a>
-    </div>
-  </li>
-  
-  </ul>
-    </div><!-- End div id=DDNavBar -->
-<!-- End of new nav bar html code -->
-
-</header>
-<body>
-<div class="container">
-	
-
-<div class="addProgramContainer">
-		<div class="TitleHeader">
-			<h4>Add Program</h4>
-		</div>
-
-		<div class="programInfoInAddProgram">
-			<table align="center">
-                <tr>
-                <h4 class="programInformationHeader">Program Information</h4><br>
-                </tr>
-                <tr>
-                    <td>Program ID:</td>
-                    <td>
-                        <input type="text" name="name" placeholder="Program ID" class="commonTxtBoxCSS">
-                    </td>
-                    <td> CAE Designation:</td>
-                    <td>
-                        <select  class="commonCmbBoxCSS">
-					       <option></option>
-				        </select>
-                    </td>
-                </tr>
-				<tr>
-                    <td>Program Title:</td>
-                    <td>
-                        <input type="text" name="programTitle" placeholder="Program Title"   class="commonTxtBoxCSS">
-                    </td>
-                    <td>Total Credit Hours:</td>
-                    <td>
-                        <select id="addNumOfCreditsInAddProgramName"  class="commonCmbBoxCSS">
-                            <option>1</option>
-                            <option>2</option>
-                            <option selected>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                            <option>6</option>
-                            <option>Subject to change</option>
-                        </select>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Program Type:</td>
-                    <td>
-                        <select class="commonCmbBoxCSS">
-					       <option></option>
-				        </select>
-                    </td>
-                    <td>Curriculam Code:</td>
-                    <td>
-                        <input type="text" placeholder="Code" id="addCurriculamCodeInSelectProgram"  class="commonTxtBoxCSS">
-                    </td>
-                </tr>
-				<tr align="center">
-                    <td colspan="6">
-                        Program URL:
-                    </td>
-                </tr>
-				<tr>
-                    <td colspan="5">
-                    <input type="text" placeholder="URL" id="addProgramURLInSelectProgram"  class="commonTxtBox3CSS">
-                    </td>
-				</tr>
-        	</table>		
-		</div> 
-        
-      
-        
-        <div id="CareerCoursesDiv">
-        <h4 class="careerCourseHeader">Career Courses:</h4>
-            <select class="selectProgramDropDown1" multiple>
-				<option></option>
-					<option></option>
-					<option></option>
-					<option></option>
-				</select>
-            <textarea class="textarea1InAddProgram" placeholder="Course details"></textarea>
-            <form id="frmAddCourseAddProgram">
-				<input type="button" value="Add Course"  id="btnAddCourseInAddProgram"class="commonBtnInCareerCourses">
-			</form>
-            <form  id="frmRemoveCourseAddProgram" >
-				<input type="button" value="Remove Course" id="btnRemoveCourseInAddProgram"  class="commonBtnInCareerCourses">
-			</form>
-            <br>
-            <script>
-                
-                 $(document).ready(function(){
-                        $("#btnAddCourseInAddProgram").click(function(){
-                            //Enable the Option A fields
-                            $("#CareerCourseSubDiv").show();
-                        });
-                });
-                
-            </script>
-            
-            <div id="CareerCourseSubDiv" style="display: none">
-                <select class="commonCmbBox3CSS">
-					<option>Department:</option>
-                    <option></option>
-                    <option></option>
-				</select>
-                <select class="commonCmbBox3CSS">
-					<option>Courses:</option>
-                    <option></option>
-                    <option></option>
-				</select>
-                <br>
-                <form  id="frmAddCourseSelectProgram" >
-				<input type="submit" value="Add Course"   class="commonBtnInCareerCourses">
-			     </form>
-                <form id="frmRemoveCourseSelectProgram" >
-				<input type="submit" value="Cancel"  class="commonBtnInCareerCourses">
-			</form>
+   <head>
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+      <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+      <link rel="stylesheet" href="jointStyle.css">
+      <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+      <script type="text/javascript" src="Script/script.js"></script>
+      <title>Add Program</title>
+   </head>
+   <header>
+      <!-- Beginning of the new navigation bar html code -->
+      <!-- Testing, Testing: 1,2,3 -->
+      <h2 align="center" style="margin: 0px"><img src="Images/CRRC%20Logo_Color-01.png"  class="CRRClogo"></h2>
+      <div id="DDNavBar">
+         <ul>
+            <li></li>
+            <li><a href="index.htm">Home</a></li>
+            <li class="dropdown" style="float:right">
+               <a href="javascript:void(0)" class="dropbtn">Global Admin Profile</a>
+               <div class="dropdown-content">
+                  <a href="#">View Profile</a>
+                  <a href="#">Logout</a>
+               </div>
+            </li>
+            <li class="dropdown">
+               <a href="javascript:void(0)" class="dropbtn">Users</a>
+               <div class="dropdown-content">
+                  <a href="viewUsers.htm">View Users</a>
+                  <a href="addUsers.htm">Add Users</a>
+               </div>
+            </li>
+            <li class="dropdown">
+               <a href="javascript:void(0)" class="dropbtn">Institutions</a>
+               <div class="dropdown-content">
+                  <a href="viewInstitutions.htm">View Institutions</a>
+                  <a href="addInstitution.htm">Add Institutions</a>
+               </div>
+            </li>
+            <li class="dropdown">
+               <a href="javascript:void(0)" class="dropbtn">Programs</a>
+               <div class="dropdown-content">
+                  <a href="viewPrograms.htm">View Programs</a>
+                  <a href="addPrograms.htm">Add Programs</a>
+               </div>
+            </li>
+            <li class="dropdown">
+               <a href="javascript:void(0)" class="dropbtn">Courses</a>
+               <div class="dropdown-content">
+                  <a href="viewCourse.htm">View Courses</a>
+                  <a href="addCourse.htm">Add Courses</a>
+               </div>
+            </li>
+            <li class="dropdown">
+               <a href="javascript:void(0)" class="dropbtn">Agreements</a>
+               <div class="dropdown-content">
+                  <a href="viewAgreementsIndex.htm">View Transfer Agreements</a>
+                  <a href="createAgreement.htm">Create Transfer Agreements</a>
+                  <a href="removeAgreement.htm">Remove Transfer Agreements</a>
+               </div>
+            </li>
+         </ul>
+      </div>
+      <!-- End div id=DDNavBar -->
+      <!-- End of new nav bar html code -->
+   </header>
+   <body>
+      <div class="container">
+         <div class="addProgramContainer">
+            <div class="TitleHeader">
+               <h4>Add Program</h4>
             </div>
-            
-        </div>
-        
-		
-        
-        <div id="generalEduInSelectProgram">
-        <h4 class="genEdReqHeader">General Education Requirements:</h4>
-            <select class="selectProgramDropDown1" multiple>
-				    <option></option>
-					<option></option>
-					<option></option>
-					<option></option>
-            </select>
-            
-            <textarea class="textarea1InAddProgram" placeholder="Course Details"></textarea>
-             <form action="" id="frmAddCourseInSelectProgram" >
-				<input type="button" value="Add Course" id="addCourseInGenEdReq" class="commonBtnInCareerCourses">
-			</form>
-             <form action="" id="frmRemoveCourseInSelectProgram" >
-				<input type="submit" value="Remove Course"  class="commonBtnInCareerCourses">
-			</form>
-            
-            <script>
-                
-                 $(document).ready(function(){
-                        $("#addCourseInGenEdReq").click(function(){
-                            //Enable the Option A fields
-                            $("#GeneralEducationSubDiv").show();
-                        });
-                });
-                
-            </script>
-            
-            <div id="GeneralEducationSubDiv" style="display: none;">
-                <select class="commonCmbBox3CSS" >
-					<option>Department:</option>
-                    <option></option>
-                    <option></option>
-				</select>
-                <select class="commonCmbBox3CSS">
-					<option>Courses:</option>
-                    <option></option>
-                    <option></option>
-				</select>
-                <br>
-                <form id="frmAddCourseSelectProgram" >
-				<input type="submit" value="Add Course" class="commonBtnInCareerCourses">
-			     </form>
-                <form id="frmRemoveCourseSelectProgram" >
-				<input type="submit" value="Cancel"  class="commonBtnInCareerCourses">
-			</form>
-            </div> <!--End of div general Education Sub Div -->
-            
-        <!--End of div general Education Requirements-->
-        </div>
-        
-        
-		<div id="saveOrCancelButtons">
-			<form action="" class="saveChangesToUserName" >
-				<input type="submit" value="Save Changes" class="commonBtn2InViewPrograms">
-			</form>
-			<form action="" class="cancelChangesToUserName">
-				<input type="submit" value="Cancel Changes" class="commonBtn2InViewPrograms">
-			</form>
-			
-		</div>	<!--End of save or cancel buttons div-->
-		
-	</div><!--End of div View User container-->
-    
-		
-		
-</div> <!--End of div Container-->
-</body> <!--End of Body tag-->
-       <footer>
-   <h2 align="center" style="margin: 0px"> <img src="Images/cae_logo-transparent-stroke.png" style="width: 180px;height: 180px">    
-        <img src="Images/MVCC-logo.png" style="height: 180px;">
-        <img src="Images/DHSlogo.png" style="width: 180px;height: 180px">
-        <img src="Images/NSAlogo.png" style="height: 180px">
-   </h2>
-</footer>
-</html><!--End of HTML tag-->
+            <div class="programInfoInAddProgram">
+               <table align="center">
+                  <tr>
+                     <h4 class="programInformationHeader">Program Information</h4>
+                     <br>
+                  </tr>
+                  <tr>
+                     <td>Program ID:</td>
+                     <td>
+                        <input type="text" name="name" placeholder="Program ID" class="commonTxtBoxCSS">
+                     </td>
+                     <td> CAE Designation:</td>
+                     <td>
+                        <select  class="commonCmbBoxCSS">
+                           <option></option>
+                        </select>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>Program Title:</td>
+                     <td>
+                        <input type="text" name="programTitle" placeholder="Program Title"   class="commonTxtBoxCSS">
+                     </td>
+                     <td>Total Credit Hours:</td>
+                     <td>
+                        <select id="addNumOfCreditsInAddProgramName"  class="commonCmbBoxCSS">
+                           <option>1</option>
+                           <option>2</option>
+                           <option selected>3</option>
+                           <option>4</option>
+                           <option>5</option>
+                           <option>6</option>
+                           <option>Subject to change</option>
+                        </select>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>Program Type:</td>
+                     <td>
+                        <select class="commonCmbBoxCSS">
+                           <option></option>
+                        </select>
+                     </td>
+                     <td>Curriculam Code:</td>
+                     <td>
+                        <input type="text" placeholder="Code" id="addCurriculamCodeInSelectProgram"  class="commonTxtBoxCSS">
+                     </td>
+                  </tr>
+                  <tr align="center">
+                     <td colspan="6">
+                        Program URL:
+                     </td>
+                  </tr>
+                  <tr>
+                     <td colspan="5">
+                        <input type="text" placeholder="URL" id="addProgramURLInSelectProgram"  class="commonTxtBox3CSS">
+                     </td>
+                  </tr>
+               </table>
+            </div>
+            <div id="CareerCoursesDiv">
+               <h4 class="careerCourseHeader">Career Courses:</h4>
+               <select class="selectProgramDropDown1" multiple>
+                  <option></option>
+                  <option></option>
+                  <option></option>
+                  <option></option>
+               </select>
+               <textarea class="textarea1InAddProgram" placeholder="Course details"></textarea>
+               <form id="frmAddCourseAddProgram">
+                  <input type="button" value="Add Course"  id="btnAddCourseInAddProgram"class="commonBtnInCareerCourses">
+               </form>
+               <form  id="frmRemoveCourseAddProgram" >
+                  <input type="button" value="Remove Course" id="btnRemoveCourseInAddProgram"  class="commonBtnInCareerCourses">
+               </form>
+               <br>
+               <script>
+                  $(document).ready(function(){
+                         $("#btnAddCourseInAddProgram").click(function(){
+                             //Enable the Option A fields
+                             $("#CareerCourseSubDiv").show();
+                         });
+                  });
+                  
+               </script>
+               <div id="CareerCourseSubDiv" style="display: none">
+                  <select class="commonCmbBox3CSS">
+                     <option>Department:</option>
+                     <option></option>
+                     <option></option>
+                  </select>
+                  <select class="commonCmbBox3CSS">
+                     <option>Courses:</option>
+                     <option></option>
+                     <option></option>
+                  </select>
+                  <br>
+                  <form  id="frmAddCourseSelectProgram" >
+                     <input type="submit" value="Add Course"   class="commonBtnInCareerCourses">
+                  </form>
+                  <form id="frmRemoveCourseSelectProgram" >
+                     <input type="submit" value="Cancel"  class="commonBtnInCareerCourses">
+                  </form>
+               </div>
+            </div>
+            <div id="generalEduInSelectProgram">
+               <h4 class="genEdReqHeader">General Education Requirements:</h4>
+               <select class="selectProgramDropDown1" multiple>
+                  <option></option>
+                  <option></option>
+                  <option></option>
+                  <option></option>
+               </select>
+               <textarea class="textarea1InAddProgram" placeholder="Course Details"></textarea>
+               <form action="" id="frmAddCourseInSelectProgram" >
+                  <input type="button" value="Add Course" id="addCourseInGenEdReq" class="commonBtnInCareerCourses">
+               </form>
+               <form action="" id="frmRemoveCourseInSelectProgram" >
+                  <input type="submit" value="Remove Course"  class="commonBtnInCareerCourses">
+               </form>
+               <script>
+                  $(document).ready(function(){
+                         $("#addCourseInGenEdReq").click(function(){
+                             //Enable the Option A fields
+                             $("#GeneralEducationSubDiv").show();
+                         });
+                  });
+                  
+               </script>
+               <div id="GeneralEducationSubDiv" style="display: none;">
+                  <select class="commonCmbBox3CSS" >
+                     <option>Department:</option>
+                     <option></option>
+                     <option></option>
+                  </select>
+                  <select class="commonCmbBox3CSS">
+                     <option>Courses:</option>
+                     <option></option>
+                     <option></option>
+                  </select>
+                  <br>
+                  <form id="frmAddCourseSelectProgram" >
+                     <input type="submit" value="Add Course" class="commonBtnInCareerCourses">
+                  </form>
+                  <form id="frmRemoveCourseSelectProgram" >
+                     <input type="submit" value="Cancel"  class="commonBtnInCareerCourses">
+                  </form>
+               </div>
+               <!--End of div general Education Sub Div -->
+               <!--End of div general Education Requirements-->
+            </div>
+            <div id="saveOrCancelButtons">
+               <form action="" class="saveChangesToUserName" >
+                  <input type="submit" value="Save Changes" class="commonBtn2InViewPrograms">
+               </form>
+               <form action="" class="cancelChangesToUserName">
+                  <input type="submit" value="Cancel Changes" class="commonBtn2InViewPrograms">
+               </form>
+            </div>
+            <!--End of save or cancel buttons div-->
+         </div>
+         <!--End of div View User container-->
+      </div>
+      <!--End of div Container-->
+   </body>
+   <!--End of Body tag-->
+   <footer>
+      <h2 align="center" style="margin: 0px"> <img src="Images/cae_logo-transparent-stroke.png" style="width: 180px;height: 180px">    
+         <img src="Images/MVCC-logo.png" style="height: 180px;">
+         <img src="Images/DHSlogo.png" style="width: 180px;height: 180px">
+         <img src="Images/NSAlogo.png" style="height: 180px">
+      </h2>
+   </footer>
+</html>
+<!--End of HTML tag-->

@@ -1,153 +1,150 @@
 <!DOCTYPE html>
 <html>
-<head>
-<link rel="stylesheet" href="jointStyle.css">
-<title>View Programs</title>
-</head>
-    <header><!-- Beginning of the new navigation bar html code -->
-<!-- Testing, Testing: 1,2,3 -->
-<div id="DDNavBar">
- <h2 align="center" style="margin: 0px"><img src="Images/CRRC%20Logo_Color-01.png"  class="CRRClogo"></h2>
-    <ul>
-        <li></li>
-  <li><a href="index.htm">Home</a></li>
-  
-  <li class="dropdown" style="float:right">
-    <a href="javascript:void(0)" class="dropbtn">Global Admin Profile</a>
-    <div class="dropdown-content">
-      <a href="#">View Profile</a>
-      <a href="#">Logout</a>
-    </div>
-  </li>
-  
-  <li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">Users</a>
-    <div class="dropdown-content">
-      <a href="viewUsers.htm">View Users</a>
-      <a href="addUsers.htm">Add Users</a>
-    </div>
-  </li>
-  
-  <li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">Institutions</a>
-    <div class="dropdown-content">
-      <a href="viewInstitutions.htm">View Institutions</a>
-      <a href="addInstitution.htm">Add Institutions</a>
-    </div>
-  </li>
-  
-  <li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">Programs</a>
-    <div class="dropdown-content">
-      <a href="viewPrograms.htm">View Programs</a>
-      <a href="addPrograms.htm">Add Programs</a>
-    </div>
-  </li>
-
-<li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">Courses</a>
-    <div class="dropdown-content">
-      <a href="viewCourse.htm">View Courses</a>
-      <a href="addCourse.htm">Add Courses</a>
-    </div>
-  </li>
-  
-  <li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">Agreements</a>
-    <div class="dropdown-content">
-      <a href="viewAgreementsIndex.htm">View Transfer Agreements</a>
-      <a href="createAgreement.htm">Create Transfer Agreements</a>
-        <a href="removeAgreement.htm">Remove Transfer Agreements</a>
-    </div>
-  </li>
-  
-  </ul>
-    </div><!-- End div id=DDNavBar -->
-<!-- End of new nav bar html code -->
-    </header>
-<body>
-<div class="container">
-
-
-
-	<div class="viewProgramContainer">
-		<div class="TitleHeader">
-			<h4>View Programs</h4>
-		</div>
-
-			<div class="viewProgramsMultilineSelect">
-				<select multiple id="selectProgram">
-					<option>  </option>
-					<option>  </option>
-					<option>  </option>
-				</select>
-				<br><br>
-                <form action="viewPrograms_selectProgram.htm" id="btnSelectProgramInViewPrograms" style="float: left" >
-                    <input type="submit" name="selectProgram" value="Select Program" onclick="" id="selectProgramButton" class="commonBtn2InViewPrograms" >
-                </form>
+   <head>
+      <link rel="stylesheet" href="jointStyle.css">
+      <title>View Programs</title>
+      <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+      <script type="text/javascript" src="Script/script.js"></script>
+   </head>
+   <header>
+      <!-- Beginning of the new navigation bar html code -->
+      <!-- Testing, Testing: 1,2,3 -->
+      <h2 align="center" style="margin: 0px"><img src="Images/CRRC%20Logo_Color-01.png"  class="CRRClogo"></h2>
+      <div id="DDNavBar">
+         <ul>
+            <li></li>
+            <li><a href="index.htm">Home</a></li>
+            <li class="dropdown" style="float:right">
+               <a href="javascript:void(0)" class="dropbtn">Global Admin Profile</a>
+               <div class="dropdown-content">
+                  <a href="#">View Profile</a>
+                  <a href="#">Logout</a>
+               </div>
+            </li>
+            <li class="dropdown">
+               <a href="javascript:void(0)" class="dropbtn">Users</a>
+               <div class="dropdown-content">
+                  <a href="viewUsers.htm">View Users</a>
+                  <a href="addUsers.htm">Add Users</a>
+               </div>
+            </li>
+            <li class="dropdown">
+               <a href="javascript:void(0)" class="dropbtn">Institutions</a>
+               <div class="dropdown-content">
+                  <a href="viewInstitutions.htm">View Institutions</a>
+                  <a href="addInstitution.htm">Add Institutions</a>
+               </div>
+            </li>
+            <li class="dropdown">
+               <a href="javascript:void(0)" class="dropbtn">Programs</a>
+               <div class="dropdown-content">
+                  <a href="viewPrograms.htm">View Programs</a>
+                  <a href="addPrograms.htm">Add Programs</a>
+               </div>
+            </li>
+            <li class="dropdown">
+               <a href="javascript:void(0)" class="dropbtn">Courses</a>
+               <div class="dropdown-content">
+                  <a href="viewCourse.htm">View Courses</a>
+                  <a href="addCourse.htm">Add Courses</a>
+               </div>
+            </li>
+            <li class="dropdown">
+               <a href="javascript:void(0)" class="dropbtn">Agreements</a>
+               <div class="dropdown-content">
+                  <a href="viewAgreementsIndex.htm">View Transfer Agreements</a>
+                  <a href="createAgreement.htm">Create Transfer Agreements</a>
+                  <a href="removeAgreement.htm">Remove Transfer Agreements</a>
+               </div>
+            </li>
+         </ul>
+      </div>
+      <!-- End div id=DDNavBar -->
+      <!-- End of new nav bar html code -->
+   </header>
+   <body>
+      <div class="container">
+         <div class="viewProgramContainer">
+            <div class="TitleHeader">
+               <h4>View Programs</h4>
+            </div>
+            <div class="viewProgramsMultilineSelect">
+               <select multiple id="selectProgram">
+                  <option>  </option>
+                  <option>  </option>
+                  <option>  </option>
+               </select>
+               <br><br>
+               <form action="viewPrograms_selectProgram.htm" id="btnSelectProgramInViewPrograms" style="float: left" >
+                  <input type="submit" name="selectProgram" value="Select Program" onclick="" id="selectProgramButton" class="commonBtn2InViewPrograms" >
+               </form>
                <form action = "addPrograms.htm" id="btnAddProgramInViewPrograms" style="float: left" >
-                <input type="submit" name="addProgram" value="Add Program" onclick="" id="addProgramButton" class="commonBtn2InViewPrograms" >
-                   
-                </form>
-                
-                <form action="" id="btnRemoveProgramInViewPrograms" >
-                    <input type="submit" name="removeProgram" value="Remove Program" onclick="" id="removeProgramButton"
-                    class="commonBtn2InViewPrograms" >
-                </form>
-				
-				<br>
-				<!--End of div viewProgramsMultilineSelect -->
-			</div>
-
-			<div class="filterByInViewPrograms">
-				<h2 id="filterByHeader"> Filter By </h2>
-				<fieldset>
-                      <legend>Program ID</legend>
-				<p id="lblPID_viewPrograms"> Program ID: </p>
-				<input type="text" name="instituteIDInput" placeholder="Name of the Program" class="commonTxtBoxCSS" >
-				<input type="submit" value="Search" class="commonBtn3InViewPrograms">  
-                </fieldset>
-                <fieldset>
-                    <legend>Location</legend>
-				<p id="adminTypeLabel"> Filter By State: </p>
-				<select class="commonCmbBoxCSS">
-					<option></option><option></option><option></option>
-				</select><br>
-				<p id="adminTypeLabel"> Filter By City: </p>
-				<select class="commonCmbBoxCSS">
-					<option></option><option></option><option></option>
-				</select>
-				<input type="submit" value="Apply Filter" class="commonBtn3InViewPrograms">  
-                </fieldset>
-                
-                <fieldset>
-                    <legend>Program Type</legend>
-				<p id="adminTypeLabel"> Program Type: </p>
-				<select class="commonCmbBoxCSS">
-					<option></option><option></option><option></option>
-				</select>
-				<input type="submit" value="Apply Filter" name="searchButton" class="commonBtn3InViewPrograms"> 
-                </fieldset>
-                <fieldset>
-                    <legend>CAE Designations</legend>
-				<p id="adminTypeLabel"> CAE Designation: </p>
-				<select class="commonCmbBoxCSS">
-					<option></option><option></option><option></option>
-				</select>
-				<input type="submit" value="Apply Filter" class="commonBtn3InViewPrograms"> 
-                    </fieldset>
-                <br>
-				<!--End of div filterBy -->
-			</div>
-		<!--End of div Container-->
-</div>
-    </div>
-</body>
-     <footer>
-   <h2 align="center" style="margin: 0px"> <img src="Images/cae_logo-transparent-stroke.png" style="width: 180px;height: 180px">    
-        <img src="Images/MVCC-logo.png" style="height: 180px;">
-        <img src="Images/DHSlogo.png" style="width: 180px;height: 180px">
-        <img src="Images/NSAlogo.png" style="height: 180px">
-   </h2>
-</footer>
+                  <input type="submit" name="addProgram" value="Add Program" onclick="" id="addProgramButton" class="commonBtn2InViewPrograms" >
+               </form>
+               <form action="" id="btnRemoveProgramInViewPrograms" >
+                  <input type="submit" name="removeProgram" value="Remove Program" onclick="" id="removeProgramButton"
+                     class="commonBtn2InViewPrograms" >
+               </form>
+               <br>
+               <!--End of div viewProgramsMultilineSelect -->
+            </div>
+            <div class="filterByInViewPrograms">
+               <h2 id="filterByHeader"> Filter By </h2>
+               <fieldset>
+                  <legend>Program ID</legend>
+                  <p id="lblPID_viewPrograms"> Program ID: </p>
+                  <input type="text" name="instituteIDInput" placeholder="Name of the Program" class="commonTxtBoxCSS" >
+                  <input type="submit" value="Search" class="commonBtn3InViewPrograms">  
+               </fieldset>
+               <fieldset>
+                  <legend>Location</legend>
+                  <p id="adminTypeLabel"> Filter By State: </p>
+                  <select class="commonCmbBoxCSS">
+                     <option></option>
+                     <option></option>
+                     <option></option>
+                  </select>
+                  <br>
+                  <p id="adminTypeLabel"> Filter By City: </p>
+                  <select class="commonCmbBoxCSS">
+                     <option></option>
+                     <option></option>
+                     <option></option>
+                  </select>
+                  <input type="submit" value="Apply Filter" class="commonBtn3InViewPrograms">  
+               </fieldset>
+               <fieldset>
+                  <legend>Program Type</legend>
+                  <p id="adminTypeLabel"> Program Type: </p>
+                  <select class="commonCmbBoxCSS">
+                     <option></option>
+                     <option></option>
+                     <option></option>
+                  </select>
+                  <input type="submit" value="Apply Filter" name="searchButton" class="commonBtn3InViewPrograms"> 
+               </fieldset>
+               <fieldset>
+                  <legend>CAE Designations</legend>
+                  <p id="adminTypeLabel"> CAE Designation: </p>
+                  <select class="commonCmbBoxCSS">
+                     <option></option>
+                     <option></option>
+                     <option></option>
+                  </select>
+                  <input type="submit" value="Apply Filter" class="commonBtn3InViewPrograms"> 
+               </fieldset>
+               <br>
+               <!--End of div filterBy -->
+            </div>
+            <!--End of div Container-->
+         </div>
+      </div>
+   </body>
+   <footer>
+      <h2 align="center" style="margin: 0px"> <img src="Images/cae_logo-transparent-stroke.png" style="width: 180px;height: 180px">    
+         <img src="Images/MVCC-logo.png" style="height: 180px;">
+         <img src="Images/DHSlogo.png" style="width: 180px;height: 180px">
+         <img src="Images/NSAlogo.png" style="height: 180px">
+      </h2>
+   </footer>
 </html>

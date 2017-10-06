@@ -1,139 +1,135 @@
 <!DOCTYPE html>
 <html>
-<head>
-<link rel="stylesheet" href="jointStyle.css">
-<title>View Users</title>
-<script type="text/javascript" src="Script/script.js"></script>
-</head>
-    <header>
-        <!-- Beginning of the new navigation bar html code -->
-<!-- Testing, Testing: 1,2,3 -->
-<div id="DDNavBar">
-<h2 align="center" style="margin: 0px"><img src="Images/CRRC%20Logo_Color-01.png"  class="CRRClogo"></h2>
-    <ul>
-        <li></li>
-  <li><a href="index.htm">Home</a></li>
-  
-  <li class="dropdown" style="float:right">
-    <a href="javascript:void(0)" class="dropbtn">Global Admin Profile</a>
-    <div class="dropdown-content">
-      <a href="#">View Profile</a>
-      <a href="#">Logout</a>
-    </div>
-  </li>
-  
-  <li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">Users</a>
-    <div class="dropdown-content">
-      <a href="viewUsers.htm">View Users</a>
-      <a href="addUsers.htm">Add Users</a>
-    </div>
-  </li>
-  
-  <li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">Institutions</a>
-    <div class="dropdown-content">
-      <a href="viewInstitutions.htm">View Institutions</a>
-      <a href="addInstitution.htm">Add Institutions</a>
-    </div>
-  </li>
-  
-  <li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">Programs</a>
-    <div class="dropdown-content">
-      <a href="viewPrograms.htm">View Programs</a>
-      <a href="addPrograms.htm">Add Programs</a>
-    </div>
-  </li>
-
-<li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">Courses</a>
-    <div class="dropdown-content">
-      <a href="viewCourse.htm">View Courses</a>
-      <a href="addCourse.htm">Add Courses</a>
-    </div>
-  </li>
-  
-  <li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">Agreements</a>
-    <div class="dropdown-content">
-      <a href="viewAgreementsIndex.htm">View Transfer Agreements</a>
-      <a href="createAgreement.htm">Create Transfer Agreements</a>
-        <a href="removeAgreement.htm">Remove Transfer Agreements</a>
-    </div>
-  </li>
-  
-  </ul>
-    </div><!-- End div id=DDNavBar -->
-<!-- End of new nav bar html code -->
-    </header>
-<body>
-<div class="container">
-
-    <div class="viewUserContainer">
-		<div class="TitleHeader">
-			<h4>View User</h4>
-		</div>
-            
+   <head>
+      <link rel="stylesheet" href="jointStyle.css">
+      <title>View Users</title>
+      <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+      <script type="text/javascript" src="Script/script.js"></script>
+   </head>
+   <header>
+      <!-- Beginning of the new navigation bar html code -->
+      <!-- Testing, Testing: 1,2,3 -->
+      <h2 align="center" style="margin: 0px"><img src="Images/CRRC%20Logo_Color-01.png"  class="CRRClogo"></h2>
+      <div id="DDNavBar">
+         <ul>
+            <li></li>
+            <li><a href="index.htm">Home</a></li>
+            <li class="dropdown" style="float:right">
+               <a href="javascript:void(0)" class="dropbtn">Global Admin Profile</a>
+               <div class="dropdown-content">
+                  <a href="#">View Profile</a>
+                  <a href="#">Logout</a>
+               </div>
+            </li>
+            <li class="dropdown">
+               <a href="javascript:void(0)" class="dropbtn">Users</a>
+               <div class="dropdown-content">
+                  <a href="viewUsers.htm">View Users</a>
+                  <a href="addUsers.htm">Add Users</a>
+               </div>
+            </li>
+            <li class="dropdown">
+               <a href="javascript:void(0)" class="dropbtn">Institutions</a>
+               <div class="dropdown-content">
+                  <a href="viewInstitutions.htm">View Institutions</a>
+                  <a href="addInstitution.htm">Add Institutions</a>
+               </div>
+            </li>
+            <li class="dropdown">
+               <a href="javascript:void(0)" class="dropbtn">Programs</a>
+               <div class="dropdown-content">
+                  <a href="viewPrograms.htm">View Programs</a>
+                  <a href="addPrograms.htm">Add Programs</a>
+               </div>
+            </li>
+            <li class="dropdown">
+               <a href="javascript:void(0)" class="dropbtn">Courses</a>
+               <div class="dropdown-content">
+                  <a href="viewCourse.htm">View Courses</a>
+                  <a href="addCourse.htm">Add Courses</a>
+               </div>
+            </li>
+            <li class="dropdown">
+               <a href="javascript:void(0)" class="dropbtn">Agreements</a>
+               <div class="dropdown-content">
+                  <a href="viewAgreementsIndex.htm">View Transfer Agreements</a>
+                  <a href="createAgreement.htm">Create Transfer Agreements</a>
+                  <a href="removeAgreement.htm">Remove Transfer Agreements</a>
+               </div>
+            </li>
+         </ul>
+      </div>
+      <!-- End div id=DDNavBar -->
+      <!-- End of new nav bar html code -->
+   </header>
+   <body>
+      <div class="container">
+         <div class="viewUserContainer">
+            <div class="TitleHeader">
+               <h4>View User</h4>
+            </div>
             <!--Start of div view Users Multiline Select -->
-			<div class="viewUsersMultilineSelect">
-				<select multiple id="lstBoxselectUser_ViewUser">
-					<option></option>
-					<option></option>
-					<option></option>
-				</select>
-				<br><br>
-				<form action="viewUsers_selectUser.htm" id="selectUserButtonForm">
-				<input type="submit" name="selectUser" value="Select User"  id="selectUserButton">
-				</form>
-				<form action="addUsers.htm" id="addUserButtonForm">
-				<input type="submit" name="addUser" value="Add User" id="addUserButton">
-				</form>
-				<form id="removeUserButtonForm">
-				<input type="submit" name="removeUser" value="Remove User" id="removeUserButton">
-				</form>
-				<br>
-				
-			</div><!--End of div viewUsersMultilineSelect -->
-
+            <div class="viewUsersMultilineSelect">
+               <select multiple id="lstBoxselectUser_ViewUser">
+                  <option></option>
+                  <option></option>
+                  <option></option>
+               </select>
+               <br><br>
+               <form action="viewUsers_selectUser.htm" id="selectUserButtonForm">
+                  <input type="submit" name="selectUser" value="Select User"  id="selectUserButton">
+               </form>
+               <form action="addUsers.htm" id="addUserButtonForm">
+                  <input type="submit" name="addUser" value="Add User" id="addUserButton">
+               </form>
+               <form id="removeUserButtonForm">
+                  <input type="submit" name="removeUser" value="Remove User" id="removeUserButton">
+               </form>
+               <br>
+            </div>
+            <!--End of div viewUsersMultilineSelect -->
             <!--Start of div filterBy -->
-			<div class="filterByInViewUsers">
-				<h2 id="filterByHeader"> Filter By </h2>
-				<fieldset>
-				<p id="instituteLabelInFilterBy"> Institute: </p>
-				<select class="commonCmbBox2CSS">
-					<option></option><option></option><option></option><option></option>
-				</select>
-				<br>
-				<p id="instituteIDLabelInFilterBy"> Institute ID: </p>
-				<input type="text" name="instituteIDInput" placeholder="Name of the Institute" class="InstituteIdFilterTextBoxInFilterBy">
-				<br>
-				<input type="button" value="Apply Filter" name="applyFilterButton" class="commonBtnInViewPrograms"><br>
-                </fieldset>
-                <fieldset>
-				<p class="adminTypeLabelInFilterBy"> Admin Type: </p>
-				<select class="commonCmbBox2CSS">
-					<option></option><option></option><option></option>
-				</select>
-                        <input type="button" value="Apply Filter" class="commonBtnInViewPrograms">
-                </fieldset>
-                <fieldset>
-				<p id="UserIDLabelInFilterBy"> User ID: </p>
-				<input type="text" name="userIDInput" placeholder="Name of the user" class="selectUserTextBoxInFilterBy"><br>
-				<input type="submit" value="Search" name="searchButton" class="commonBtnInViewPrograms">
-                </fieldset>
-				
-			</div><!--End of div filterBy -->
-    </div>
-    
-		<!--End of div Container-->
-</div>
-</body>
-     <footer>
-         <h2 align="center" style="margin: 0px"> <img src="Images/cae_logo-transparent-stroke.png" style="width: 180px;height: 180px">    
-        <img src="Images/MVCC-logo.png" style="height: 180px;">
-        <img src="Images/DHSlogo.png" style="width: 180px;height: 180px">
-        <img src="Images/NSAlogo.png" style="height: 180px">
-   </h2>
-</footer>
+            <div class="filterByInViewUsers">
+               <h2 id="filterByHeader"> Filter By </h2>
+               <fieldset>
+                  <p id="instituteLabelInFilterBy"> Institute: </p>
+                  <select class="commonCmbBox2CSS">
+                     <option></option>
+                     <option></option>
+                     <option></option>
+                     <option></option>
+                  </select>
+                  <br>
+                  <p id="instituteIDLabelInFilterBy"> Institute ID: </p>
+                  <input type="text" name="instituteIDInput" placeholder="Name of the Institute" class="InstituteIdFilterTextBoxInFilterBy">
+                  <br>
+                  <input type="button" value="Apply Filter" name="applyFilterButton" class="commonBtnInViewPrograms"><br>
+               </fieldset>
+               <fieldset>
+                  <p class="adminTypeLabelInFilterBy"> Admin Type: </p>
+                  <select class="commonCmbBox2CSS">
+                     <option></option>
+                     <option></option>
+                     <option></option>
+                  </select>
+                  <input type="button" value="Apply Filter" class="commonBtnInViewPrograms">
+               </fieldset>
+               <fieldset>
+                  <p id="UserIDLabelInFilterBy"> User ID: </p>
+                  <input type="text" name="userIDInput" placeholder="Name of the user" class="selectUserTextBoxInFilterBy"><br>
+                  <input type="submit" value="Search" name="searchButton" class="commonBtnInViewPrograms">
+               </fieldset>
+            </div>
+            <!--End of div filterBy -->
+         </div>
+         <!--End of div Container-->
+      </div>
+   </body>
+   <footer>
+      <h2 align="center" style="margin: 0px"> <img src="Images/cae_logo-transparent-stroke.png" style="width: 180px;height: 180px">    
+         <img src="Images/MVCC-logo.png" style="height: 180px;">
+         <img src="Images/DHSlogo.png" style="width: 180px;height: 180px">
+         <img src="Images/NSAlogo.png" style="height: 180px">
+      </h2>
+   </footer>
 </html>
