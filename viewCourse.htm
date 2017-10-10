@@ -1,83 +1,77 @@
 <!DOCTYPE html>
 <html>
    <head>
-      <link rel="stylesheet" href="jointStyle.css">
-      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
-      <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-      <script type="text/javascript" src="script.js"></script>
       <title>View Courses</title>
+      <link rel="stylesheet" href="jointStyle.css">
+      <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script type="text/javascript" src="Script/script.js"></script>
    </head>
-    
-    <header>
-        <!-- Testing, Testing: 1,2,3 -->
-         <div id="DDNavBar"><!-- Navigation bar -->
-           <h2 align="center" style="margin: 0px"><img src="Images/CRRC%20Logo_Color-01.png"  class="CRRClogo"></h2>
-            <ul>
-               <li></li>
-               <li><a href="index.htm">Home</a></li>
-               <li class="dropdown" style="float:right">
-                  <a href="javascript:void(0)" class="dropbtn">Global Admin Profile</a>
-                  <div class="dropdown-content">
-                     <a href="#">View Profile</a>
-                     <a href="#">Logout</a>
-                  </div>
-               </li>
-               <li class="dropdown">
-                  <a href="javascript:void(0)" class="dropbtn">Users</a>
-                  <div class="dropdown-content">
-                     <a href="viewUsers.htm">View Users</a>
-                     <a href="addUsers.htm">Add Users</a>
-                  </div>
-               </li>
-               <li class="dropdown">
-                  <a href="javascript:void(0)" class="dropbtn">Institutions</a>
-                  <div class="dropdown-content">
-                     <a href="viewInstitutions.htm">View Institutions</a>
-                     <a href="addInstitution.htm">Add Institutions</a>
-                  </div>
-               </li>
-               <li class="dropdown">
-                  <a href="javascript:void(0)" class="dropbtn">Programs</a>
-                  <div class="dropdown-content">
-                     <a href="viewPrograms.htm">View Programs</a>
-                     <a href="addPrograms.htm">Add Programs</a>
-                  </div>
-               </li>
-               <li class="dropdown">
-                  <a href="javascript:void(0)" class="dropbtn">Courses</a>
-                  <div class="dropdown-content">
-                     <a href="viewCourse.htm">View Courses</a>
-                     <a href="addCourse.htm">Add Courses</a>
-                  </div>
-               </li>
-               <li class="dropdown">
-                  <a href="javascript:void(0)" class="dropbtn">Agreements</a>
-                  <div class="dropdown-content">
-                     <a href="viewAgreementsIndex.htm">View Transfer Agreements</a>
-                     <a href="createAgreement.htm">Create Transfer Agreements</a>
-                     <a href="removeAgreement.htm">Remove Transfer Agreements</a>
-                  </div>
-               </li>
-            </ul>
-         </div>
-         <!-- End div id=DDNavBar -->
-
-    
-    </header>
-    
+   <header>
+      <!-- Testing, Testing: 1,2,3 -->
+      <h2 align="center" style="margin: 0px"><img src="Images/CRRC%20Logo_Color-01.png"  class="CRRClogo"></h2>
+       <div id="DDNavBar">
+         <!-- Navigation bar -->
+         
+         <ul>
+            <li></li>
+            <li><a href="index.htm">Home</a></li>
+            <li class="dropdown" style="float:right">
+               <a href="javascript:void(0)" class="dropbtn">Global Admin Profile</a>
+               <div class="dropdown-content">
+                  <a href="#">View Profile</a>
+                  <a href="#">Logout</a>
+               </div>
+            </li>
+            <li class="dropdown">
+               <a href="javascript:void(0)" class="dropbtn">Users</a>
+               <div class="dropdown-content">
+                  <a href="viewUsers.htm">View Users</a>
+                  <a href="addUsers.htm">Add Users</a>
+               </div>
+            </li>
+            <li class="dropdown">
+               <a href="javascript:void(0)" class="dropbtn">Institutions</a>
+               <div class="dropdown-content">
+                  <a href="viewInstitutions.htm">View Institutions</a>
+                  <a href="addInstitution.htm">Add Institutions</a>
+               </div>
+            </li>
+            <li class="dropdown">
+               <a href="javascript:void(0)" class="dropbtn">Programs</a>
+               <div class="dropdown-content">
+                  <a href="viewPrograms.htm">View Programs</a>
+                  <a href="addPrograms.htm">Add Programs</a>
+               </div>
+            </li>
+            <li class="dropdown">
+               <a href="javascript:void(0)" class="dropbtn">Courses</a>
+               <div class="dropdown-content">
+                  <a href="viewCourse.htm">View Courses</a>
+                  <a href="addCourse.htm">Add Courses</a>
+               </div>
+            </li>
+            <li class="dropdown">
+               <a href="javascript:void(0)" class="dropbtn">Agreements</a>
+               <div class="dropdown-content">
+                  <a href="viewAgreementsIndex.htm">View Transfer Agreements</a>
+                  <a href="createAgreement.htm">Create Transfer Agreements</a>
+                  <a href="removeAgreement.htm">Remove Transfer Agreements</a>
+               </div>
+            </li>
+         </ul>
+      </div>
+      <!-- End div id=DDNavBar -->
+   </header>
    <body>
       <div class="container">
-          
-                   
          <div class="viewCoursesContainer">
             <div class="TitleHeader">
                <h4>View Course(s)</h4>
-            </div> <!-- end div class="viewCoursesHeader" -->
-             
+            </div>
+            <!-- end div class="viewCoursesHeader" -->
             <div class="selectAnInstitution" id="selectAnInstitution" align=center style="">
                <h4 align="center">There are three ways you can select which course(s) are presented. Please select your method</h4>
-               
-                <script>
+               <script>
                   $(document).ready(function(){
                                          $("#OptionA").click(function(){
                                              //Uncheck the Option B and C checkboxes
@@ -118,8 +112,8 @@
                                      });
                   
                </script>
-                
-               <table id="optionsTable"> <!-- How to select which way you will view the courses -->
+               <table id="optionsTable">
+                  <!-- How to select which way you will view the courses -->
                   <tr>
                   <thead>
                      <th>
@@ -175,11 +169,11 @@
                         <b>CAE Designation: </b><select id="CAEOption" style="width:150px" disabled></select>
                      </td>
                   </tr>
-               </table> <!-- End table id="optionsTable" -->
+               </table>
+               <!-- End table id="optionsTable" -->
                <p>
                   <input type="submit" id="SelectOption" value="Select Option" name="SelectOption">
                </p>
-                
                <script>
                   $(document).ready(function()
                       {
@@ -198,12 +192,14 @@
                               })
                       })
                </script>
-            </div> <!-- end div class="selectAnInstitution" -->
-             
+            </div>
+            <!-- end div class="selectAnInstitution" -->
             <div class="viewCoursesInformation" id="viewCoursesInformation" name="viewCoursesInformation" style="display: none">
-               <div> <!-- Return Button -->
+               <div>
+                  <!-- Return Button -->
                   <h3 align=center><a href="#" id="SelectDifferentInstitution">Return to Search Options</a></h3>
-               </div><!-- End return button div -->
+               </div>
+               <!-- End return button div -->
                <div class="courseListDiv" id="courseListDiv" name="courseListDiv">
                   <table align=center>
                      <tr align=center>
@@ -251,8 +247,8 @@
                         </td>
                      </tr>
                   </table>
-               </div> <!-- End div class="courseListDiv" -->
-               
+               </div>
+               <!-- End div class="courseListDiv" -->
                <div class="courseInfo" align="center" id="courseInfo">
                   <form id="courseInfoForm">
                      <h2 align=center><u>Course Information</u></h2>
@@ -470,12 +466,15 @@
                         </tr>
                      </table>
                   </form>
-               </div> <!-- End div class="courseInfo" -->
-            </div> <!-- End div class="viewCoursesInformation" -->
-         </div> <!-- End div class="viewCoursesContainer" -->
-      </div> <!-- End div class="container" -->
+               </div>
+               <!-- End div class="courseInfo" -->
+            </div>
+            <!-- End div class="viewCoursesInformation" -->
+         </div>
+         <!-- End div class="viewCoursesContainer" -->
+      </div>
+      <!-- End div class="container" -->
    </body>
-    
    <footer>
       <h2 align="center" style="margin: 0px"> <img src="Images/cae_logo-transparent-stroke.png" style="width: 180px;height: 180px">    
          <img src="Images/MVCC-logo.png" style="height: 180px;">
@@ -483,5 +482,4 @@
          <img src="Images/NSAlogo.png" style="height: 180px">
       </h2>
    </footer>
-    
 </html>
