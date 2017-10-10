@@ -300,6 +300,17 @@
                               <input type="text" id="CourseNum" name="CourseNum" style="width:48%" placeholder="Number" readonly>
                            </td>
                         </tr>
+                         
+                         <tr>
+                             <td>
+                                 Course Letter (Optional): 
+                             </td>
+                             
+                             <td>
+                                 <input type="text" id="CourseLetter">
+                             </td>
+                         </tr>
+                         
                         <tr>
                            <td>
                               Course Name:
@@ -340,13 +351,44 @@
                               <textarea style="height: 75px; width:250px" id="Description" name="description" placeholder="Enter your description here" readonly></textarea>
                            </td>
                         </tr>
+                         
+                         <tr>
+                             <td>
+                                 Is There A Lab: 
+                             </td>
+                             <td>
+                                 <input type="radio" id="LabYes" name="Lab" value="1" disabled>Yes
+                                 <input type="radio" id="LabNo" name="Lab" value="0" disabled>No
+                             </td>
+                         </tr>
+                         
+                         <tr>
+                       <td>Prerequisites:</td>
+                       <td>
+                           <select id="Prereqs" size="5" style="width:257px" readonly></select>
+                       </td>
+                       
+                   </tr>
+                  
+                   <tr>
+                       <td>
+                           Prerequisite Options:
+                       </td>
+                       <td>
+                           <select id="PreOptions" style="width:260px" disabled>
+                               <option value="0">All Prerequisites Required</option>
+                               <option value="1">One Prerequisite is Required</option>
+                           </select>
+                       </td>
+                   </tr>
+                         
                         <tr>
                            <td>
                               Map to Knowledge Unit: 
                            </td>
                            <td>
-                              <input type="radio" id="KUYes" name="KU" value="1" readonly>Yes
-                              <input type="radio" id="KUNo" name="KU" value="0" readonly>No
+                              <input type="radio" id="KUYes" name="KU" value="1" disabled>Yes
+                              <input type="radio" id="KUNo" name="KU" value="0" disabled>No
                            </td>
                         </tr>
                         <tr>

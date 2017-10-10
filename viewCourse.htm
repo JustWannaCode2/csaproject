@@ -285,6 +285,19 @@
                             
                             document.getElementById('Cancel').removeAttribute('disabled');
                             
+                            document.getElementById('PlusPre').removeAttribute('disabled');
+                            
+                            document.getElementById('PlusPre').removeAttribute('disabled');
+                            
+                            document.getElementById('MinusPre').removeAttribute('disabled');
+                            
+                            document.getElementById('Prereqs').removeAttribute('disabled');
+                            
+                            document.getElementById('LabYes').removeAttribute('disabled');
+                            
+                            document.getElementById('LabNo').removeAttribute('disabled');
+                            
+                            document.getElementById('CourseLetter').removeAttribute('disabled');
                             })
                         })
                         
@@ -312,6 +325,17 @@
                               <input type="text" id="CourseNum" name="CourseNum" style="width:48%" placeholder="Number" disabled>
                            </td>
                         </tr>
+                         
+                         <tr>
+                             <td>
+                                 Course Letter (Optional): 
+                             </td>
+                             
+                             <td>
+                                 <input type="text" id="CourseLetter" placeholder="Course Letter" disabled>
+                             </td>
+                         </tr>
+                         
                         <tr>
                            <td>
                               Course Name:
@@ -352,6 +376,74 @@
                               <textarea style="height: 75px; width:250px" id="Description" name="description" placeholder="Enter your description here" disabled></textarea>
                            </td>
                         </tr>
+                         
+                         <tr>
+                             <td>
+                                 Is There A Lab: 
+                             </td>
+                             <td>
+                                 <input type="radio" id="LabYes" name="Lab" value="1" disabled>Yes
+                                 <input type="radio" id="LabNo" name="Lab" value="0" disabled>No
+                             </td>
+                         </tr>
+                         
+                         <tr>
+                       <td>Prerequisites:</td>
+                       <td>
+                           <select id="Prereqs" size="5" style="width:257px" disabled></select>
+                           <input type="button" value="+" id="PlusPre" style="text-align: center" disabled>
+                           <input type="button" value="-" id="MinusPre" style="text-align: center" disabled>
+                       </td>
+                       
+                       <script>
+                     //this script is used to toggle the new prereq info
+                     $(document).ready(function()
+                       {
+                     $("#PlusPre").click(function()
+                        {
+                     $("#NewPrereqInfo").toggle();
+                     })
+                     
+                     $("#AddPre").click(function()
+                        {
+                     $("#NewPrereqInfo").hide();
+                     })
+                     
+                     $("#CancelAddPre").click(function()
+                        {
+                     $("#NewPrereqInfo").hide();
+                     })                                            
+                     
+                     })
+                  </script>
+                   </tr>
+                   <tr>
+                       <td></td>
+                       <td id="NewPrereqInfo" style="display: none">
+                           <table style="border: 1px solid black">
+                           <tr>
+                              <td>
+                                 Department:
+                                 <select id="PreDept" style="width:257px"></select>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td>
+                                 Course Number/ Letter:
+                                 <select id="PreCourseNumber" style="width:100px"></select>
+                                 <select id="PreCourseLetter" style="width:80px"></select> 
+                              </td>
+                           </tr>
+                           <tr>
+                              <td align="center" colspan="2">
+                                 <input type="button" id="AddPre" value="Add" style="width:48%">
+                                 <input type="button" id="CancelAddPre" value="Cancel" style="width:48%">
+                              </td>
+                           </tr>
+                        </table>
+                       </td>
+                   </tr>
+                         
                         <tr>
                            <td>
                               Map to Knowledge Unit: 
